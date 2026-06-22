@@ -124,28 +124,23 @@ try:
         tour_options = sorted(df["Tour"].dropna().unique())
         surface_options = sorted(df["Surface"].dropna().unique())
 
-        col_a, col_b, col_c = st.columns(3)
+        selected_dates = st.multiselect(
+            "Dni",
+            date_options,
+            default=date_options
+        )
 
-        with col_a:
-            selected_dates = st.multiselect(
-                "Dni",
-                date_options,
-                default=date_options
-            )
+        selected_tours = st.multiselect(
+            "Tour",
+            tour_options,
+            default=tour_options
+        )
 
-        with col_b:
-            selected_tours = st.multiselect(
-                "Tour",
-                tour_options,
-                default=tour_options
-            )
-
-        with col_c:
-            selected_surfaces = st.multiselect(
-                "Povrch",
-                surface_options,
-                default=surface_options
-            )
+        selected_surfaces = st.multiselect(
+            "Povrch",
+            surface_options,
+            default=surface_options
+        )
 
         df_view = df[
             df["DateLabel"].isin(selected_dates)
@@ -158,49 +153,41 @@ try:
             ascending=False
         )
 
-        df_view["Match"] = (
-            df_view["Player 1"].astype(str)
-            + " - "
-            + df_view["Player 2"].astype(str)
-        )
+        st.caption(f"Počet zápasov: {len(df_view)}")
 
-        mobile_cols = [
-            "DateLabel",
-            "Time",
-            "Ranking Favorite",
-            "Rank Diff",
-            "ELO Favorite",
-            "ELO Diff",
-            "Match",
-        ]
+        for _, row in df_view.iterrows():
+            st.markdown(
+                f"""
+### {row["DateLabel"]} · {row["Time"]}
 
-        st.dataframe(
-            df_view[mobile_cols],
-            use_container_width=True,
-            hide_index=True
-        )
+**{row["Player 1"]}** vs **{row["Player 2"]}**
 
-        with st.expander("🔎 Detail zápasov"):
-            detail_cols = [
-                "DateLabel",
-                "Time",
-                "Player 1",
-                "Rank 1",
-                "Surface Elo Rank 1",
-                "Player 2",
-                "Rank 2",
-                "Surface Elo Rank 2",
-                "Ranking Favorite",
-                "ELO Favorite",
-                "Rank Diff",
-                "ELO Diff",
-            ]
+Ranking favorit: **{row["Ranking Favorite"]}**  
+Rank rozdiel: **{row["Rank Diff"]}**
 
-            st.dataframe(
-                df_view[detail_cols],
-                use_container_width=True,
-                hide_index=True
+Surface ELO favorit: **{row["ELO Favorite"]}**  
+ELO rozdiel: **{row["ELO Diff"]}**
+"""
             )
+
+            with st.expander("📊 Detail zápasu"):
+                col_a, col_b = st.columns(2)
+
+                with col_a:
+                    st.markdown(f"#### {row['Player 1']}")
+                    st.write(f"Rank: {row['Rank 1']}")
+                    st.write(
+                        f"Surface ELO Rank: {row['Surface Elo Rank 1']}"
+                    )
+
+                with col_b:
+                    st.markdown(f"#### {row['Player 2']}")
+                    st.write(f"Rank: {row['Rank 2']}")
+                    st.write(
+                        f"Surface ELO Rank: {row['Surface Elo Rank 2']}"
+                    )
+
+            st.divider()
 
         csv = df_view.to_csv(index=False, sep=";").encode("utf-8-sig")
 
