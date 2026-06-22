@@ -1,5 +1,7 @@
 import sys
 import subprocess
+from datetime import datetime
+
 import streamlit as st
 import pandas as pd
 
@@ -148,9 +150,33 @@ try:
             & df["Surface"].isin(selected_surfaces)
         ].copy()
 
+        def day_order(value):
+            if value == "Today":
+                return 0
+            if str(value).startswith("Day+"):
+                return int(str(value).replace("Day+", ""))
+            return 99
+
+
+        now_time = datetime.now().time()
+
+        df_view["DayOrder"] = df_view["DateLabel"].apply(day_order)
+        df_view["MatchTime"] = pd.to_datetime(
+            df_view["Time"],
+            format="%H:%M",
+            errors="coerce"
+        ).dt.time
+
+        df_view = df_view[
+            ~(
+                (df_view["DateLabel"] == "Today")
+                & (df_view["MatchTime"] < now_time)
+            )
+        ]
+
         df_view = df_view.sort_values(
-            by="ELO Diff",
-            ascending=False
+            by=["DayOrder", "Time"],
+            ascending=[True, True]
         )
 
         st.caption(f"Počet zápasov: {len(df_view)}")
