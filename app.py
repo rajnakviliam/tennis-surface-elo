@@ -5,6 +5,12 @@ from datetime import datetime
 import streamlit as st
 import pandas as pd
 
+from google_seen_matches import (
+    load_seen_matches,
+    save_new_matches,
+    make_match_id,
+)
+
 PYTHON = sys.executable
 
 st.set_page_config(page_title="Tennis Surface ELO Finder", layout="wide")
@@ -179,9 +185,25 @@ try:
             ascending=[True, True]
         )
 
-        st.caption(f"Počet zápasov: {len(df_view)}")
+        seen_matches = load_seen_matches()
+
+        df_view["match_id"] = df_view.apply(make_match_id, axis=1)
+        df_view["IsNew"] = ~df_view["match_id"].isin(seen_matches)
+
+        new_match_ids = df_view[df_view["IsNew"]]["match_id"].tolist()
+        save_new_matches(new_match_ids)
+
+        show_new_only = st.checkbox("🆕 Zobraziť iba nové zápasy")
+
+        if show_new_only:
+            df_view = df_view[df_view["IsNew"]]
+
+        st.caption(
+            f"Počet zápasov: {len(df_view)} | Nové: {df_view['IsNew'].sum()}"
+)
 
         for _, row in df_view.iterrows():
+            new_badge = "🆕 " if row.get("IsNew", False) else ""
             elo_fav = row["ELO Favorite"]
             ranking_fav = row["Ranking Favorite"]
 
@@ -192,7 +214,7 @@ try:
 
             st.markdown(
                 f"""
-        ### {row["DateLabel"]} · {row["Time"]}
+        ### {new_badge}{row["DateLabel"]} · {row["Time"]}
 
         🎾 **{row["Player 1"]}** vs **{row["Player 2"]}**
 
