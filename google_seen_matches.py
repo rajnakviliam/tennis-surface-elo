@@ -39,7 +39,9 @@ def load_seen_matches():
         return seen
 
     except Exception as e:
-        st.warning(f"Nepodarilo sa načítať Google Sheet: {e}")
+        import traceback
+        st.code(traceback.format_exc())
+        st.warning(f"Nepodarilo sa načítať Google Sheet: {repr(e)}")
         return set()
 
 
@@ -58,7 +60,9 @@ def save_new_matches(match_ids):
         worksheet.append_rows(rows)
 
     except Exception as e:
-        st.warning(f"Nepodarilo sa uložiť nové zápasy do Google Sheet: {e}")
+        import traceback
+        st.code(traceback.format_exc())
+        st.warning(f"Nepodarilo sa uložiť nové zápasy do Google Sheet: {repr(e)}")
 
 
 def make_match_id(row):
