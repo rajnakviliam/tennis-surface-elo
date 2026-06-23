@@ -13,8 +13,10 @@ def get_worksheet():
         "https://www.googleapis.com/auth/drive",
     ]
 
+    service_account_info = dict(st.secrets["gcp_service_account"])
+
     creds = Credentials.from_service_account_info(
-        st.secrets["gcp_service_account"],
+        service_account_info,
         scopes=scopes,
     )
 
