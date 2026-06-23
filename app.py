@@ -182,36 +182,46 @@ try:
         st.caption(f"Počet zápasov: {len(df_view)}")
 
         for _, row in df_view.iterrows():
+            elo_fav = row["ELO Favorite"]
+            ranking_fav = row["Ranking Favorite"]
+
+            if elo_fav == row["Player 1"]:
+                elo_text = f"🟦 Surface ELO → {elo_fav}"
+            else:
+                elo_text = f"🟧 Surface ELO → {elo_fav}"
+
             st.markdown(
                 f"""
-### {row["DateLabel"]} · {row["Time"]}
+        ### {row["DateLabel"]} · {row["Time"]}
 
-**{row["Player 1"]}** vs **{row["Player 2"]}**
+        🎾 **{row["Player 1"]}** vs **{row["Player 2"]}**
 
-Ranking favorit: **{row["Ranking Favorite"]}**  
-Rank rozdiel: **{row["Rank Diff"]}**
+        **Ranking favorit:** {ranking_fav}  
+        **Rank rozdiel:** {row["Rank Diff"]}
 
-Surface ELO favorit: **{row["ELO Favorite"]}**  
-ELO rozdiel: **{row["ELO Diff"]}**
-"""
+        **{elo_text}**  
+        **ELO rozdiel:** {row["ELO Diff"]}
+        """
             )
 
             with st.expander("📊 Detail zápasu"):
                 col_a, col_b = st.columns(2)
 
                 with col_a:
-                    st.markdown(f"#### {row['Player 1']}")
+                    st.markdown(f"#### 🟦 {row['Player 1']}")
                     st.write(f"Rank: {row['Rank 1']}")
-                    st.write(
-                        f"Surface ELO Rank: {row['Surface Elo Rank 1']}"
-                    )
+                    st.write(f"Surface ELO Rank: {row['Surface Elo Rank 1']}")
 
                 with col_b:
-                    st.markdown(f"#### {row['Player 2']}")
+                    st.markdown(f"#### 🟧 {row['Player 2']}")
                     st.write(f"Rank: {row['Rank 2']}")
-                    st.write(
-                        f"Surface ELO Rank: {row['Surface Elo Rank 2']}"
-                    )
+                    st.write(f"Surface ELO Rank: {row['Surface Elo Rank 2']}")
+
+                st.markdown("---")
+                st.write(f"Ranking favorit: {ranking_fav}")
+                st.write(f"Surface ELO favorit: {elo_fav}")
+                st.write(f"Rank rozdiel: {row['Rank Diff']}")
+                st.write(f"ELO rozdiel: {row['ELO Diff']}")
 
             st.divider()
 
