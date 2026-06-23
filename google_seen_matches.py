@@ -4,7 +4,7 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 
-SHEET_NAME = "tennis_seen_matches"
+SHEET_ID = "1jCNYJox7NnrCnjNxg_qKJNUSSwfIRUNnrf9o4do_R-0"
 
 
 def get_worksheet():
@@ -21,7 +21,7 @@ def get_worksheet():
     )
 
     client = gspread.authorize(creds)
-    sheet = client.open(SHEET_NAME)
+    sheet = client.open_by_key(SHEET_ID)
     return sheet.sheet1
 
 
