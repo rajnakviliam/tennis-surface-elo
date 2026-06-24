@@ -15,7 +15,7 @@ PYTHON = sys.executable
 
 st.set_page_config(page_title="Tennis Surface ELO Finder", layout="wide")
 
-st.title("🎾 Tennis Surface ELO Finder")
+st.title("🎾 Tennis Surface ELO Finder v2")
 
 st.markdown(
     """
