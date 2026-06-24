@@ -42,7 +42,6 @@ def load_seen_matches():
         import traceback
         st.code(traceback.format_exc())
         st.warning(f"Nepodarilo sa načítať Google Sheet: {repr(e)}")
-        return set()
 
 
 def save_new_matches(match_ids):
