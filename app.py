@@ -7,6 +7,7 @@ import streamlit as st
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
+from zoneinfo import ZoneInfo
 
 PYTHON = sys.executable
 SHEET_ID = "1jCNYJox7NnrCnjNxg_qKJNUSSwfIRUNnrf9o4do_R-0"
@@ -269,7 +270,7 @@ try:
                 return int(str(value).replace("Day+", ""))
             return 99
 
-        now_time = dt.now().time()
+        now_time = dt.now(ZoneInfo("Europe/Bratislava")).time()
 
         df_view["DayOrder"] = df_view["DateLabel"].apply(day_order)
         df_view["MatchTime"] = pd.to_datetime(
