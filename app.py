@@ -228,6 +228,7 @@ if st.button("🔄 Aktualizovať všetko"):
             st.stop()
 
     st.success("Všetko aktualizované.")
+    st.session_state["did_update"] = True
 
 
 st.subheader("📊 Ranking vs Surface ELO mismatch")
@@ -291,7 +292,8 @@ try:
                 if match_id not in current_statuses
             ]
 
-            add_new_matches(new_ids)
+            if st.session_state.get("did_update", False):
+                add_new_matches(new_ids)
 
             current_statuses = load_match_statuses()
 
