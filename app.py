@@ -1,17 +1,15 @@
 import sys
 import subprocess
-from datetime import datetime
+import datetime
+from datetime import datetime as dt
 
 import streamlit as st
 import pandas as pd
-
-from google_seen_matches import (
-    load_seen_matches,
-    save_new_matches,
-    make_match_id,
-)
+import gspread
+from google.oauth2.service_account import Credentials
 
 PYTHON = sys.executable
+SHEET_ID = "1jCNYJox7NnrCnjNxg_qKJNUSSwfIRUNnrf9o4do_R-0"
 
 st.set_page_config(page_title="Tennis Surface ELO Finder", layout="wide")
 
@@ -59,6 +57,58 @@ def run_script(script):
         st.success(f"{script} dokončený.")
     else:
         st.error(result.stderr)
+
+
+def get_worksheet():
+    scopes = [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive",
+    ]
+
+    creds = Credentials.from_service_account_info(
+        dict(st.secrets["gcp_service_account"]),
+        scopes=scopes,
+    )
+
+    client = gspread.authorize(creds)
+    sheet = client.open_by_key(SHEET_ID)
+    return sheet.sheet1
+
+
+def load_seen_matches():
+    worksheet = get_worksheet()
+    records = worksheet.get_all_records()
+
+    seen = set()
+    for row in records:
+        match_id = row.get("match_id")
+        if match_id:
+            seen.add(match_id)
+
+    return seen
+
+
+def save_new_matches(match_ids):
+    if not match_ids:
+        return
+
+    worksheet = get_worksheet()
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    rows = [[match_id, now] for match_id in match_ids]
+    worksheet.append_rows(rows)
+
+
+def make_match_id(row):
+    return (
+        str(row["DateLabel"])
+        + "|"
+        + str(row["Time"])
+        + "|"
+        + str(row["Player 1"])
+        + "|"
+        + str(row["Player 2"])
+    )
 
 
 st.subheader("1. Aktualizácia dát")
@@ -132,23 +182,9 @@ try:
         tour_options = sorted(df["Tour"].dropna().unique())
         surface_options = sorted(df["Surface"].dropna().unique())
 
-        selected_dates = st.multiselect(
-            "Dni",
-            date_options,
-            default=date_options
-        )
-
-        selected_tours = st.multiselect(
-            "Tour",
-            tour_options,
-            default=tour_options
-        )
-
-        selected_surfaces = st.multiselect(
-            "Povrch",
-            surface_options,
-            default=surface_options
-        )
+        selected_dates = st.multiselect("Dni", date_options, default=date_options)
+        selected_tours = st.multiselect("Tour", tour_options, default=tour_options)
+        selected_surfaces = st.multiselect("Povrch", surface_options, default=surface_options)
 
         df_view = df[
             df["DateLabel"].isin(selected_dates)
@@ -163,8 +199,7 @@ try:
                 return int(str(value).replace("Day+", ""))
             return 99
 
-
-        now_time = datetime.now().time()
+        now_time = dt.now().time()
 
         df_view["DayOrder"] = df_view["DateLabel"].apply(day_order)
         df_view["MatchTime"] = pd.to_datetime(
@@ -185,13 +220,18 @@ try:
             ascending=[True, True]
         )
 
-        seen_matches = load_seen_matches()
+        try:
+            seen_matches = load_seen_matches()
 
-        df_view["match_id"] = df_view.apply(make_match_id, axis=1)
-        df_view["IsNew"] = ~df_view["match_id"].isin(seen_matches)
+            df_view["match_id"] = df_view.apply(make_match_id, axis=1)
+            df_view["IsNew"] = ~df_view["match_id"].isin(seen_matches)
 
-        new_match_ids = df_view[df_view["IsNew"]]["match_id"].tolist()
-        save_new_matches(new_match_ids)
+            new_match_ids = df_view[df_view["IsNew"]]["match_id"].tolist()
+            save_new_matches(new_match_ids)
+
+        except Exception as e:
+            st.warning(f"Nepodarilo sa pripojiť ku Google Sheet: {repr(e)}")
+            df_view["IsNew"] = True
 
         show_new_only = st.checkbox("🆕 Zobraziť iba nové zápasy")
 
@@ -200,7 +240,7 @@ try:
 
         st.caption(
             f"Počet zápasov: {len(df_view)} | Nové: {df_view['IsNew'].sum()}"
-)
+        )
 
         for _, row in df_view.iterrows():
             new_badge = "🆕 " if row.get("IsNew", False) else ""
@@ -214,16 +254,16 @@ try:
 
             st.markdown(
                 f"""
-        ### {new_badge}{row["DateLabel"]} · {row["Time"]}
+### {new_badge}{row["DateLabel"]} · {row["Time"]}
 
-        🎾 **{row["Player 1"]}** vs **{row["Player 2"]}**
+🎾 **{row["Player 1"]}** vs **{row["Player 2"]}**
 
-        **Ranking favorit:** {ranking_fav}  
-        **Rank rozdiel:** {row["Rank Diff"]}
+**Ranking favorit:** {ranking_fav}  
+**Rank rozdiel:** {row["Rank Diff"]}
 
-        **{elo_text}**  
-        **ELO rozdiel:** {row["ELO Diff"]}
-        """
+**{elo_text}**  
+**ELO rozdiel:** {row["ELO Diff"]}
+"""
             )
 
             with st.expander("📊 Detail zápasu"):
