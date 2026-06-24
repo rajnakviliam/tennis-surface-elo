@@ -13,7 +13,7 @@ SHEET_ID = "1jCNYJox7NnrCnjNxg_qKJNUSSwfIRUNnrf9o4do_R-0"
 
 st.set_page_config(page_title="Tennis Surface ELO Finder", layout="wide")
 
-st.title("🎾 Tennis Surface ELO Finder v2")
+st.title("🎾 Tennis Surface ELO Finder v3")
 
 st.markdown(
     """
@@ -82,35 +82,11 @@ def get_worksheet():
     creds = Credentials.from_service_account_info(
         service_account_info,
         scopes=scopes,
-)
+    )
 
     client = gspread.authorize(creds)
     sheet = client.open_by_key(SHEET_ID)
     return sheet.sheet1
-
-
-def load_seen_matches():
-    worksheet = get_worksheet()
-    records = worksheet.get_all_records()
-
-    seen = set()
-    for row in records:
-        match_id = row.get("match_id")
-        if match_id:
-            seen.add(match_id)
-
-    return seen
-
-
-def save_new_matches(match_ids):
-    if not match_ids:
-        return
-
-    worksheet = get_worksheet()
-    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    rows = [[match_id, now] for match_id in match_ids]
-    worksheet.append_rows(rows)
 
 
 def make_match_id(row):
@@ -123,6 +99,79 @@ def make_match_id(row):
         + "|"
         + str(row["Player 2"])
     )
+
+
+def load_match_statuses():
+    worksheet = get_worksheet()
+    records = worksheet.get_all_records()
+
+    statuses = {}
+
+    for row in records:
+        match_id = row.get("match_id")
+        status = row.get("status", "seen")
+
+        if match_id:
+            statuses[match_id] = status
+
+    return statuses
+
+
+def add_new_matches(match_ids):
+    if not match_ids:
+        return
+
+    worksheet = get_worksheet()
+    existing_records = worksheet.get_all_records()
+    existing_ids = {
+        row.get("match_id")
+        for row in existing_records
+        if row.get("match_id")
+    }
+
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    rows = []
+
+    for match_id in match_ids:
+        if match_id not in existing_ids:
+            rows.append([match_id, now, "new"])
+
+    if rows:
+        worksheet.append_rows(rows)
+
+
+def update_match_status(match_id, new_status):
+    worksheet = get_worksheet()
+    records = worksheet.get_all_records()
+
+    for idx, row in enumerate(records, start=2):
+        if row.get("match_id") == match_id:
+            worksheet.update_cell(idx, 3, new_status)
+            return
+
+    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    worksheet.append_row([match_id, now, new_status])
+
+
+def status_label(status):
+    if status == "new":
+        return "🆕 NEW"
+    if status == "bet":
+        return "🎯 STAVENÉ"
+    if status == "seen":
+        return "👁️ VIDENÉ"
+    return status
+
+
+def status_order(status):
+    if status == "new":
+        return 0
+    if status == "bet":
+        return 1
+    if status == "seen":
+        return 2
+    return 9
 
 
 st.subheader("1. Aktualizácia dát")
@@ -196,6 +245,11 @@ try:
         tour_options = sorted(df["Tour"].dropna().unique())
         surface_options = sorted(df["Surface"].dropna().unique())
 
+        selected_status = st.selectbox(
+            "Zobraziť",
+            ["Všetky", "Nové", "Stavené", "Videné"]
+        )
+
         selected_dates = st.multiselect("Dni", date_options, default=date_options)
         selected_tours = st.multiselect("Tour", tour_options, default=tour_options)
         selected_surfaces = st.multiselect("Povrch", surface_options, default=surface_options)
@@ -229,37 +283,54 @@ try:
             )
         ]
 
-        df_view = df_view.sort_values(
-            by=["DayOrder", "Time"],
-            ascending=[True, True]
-        )
-
         try:
-            seen_matches = load_seen_matches()
-
             df_view["match_id"] = df_view.apply(make_match_id, axis=1)
-            df_view["IsNew"] = ~df_view["match_id"].isin(seen_matches)
 
-            new_match_ids = df_view[df_view["IsNew"]]["match_id"].tolist()
-            save_new_matches(new_match_ids)
+            current_statuses = load_match_statuses()
+
+            new_ids = [
+                match_id
+                for match_id in df_view["match_id"].tolist()
+                if match_id not in current_statuses
+            ]
+
+            add_new_matches(new_ids)
+
+            current_statuses = load_match_statuses()
+
+            df_view["Status"] = df_view["match_id"].map(current_statuses).fillna("new")
 
         except Exception as e:
-            import traceback
-            st.code(traceback.format_exc())
             st.warning(f"Nepodarilo sa pripojiť ku Google Sheet: {repr(e)}")
-            df_view["IsNew"] = True
+            df_view["match_id"] = df_view.apply(make_match_id, axis=1)
+            df_view["Status"] = "new"
 
-        show_new_only = st.checkbox("🆕 Zobraziť iba nové zápasy")
+        if selected_status == "Nové":
+            df_view = df_view[df_view["Status"] == "new"]
+        elif selected_status == "Stavené":
+            df_view = df_view[df_view["Status"] == "bet"]
+        elif selected_status == "Videné":
+            df_view = df_view[df_view["Status"] == "seen"]
 
-        if show_new_only:
-            df_view = df_view[df_view["IsNew"]]
+        df_view["StatusOrder"] = df_view["Status"].apply(status_order)
+
+        df_view = df_view.sort_values(
+            by=["StatusOrder", "DayOrder", "Time"],
+            ascending=[True, True, True]
+        )
+
+        new_count = (df_view["Status"] == "new").sum()
+        bet_count = (df_view["Status"] == "bet").sum()
+        seen_count = (df_view["Status"] == "seen").sum()
 
         st.caption(
-            f"Počet zápasov: {len(df_view)} | Nové: {df_view['IsNew'].sum()}"
+            f"Počet zápasov: {len(df_view)} | Nové: {new_count} | Stavené: {bet_count} | Videné: {seen_count}"
         )
 
         for _, row in df_view.iterrows():
-            new_badge = "🆕 " if row.get("IsNew", False) else ""
+            status = row.get("Status", "new")
+            badge = status_label(status)
+
             elo_fav = row["ELO Favorite"]
             ranking_fav = row["Ranking Favorite"]
 
@@ -270,7 +341,7 @@ try:
 
             st.markdown(
                 f"""
-### {new_badge}{row["DateLabel"]} · {row["Time"]}
+### {badge} · {row["DateLabel"]} · {row["Time"]}
 
 🎾 **{row["Player 1"]}** vs **{row["Player 2"]}**
 
@@ -281,6 +352,24 @@ try:
 **ELO rozdiel:** {row["ELO Diff"]}
 """
             )
+
+            col_seen, col_bet = st.columns(2)
+
+            with col_seen:
+                if st.button(
+                    "👁️ Označiť ako videné",
+                    key=f"seen_{row['match_id']}"
+                ):
+                    update_match_status(row["match_id"], "seen")
+                    st.rerun()
+
+            with col_bet:
+                if st.button(
+                    "🎯 Označiť ako stavené",
+                    key=f"bet_{row['match_id']}"
+                ):
+                    update_match_status(row["match_id"], "bet")
+                    st.rerun()
 
             with st.expander("📊 Detail zápasu"):
                 col_a, col_b = st.columns(2)
@@ -300,6 +389,7 @@ try:
                 st.write(f"Surface ELO favorit: {elo_fav}")
                 st.write(f"Rank rozdiel: {row['Rank Diff']}")
                 st.write(f"ELO rozdiel: {row['ELO Diff']}")
+                st.write(f"Status: {status_label(status)}")
 
             st.divider()
 
