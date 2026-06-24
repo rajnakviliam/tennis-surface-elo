@@ -244,6 +244,8 @@ try:
             save_new_matches(new_match_ids)
 
         except Exception as e:
+            import traceback
+            st.code(traceback.format_exc())
             st.warning(f"Nepodarilo sa pripojiť ku Google Sheet: {repr(e)}")
             df_view["IsNew"] = True
 
