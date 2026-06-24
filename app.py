@@ -155,14 +155,13 @@ def update_match_status(match_id, new_status):
 def status_label(status):
     if status == "new":
         return "🆕 NEW"
+    if status == "wait":
+        return "⏳ ČAKÁ NA KURZY"
     if status == "bet":
         return "🎯 STAVENÉ"
     if status == "seen":
         return "👁️ VIDENÉ"
-    if status == "wait":
-        return "⏳ ČAKÁ NA KURZY"
     return status
-
 
 def status_order(status):
     if status == "new":
