@@ -79,9 +79,9 @@ def get_worksheet():
         "universe_domain": st.secrets["gcp_service_account"]["universe_domain"],
     }
 
-creds = Credentials.from_service_account_info(
-    service_account_info,
-    scopes=scopes,
+    creds = Credentials.from_service_account_info(
+        service_account_info,
+        scopes=scopes,
 )
 
     client = gspread.authorize(creds)
