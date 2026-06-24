@@ -90,15 +90,12 @@ def get_worksheet():
 
 
 def make_match_id(row):
-    return (
-        str(row["DateLabel"])
-        + "|"
-        + str(row["Time"])
-        + "|"
-        + str(row["Player 1"])
-        + "|"
-        + str(row["Player 2"])
-    )
+    players = sorted([
+        str(row["Player 1"]).strip(),
+        str(row["Player 2"]).strip(),
+    ])
+
+    return players[0] + "|" + players[1]
 
 
 def load_match_statuses():
