@@ -166,9 +166,9 @@ def status_label(status):
 def status_order(status):
     if status == "new":
         return 0
-    if status == "bet":
+    if status == "wait":
         return 1
-    if status == "seen":
+    if status == "bet":
         return 2
     if status == "seen":
         return 3
