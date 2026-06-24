@@ -158,6 +158,8 @@ def status_label(status):
         return "🎯 STAVENÉ"
     if status == "seen":
         return "👁️ VIDENÉ"
+    if status == "wait":
+        return "⏳ ČAKÁ NA KURZY"
     return status
 
 
@@ -168,6 +170,8 @@ def status_order(status):
         return 1
     if status == "seen":
         return 2
+    if status == "seen":
+        return 3
     return 9
 
 
@@ -245,7 +249,7 @@ try:
 
         selected_status = st.selectbox(
             "Zobraziť",
-            ["Všetky", "Nové", "Stavené", "Videné"]
+            ["Všetky", "Nové", "Čaká na kurzy", "Stavené", "Videné"]
         )
 
         selected_dates = st.multiselect("Dni", date_options, default=date_options)
@@ -310,6 +314,8 @@ try:
             df_view = df_view[df_view["Status"] == "bet"]
         elif selected_status == "Videné":
             df_view = df_view[df_view["Status"] == "seen"]
+        elif selected_status == "Čaká na kurzy":
+            df_view = df_view[df_view["Status"] == "wait"]
 
         df_view["StatusOrder"] = df_view["Status"].apply(status_order)
 
@@ -352,7 +358,7 @@ try:
 """
             )
 
-            col_seen, col_bet = st.columns(2)
+            col_seen, col_wait, col_bet = st.columns(3)
 
             with col_seen:
                 if st.button(
@@ -368,6 +374,14 @@ try:
                     key=f"bet_{row['match_id']}"
                 ):
                     update_match_status(row["match_id"], "bet")
+                    st.rerun()
+                    
+            with col_wait:
+                if st.button(
+                    "⏳ Čaká na kurzy",
+                    key=f"wait_{row['match_id']}"
+                ):
+                    update_match_status(row["match_id"], "wait")
                     st.rerun()
 
             with st.expander("📊 Detail zápasu"):
