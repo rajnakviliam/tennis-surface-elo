@@ -2,19 +2,19 @@ import sys
 import subprocess
 import datetime
 from datetime import datetime as dt
+from zoneinfo import ZoneInfo
 
 import streamlit as st
 import pandas as pd
 import gspread
 from google.oauth2.service_account import Credentials
-from zoneinfo import ZoneInfo
 
 PYTHON = sys.executable
 SHEET_ID = "1jCNYJox7NnrCnjNxg_qKJNUSSwfIRUNnrf9o4do_R-0"
 
 st.set_page_config(page_title="Tennis Surface ELO Finder", layout="wide")
 
-st.title("🎾 Tennis Surface ELO Finder v3")
+st.title("🎾 Tennis Surface ELO Finder v4")
 
 st.markdown(
     """
@@ -121,6 +121,7 @@ def add_new_matches(match_ids):
 
     worksheet = get_worksheet()
     existing_records = worksheet.get_all_records()
+
     existing_ids = {
         row.get("match_id")
         for row in existing_records
@@ -163,6 +164,7 @@ def status_label(status):
         return "👁️ VIDENÉ"
     return status
 
+
 def status_order(status):
     if status == "new":
         return 0
@@ -173,6 +175,38 @@ def status_order(status):
     if status == "seen":
         return 3
     return 9
+
+
+def better_value(v1, v2, lower_is_better=False):
+    if lower_is_better:
+        if v1 < v2:
+            return "p1"
+        if v2 < v1:
+            return "p2"
+        return "tie"
+
+    if v1 > v2:
+        return "p1"
+    if v2 > v1:
+        return "p2"
+    return "tie"
+
+
+def player_line(player, value, rank=None, winner=False):
+    mark = "🟢" if winner else "⚪"
+    if rank is None:
+        return f"{mark} **{player}:** {value}"
+    return f"{mark} **{player}:** {value} `#{rank}`"
+
+
+def surface_name(surface):
+    if surface == "grass":
+        return "Grass"
+    if surface == "clay":
+        return "Clay"
+    if surface == "hard":
+        return "Hard"
+    return str(surface).capitalize()
 
 
 st.subheader("1. Aktualizácia dát")
@@ -242,7 +276,31 @@ try:
 
     if df.empty:
         st.info("Žiadne ranking vs Surface ELO mismatch zápasy.")
+
     else:
+        required_columns = [
+            "Overall Elo 1",
+            "Overall Elo 2",
+            "Surface Elo 1",
+            "Surface Elo 2",
+            "Overall Elo Diff",
+            "Surface Elo Diff",
+            "Overall Elo Rank 1",
+            "Overall Elo Rank 2",
+            "Surface Elo Rank 1",
+            "Surface Elo Rank 2",
+        ]
+
+        missing_columns = [
+            col for col in required_columns if col not in df.columns
+        ]
+
+        if missing_columns:
+            st.warning(
+                "CSV ešte nemá nové ELO stĺpce. Spusti najprv 🔄 Aktualizovať všetko."
+            )
+            st.stop()
+
         date_options = sorted(df["DateLabel"].dropna().unique())
         tour_options = sorted(df["Tour"].dropna().unique())
         surface_options = sorted(df["Surface"].dropna().unique())
@@ -252,9 +310,23 @@ try:
             ["Všetky", "Nové", "Čaká na kurzy", "Stavené", "Videné"]
         )
 
-        selected_dates = st.multiselect("Dni", date_options, default=date_options)
-        selected_tours = st.multiselect("Tour", tour_options, default=tour_options)
-        selected_surfaces = st.multiselect("Povrch", surface_options, default=surface_options)
+        selected_dates = st.multiselect(
+            "Dni",
+            date_options,
+            default=date_options
+        )
+
+        selected_tours = st.multiselect(
+            "Tour",
+            tour_options,
+            default=tour_options
+        )
+
+        selected_surfaces = st.multiselect(
+            "Povrch",
+            surface_options,
+            default=surface_options
+        )
 
         df_view = df[
             df["DateLabel"].isin(selected_dates)
@@ -301,7 +373,11 @@ try:
 
             current_statuses = load_match_statuses()
 
-            df_view["Status"] = df_view["match_id"].map(current_statuses).fillna("new")
+            df_view["Status"] = (
+                df_view["match_id"]
+                .map(current_statuses)
+                .fillna("new")
+            )
 
         except Exception as e:
             st.warning(f"Nepodarilo sa pripojiť ku Google Sheet: {repr(e)}")
@@ -310,12 +386,12 @@ try:
 
         if selected_status == "Nové":
             df_view = df_view[df_view["Status"] == "new"]
+        elif selected_status == "Čaká na kurzy":
+            df_view = df_view[df_view["Status"] == "wait"]
         elif selected_status == "Stavené":
             df_view = df_view[df_view["Status"] == "bet"]
         elif selected_status == "Videné":
             df_view = df_view[df_view["Status"] == "seen"]
-        elif selected_status == "Čaká na kurzy":
-            df_view = df_view[df_view["Status"] == "wait"]
 
         df_view["StatusOrder"] = df_view["Status"].apply(status_order)
 
@@ -325,47 +401,75 @@ try:
         )
 
         new_count = (df_view["Status"] == "new").sum()
+        wait_count = (df_view["Status"] == "wait").sum()
         bet_count = (df_view["Status"] == "bet").sum()
         seen_count = (df_view["Status"] == "seen").sum()
 
         st.caption(
-            f"Počet zápasov: {len(df_view)} | Nové: {new_count} | Stavené: {bet_count} | Videné: {seen_count}"
+            f"Počet zápasov: {len(df_view)} | "
+            f"Nové: {new_count} | "
+            f"Čaká na kurzy: {wait_count} | "
+            f"Stavené: {bet_count} | "
+            f"Videné: {seen_count}"
         )
 
         for _, row in df_view.iterrows():
             status = row.get("Status", "new")
             badge = status_label(status)
 
-            elo_fav = row["ELO Favorite"]
-            ranking_fav = row["Ranking Favorite"]
+            p1 = row["Player 1"]
+            p2 = row["Player 2"]
+            surface = row["Surface"]
+            surface_title = surface_name(surface)
 
-            if elo_fav == row["Player 1"]:
-                elo_text = f"🟦 Surface ELO → {elo_fav}"
+            ranking_fav = row["Ranking Favorite"]
+            elo_fav = row["ELO Favorite"]
+
+            rank_winner = better_value(
+                row["Rank 1"],
+                row["Rank 2"],
+                lower_is_better=True
+            )
+
+            overall_winner = better_value(
+                row["Overall Elo 1"],
+                row["Overall Elo 2"]
+            )
+
+            surface_winner = better_value(
+                row["Surface Elo 1"],
+                row["Surface Elo 2"]
+            )
+
+            if elo_fav == p1:
+                elo_text = f"🟦 Surface ELO → **{elo_fav}**"
             else:
-                elo_text = f"🟧 Surface ELO → {elo_fav}"
+                elo_text = f"🟧 Surface ELO → **{elo_fav}**"
 
             st.markdown(
                 f"""
 ### {badge} · {row["DateLabel"]} · {row["Time"]}
 
-🎾 **{row["Player 1"]}** vs **{row["Player 2"]}**
+🎾 **{p1}** vs **{p2}**
 
-⭐ **Ranking**
-{row["Player 1"]}: #{row["Rank 1"]}  
-{row["Player 2"]}: #{row["Rank 2"]}  
+**Mismatch:** Ranking → **{ranking_fav}** | Surface ELO → **{elo_fav}**
+
+⭐ **Ranking**  
+{player_line(p1, "#" + str(row["Rank 1"]), winner=(rank_winner == "p1"))}  
+{player_line(p2, "#" + str(row["Rank 2"]), winner=(rank_winner == "p2"))}  
 Rozdiel: **{row["Rank Diff"]}**
 
-🌍 **Overall ELO**
-{row["Player 1"]}: {row["Overall Elo 1"]} #{row["Overall Elo Rank 1"]}  
-{row["Player 2"]}: {row["Overall Elo 2"]} #{row["Overall Elo Rank 2"]}  
+🌍 **Overall ELO**  
+{player_line(p1, row["Overall Elo 1"], row["Overall Elo Rank 1"], winner=(overall_winner == "p1"))}  
+{player_line(p2, row["Overall Elo 2"], row["Overall Elo Rank 2"], winner=(overall_winner == "p2"))}  
 Rozdiel: **{row["Overall Elo Diff"]}**
 
-🌱 **Surface ELO**
-{row["Player 1"]}: {row["Surface Elo 1"]} #{row["Surface Elo Rank 1"]}  
-{row["Player 2"]}: {row["Surface Elo 2"]} #{row["Surface Elo Rank 2"]}  
+🌱 **{surface_title} ELO**  
+{player_line(p1, row["Surface Elo 1"], row["Surface Elo Rank 1"], winner=(surface_winner == "p1"))}  
+{player_line(p2, row["Surface Elo 2"], row["Surface Elo Rank 2"], winner=(surface_winner == "p2"))}  
 Rozdiel: **{row["Surface Elo Diff"]}**
 
-**{elo_text}**
+{elo_text}
 """
             )
 
@@ -373,20 +477,12 @@ Rozdiel: **{row["Surface Elo Diff"]}**
 
             with col_seen:
                 if st.button(
-                    "👁️ Označiť ako videné",
+                    "👁️ Videné",
                     key=f"seen_{row['match_id']}"
                 ):
                     update_match_status(row["match_id"], "seen")
                     st.rerun()
 
-            with col_bet:
-                if st.button(
-                    "🎯 Označiť ako stavené",
-                    key=f"bet_{row['match_id']}"
-                ):
-                    update_match_status(row["match_id"], "bet")
-                    st.rerun()
-                    
             with col_wait:
                 if st.button(
                     "⏳ Čaká na kurzy",
@@ -395,23 +491,51 @@ Rozdiel: **{row["Surface Elo Diff"]}**
                     update_match_status(row["match_id"], "wait")
                     st.rerun()
 
+            with col_bet:
+                if st.button(
+                    "🎯 Stavené",
+                    key=f"bet_{row['match_id']}"
+                ):
+                    update_match_status(row["match_id"], "bet")
+                    st.rerun()
+
             with st.expander("📊 Detail zápasu"):
-                col_a, col_b = st.columns(2)
+                detail_df = pd.DataFrame(
+                    {
+                        p1: [
+                            row["Rank 1"],
+                            row["Overall Elo 1"],
+                            row["Overall Elo Rank 1"],
+                            row["Surface Elo 1"],
+                            row["Surface Elo Rank 1"],
+                        ],
+                        p2: [
+                            row["Rank 2"],
+                            row["Overall Elo 2"],
+                            row["Overall Elo Rank 2"],
+                            row["Surface Elo 2"],
+                            row["Surface Elo Rank 2"],
+                        ],
+                    },
+                    index=[
+                        "Ranking",
+                        "Overall ELO",
+                        "Overall ELO Rank",
+                        f"{surface_title} ELO",
+                        f"{surface_title} ELO Rank",
+                    ]
+                )
 
-                with col_a:
-                    st.markdown(f"#### 🟦 {row['Player 1']}")
-                    st.write(f"Rank: {row['Rank 1']}")
-                    st.write(f"Surface ELO Rank: {row['Surface Elo Rank 1']}")
-
-                with col_b:
-                    st.markdown(f"#### 🟧 {row['Player 2']}")
-                    st.write(f"Rank: {row['Rank 2']}")
-                    st.write(f"Surface ELO Rank: {row['Surface Elo Rank 2']}")
+                st.dataframe(
+                    detail_df,
+                    use_container_width=True
+                )
 
                 st.markdown("---")
                 st.write(f"Ranking favorit: {ranking_fav}")
                 st.write(f"Surface ELO favorit: {elo_fav}")
                 st.write(f"Rank rozdiel: {row['Rank Diff']}")
+                st.write(f"Overall ELO rozdiel: {row['Overall Elo Diff']}")
                 st.write(f"Surface ELO rozdiel: {row['Surface Elo Diff']}")
                 st.write(f"Status: {status_label(status)}")
 
