@@ -75,6 +75,9 @@ if st.button("🔄 Aktualizovať dáta"):
 try:
 
     df = pd.read_csv("flashscore_elo_matches.csv", sep=";")
+    
+    st.write("Počet riadkov v CSV:", len(df))
+    st.write(df["DateLabel"].value_counts())
 
     now_time = dt.now(ZoneInfo("Europe/Bratislava")).time()
 
