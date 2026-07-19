@@ -1,5 +1,7 @@
+import os
 import sys
 import subprocess
+
 from datetime import datetime as dt
 from zoneinfo import ZoneInfo
 
@@ -8,6 +10,7 @@ import streamlit as st
 
 
 PYTHON = sys.executable
+
 
 st.set_page_config(
     page_title="Dnešné zápasy",
@@ -25,8 +28,14 @@ def run_script(script):
     )
 
     if result.returncode != 0:
-        st.error(f"Chyba v {script}")
-        st.code(result.stderr)
+        st.error(f"Chyba v skripte: {script}")
+
+        if result.stdout:
+            st.code(result.stdout)
+
+        if result.stderr:
+            st.code(result.stderr)
+
         st.stop()
 
     lines = []
@@ -63,24 +72,71 @@ def show(value):
         return value
 
 
-if st.button("🔄 Aktualizovať dáta", use_container_width=True):
-    scripts = [
-        "export_flashscore_matches.py",
-        "get_atp_elo_final.py",
-        "get_wta_elo_final.py",
-        "create_name_map.py",
-        "flashscore_elo_compare.py",
-    ]
+def file_modified_text(filename):
+    if not os.path.exists(filename):
+        return "súbor neexistuje"
 
-    progress = st.progress(0)
+    modified = dt.fromtimestamp(
+        os.path.getmtime(filename),
+        tz=ZoneInfo("Europe/Bratislava"),
+    )
 
-    for index, script in enumerate(scripts, start=1):
-        st.write(f"Spúšťam: {script}")
-        run_script(script)
-        progress.progress(index / len(scripts))
+    return modified.strftime("%d.%m.%Y %H:%M")
 
-    st.success("Zápasy, rankingy a Elo boli aktualizované.")
-    st.rerun()
+
+st.caption(
+    "ATP Elo: "
+    f"{file_modified_text('atp_elo.csv')} · "
+    "WTA Elo: "
+    f"{file_modified_text('wta_elo.csv')}"
+)
+
+
+col1, col2 = st.columns(2)
+
+
+with col1:
+    if st.button(
+        "🎾 Aktualizovať zápasy",
+        use_container_width=True,
+    ):
+        scripts = [
+            "export_flashscore_matches.py",
+            "flashscore_elo_compare.py",
+        ]
+
+        progress = st.progress(0)
+
+        for index, script in enumerate(scripts, start=1):
+            st.write(f"Spúšťam: {script}")
+            run_script(script)
+            progress.progress(index / len(scripts))
+
+        st.success("Zápasy boli aktualizované.")
+        st.rerun()
+
+
+with col2:
+    if st.button(
+        "📈 Aktualizovať Elo",
+        use_container_width=True,
+    ):
+        scripts = [
+            "get_atp_elo_final.py",
+            "get_wta_elo_final.py",
+            "create_name_map.py",
+            "flashscore_elo_compare.py",
+        ]
+
+        progress = st.progress(0)
+
+        for index, script in enumerate(scripts, start=1):
+            st.write(f"Spúšťam: {script}")
+            run_script(script)
+            progress.progress(index / len(scripts))
+
+        st.success("Elo a porovnanie boli aktualizované.")
+        st.rerun()
 
 
 try:
@@ -145,6 +201,9 @@ try:
 
     st.caption(f"Ešte nezačaté zápasy: {len(df)}")
 
+    if df.empty:
+        st.info("Momentálne nie sú žiadne ďalšie dnešné zápasy.")
+
     for _, row in df.iterrows():
         player_1 = row["Player 1"]
         player_2 = row["Player 2"]
@@ -155,7 +214,10 @@ try:
             f"{row['Tournament']}"
         )
 
-        with st.expander(title, expanded=False):
+        with st.expander(
+            title,
+            expanded=False,
+        ):
             st.caption(
                 f"{row['Tour']} · {row['Surface']}"
             )
@@ -192,7 +254,10 @@ try:
             )
 
 except FileNotFoundError:
-    st.info("Najprv klikni na 🔄 Aktualizovať dáta.")
+    st.info(
+        "Súbor flashscore_elo_matches.csv neexistuje. "
+        "Klikni na 🎾 Aktualizovať zápasy."
+    )
 
 except Exception as error:
     st.error(f"Chyba pri načítaní dát: {error}")
