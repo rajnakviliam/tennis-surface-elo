@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+
+archiv/
+
+*_backup.py
+*_old.py
+
+audit_*.csv
+manual_review.csv
+ranking_vs_elo_mismatch.csv
+skipped_matches.csv
+unmatched_names.csv
+name_map_auto_added.csv
+name_map_suggestions.csv
+
+matches.html
+Tennis Explorer_*.html
+Tennis Explorer_*_files/
