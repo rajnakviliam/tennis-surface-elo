@@ -13,11 +13,11 @@ PYTHON = sys.executable
 
 
 st.set_page_config(
-    page_title="Dnešné zápasy",
+    page_title="Tenisové zápasy",
     layout="wide",
 )
 
-st.title("🎾 Dnešné zápasy – ešte nezačaté")
+st.title("🎾 Tenisové zápasy")
 
 
 def run_script(script):
@@ -82,6 +82,61 @@ def file_modified_text(filename):
     )
 
     return modified.strftime("%d.%m.%Y %H:%M")
+
+
+def render_matches(matches, empty_message):
+    if matches.empty:
+        st.info(empty_message)
+        return
+
+    for _, row in matches.iterrows():
+        player_1 = row["Player 1"]
+        player_2 = row["Player 2"]
+
+        title = (
+            f"{row['Time']} · "
+            f"{player_1} vs {player_2} · "
+            f"{row['Tournament']}"
+        )
+
+        with st.expander(
+            title,
+            expanded=False,
+        ):
+            st.caption(
+                f"{row['Tour']} · {row['Surface']}"
+            )
+
+            table = pd.DataFrame(
+                {
+                    player_1: [
+                        show(row["Rank 1"]),
+                        show(row["Overall Elo 1"]),
+                        show(row["Overall Elo Rank 1"]),
+                        show(row["Surface Elo 1"]),
+                        show(row["Surface Elo Rank 1"]),
+                    ],
+                    player_2: [
+                        show(row["Rank 2"]),
+                        show(row["Overall Elo 2"]),
+                        show(row["Overall Elo Rank 2"]),
+                        show(row["Surface Elo 2"]),
+                        show(row["Surface Elo Rank 2"]),
+                    ],
+                },
+                index=[
+                    "ATP/WTA Rank",
+                    "Overall Elo",
+                    "Overall Elo Rank",
+                    "Surface Elo",
+                    "Surface Elo Rank",
+                ],
+            )
+
+            st.dataframe(
+                table,
+                use_container_width=True,
+            )
 
 
 st.caption(
@@ -178,86 +233,79 @@ try:
         )
         st.stop()
 
-    now_time = dt.now(
-        ZoneInfo("Europe/Bratislava")
-    ).time()
-
     df["MatchTime"] = pd.to_datetime(
         df["Time"],
         format="%H:%M",
         errors="coerce",
-    ).dt.time
+    )
 
     today = df[
-        (df["DateLabel"] == "Today")
-        & df["MatchTime"].notna()
-        & (df["MatchTime"] >= now_time)
-    ]
+        df["DateLabel"] == "Today"
+    ].copy()
 
     tomorrow = df[
         df["DateLabel"] == "Day+1"
-    ]
+    ].copy()
 
-    df = pd.concat([today, tomorrow], ignore_index=True).copy()
-
-    df = df.sort_values(
-        by=["Time", "Tournament"],
+    today = today.sort_values(
+        by=["MatchTime", "Tournament"],
         ascending=[True, True],
+        na_position="last",
     )
 
-    st.caption(f"Ešte nezačaté zápasy: {len(df)}")
+    tomorrow = tomorrow.sort_values(
+        by=["MatchTime", "Tournament"],
+        ascending=[True, True],
+        na_position="last",
+    )
 
-    if df.empty:
-        st.info("Momentálne nie sú žiadne ďalšie dnešné zápasy.")
+    today_count = len(today)
+    tomorrow_count = len(tomorrow)
+    all_count = today_count + tomorrow_count
 
-    for _, row in df.iterrows():
-        player_1 = row["Player 1"]
-        player_2 = row["Player 2"]
+    view_labels = {
+        f"🎾 Dnes ({today_count})": "today",
+        f"🌅 Zajtra ({tomorrow_count})": "tomorrow",
+        f"📋 Všetko ({all_count})": "all",
+    }
 
-        title = (
-            f"{row['Time']} · "
-            f"{player_1} vs {player_2} · "
-            f"{row['Tournament']}"
+    selected_label = st.radio(
+        "Zobraziť zápasy",
+        options=list(view_labels.keys()),
+        horizontal=True,
+        label_visibility="collapsed",
+    )
+
+    selected_view = view_labels[selected_label]
+
+    if selected_view == "today":
+        st.subheader(f"🎾 Dnešné zápasy ({today_count})")
+        render_matches(
+            today,
+            "Dnes nie sú k dispozícii žiadne zápasy s Elo dátami.",
         )
 
-        with st.expander(
-            title,
-            expanded=False,
-        ):
-            st.caption(
-                f"{row['Tour']} · {row['Surface']}"
-            )
+    elif selected_view == "tomorrow":
+        st.subheader(f"🌅 Zajtrajšie zápasy ({tomorrow_count})")
+        render_matches(
+            tomorrow,
+            "Na zajtra nie sú k dispozícii žiadne zápasy s Elo dátami.",
+        )
 
-            table = pd.DataFrame(
-                {
-                    player_1: [
-                        show(row["Rank 1"]),
-                        show(row["Overall Elo 1"]),
-                        show(row["Overall Elo Rank 1"]),
-                        show(row["Surface Elo 1"]),
-                        show(row["Surface Elo Rank 1"]),
-                    ],
-                    player_2: [
-                        show(row["Rank 2"]),
-                        show(row["Overall Elo 2"]),
-                        show(row["Overall Elo Rank 2"]),
-                        show(row["Surface Elo 2"]),
-                        show(row["Surface Elo Rank 2"]),
-                    ],
-                },
-                index=[
-                    "ATP/WTA Rank",
-                    "Overall Elo",
-                    "Overall Elo Rank",
-                    "Surface Elo",
-                    "Surface Elo Rank",
-                ],
-            )
+    else:
+        st.subheader(f"🎾 Dnešné zápasy ({today_count})")
+        render_matches(
+            today,
+            "Dnes nie sú k dispozícii žiadne zápasy s Elo dátami.",
+        )
 
-            st.dataframe(
-                table,
-                use_container_width=True,
-            )
+        st.divider()
+
+        st.subheader(f"🌅 Zajtrajšie zápasy ({tomorrow_count})")
+        render_matches(
+            tomorrow,
+            "Na zajtra nie sú k dispozícii žiadne zápasy s Elo dátami.",
+        )
 
 except FileNotFoundError:
     st.info(
