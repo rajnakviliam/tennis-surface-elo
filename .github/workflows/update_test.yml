@@ -21,8 +21,23 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-      - name: Download ATP Elo
-        run: python get_atp_elo_final.py
+            - name: Diagnose ATP download
+        run: |
+          curl -L \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36" \
+            -D atp_headers.txt \
+            -o atp_page.html \
+            -w "HTTP STATUS: %{http_code}\n" \
+            https://tennisabstract.com/reports/atp_elo_ratings.html
+
+          echo "===== HEADERS ====="
+          cat atp_headers.txt
+
+          echo "===== FILE SIZE ====="
+          wc -c atp_page.html
+
+          echo "===== TABLE CHECK ====="
+          grep -o 'id="reportable"' atp_page.html || true
 
       - name: Download WTA Elo
         run: python get_wta_elo_final.py
