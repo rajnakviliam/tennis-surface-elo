@@ -1,14 +1,14 @@
 name: Test Tennis Abstract
 
-"on":
-  workflow_dispatch: {}
+on:
+  workflow_dispatch:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
 
-            - name: Diagnose ATP download
+      - name: Diagnose ATP download
         run: |
           curl -L \
             -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36" \
@@ -36,8 +36,29 @@ jobs:
           echo "===== FILE SIZE ====="
           wc -c atp_page.html
 
-          echo "===== TABLE CHECK ====="
-          grep -o 'id="reportable"' atp_page.html || true
+          echo "===== FIRST 20 LINES ====="
+          head -20 atp_page.html
 
-      - name: Download WTA Elo
-        run: python get_wta_elo_final.py
+          echo "===== TABLE CHECK ====="
+          grep 'id="reportable"' atp_page.html || true
+
+      - name: Diagnose WTA download
+        run: |
+          curl -L \
+            -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36" \
+            -D wta_headers.txt \
+            -o wta_page.html \
+            -w "HTTP STATUS: %{http_code}\n" \
+            https://tennisabstract.com/reports/wta_elo_ratings.html
+
+          echo "===== HEADERS ====="
+          cat wta_headers.txt
+
+          echo "===== FILE SIZE ====="
+          wc -c wta_page.html
+
+          echo "===== FIRST 20 LINES ====="
+          head -20 wta_page.html
+
+          echo "===== TABLE CHECK ====="
+          grep 'id="reportable"' wta_page.html || true
