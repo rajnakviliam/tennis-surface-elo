@@ -1,6 +1,6 @@
 streamlit
 pandas
-requests
-beautifulsoup4
 gspread
 google-auth
+requests
+beautifulsoup4

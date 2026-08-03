@@ -2,6 +2,7 @@ import requests
 import csv
 import re
 from bs4 import BeautifulSoup
+from pathlib import Path
 
 headers = {
     "User-Agent": "Mozilla/5.0"
@@ -25,6 +26,9 @@ surface_map = {
 
 all_matches = []
 
+RAW_DIR = Path("data/raw_flashscore")
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+
 
 def clean_flashscore_player(name):
     name = re.sub(r"\s*\([A-Za-z]{3}\)", "", name)
@@ -39,9 +43,27 @@ for date_label, url in urls:
     before_count = len(all_matches)
 
     html = requests.get(url, headers=headers, timeout=20).text
+    
+    safe_name = date_label.lower().replace("+", "_plus_")
+
+    html_path = RAW_DIR / f"{safe_name}.html"
+
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(html)
+
+    print(f"  HTML uložené: {html_path}")
+    
     soup = BeautifulSoup(html, "html.parser")
 
     text = soup.get_text("\n", strip=True)
+    
+    text_path = RAW_DIR / f"{safe_name}.txt"
+
+    with open(text_path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+    print(f"  TXT uložené : {text_path}")
+    
     lines = text.splitlines()
 
     current_tour = ""
@@ -79,7 +101,18 @@ for date_label, url in urls:
 
             continue
 
-        if re.match(r"^\d{1,2}:\d{2}$", line):
+        is_scheduled_time = re.match(
+            r"^\d{1,2}:\d{2}$",
+            line,
+        )
+
+        is_live_status = re.match(
+            r"^(1\. set|2\. set|3\. set|Tiebreak)$",
+            line,
+            re.IGNORECASE,
+        )
+
+        if is_scheduled_time or is_live_status:
             if i + 1 >= len(lines):
                 continue
 
@@ -91,22 +124,37 @@ for date_label, url in urls:
             if "Zrušené" in next_line:
                 continue
 
-            if " - " not in next_line:
-                continue
+            # Bežný formát:
+            # Player 1 - Player 2
+            if " - " in next_line:
+                player1, player2 = next_line.split(" - ", 1)
 
-            player1, player2 = next_line.split(" - ", 1)
+            # Rozdelený formát:
+            # Player 1 -
+            # Player 2
+            elif next_line.endswith(" -"):
+                if i + 2 >= len(lines):
+                    continue
+
+                player1 = next_line[:-2].strip()
+                player2 = lines[i + 2].strip()
+
+            else:
+                continue
 
             if "/" in player1 or "/" in player2:
                 continue
+
+            match_time = line if is_scheduled_time else ""
 
             all_matches.append([
                 date_label,
                 current_tour,
                 current_tournament,
                 current_surface,
-                line,
+                match_time,
                 clean_flashscore_player(player1),
-                clean_flashscore_player(player2)
+                clean_flashscore_player(player2),
             ])
 
     added = len(all_matches) - before_count
