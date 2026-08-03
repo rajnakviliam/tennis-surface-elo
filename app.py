@@ -7,7 +7,7 @@ from zoneinfo import ZoneInfo
 
 import pandas as pd
 import streamlit as st
-
+from google_seen_matches import compare_and_replace
 
 PYTHON = sys.executable
 
@@ -93,11 +93,14 @@ def render_matches(matches, empty_message):
         player_1 = row["Player 1"]
         player_2 = row["Player 2"]
 
+        prefix = "🟢 NOVÉ · " if row["IsNew"] else ""
+
         title = (
+            f"{prefix}"
             f"{row['Time']} · "
             f"{player_1} vs {player_2} · "
             f"{row['Tournament']}"
-        )
+)
 
         with st.expander(
             title,
@@ -199,6 +202,8 @@ try:
         "flashscore_elo_matches.csv",
         sep=";",
     )
+    
+    df = compare_and_replace(df)
 
     required_columns = [
         "DateLabel",
@@ -248,14 +253,14 @@ try:
     ].copy()
 
     today = today.sort_values(
-        by=["MatchTime", "Tournament"],
-        ascending=[True, True],
+        by=["IsNew", "MatchTime", "Tournament"],
+        ascending=[False, True, True],
         na_position="last",
     )
 
     tomorrow = tomorrow.sort_values(
-        by=["MatchTime", "Tournament"],
-        ascending=[True, True],
+        by=["IsNew", "MatchTime", "Tournament"],
+        ascending=[False, True, True],
         na_position="last",
     )
 
