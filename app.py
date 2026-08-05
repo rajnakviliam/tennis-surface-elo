@@ -150,9 +150,12 @@ def load_current_matches():
     ].copy()
 
 
-def load_current_singles(filename):
+def load_current_rows(filename):
     """
-    Načíta iba dnešné a zajtrajšie dvojhry.
+    Načíta iba riadky Today a Day+1.
+
+    Názvy stĺpcov aj hodnoty DateLabel sa očistia od
+    medzier a prípadného BOM znaku.
     """
     if not os.path.exists(filename):
         return pd.DataFrame()
@@ -165,67 +168,79 @@ def load_current_singles(filename):
     except Exception:
         return pd.DataFrame()
 
+    data.columns = [
+        str(column)
+        .replace("\ufeff", "")
+        .strip()
+        for column in data.columns
+    ]
+
     if "DateLabel" in data.columns:
+        date_labels = (
+            data["DateLabel"]
+            .astype(str)
+            .str.strip()
+        )
+
         data = data[
-            data["DateLabel"].isin(
+            date_labels.isin(
                 ["Today", "Day+1"]
             )
         ].copy()
 
-    singles_mask = pd.Series(
-        True,
-        index=data.index,
+    return data
+
+
+def get_match_counts():
+    """
+    Počty vychádzajú z výstupov porovnávacieho skriptu:
+
+    - zobrazené = flashscore_elo_matches.csv
+    - vyradené = skipped_matches.csv
+    - Flashscore dvojhry = zobrazené + vyradené
+    - chýba alias = vyradené s dôvodom not_in_aliases
+    """
+    shown = load_current_rows(
+        "flashscore_elo_matches.csv"
+    )
+    skipped = load_current_rows(
+        "skipped_matches.csv"
     )
 
-    if "Tournament" in data.columns:
-        singles_mask &= ~data[
-            "Tournament"
-        ].astype(str).str.contains(
-            "doubles|štvorhra|dvojice",
-            case=False,
-            na=False,
-        )
+    shown_count = len(shown)
+    skipped_count = len(skipped)
+    flashscore_count = (
+        shown_count
+        + skipped_count
+    )
 
-    for column in ["Player 1", "Player 2"]:
-        if column in data.columns:
-            singles_mask &= ~data[
-                column
-            ].astype(str).str.contains(
-                "/",
-                regex=False,
+    alias_skip_count = 0
+
+    if (
+        not skipped.empty
+        and "Reason" in skipped.columns
+    ):
+        alias_skip_count = int(
+            skipped["Reason"]
+            .astype(str)
+            .str.contains(
+                "not_in_aliases",
+                case=False,
                 na=False,
             )
+            .sum()
+        )
 
-    return data[singles_mask].copy()
-
-
-def count_current_rows(filename):
-    return len(
-        load_current_singles(filename)
+    return (
+        flashscore_count,
+        shown_count,
+        skipped_count,
+        alias_skip_count,
     )
 
 
 def count_alias_skips():
-    skipped = load_current_singles(
-        "skipped_matches.csv"
-    )
-
-    if (
-        skipped.empty
-        or "Reason" not in skipped.columns
-    ):
-        return 0
-
-    return int(
-        skipped["Reason"]
-        .astype(str)
-        .str.contains(
-            "not_in_aliases",
-            case=False,
-            na=False,
-        )
-        .sum()
-    )
+    return get_match_counts()[3]
 
 
 def prepare_for_display(df):
@@ -487,13 +502,12 @@ with col2:
         st.rerun()
 
 
-raw_count = count_current_rows(
-    "flashscore_matches.csv"
-)
-shown_count = count_current_rows(
-    "flashscore_elo_matches.csv"
-)
-alias_skip_count = count_alias_skips()
+(
+    raw_count,
+    shown_count,
+    skipped_count,
+    alias_skip_count,
+) = get_match_counts()
 
 st.markdown(
     (
@@ -502,7 +516,7 @@ st.markdown(
         f"<div style='flex:1;min-width:92px;padding:8px 10px;"
         "border:1px solid rgba(128,128,128,.28);"
         "border-radius:10px;text-align:center;'>"
-        "<div style='font-size:.78rem;opacity:.72;'>🎾 Flashscore</div>"
+        "<div style='font-size:.78rem;opacity:.72;'>🎾 Flashscore dvojhry</div>"
         f"<div style='font-size:1.35rem;font-weight:700;'>{raw_count}</div></div>"
         f"<div style='flex:1;min-width:92px;padding:8px 10px;"
         "border:1px solid rgba(128,128,128,.28);"
