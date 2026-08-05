@@ -150,45 +150,70 @@ def load_current_matches():
     ].copy()
 
 
-def count_current_rows(filename):
+def load_current_singles(filename):
+    """
+    Načíta iba dnešné a zajtrajšie dvojhry.
+    """
     if not os.path.exists(filename):
-        return 0
+        return pd.DataFrame()
 
     try:
-        data = pd.read_csv(filename, sep=";")
+        data = pd.read_csv(
+            filename,
+            sep=";",
+        )
     except Exception:
-        return 0
+        return pd.DataFrame()
 
     if "DateLabel" in data.columns:
         data = data[
             data["DateLabel"].isin(
                 ["Today", "Day+1"]
             )
-        ]
+        ].copy()
 
-    return len(data)
+    singles_mask = pd.Series(
+        True,
+        index=data.index,
+    )
+
+    if "Tournament" in data.columns:
+        singles_mask &= ~data[
+            "Tournament"
+        ].astype(str).str.contains(
+            "doubles|štvorhra|dvojice",
+            case=False,
+            na=False,
+        )
+
+    for column in ["Player 1", "Player 2"]:
+        if column in data.columns:
+            singles_mask &= ~data[
+                column
+            ].astype(str).str.contains(
+                "/",
+                regex=False,
+                na=False,
+            )
+
+    return data[singles_mask].copy()
+
+
+def count_current_rows(filename):
+    return len(
+        load_current_singles(filename)
+    )
 
 
 def count_alias_skips():
-    if not os.path.exists("skipped_matches.csv"):
-        return 0
+    skipped = load_current_singles(
+        "skipped_matches.csv"
+    )
 
-    try:
-        skipped = pd.read_csv(
-            "skipped_matches.csv",
-            sep=";",
-        )
-    except Exception:
-        return 0
-
-    if "DateLabel" in skipped.columns:
-        skipped = skipped[
-            skipped["DateLabel"].isin(
-                ["Today", "Day+1"]
-            )
-        ]
-
-    if "Reason" not in skipped.columns:
+    if (
+        skipped.empty
+        or "Reason" not in skipped.columns
+    ):
         return 0
 
     return int(
@@ -407,17 +432,28 @@ with col1:
             )
             st.stop()
 
-        if new_count:
-            st.success(
-                f"Zápasy boli aktualizované. "
+        alias_skip_count = (
+            count_alias_skips()
+        )
+
+        message_parts = [
+            "Zápasy boli aktualizované.",
+            (
                 f"Nové zápasy: {new_count}."
-            )
-        else:
-            st.success(
-                "Zápasy boli aktualizované. "
-                "Žiadne nové zápasy."
+                if new_count
+                else "Žiadne nové zápasy."
+            ),
+        ]
+
+        if alias_skip_count:
+            message_parts.append(
+                f"Chýba alias pri "
+                f"{alias_skip_count} zápasoch."
             )
 
+        st.success(
+            " ".join(message_parts)
+        )
         st.rerun()
 
 
@@ -457,30 +493,45 @@ raw_count = count_current_rows(
 shown_count = count_current_rows(
     "flashscore_elo_matches.csv"
 )
-skipped_count = max(
-    raw_count - shown_count,
-    0,
-)
 alias_skip_count = count_alias_skips()
 
-metric_1, metric_2, metric_3, metric_4 = st.columns(4)
+st.markdown(
+    (
+        "<div style='display:flex;gap:8px;"
+        "flex-wrap:wrap;margin:0.35rem 0 0.8rem 0;'>"
+        f"<div style='flex:1;min-width:92px;padding:8px 10px;"
+        "border:1px solid rgba(128,128,128,.28);"
+        "border-radius:10px;text-align:center;'>"
+        "<div style='font-size:.78rem;opacity:.72;'>🎾 Flashscore</div>"
+        f"<div style='font-size:1.35rem;font-weight:700;'>{raw_count}</div></div>"
+        f"<div style='flex:1;min-width:92px;padding:8px 10px;"
+        "border:1px solid rgba(128,128,128,.28);"
+        "border-radius:10px;text-align:center;'>"
+        "<div style='font-size:.78rem;opacity:.72;'>✅ Zobrazené</div>"
+        f"<div style='font-size:1.35rem;font-weight:700;'>{shown_count}</div></div>"
+        f"<div style='flex:1;min-width:92px;padding:8px 10px;"
+        "border:1px solid rgba(128,128,128,.28);"
+        "border-radius:10px;text-align:center;'>"
+        "<div style='font-size:.78rem;opacity:.72;'>⚠️ Chýba alias</div>"
+        f"<div style='font-size:1.35rem;font-weight:700;'>{alias_skip_count}</div></div>"
+        "</div>"
+    ),
+    unsafe_allow_html=True,
+)
 
-metric_1.metric(
-    "Flashscore",
-    raw_count,
-)
-metric_2.metric(
-    "Zobrazené",
-    shown_count,
-)
-metric_3.metric(
-    "Nezobrazené",
-    skipped_count,
-)
-metric_4.metric(
-    "Chýba alias",
-    alias_skip_count,
-)
+if alias_skip_count:
+    st.warning(
+        f"Chýba alias pri "
+        f"{alias_skip_count} dnešných alebo "
+        "zajtrajších dvojhrách. "
+        "Podrobnosti sú na stránke "
+        "Diagnostika aliasov."
+    )
+elif raw_count:
+    st.caption(
+        "✅ Pri dnešných a zajtrajších "
+        "dvojhrách nechýba žiadny alias."
+    )
 
 
 try:
