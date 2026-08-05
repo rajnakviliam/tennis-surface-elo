@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 import gspread
+import pandas as pd
 import streamlit as st
 from google.oauth2.service_account import Credentials
 
@@ -9,6 +10,13 @@ from google.oauth2.service_account import Credentials
 SHEET_ID = "1jCNYJox7NnrCnjNxg_qKJNUSSwfIRUNnrf9o4do_R-0"
 TIMEZONE = ZoneInfo("Europe/Bratislava")
 KEEP_DAYS = 4
+
+SHEET_HEADERS = [
+    "match_id",
+    "first_seen",
+    "last_seen",
+    "is_new",
+]
 
 
 def get_worksheet():
@@ -44,10 +52,11 @@ def normalize_part(value):
 
 def make_match_id(row):
     """
-    Stabilné ID zápasu bez DateLabel a času.
+    Stabilné ID zápasu.
 
-    Zápas preto zostane rovnaký aj pri presune:
-    Day+1 -> Today alebo pri zmene plánovaného času.
+    Neobsahuje DateLabel ani čas, takže ten istý zápas
+    zostane rovnaký pri presune Day+1 -> Today,
+    Today -> Day+1 alebo pri zmene času.
     """
     player_1 = normalize_part(row["Player 1"])
     player_2 = normalize_part(row["Player 2"])
@@ -63,7 +72,7 @@ def make_match_id(row):
     )
 
 
-def parse_seen_at(value):
+def parse_datetime(value):
     value = str(value or "").strip()
 
     if not value:
@@ -80,13 +89,28 @@ def parse_seen_at(value):
     return parsed.astimezone(TIMEZONE)
 
 
-def load_seen_matches():
+def parse_bool(value):
+    return str(value or "").strip().lower() in {
+        "true",
+        "1",
+        "yes",
+        "y",
+        "áno",
+        "ano",
+    }
+
+
+def load_match_states():
     """
     Vráti slovník:
-        match_id -> first_seen datetime
+        match_id -> {
+            first_seen: datetime,
+            last_seen: datetime,
+            is_new: bool,
+        }
 
-    Staré riadky bez first_seen sa považujú za videné
-    a pri najbližšom zápise dostanú aktuálny čas.
+    Podporuje aj staršiu tabuľku s jedným alebo dvoma stĺpcami.
+    Staré riadky bez is_new sa považujú za videné.
     """
     worksheet = get_worksheet()
     values = worksheet.get_all_values()
@@ -99,19 +123,19 @@ def load_seen_matches():
         for value in values[0]
     ]
 
-    try:
-        match_id_index = headers.index("match_id")
-    except ValueError:
-        match_id_index = 0
+    def column_index(name, fallback=None):
+        try:
+            return headers.index(name)
+        except ValueError:
+            return fallback
 
-    first_seen_index = (
-        headers.index("first_seen")
-        if "first_seen" in headers
-        else None
-    )
+    match_id_index = column_index("match_id", 0)
+    first_seen_index = column_index("first_seen")
+    last_seen_index = column_index("last_seen")
+    is_new_index = column_index("is_new")
 
     now = datetime.now(TIMEZONE)
-    seen = {}
+    states = {}
 
     for row in values[1:]:
         if len(row) <= match_id_index:
@@ -122,41 +146,64 @@ def load_seen_matches():
         if not match_id:
             continue
 
-        first_seen = None
-
-        if (
-            first_seen_index is not None
+        first_seen = (
+            parse_datetime(row[first_seen_index])
+            if first_seen_index is not None
             and len(row) > first_seen_index
-        ):
-            first_seen = parse_seen_at(
-                row[first_seen_index]
-            )
+            else None
+        )
 
-        seen[match_id] = first_seen or now
+        last_seen = (
+            parse_datetime(row[last_seen_index])
+            if last_seen_index is not None
+            and len(row) > last_seen_index
+            else None
+        )
 
-    return seen
+        is_new = (
+            parse_bool(row[is_new_index])
+            if is_new_index is not None
+            and len(row) > is_new_index
+            else False
+        )
+
+        first_seen = first_seen or now
+        last_seen = last_seen or first_seen
+
+        states[match_id] = {
+            "first_seen": first_seen,
+            "last_seen": last_seen,
+            "is_new": is_new,
+        }
+
+    return states
 
 
-def save_seen_matches(seen_matches):
+def save_match_states(states):
     worksheet = get_worksheet()
 
-    rows = [["match_id", "first_seen"]]
+    rows = [SHEET_HEADERS]
 
-    for match_id, first_seen in sorted(
-        seen_matches.items(),
+    sorted_states = sorted(
+        states.items(),
         key=lambda item: (
-            item[1],
+            item[1]["last_seen"],
             item[0],
         ),
-    ):
+        reverse=True,
+    )
+
+    for match_id, state in sorted_states:
         rows.append(
             [
                 match_id,
-                first_seen.astimezone(
+                state["first_seen"].astimezone(
                     TIMEZONE
-                ).isoformat(
-                    timespec="seconds"
-                ),
+                ).isoformat(timespec="seconds"),
+                state["last_seen"].astimezone(
+                    TIMEZONE
+                ).isoformat(timespec="seconds"),
+                "TRUE" if state["is_new"] else "FALSE",
             ]
         )
 
@@ -167,12 +214,46 @@ def save_seen_matches(seen_matches):
     )
 
 
-def compare_and_replace(df):
+def add_saved_status(df):
     """
-    1. Načíta zápasy videné počas posledných 4 dní.
-    2. Označí aktuálne neznáme MatchID ako nové.
-    3. Pridá aktuálne zápasy do evidencie.
-    4. Vymaže iba záznamy staršie než 4 dni.
+    Iba načíta uložený stav z Google Sheets.
+    Nič nezapisuje, takže otvorenie, rerun ani reštart
+    aplikácie nemôžu zrušiť označenie NOVÉ.
+    """
+    result = df.copy()
+
+    result["MatchID"] = result.apply(
+        make_match_id,
+        axis=1,
+    )
+
+    states = load_match_states()
+
+    result["IsNew"] = result["MatchID"].map(
+        lambda match_id: bool(
+            states.get(
+                match_id,
+                {},
+            ).get(
+                "is_new",
+                False,
+            )
+        )
+    )
+
+    return result
+
+
+def update_after_refresh(df):
+    """
+    Volá sa iba po manuálnom kliknutí na Aktualizovať zápasy.
+
+    - všetky dovtedy NOVÉ zápasy označí ako videné,
+    - aktuálne neznáme zápasy označí ako NOVÉ,
+    - aktualizuje last_seen pri dnešných a zajtrajších zápasoch,
+    - odstráni iba zápasy, ktoré neboli v aktuálnom zozname
+      viac než KEEP_DAYS dní,
+    - stav uloží do Google Sheets.
     """
     result = df.copy()
 
@@ -184,22 +265,42 @@ def compare_and_replace(df):
     now = datetime.now(TIMEZONE)
     cutoff = now - timedelta(days=KEEP_DAYS)
 
-    all_seen = load_seen_matches()
+    old_states = load_match_states()
 
-    recent_seen = {
-        match_id: first_seen
-        for match_id, first_seen in all_seen.items()
-        if first_seen >= cutoff
-    }
+    # Pred každou manuálnou aktualizáciou sa všetky predtým nové
+    # zápasy považujú za už videné.
+    for state in old_states.values():
+        state["is_new"] = False
 
-    result["IsNew"] = ~result["MatchID"].isin(
-        recent_seen
+    current_ids = set(
+        result["MatchID"].astype(str)
     )
 
-    for match_id in result["MatchID"].astype(str):
-        if match_id not in recent_seen:
-            recent_seen[match_id] = now
+    for match_id in current_ids:
+        if match_id in old_states:
+            old_states[match_id]["last_seen"] = now
+        else:
+            old_states[match_id] = {
+                "first_seen": now,
+                "last_seen": now,
+                "is_new": True,
+            }
 
-    save_seen_matches(recent_seen)
+    cleaned_states = {
+        match_id: state
+        for match_id, state in old_states.items()
+        if (
+            match_id in current_ids
+            or state["last_seen"] >= cutoff
+        )
+    }
+
+    save_match_states(cleaned_states)
+
+    result["IsNew"] = result["MatchID"].map(
+        lambda match_id: cleaned_states[
+            match_id
+        ]["is_new"]
+    )
 
     return result
