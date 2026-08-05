@@ -10,6 +10,7 @@ import streamlit as st
 
 from google_seen_matches import (
     add_saved_status,
+    set_pinned,
     update_after_refresh,
 )
 
@@ -139,8 +140,6 @@ def load_current_matches():
             + ", ".join(missing_columns)
         )
 
-    # Aplikácia aj Google Sheets sledujú iba dnešné
-    # a zajtrajšie zápasy.
     return df[
         df["DateLabel"].isin(
             [
@@ -151,6 +150,59 @@ def load_current_matches():
     ].copy()
 
 
+def count_current_rows(filename):
+    if not os.path.exists(filename):
+        return 0
+
+    try:
+        data = pd.read_csv(filename, sep=";")
+    except Exception:
+        return 0
+
+    if "DateLabel" in data.columns:
+        data = data[
+            data["DateLabel"].isin(
+                ["Today", "Day+1"]
+            )
+        ]
+
+    return len(data)
+
+
+def count_alias_skips():
+    if not os.path.exists("skipped_matches.csv"):
+        return 0
+
+    try:
+        skipped = pd.read_csv(
+            "skipped_matches.csv",
+            sep=";",
+        )
+    except Exception:
+        return 0
+
+    if "DateLabel" in skipped.columns:
+        skipped = skipped[
+            skipped["DateLabel"].isin(
+                ["Today", "Day+1"]
+            )
+        ]
+
+    if "Reason" not in skipped.columns:
+        return 0
+
+    return int(
+        skipped["Reason"]
+        .astype(str)
+        .str.contains(
+            "not_in_aliases",
+            case=False,
+            na=False,
+        )
+        .sum()
+    )
+
+
 def prepare_for_display(df):
     result = df.copy()
 
@@ -159,20 +211,30 @@ def prepare_for_display(df):
         format="%H:%M",
         errors="coerce",
     )
-
     result["IsLive"] = result["MatchTime"].isna()
 
+    # Pripnutý zápas sa nezobrazuje zároveň ako NOVÝ.
+    result.loc[
+        result["IsPinned"],
+        "IsNew",
+    ] = False
+
     # Poradie:
-    # 0 = NOVÉ
-    # 1 = LIVE, ale už videné
-    # 2 = ostatné videné
-    result["DisplayGroup"] = 2
+    # 0 = pripnuté
+    # 1 = nové
+    # 2 = live, ale už videné
+    # 3 = ostatné
+    result["DisplayGroup"] = 3
     result.loc[
         result["IsLive"],
         "DisplayGroup",
-    ] = 1
+    ] = 2
     result.loc[
         result["IsNew"],
+        "DisplayGroup",
+    ] = 1
+    result.loc[
+        result["IsPinned"],
         "DisplayGroup",
     ] = 0
 
@@ -208,18 +270,15 @@ def render_matches(matches, empty_message):
         player_1 = row["Player 1"]
         player_2 = row["Player 2"]
 
-        if bool(row["IsNew"]):
+        if bool(row["IsPinned"]):
+            status = "📌 "
+        elif bool(row["IsNew"]):
             status = "🟢 NOVÉ · "
         elif bool(row["IsLive"]):
             status = "🔴 LIVE · "
         else:
             status = ""
 
-        time_text = show_time(
-            row["Time"]
-        )
-
-        # Pri LIVE už stav obsahuje text LIVE, preto ho neopakujeme.
         if bool(row["IsLive"]):
             title = (
                 f"{status}"
@@ -229,7 +288,7 @@ def render_matches(matches, empty_message):
         else:
             title = (
                 f"{status}"
-                f"{time_text} · "
+                f"{show_time(row['Time'])} · "
                 f"{player_1} vs {player_2} · "
                 f"{row['Tournament']}"
             )
@@ -273,6 +332,32 @@ def render_matches(matches, empty_message):
                 use_container_width=True,
             )
 
+            pinned = bool(row["IsPinned"])
+            button_text = (
+                "📌 Odopnúť zápas"
+                if pinned
+                else "📌 Pripnúť zápas"
+            )
+
+            if st.button(
+                button_text,
+                key=f"pin_{row['MatchID']}",
+                use_container_width=True,
+            ):
+                try:
+                    set_pinned(
+                        row["MatchID"],
+                        not pinned,
+                    )
+                except Exception as error:
+                    st.error(
+                        "Nepodarilo sa zmeniť pripnutie: "
+                        f"{error}"
+                    )
+                    st.stop()
+
+                st.rerun()
+
 
 st.caption(
     "ATP Elo: "
@@ -308,22 +393,16 @@ with col1:
             )
 
         try:
-            refreshed_df = (
+            updated_df = update_after_refresh(
                 load_current_matches()
             )
-
-            updated_df = update_after_refresh(
-                refreshed_df
-            )
-
             new_count = int(
                 updated_df["IsNew"].sum()
             )
-
         except Exception as error:
             st.error(
                 "Zápasy sa stiahli, ale nepodarilo "
-                "sa aktualizovať stav NOVÉ v Google Sheets: "
+                "sa aktualizovať stav v Google Sheets: "
                 f"{error}"
             )
             st.stop()
@@ -372,11 +451,40 @@ with col2:
         st.rerun()
 
 
+raw_count = count_current_rows(
+    "flashscore_matches.csv"
+)
+shown_count = count_current_rows(
+    "flashscore_elo_matches.csv"
+)
+skipped_count = max(
+    raw_count - shown_count,
+    0,
+)
+alias_skip_count = count_alias_skips()
+
+metric_1, metric_2, metric_3, metric_4 = st.columns(4)
+
+metric_1.metric(
+    "Flashscore",
+    raw_count,
+)
+metric_2.metric(
+    "Zobrazené",
+    shown_count,
+)
+metric_3.metric(
+    "Nezobrazené",
+    skipped_count,
+)
+metric_4.metric(
+    "Chýba alias",
+    alias_skip_count,
+)
+
+
 try:
     df = load_current_matches()
-
-    # Pri obyčajnom otvorení alebo rerune iba načítame
-    # uložený stav. Google Sheets sa nemení.
     df = add_saved_status(df)
     df = prepare_for_display(df)
 
@@ -385,7 +493,6 @@ try:
             df["DateLabel"] == "Today"
         ].copy()
     )
-
     tomorrow = sort_matches(
         df[
             df["DateLabel"] == "Day+1"
@@ -394,10 +501,7 @@ try:
 
     today_count = len(today)
     tomorrow_count = len(tomorrow)
-    all_count = (
-        today_count
-        + tomorrow_count
-    )
+    all_count = today_count + tomorrow_count
 
     today_new_count = int(
         today["IsNew"].sum()
@@ -410,12 +514,24 @@ try:
         + tomorrow_new_count
     )
 
+    pinned_count = int(
+        df["IsPinned"].sum()
+    )
+
+    messages = []
+    if pinned_count:
+        messages.append(
+            f"📌 Pripnuté: {pinned_count}"
+        )
     if total_new_count:
-        st.success(
-            f"🟢 Nové zápasy: {total_new_count} "
+        messages.append(
+            f"🟢 Nové: {total_new_count} "
             f"(dnes {today_new_count}, "
             f"zajtra {tomorrow_new_count})"
         )
+
+    if messages:
+        st.success(" · ".join(messages))
 
     view_labels = {
         f"🎾 Dnes ({today_count})": "today",

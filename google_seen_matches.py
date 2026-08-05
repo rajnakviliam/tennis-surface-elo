@@ -2,7 +2,6 @@ from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 import gspread
-import pandas as pd
 import streamlit as st
 from google.oauth2.service_account import Credentials
 
@@ -16,6 +15,7 @@ SHEET_HEADERS = [
     "first_seen",
     "last_seen",
     "is_new",
+    "is_pinned",
 ]
 
 
@@ -52,11 +52,10 @@ def normalize_part(value):
 
 def make_match_id(row):
     """
-    Stabilné ID zápasu.
+    Stabilné ID zápasu bez DateLabel a času.
 
-    Neobsahuje DateLabel ani čas, takže ten istý zápas
-    zostane rovnaký pri presune Day+1 -> Today,
-    Today -> Day+1 alebo pri zmene času.
+    Preto sa zápas považuje za ten istý aj po presune
+    zo zajtra na dnes, z dneška na zajtra alebo po zmene času.
     """
     player_1 = normalize_part(row["Player 1"])
     player_2 = normalize_part(row["Player 2"])
@@ -102,15 +101,9 @@ def parse_bool(value):
 
 def load_match_states():
     """
-    Vráti slovník:
-        match_id -> {
-            first_seen: datetime,
-            last_seen: datetime,
-            is_new: bool,
-        }
+    Načíta stav zápasov z Google Sheets.
 
-    Podporuje aj staršiu tabuľku s jedným alebo dvoma stĺpcami.
-    Staré riadky bez is_new sa považujú za videné.
+    Podporuje aj staršie verzie tabuľky bez stĺpca is_pinned.
     """
     worksheet = get_worksheet()
     values = worksheet.get_all_values()
@@ -133,6 +126,7 @@ def load_match_states():
     first_seen_index = column_index("first_seen")
     last_seen_index = column_index("last_seen")
     is_new_index = column_index("is_new")
+    is_pinned_index = column_index("is_pinned")
 
     now = datetime.now(TIMEZONE)
     states = {}
@@ -167,6 +161,13 @@ def load_match_states():
             else False
         )
 
+        is_pinned = (
+            parse_bool(row[is_pinned_index])
+            if is_pinned_index is not None
+            and len(row) > is_pinned_index
+            else False
+        )
+
         first_seen = first_seen or now
         last_seen = last_seen or first_seen
 
@@ -174,6 +175,7 @@ def load_match_states():
             "first_seen": first_seen,
             "last_seen": last_seen,
             "is_new": is_new,
+            "is_pinned": is_pinned,
         }
 
     return states
@@ -204,6 +206,7 @@ def save_match_states(states):
                     TIMEZONE
                 ).isoformat(timespec="seconds"),
                 "TRUE" if state["is_new"] else "FALSE",
+                "TRUE" if state["is_pinned"] else "FALSE",
             ]
         )
 
@@ -216,28 +219,25 @@ def save_match_states(states):
 
 def add_saved_status(df):
     """
-    Iba načíta uložený stav z Google Sheets.
-    Nič nezapisuje, takže otvorenie, rerun ani reštart
-    aplikácie nemôžu zrušiť označenie NOVÉ.
+    Iba načíta uložený stav. Nič nezapisuje.
+
+    Reštart aplikácie ani prepínanie stránok preto nemení
+    označenie NOVÉ ani pripnutie zápasu.
     """
     result = df.copy()
-
-    result["MatchID"] = result.apply(
-        make_match_id,
-        axis=1,
-    )
+    result["MatchID"] = result.apply(make_match_id, axis=1)
 
     states = load_match_states()
 
     result["IsNew"] = result["MatchID"].map(
         lambda match_id: bool(
-            states.get(
-                match_id,
-                {},
-            ).get(
-                "is_new",
-                False,
-            )
+            states.get(match_id, {}).get("is_new", False)
+        )
+    )
+
+    result["IsPinned"] = result["MatchID"].map(
+        lambda match_id: bool(
+            states.get(match_id, {}).get("is_pinned", False)
         )
     )
 
@@ -248,59 +248,77 @@ def update_after_refresh(df):
     """
     Volá sa iba po manuálnom kliknutí na Aktualizovať zápasy.
 
-    - všetky dovtedy NOVÉ zápasy označí ako videné,
-    - aktuálne neznáme zápasy označí ako NOVÉ,
-    - aktualizuje last_seen pri dnešných a zajtrajších zápasoch,
-    - odstráni iba zápasy, ktoré neboli v aktuálnom zozname
-      viac než KEEP_DAYS dní,
-    - stav uloží do Google Sheets.
+    - predtým nové zápasy označí ako videné,
+    - úplne nové MatchID označí ako NOVÉ,
+    - pripnutie zachová,
+    - staré záznamy odstráni po KEEP_DAYS dňoch,
+    - aktuálny stav uloží do Google Sheets.
     """
     result = df.copy()
-
-    result["MatchID"] = result.apply(
-        make_match_id,
-        axis=1,
-    )
+    result["MatchID"] = result.apply(make_match_id, axis=1)
 
     now = datetime.now(TIMEZONE)
     cutoff = now - timedelta(days=KEEP_DAYS)
 
-    old_states = load_match_states()
+    states = load_match_states()
 
-    # Pred každou manuálnou aktualizáciou sa všetky predtým nové
-    # zápasy považujú za už videné.
-    for state in old_states.values():
+    for state in states.values():
         state["is_new"] = False
 
-    current_ids = set(
-        result["MatchID"].astype(str)
-    )
+    current_ids = set(result["MatchID"].astype(str))
 
     for match_id in current_ids:
-        if match_id in old_states:
-            old_states[match_id]["last_seen"] = now
+        if match_id in states:
+            states[match_id]["last_seen"] = now
         else:
-            old_states[match_id] = {
+            states[match_id] = {
                 "first_seen": now,
                 "last_seen": now,
                 "is_new": True,
+                "is_pinned": False,
             }
 
     cleaned_states = {
         match_id: state
-        for match_id, state in old_states.items()
+        for match_id, state in states.items()
         if (
             match_id in current_ids
             or state["last_seen"] >= cutoff
+            or state["is_pinned"]
         )
     }
 
     save_match_states(cleaned_states)
 
     result["IsNew"] = result["MatchID"].map(
-        lambda match_id: cleaned_states[
-            match_id
-        ]["is_new"]
+        lambda match_id: cleaned_states[match_id]["is_new"]
+    )
+    result["IsPinned"] = result["MatchID"].map(
+        lambda match_id: cleaned_states[match_id]["is_pinned"]
     )
 
     return result
+
+
+def set_pinned(match_id, pinned):
+    """
+    Pripne alebo odopne jeden zápas a stav okamžite uloží.
+    """
+    states = load_match_states()
+    now = datetime.now(TIMEZONE)
+
+    if match_id not in states:
+        states[match_id] = {
+            "first_seen": now,
+            "last_seen": now,
+            "is_new": False,
+            "is_pinned": bool(pinned),
+        }
+    else:
+        states[match_id]["is_pinned"] = bool(pinned)
+
+        # Pripnutý zápas sa už vizuálne nepovažuje za NOVÝ.
+        if pinned:
+            states[match_id]["is_new"] = False
+
+    save_match_states(states)
