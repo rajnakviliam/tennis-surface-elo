@@ -150,97 +150,57 @@ def load_current_matches():
     ].copy()
 
 
-def load_current_rows(filename):
-    """
-    Načíta iba riadky Today a Day+1.
-
-    Názvy stĺpcov aj hodnoty DateLabel sa očistia od
-    medzier a prípadného BOM znaku.
-    """
+def count_current_rows(filename):
     if not os.path.exists(filename):
-        return pd.DataFrame()
+        return 0
 
     try:
-        data = pd.read_csv(
-            filename,
-            sep=";",
-        )
+        data = pd.read_csv(filename, sep=";")
     except Exception:
-        return pd.DataFrame()
-
-    data.columns = [
-        str(column)
-        .replace("\ufeff", "")
-        .strip()
-        for column in data.columns
-    ]
+        return 0
 
     if "DateLabel" in data.columns:
-        date_labels = (
-            data["DateLabel"]
-            .astype(str)
-            .str.strip()
-        )
-
         data = data[
-            date_labels.isin(
+            data["DateLabel"].isin(
                 ["Today", "Day+1"]
             )
-        ].copy()
+        ]
 
-    return data
-
-
-def get_match_counts():
-    """
-    Počty vychádzajú z výstupov porovnávacieho skriptu:
-
-    - zobrazené = flashscore_elo_matches.csv
-    - vyradené = skipped_matches.csv
-    - Flashscore dvojhry = zobrazené + vyradené
-    - chýba alias = vyradené s dôvodom not_in_aliases
-    """
-    shown = load_current_rows(
-        "flashscore_elo_matches.csv"
-    )
-    skipped = load_current_rows(
-        "skipped_matches.csv"
-    )
-
-    shown_count = len(shown)
-    skipped_count = len(skipped)
-    flashscore_count = (
-        shown_count
-        + skipped_count
-    )
-
-    alias_skip_count = 0
-
-    if (
-        not skipped.empty
-        and "Reason" in skipped.columns
-    ):
-        alias_skip_count = int(
-            skipped["Reason"]
-            .astype(str)
-            .str.contains(
-                "not_in_aliases",
-                case=False,
-                na=False,
-            )
-            .sum()
-        )
-
-    return (
-        flashscore_count,
-        shown_count,
-        skipped_count,
-        alias_skip_count,
-    )
+    return len(data)
 
 
 def count_alias_skips():
-    return get_match_counts()[3]
+    if not os.path.exists("skipped_matches.csv"):
+        return 0
+
+    try:
+        skipped = pd.read_csv(
+            "skipped_matches.csv",
+            sep=";",
+        )
+    except Exception:
+        return 0
+
+    if "DateLabel" in skipped.columns:
+        skipped = skipped[
+            skipped["DateLabel"].isin(
+                ["Today", "Day+1"]
+            )
+        ]
+
+    if "Reason" not in skipped.columns:
+        return 0
+
+    return int(
+        skipped["Reason"]
+        .astype(str)
+        .str.contains(
+            "not_in_aliases",
+            case=False,
+            na=False,
+        )
+        .sum()
+    )
 
 
 def prepare_for_display(df):
@@ -447,28 +407,17 @@ with col1:
             )
             st.stop()
 
-        alias_skip_count = (
-            count_alias_skips()
-        )
-
-        message_parts = [
-            "Zápasy boli aktualizované.",
-            (
+        if new_count:
+            st.success(
+                f"Zápasy boli aktualizované. "
                 f"Nové zápasy: {new_count}."
-                if new_count
-                else "Žiadne nové zápasy."
-            ),
-        ]
-
-        if alias_skip_count:
-            message_parts.append(
-                f"Chýba alias pri "
-                f"{alias_skip_count} zápasoch."
+            )
+        else:
+            st.success(
+                "Zápasy boli aktualizované. "
+                "Žiadne nové zápasy."
             )
 
-        st.success(
-            " ".join(message_parts)
-        )
         st.rerun()
 
 
@@ -480,6 +429,9 @@ with col2:
         scripts = [
             "get_atp_elo_final.py",
             "get_wta_elo_final.py",
+            "get_atp_rankings.py",
+            "get_wta_rankings.py",
+            "create_players_master.py",
             "create_name_map.py",
             "flashscore_elo_compare.py",
         ]
@@ -497,55 +449,41 @@ with col2:
             )
 
         st.success(
-            "Elo a porovnanie boli aktualizované."
+            "Elo, ATP/WTA rankingy a porovnanie boli aktualizované."
         )
         st.rerun()
 
 
-(
-    raw_count,
-    shown_count,
-    skipped_count,
-    alias_skip_count,
-) = get_match_counts()
-
-st.markdown(
-    (
-        "<div style='display:flex;gap:8px;"
-        "flex-wrap:wrap;margin:0.35rem 0 0.8rem 0;'>"
-        f"<div style='flex:1;min-width:92px;padding:8px 10px;"
-        "border:1px solid rgba(128,128,128,.28);"
-        "border-radius:10px;text-align:center;'>"
-        "<div style='font-size:.78rem;opacity:.72;'>🎾 Flashscore dvojhry</div>"
-        f"<div style='font-size:1.35rem;font-weight:700;'>{raw_count}</div></div>"
-        f"<div style='flex:1;min-width:92px;padding:8px 10px;"
-        "border:1px solid rgba(128,128,128,.28);"
-        "border-radius:10px;text-align:center;'>"
-        "<div style='font-size:.78rem;opacity:.72;'>✅ Zobrazené</div>"
-        f"<div style='font-size:1.35rem;font-weight:700;'>{shown_count}</div></div>"
-        f"<div style='flex:1;min-width:92px;padding:8px 10px;"
-        "border:1px solid rgba(128,128,128,.28);"
-        "border-radius:10px;text-align:center;'>"
-        "<div style='font-size:.78rem;opacity:.72;'>⚠️ Chýba alias</div>"
-        f"<div style='font-size:1.35rem;font-weight:700;'>{alias_skip_count}</div></div>"
-        "</div>"
-    ),
-    unsafe_allow_html=True,
+raw_count = count_current_rows(
+    "flashscore_matches.csv"
 )
+shown_count = count_current_rows(
+    "flashscore_elo_matches.csv"
+)
+skipped_count = max(
+    raw_count - shown_count,
+    0,
+)
+alias_skip_count = count_alias_skips()
 
-if alias_skip_count:
-    st.warning(
-        f"Chýba alias pri "
-        f"{alias_skip_count} dnešných alebo "
-        "zajtrajších dvojhrách. "
-        "Podrobnosti sú na stránke "
-        "Diagnostika aliasov."
-    )
-elif raw_count:
-    st.caption(
-        "✅ Pri dnešných a zajtrajších "
-        "dvojhrách nechýba žiadny alias."
-    )
+metric_1, metric_2, metric_3, metric_4 = st.columns(4)
+
+metric_1.metric(
+    "Flashscore",
+    raw_count,
+)
+metric_2.metric(
+    "Zobrazené",
+    shown_count,
+)
+metric_3.metric(
+    "Nezobrazené",
+    skipped_count,
+)
+metric_4.metric(
+    "Chýba alias",
+    alias_skip_count,
+)
 
 
 try:
