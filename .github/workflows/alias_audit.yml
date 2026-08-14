@@ -29,6 +29,10 @@ jobs:
         run: |
           python audit_generated_flashscore_aliases.py
 
+      - name: Propose alias candidates
+        run: |
+          python propose_alias_candidates.py    
+      
       - name: Show summary
         run: |
           echo "=== SUMMARY ==="
@@ -36,6 +40,9 @@ jobs:
           echo ""
           echo "=== UNRESOLVED ==="
           cat flashscore_alias_still_unresolved.csv
+                    echo ""
+          echo "=== REVIEW CANDIDATES ==="
+          cat flashscore_alias_review_candidates.csv
 
       - name: Upload audit files
         uses: actions/upload-artifact@v4
@@ -48,3 +55,4 @@ jobs:
             flashscore_generated_aliases.csv
             flashscore_alias_collisions.csv
             flashscore_alias_review_4plus.csv
+            flashscore_alias_review_candidates.csv
