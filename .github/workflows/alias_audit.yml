@@ -1,0 +1,50 @@
+name: Test Flashscore Aliases
+
+on:
+  workflow_dispatch:
+
+jobs:
+  alias-audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas
+
+      - name: Generate Flashscore aliases
+        run: |
+          python generate_flashscore_aliases.py
+
+      - name: Audit generated aliases
+        run: |
+          python audit_generated_flashscore_aliases.py
+
+      - name: Show summary
+        run: |
+          echo "=== SUMMARY ==="
+          cat flashscore_alias_audit_summary.csv
+          echo ""
+          echo "=== UNRESOLVED ==="
+          cat flashscore_alias_still_unresolved.csv
+
+      - name: Upload audit files
+        uses: actions/upload-artifact@v4
+        with:
+          name: flashscore-alias-audit
+          path: |
+            flashscore_alias_audit_summary.csv
+            flashscore_alias_resolved_by_generator.csv
+            flashscore_alias_still_unresolved.csv
+            flashscore_generated_aliases.csv
+            flashscore_alias_collisions.csv
+            flashscore_alias_review_4plus.csv
