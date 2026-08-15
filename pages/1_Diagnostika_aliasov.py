@@ -368,6 +368,62 @@ candidates = read_csv_if_exists(
     "flashscore_alias_review_candidates.csv"
 )
 
+
+def find_match_context(flash_name, tour, raw_matches):
+    if raw_matches.empty:
+        return []
+
+    contexts = []
+
+    for _, match in raw_matches.iterrows():
+        match_tour = clean(match.get("Tour", ""))
+
+        if tour and match_tour and tour.casefold() != match_tour.casefold():
+            continue
+
+        player_1 = clean(match.get("Player 1", ""))
+        player_2 = clean(match.get("Player 2", ""))
+
+        if (
+            player_1.casefold() != flash_name.casefold()
+            and player_2.casefold() != flash_name.casefold()
+        ):
+            continue
+
+        date_label = clean(match.get("DateLabel", ""))
+        tournament = clean(match.get("Tournament", ""))
+
+        if date_label == "Today":
+            date_text = "Dnes"
+        elif date_label == "Day+1":
+            date_text = "Zajtra"
+        else:
+            date_text = date_label or "—"
+
+        contexts.append(
+            {
+                "Date": date_text,
+                "Tournament": tournament or "—",
+            }
+        )
+
+    unique_contexts = []
+    seen = set()
+
+    for context in contexts:
+        key = (
+            context["Date"],
+            context["Tournament"],
+        )
+
+        if key in seen:
+            continue
+
+        seen.add(key)
+        unique_contexts.append(context)
+
+    return unique_contexts
+
 raw_count = len(raw)
 shown_count = len(shown)
 skipped_count = len(skipped)
@@ -473,6 +529,18 @@ else:
                 f"❓ {flash_name} · {tour}",
                 expanded=False,
             ):
+                contexts = find_match_context(
+                    flash_name,
+                    tour,
+                    raw,
+                )
+
+                for context in contexts:
+                    st.caption(
+                        f"📅 {context['Date']} · "
+                        f"🏆 {context['Tournament']}"
+                    )
+
                 st.warning(
                     "Pre toto meno sa v players_master.csv "
                     "nenašiel vhodný kandidát."
@@ -483,6 +551,18 @@ else:
             f"⚠️ {flash_name} · {tour}",
             expanded=False,
         ):
+            contexts = find_match_context(
+                flash_name,
+                tour,
+                raw,
+            )
+
+            for context in contexts:
+                st.caption(
+                    f"📅 {context['Date']} · "
+                    f"🏆 {context['Tournament']}"
+                )
+
             labels = [
                 label
                 for _, label in options
