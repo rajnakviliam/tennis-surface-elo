@@ -213,9 +213,11 @@ def main():
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
+            executable_path="/usr/bin/chromium",
             args=[
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
+                "--disable-gpu",
             ],
         )
 
