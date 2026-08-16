@@ -1,132 +1,461 @@
-import csv, re
+import csv
+import re
 from pathlib import Path
+
 from playwright.sync_api import sync_playwright
 
-BASE_URL = "https://www.flashscore.com/tennis/"
-DAYS = [("Today", BASE_URL), ("Day+1", BASE_URL + "?d=1")]
-OUT = "flashscore_com_test.csv"
-RAW = Path("data/raw_flashscore_com")
-RAW.mkdir(parents=True, exist_ok=True)
 
-def clean(x):
-    return " ".join(str(x or "").replace("\xa0"," ").split()).strip()
+URL = "https://www.flashscore.com/tennis/"
 
-def parse_header(text):
-    t = clean(text)
-    u = t.upper()
-    if "SINGLES" not in u or "DOUBLES" in u or "UTR" in u:
+OUT_FILE = "flashscore_com_test.csv"
+
+RAW_DIR = Path("data/raw_flashscore_com")
+RAW_DIR.mkdir(parents=True, exist_ok=True)
+
+
+SURFACE_MAP = {
+    "hard": "hard",
+    "clay": "clay",
+    "grass": "grass",
+    "indoor": "hard",
+}
+
+
+def clean(text):
+    return " ".join(
+        str(text or "")
+        .replace("\xa0", " ")
+        .split()
+    ).strip()
+
+
+def is_time(text):
+    return bool(
+        re.fullmatch(
+            r"\d{1,2}:\d{2}",
+            clean(text),
+        )
+    )
+
+
+def parse_tournament_line(line):
+    line = clean(line)
+
+    m = re.match(
+        r"^(.+?),\s*(hard|clay|grass|indoor)$",
+        line,
+        re.IGNORECASE,
+    )
+
+    if not m:
         return None
-    tour = "WTA" if ("WTA" in u or "WOMEN" in u or "GIRLS" in u) else "ATP"
-    low = t.lower()
-    surface = ""
-    for s in ("hard","clay","grass","indoor"):
-        if re.search(rf"\b{s}\b", low):
-            surface = "hard" if s == "indoor" else s
-            break
-    m = re.search(r"SINGLES\s*[:\-]?\s*(.+?)(?:,\s*(?:hard|clay|grass|indoor)\b|$)", t, re.I)
-    tournament = clean(m.group(1)) if m else t
-    return tour, tournament, surface
 
-def extract(page, date_label):
-    try:
-        page.wait_for_selector(".event__match, .event__header", timeout=20000)
-    except Exception:
-        pass
+    tournament = clean(m.group(1))
+    surface_raw = m.group(2).lower()
 
-    for _ in range(10):
-        page.mouse.wheel(0, 2500)
-        page.wait_for_timeout(250)
+    surface = SURFACE_MAP.get(
+        surface_raw,
+        surface_raw,
+    )
 
-    items = page.locator(".event__header, .event__match")
-    current_header = ""
+    return tournament, surface
+
+
+def parse_tour_line(line):
+    line = clean(line)
+    upper = line.upper()
+
+    if "SINGLES" not in upper:
+        return None
+
+    if "DOUBLES" in upper:
+        return None
+
+    if "UTR" in upper:
+        return None
+
+    if (
+        "WTA" in upper
+        or "WOMEN" in upper
+        or "GIRLS" in upper
+    ):
+        return "WTA"
+
+    return "ATP"
+
+
+def parse_body_text(text, date_label):
+    lines = [
+        clean(line)
+        for line in text.splitlines()
+        if clean(line)
+    ]
+
     rows = []
 
-    for i in range(items.count()):
-        item = items.nth(i)
-        cls = item.get_attribute("class") or ""
+    current_tournament = ""
+    current_surface = ""
+    current_tour = ""
 
-        if "event__header" in cls:
-            try:
-                current_header = clean(item.inner_text())
-            except Exception:
-                current_header = ""
+    i = 0
+
+    while i < len(lines):
+        line = lines[i]
+
+        tournament_info = parse_tournament_line(
+            line
+        )
+
+        if tournament_info:
+            (
+                current_tournament,
+                current_surface,
+            ) = tournament_info
+
+            current_tour = ""
+
+            i += 1
             continue
 
-        if "event__match" not in cls:
+        tour = parse_tour_line(line)
+
+        if tour:
+            current_tour = tour
+
+            i += 1
             continue
 
-        parsed = parse_header(current_header)
-        if not parsed:
+        if (
+            is_time(line)
+            and current_tournament
+            and current_surface
+            and current_tour
+        ):
+            if i + 2 >= len(lines):
+                i += 1
+                continue
+
+            player1 = clean(lines[i + 1])
+            player2 = clean(lines[i + 2])
+
+            blocked = {
+                "DRAW",
+                "PREVIEW",
+                "FINISHED",
+                "CANCELLED",
+                "POSTPONED",
+            }
+
+            if (
+                not player1
+                or not player2
+                or player1.upper() in blocked
+                or player2.upper() in blocked
+            ):
+                i += 1
+                continue
+
+            if (
+                "/" in player1
+                or "/" in player2
+            ):
+                i += 1
+                continue
+
+            rows.append(
+                [
+                    date_label,
+                    current_tour,
+                    current_tournament,
+                    current_surface,
+                    line,
+                    player1,
+                    player2,
+                ]
+            )
+
+            i += 3
             continue
 
-        home = item.locator(".event__participant--home")
-        away = item.locator(".event__participant--away")
-        if home.count() == 0 or away.count() == 0:
-            continue
-
-        p1 = clean(home.first.inner_text())
-        p2 = clean(away.first.inner_text())
-        if not p1 or not p2 or "/" in p1 or "/" in p2:
-            continue
-
-        tloc = item.locator(".event__time")
-        tm = ""
-        if tloc.count():
-            mt = re.search(r"\b\d{1,2}:\d{2}\b", clean(tloc.first.inner_text()))
-            if mt:
-                tm = mt.group(0)
-
-        tour, tournament, surface = parsed
-        rows.append([date_label,tour,tournament,surface,tm,p1,p2,current_header])
+        i += 1
 
     return rows
 
-def main():
-    all_rows = []
 
-    with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=True, args=["--no-sandbox","--disable-dev-shm-usage"])
+def save_raw(page, label):
+    safe_name = (
+        label
+        .lower()
+        .replace("+", "_plus_")
+    )
+
+    html = page.content()
+
+    text = page.locator(
+        "body"
+    ).inner_text()
+
+    (
+        RAW_DIR
+        / f"{safe_name}.html"
+    ).write_text(
+        html,
+        encoding="utf-8",
+    )
+
+    (
+        RAW_DIR
+        / f"{safe_name}.txt"
+    ).write_text(
+        text,
+        encoding="utf-8",
+    )
+
+    return text
+
+
+def click_tomorrow(page):
+    selectors = [
+        'button[aria-label*="tomorrow" i]',
+        'button[title*="tomorrow" i]',
+        '[data-testid*="tomorrow" i]',
+        'button[class*="tomorrow"]',
+        '[class*="calendar"] button:last-child',
+    ]
+
+    for selector in selectors:
+        try:
+            locator = page.locator(
+                selector
+            )
+
+            if locator.count():
+                locator.first.click()
+
+                page.wait_for_timeout(
+                    4000
+                )
+
+                return True
+
+        except Exception:
+            pass
+
+    return False
+
+
+def main():
+    all_matches = []
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                "--no-sandbox",
+                "--disable-dev-shm-usage",
+            ],
+        )
+
         context = browser.new_context(
             locale="en-US",
-            timezone_id="Europe/Bratislava",
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/127 Safari/537.36",
+            timezone_id=(
+                "Europe/Bratislava"
+            ),
+            user_agent=(
+                "Mozilla/5.0 "
+                "(Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 "
+                "(KHTML, like Gecko) "
+                "Chrome/127.0 Safari/537.36"
+            ),
         )
+
         page = context.new_page()
 
-        for label, url in DAYS:
-            print("Sťahujem:", label, url)
-            page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            page.wait_for_timeout(5000)
+        print("Sťahujem Today")
 
-            safe = label.lower().replace("+","_plus_")
-            (RAW / f"{safe}.html").write_text(page.content(), encoding="utf-8")
-            (RAW / f"{safe}.txt").write_text(page.locator("body").inner_text(), encoding="utf-8")
+        page.goto(
+            URL,
+            wait_until="domcontentloaded",
+            timeout=60000,
+        )
 
-            rows = extract(page, label)
-            print("  nájdených singles zápasov:", len(rows))
-            all_rows.extend(rows)
+        page.wait_for_timeout(
+            5000
+        )
+
+        today_text = save_raw(
+            page,
+            "Today",
+        )
+
+        today_matches = (
+            parse_body_text(
+                today_text,
+                "Today",
+            )
+        )
+
+        print(
+            "Today zápasov:",
+            len(today_matches),
+        )
+
+        all_matches.extend(
+            today_matches
+        )
+
+        print(
+            "Skúšam prepnúť na zajtra..."
+        )
+
+        tomorrow_clicked = (
+            click_tomorrow(page)
+        )
+
+        print(
+            "Tomorrow click:",
+            tomorrow_clicked,
+        )
+
+        if tomorrow_clicked:
+            tomorrow_text = save_raw(
+                page,
+                "Day+1",
+            )
+
+            tomorrow_matches = (
+                parse_body_text(
+                    tomorrow_text,
+                    "Day+1",
+                )
+            )
+
+            print(
+                "Day+1 zápasov:",
+                len(
+                    tomorrow_matches
+                ),
+            )
+
+            all_matches.extend(
+                tomorrow_matches
+            )
 
         browser.close()
 
-    seen, unique = set(), []
-    for r in all_rows:
-        key = (r[0],r[2],r[5],r[6])
-        if key not in seen:
-            seen.add(key)
-            unique.append(r)
+    unique_matches = []
+    seen = set()
 
-    with open(OUT,"w",newline="",encoding="utf-8-sig") as f:
-        w = csv.writer(f, delimiter=";")
-        w.writerow(["DateLabel","Tour","Tournament","Surface","Time","Player 1","Player 2","RawHeader"])
-        w.writerows(unique)
+    for row in all_matches:
+        key = (
+            row[0],
+            row[2],
+            row[5],
+            row[6],
+        )
 
-    diac = sorted({n for r in unique for n in (r[5],r[6]) if any(ord(ch)>127 for ch in n)})
-    print("Hotovo.")
-    print("Zápasov:", len(unique))
-    print("Súbor:", OUT)
-    print("Mená s non-ASCII znakmi:", len(diac))
-    for n in diac[:30]:
-        print(" ", n)
+        if key in seen:
+            continue
+
+        seen.add(key)
+
+        unique_matches.append(
+            row
+        )
+
+    with open(
+        OUT_FILE,
+        "w",
+        newline="",
+        encoding="utf-8-sig",
+    ) as f:
+        writer = csv.writer(
+            f,
+            delimiter=";",
+        )
+
+        writer.writerow(
+            [
+                "DateLabel",
+                "Tour",
+                "Tournament",
+                "Surface",
+                "Time",
+                "Player 1",
+                "Player 2",
+            ]
+        )
+
+        writer.writerows(
+            unique_matches
+        )
+
+    print()
+    print("=" * 60)
+    print("HOTOVO")
+    print("=" * 60)
+
+    print(
+        "Zápasov spolu:",
+        len(unique_matches),
+    )
+
+    print(
+        "Súbor:",
+        OUT_FILE,
+    )
+
+    today_count = sum(
+        row[0] == "Today"
+        for row in unique_matches
+    )
+
+    tomorrow_count = sum(
+        row[0] == "Day+1"
+        for row in unique_matches
+    )
+
+    print(
+        "Today:",
+        today_count,
+    )
+
+    print(
+        "Day+1:",
+        tomorrow_count,
+    )
+
+    names_with_diacritics = sorted(
+        {
+            name
+            for row in unique_matches
+            for name in (
+                row[5],
+                row[6],
+            )
+            if any(
+                ord(char) > 127
+                for char in name
+            )
+        }
+    )
+
+    print(
+        "Mená s non-ASCII znakmi:",
+        len(
+            names_with_diacritics
+        ),
+    )
+
+    for name in (
+        names_with_diacritics[:30]
+    ):
+        print(
+            " ",
+            name,
+        )
+
 
 if __name__ == "__main__":
     main()
