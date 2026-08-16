@@ -66,6 +66,9 @@ def only_current_days(df):
 
 
 def clean(value):
+    if pd.isna(value):
+        return ""
+
     return " ".join(
         str(value or "").replace("\xa0", " ").split()
     ).strip()
@@ -367,6 +370,12 @@ review = read_csv_if_exists(
 candidates = read_csv_if_exists(
     "flashscore_alias_review_candidates.csv"
 )
+players_master = read_csv_if_exists(
+    "players_master.csv"
+)
+not_in_ta = read_csv_if_exists(
+    "not_in_tennis_abstract.csv"
+)
 
 
 def find_match_context(flash_name, tour, raw_matches):
@@ -423,6 +432,142 @@ def find_match_context(flash_name, tour, raw_matches):
         unique_contexts.append(context)
 
     return unique_contexts
+
+def player_choices_for_tour(tour):
+    if players_master.empty:
+        return []
+
+    if "Player" not in players_master.columns:
+        return []
+
+    pool = players_master.copy()
+
+    if "Tour" in pool.columns and tour:
+        pool = pool[
+            pool["Tour"]
+            .astype(str)
+            .str.strip()
+            .str.casefold()
+            == tour.casefold()
+        ]
+
+    choices = (
+        pool["Player"]
+        .astype(str)
+        .map(clean)
+    )
+
+    choices = [
+        name
+        for name in choices
+        if name
+    ]
+
+    return sorted(
+        set(choices),
+        key=str.casefold,
+    )
+
+
+def mark_not_in_tennis_abstract(
+    flash_name,
+    tour,
+):
+    filename = "not_in_tennis_abstract.csv"
+
+    df = read_csv_if_exists(filename)
+
+    if df.empty and not os.path.exists(filename):
+        df = pd.DataFrame(
+            columns=[
+                "FlashscoreName",
+                "Tour",
+            ]
+        )
+
+    if "FlashscoreName" not in df.columns:
+        df["FlashscoreName"] = ""
+
+    if "Tour" not in df.columns:
+        df["Tour"] = ""
+
+    same = (
+        df["FlashscoreName"]
+        .astype(str)
+        .map(clean)
+        .str.casefold()
+        == flash_name.casefold()
+    ) & (
+        df["Tour"]
+        .astype(str)
+        .map(clean)
+        .str.casefold()
+        == tour.casefold()
+    )
+
+    if not same.any():
+        df = pd.concat(
+            [
+                df,
+                pd.DataFrame(
+                    [
+                        {
+                            "FlashscoreName": flash_name,
+                            "Tour": tour,
+                        }
+                    ]
+                ),
+            ],
+            ignore_index=True,
+        )
+
+        df.to_csv(
+            filename,
+            sep=";",
+            index=False,
+            encoding="utf-8-sig",
+        )
+
+
+def already_marked_not_in_ta(
+    flash_name,
+    tour,
+):
+    if not_in_ta.empty:
+        return False
+
+    if "FlashscoreName" not in not_in_ta.columns:
+        return False
+
+    tour_series = (
+        not_in_ta["Tour"]
+        if "Tour" in not_in_ta.columns
+        else pd.Series(
+            [""] * len(not_in_ta),
+            index=not_in_ta.index,
+        )
+    )
+
+    same_name = (
+        not_in_ta["FlashscoreName"]
+        .astype(str)
+        .map(clean)
+        .str.casefold()
+        == flash_name.casefold()
+    )
+
+    same_tour = (
+        tour_series
+        .astype(str)
+        .map(clean)
+        .str.casefold()
+        == tour.casefold()
+    )
+
+    return bool(
+        (same_name & same_tour).any()
+    )
+
 
 raw_count = len(raw)
 shown_count = len(shown)
@@ -486,7 +631,18 @@ else:
         flash_name = clean(
             row.get("FlashscoreName", "")
         )
-        tour = clean(row.get("Tour", ""))
+        tour = clean(
+            row.get("Tour", "")
+        )
+
+        if not flash_name:
+            continue
+
+        if already_marked_not_in_ta(
+            flash_name,
+            tour,
+        ):
+            continue
 
         options = []
 
@@ -501,9 +657,11 @@ else:
             if not candidate:
                 continue
 
-            score = row.get(
-                f"Score{number}",
-                "",
+            score = clean(
+                row.get(
+                    f"Score{number}",
+                    "",
+                )
             )
             reason = clean(
                 row.get(
@@ -514,41 +672,23 @@ else:
 
             label = candidate
 
-            if str(score).strip():
+            if score:
                 label += f" · skóre {score}"
 
             if reason:
                 label += f" · {reason}"
 
             options.append(
-                (candidate, label)
+                (
+                    candidate,
+                    label,
+                )
             )
 
-        if not options:
-            with st.expander(
-                f"❓ {flash_name} · {tour}",
-                expanded=False,
-            ):
-                contexts = find_match_context(
-                    flash_name,
-                    tour,
-                    raw,
-                )
-
-                for context in contexts:
-                    st.caption(
-                        f"📅 {context['Date']} · "
-                        f"🏆 {context['Tournament']}"
-                    )
-
-                st.warning(
-                    "Pre toto meno sa v players_master.csv "
-                    "nenašiel vhodný kandidát."
-                )
-            continue
+        icon = "⚠️" if options else "❓"
 
         with st.expander(
-            f"⚠️ {flash_name} · {tour}",
+            f"{icon} {flash_name} · {tour}",
             expanded=False,
         ):
             contexts = find_match_context(
@@ -563,29 +703,143 @@ else:
                     f"🏆 {context['Tournament']}"
                 )
 
-            labels = [
-                label
-                for _, label in options
-            ]
+            selected_player = None
 
-            selected_label = st.radio(
-                "Vyber Tennis Abstract hráča",
-                options=labels,
-                key=f"candidate_{tour}_{flash_name}",
+            if options:
+                st.write(
+                    "Navrhnutí kandidáti"
+                )
+
+                labels = [
+                    label
+                    for _, label in options
+                ]
+
+                selected_label = st.radio(
+                    "Vyber kandidáta",
+                    options=labels,
+                    key=(
+                        f"candidate_"
+                        f"{tour}_{flash_name}"
+                    ),
+                    label_visibility="collapsed",
+                )
+
+                selected_player = next(
+                    player
+                    for player, label in options
+                    if label == selected_label
+                )
+            else:
+                st.info(
+                    "Automaticky sa nenašiel "
+                    "vhodný kandidát."
+                )
+
+            manual_key = (
+                f"manual_picker_"
+                f"{tour}_{flash_name}"
             )
 
-            selected_player = next(
-                player
-                for player, label in options
-                if label == selected_label
-            )
+            if manual_key not in st.session_state:
+                st.session_state[
+                    manual_key
+                ] = False
 
-            col_yes, col_no = st.columns(2)
+            if st.button(
+                "🔍 Vybrať iného hráča",
+                key=(
+                    f"open_manual_"
+                    f"{tour}_{flash_name}"
+                ),
+                use_container_width=True,
+            ):
+                st.session_state[
+                    manual_key
+                ] = not st.session_state[
+                    manual_key
+                ]
 
-            with col_yes:
+            if st.session_state[
+                manual_key
+            ]:
+                manual_choices = (
+                    player_choices_for_tour(
+                        tour
+                    )
+                )
+
+                if manual_choices:
+                    search_text = st.text_input(
+                        f"Napíš časť mena ({tour})",
+                        key=(
+                            f"manual_search_"
+                            f"{tour}_{flash_name}"
+                        ),
+                        placeholder=(
+                            "napr. Huertas, Arklon, Tsitsipas..."
+                        ),
+                    )
+
+                    filtered_choices = manual_choices
+
+                    if search_text:
+                        needle = clean(
+                            search_text
+                        ).casefold()
+
+                        filtered_choices = [
+                            name
+                            for name in manual_choices
+                            if needle in name.casefold()
+                        ]
+
+                    if not search_text:
+                        st.caption(
+                            "Napíš aspoň časť mena "
+                            "a zoznam sa zúži."
+                        )
+                    elif not filtered_choices:
+                        st.warning(
+                            "Nenašiel sa žiadny hráč "
+                            "s týmto textom."
+                        )
+                    else:
+                        st.caption(
+                            f"Nájdených: "
+                            f"{len(filtered_choices)}"
+                        )
+
+                        manual_selected = st.selectbox(
+                            "Vyber hráča",
+                            options=filtered_choices,
+                            key=(
+                                f"manual_select_"
+                                f"{tour}_{flash_name}"
+                            ),
+                        )
+
+                        if manual_selected:
+                            selected_player = (
+                                manual_selected
+                            )
+                else:
+                    st.warning(
+                        "V players_master.csv "
+                        "nie sú dostupní hráči "
+                        f"pre {tour}."
+                    )
+
+            if selected_player:
                 if st.button(
-                    "✅ Potvrdiť",
-                    key=f"approve_{tour}_{flash_name}",
+                    (
+                        "✅ Potvrdiť: "
+                        f"{selected_player}"
+                    ),
+                    key=(
+                        f"approve_"
+                        f"{tour}_{flash_name}"
+                    ),
                     use_container_width=True,
                 ):
                     try:
@@ -628,7 +882,9 @@ else:
                             )
                         else:
                             st.info(
-                                manual_msg + " " + runtime_msg
+                                manual_msg
+                                + " "
+                                + runtime_msg
                             )
 
                         st.rerun()
@@ -639,16 +895,25 @@ else:
                             f"{error}"
                         )
 
-            with col_no:
-                if st.button(
-                    "❌ Preskočiť",
-                    key=f"reject_{tour}_{flash_name}",
-                    use_container_width=True,
-                ):
-                    st.info(
-                        "Alias nebol pridaný. "
-                        "Zostane medzi nevyriešenými."
-                    )
+            if st.button(
+                "🚫 Hráč nie je v Tennis Abstract",
+                key=(
+                    f"not_in_ta_"
+                    f"{tour}_{flash_name}"
+                ),
+                use_container_width=True,
+            ):
+                mark_not_in_tennis_abstract(
+                    flash_name,
+                    tour,
+                )
+
+                st.success(
+                    f"{flash_name} bol označený "
+                    "ako nenájdený v Tennis Abstract."
+                )
+
+                st.rerun()
 
 
 st.subheader("Dôvody vyradenia")
@@ -766,7 +1031,9 @@ st.caption(
     "Potvrdené aliasy sa počas aktuálneho behu "
     "zapíšu do manual_aliases.csv aj aliases.csv "
     "a zápasy sa okamžite prepočítajú. "
-    "Na Streamlit Cloude však súbory vytvorené "
-    "za behu nie sú trvalo uložené po redeploy/reštarte. "
+    "Označenie „nie je v Tennis Abstract“ sa ukladá "
+    "do not_in_tennis_abstract.csv. "
+    "Na Streamlit Cloude však tieto runtime zmeny "
+    "nie sú trvalé po redeploy/reštarte. "
     "Trvalé ukladanie na GitHub doplníme ako ďalší krok."
 )
