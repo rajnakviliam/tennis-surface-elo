@@ -215,33 +215,35 @@ def save_raw(page, label):
 
 
 def click_tomorrow(page):
-    selectors = [
-        'button[aria-label*="tomorrow" i]',
-        'button[title*="tomorrow" i]',
-        '[data-testid*="tomorrow" i]',
-        'button[class*="tomorrow"]',
-        '[class*="calendar"] button:last-child',
-    ]
+    try:
+        button = page.locator(
+            'button[data-day-picker-arrow="next"]'
+        )
 
-    for selector in selectors:
-        try:
-            locator = page.locator(
-                selector
-            )
+        if button.count() == 0:
+            print("  Next day button nenájdený.")
+            return False
 
-            if locator.count():
-                locator.first.click()
+        print(
+            "  Next day button nájdený:",
+            button.first.get_attribute(
+                "aria-label"
+            ),
+        )
 
-                page.wait_for_timeout(
-                    4000
-                )
+        button.first.click()
 
-                return True
+        # Počkáme, kým Flashscore načíta nový deň.
+        page.wait_for_timeout(5000)
 
-        except Exception:
-            pass
+        return True
 
-    return False
+    except Exception as error:
+        print(
+            "  Chyba pri prepnutí na zajtra:",
+            error,
+        )
+        return False
 
 
 def main():
