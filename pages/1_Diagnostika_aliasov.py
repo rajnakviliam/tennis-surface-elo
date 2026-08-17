@@ -216,17 +216,27 @@ def apply_manual_aliases_to_runtime():
     if manual.empty:
         return 0
 
+    alias_col, player_col, tour_col = (
+        detect_alias_columns(manual)
+    )
+
+    if alias_col is None or player_col is None:
+        return 0
+
     added = 0
 
     for _, row in manual.iterrows():
         alias = clean(
-            row.get("Alias", "")
+            row.get(alias_col, "")
         )
         player = clean(
-            row.get("Player", "")
+            row.get(player_col, "")
         )
-        tour = clean(
-            row.get("Tour", "")
+
+        tour = (
+            clean(row.get(tour_col, ""))
+            if tour_col is not None
+            else ""
         )
 
         if not alias or not player:
