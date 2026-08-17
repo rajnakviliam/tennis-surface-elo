@@ -1101,3 +1101,19 @@ st.caption(
     "Ak GitHub token nie je nastavený, zmena zostane iba v runtime. "
     "Označenie „nie je v Tennis Abstract“ sa zatiaľ ukladá iba do runtime."
 )
+
+st.subheader("🧪 Raw Flashscore diagnostika")
+
+for raw_file in [
+    "data/raw_flashscore/today.txt",
+    "data/raw_flashscore/day_plus_1.txt",
+]:
+    if os.path.exists(raw_file):
+        with open(raw_file, "rb") as f:
+            st.download_button(
+                f"⬇️ {raw_file}",
+                data=f.read(),
+                file_name=os.path.basename(raw_file),
+                mime="text/plain",
+                use_container_width=True,
+            )
