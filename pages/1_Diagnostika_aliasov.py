@@ -208,6 +208,41 @@ def append_alias_to_file(
 
     return True, "Alias bol pridaný."
 
+def apply_manual_aliases_to_runtime():
+    manual = read_csv_if_exists(
+        "manual_aliases.csv"
+    )
+
+    if manual.empty:
+        return 0
+
+    added = 0
+
+    for _, row in manual.iterrows():
+        alias = clean(
+            row.get("Alias", "")
+        )
+        player = clean(
+            row.get("Player", "")
+        )
+        tour = clean(
+            row.get("Tour", "")
+        )
+
+        if not alias or not player:
+            continue
+
+        was_added, _ = append_alias_to_file(
+            "aliases.csv",
+            alias,
+            player,
+            tour,
+        )
+
+        if was_added:
+            added += 1
+
+    return added
 
 def apply_generated_safe_aliases():
     generated = read_csv_if_exists(
@@ -295,6 +330,13 @@ def apply_generated_safe_aliases():
 
 
 def refresh_alias_pipeline():
+    manual_added = apply_manual_aliases_to_runtime()
+
+    if manual_added:
+        st.write(
+            f"Ručných aliasov obnovených do runtime: "
+            f"{manual_added}"
+        )
     for script in [
         "generate_flashscore_aliases.py",
         "audit_generated_flashscore_aliases.py",
