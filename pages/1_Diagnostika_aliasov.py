@@ -854,6 +854,20 @@ else:
                             )
                         )
 
+                    if manual_added:
+                        github_ok, github_msg = persist_file_to_github(
+                            "manual_aliases.csv",
+                            repo_path="manual_aliases.csv",
+                            commit_message=(
+                                f"Add alias: {flash_name} -> {selected_player}"
+                            ),
+                        )
+
+                        if github_ok:
+                            st.success(github_msg)
+                        else:
+                            st.warning(github_msg)
+
                         runtime_added, runtime_msg = (
                             append_alias_to_file(
                                 "aliases.csv",
