@@ -5,6 +5,8 @@ import sys
 import pandas as pd
 import streamlit as st
 
+from github_persistence import persist_file_to_github
+
 
 PYTHON = sys.executable
 
