@@ -854,19 +854,19 @@ else:
                             )
                         )
 
-                    if manual_added:
-                        github_ok, github_msg = persist_file_to_github(
-                            "manual_aliases.csv",
-                            repo_path="manual_aliases.csv",
-                            commit_message=(
-                                f"Add alias: {flash_name} -> {selected_player}"
-                            ),
-                        )
+                        if manual_added:
+                            github_ok, github_msg = persist_file_to_github(
+                                "manual_aliases.csv",
+                                repo_path="manual_aliases.csv",
+                                commit_message=(
+                                    f"Add alias: {flash_name} -> {selected_player}"
+                                ),
+                            )
 
-                        if github_ok:
-                            st.success(github_msg)
-                        else:
-                            st.warning(github_msg)
+                            if github_ok:
+                                st.success(github_msg)
+                            else:
+                                st.warning(github_msg)
 
                         runtime_added, runtime_msg = (
                             append_alias_to_file(
@@ -1044,12 +1044,8 @@ else:
 
 
 st.caption(
-    "Potvrdené aliasy sa počas aktuálneho behu "
-    "zapíšu do manual_aliases.csv aj aliases.csv "
-    "a zápasy sa okamžite prepočítajú. "
-    "Označenie „nie je v Tennis Abstract“ sa ukladá "
-    "do not_in_tennis_abstract.csv. "
-    "Na Streamlit Cloude však tieto runtime zmeny "
-    "nie sú trvalé po redeploy/reštarte. "
-    "Trvalé ukladanie na GitHub doplníme ako ďalší krok."
+    "Potvrdené aliasy sa zapíšu do manual_aliases.csv aj aliases.csv "
+    "a aplikácia sa zároveň pokúsi uložiť manual_aliases.csv do GitHubu. "
+    "Ak GitHub token nie je nastavený, zmena zostane iba v runtime. "
+    "Označenie „nie je v Tennis Abstract“ sa zatiaľ ukladá iba do runtime."
 )
