@@ -976,6 +976,20 @@ else:
                     tour,
                 )
 
+                github_ok, github_msg = persist_file_to_github(
+                    "not_in_tennis_abstract.csv",
+                    repo_path="not_in_tennis_abstract.csv",
+                    commit_message=(
+                        f"Mark not in Tennis Abstract: "
+                        f"{flash_name} ({tour})"
+                    ),
+                )
+                
+                if github_ok:
+                    st.success(github_msg)
+                else:
+                    st.warning(github_msg)
+
                 st.success(
                     f"{flash_name} bol označený "
                     "ako nenájdený v Tennis Abstract."
