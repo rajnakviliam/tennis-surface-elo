@@ -211,7 +211,27 @@ def prepare_for_display(df):
         format="%H:%M",
         errors="coerce",
     )
-    result["IsLive"] = result["MatchTime"].isna()
+
+    result["MatchStatus"] = (
+        result["Time"]
+        .astype(str)
+        .str.strip()
+        .str.upper()
+    )
+    
+    result["IsLive"] = (
+        result["MatchStatus"].str.startswith("SET ")
+        | result["MatchStatus"].eq("INTERRUPTED")
+    )
+    
+    result["IsFinished"] = (
+        result["MatchStatus"].isin(
+            [
+                "FINISHED",
+                "WALKOVER",
+            ]
+        )
+    )
 
     # Pripnutý zápas sa nezobrazuje zároveň ako NOVÝ.
     result.loc[
