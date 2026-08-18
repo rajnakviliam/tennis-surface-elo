@@ -82,8 +82,10 @@ def detect_match_status(line):
     """
     Vráti:
     - konkrétny čas napr. 21:30
-    - LIVE
+    - SET 1, SET 2, SET 3...
+    - INTERRUPTED
     - FINISHED
+    - WALKOVER
     - None, ak riadok nie je začiatok zápasu
     """
 
@@ -93,31 +95,20 @@ def detect_match_status(line):
     if is_time(line):
         return line
 
-    live_statuses = {
-        "INTERRUPTED",
-        "SET 1",
-        "SET 2",
-        "SET 3",
-        "SET 4",
-        "SET 5",
-    }
-
-    if upper in live_statuses:
-        return "LIVE"
+    if upper == "INTERRUPTED":
+        return "INTERRUPTED"
 
     if upper.startswith("SET "):
-        return "LIVE"
+        return upper
 
-    finished_statuses = {
-        "FINISHED",
-        "WALKOVER",
-    }
-
-    if upper in finished_statuses:
+    if upper == "FINISHED":
         return "FINISHED"
 
     if upper.startswith("FINISHED"):
         return "FINISHED"
+
+    if upper == "WALKOVER":
+        return "WALKOVER"
 
     return None
 
