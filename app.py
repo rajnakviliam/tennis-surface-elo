@@ -272,10 +272,34 @@ def render_matches(matches, empty_message):
 
         if bool(row["IsPinned"]):
             status = "📌 "
+
         elif bool(row["IsNew"]):
             status = "🟢 NOVÉ · "
+
         elif bool(row["IsLive"]):
-            status = "🔴 LIVE · "
+            live_status = str(
+                row["Time"]
+            ).strip().upper()
+
+            if live_status.startswith("SET "):
+                set_number = live_status.replace(
+                    "SET ",
+                    "",
+                )
+                status = f"🔴 S{set_number} · "
+
+            elif live_status == "INTERRUPTED":
+                status = "⏸️ PRERUŠENÉ · "
+
+            else:
+                status = "🔴 LIVE · "
+
+        elif bool(row.get("IsFinished", False)):
+            if str(row["Time"]).strip().upper() == "WALKOVER":
+                status = "✅ WALKOVER · "
+            else:
+                status = "✅ SKONČENÉ · "
+
         else:
             status = ""
 
