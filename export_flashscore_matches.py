@@ -385,6 +385,11 @@ def click_next_day(page):
 def main():
     all_matches = []
 
+    subprocess.run(
+        [sys.executable, "-m", "playwright", "install", "chromium"],
+        check=True,
+    )
+
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
