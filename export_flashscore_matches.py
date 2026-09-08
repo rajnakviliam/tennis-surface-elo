@@ -1,8 +1,6 @@
 import csv
 import re
 from pathlib import Path
-import sys
-import subprocess
 
 from playwright.sync_api import sync_playwright
 
@@ -385,14 +383,10 @@ def click_next_day(page):
 def main():
     all_matches = []
 
-    subprocess.run(
-        [sys.executable, "-m", "playwright", "install", "chromium"],
-        check=True,
-    )
-
     with sync_playwright() as p:
         browser = p.chromium.launch(
             headless=True,
+            executable_path="/usr/bin/chromium",
             args=[
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
@@ -581,3 +575,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
