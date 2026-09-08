@@ -1,6 +1,8 @@
 import csv
 import re
 from pathlib import Path
+import sys
+import subprocess
 
 from playwright.sync_api import sync_playwright
 
