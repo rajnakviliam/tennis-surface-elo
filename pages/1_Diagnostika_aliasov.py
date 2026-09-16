@@ -928,21 +928,7 @@ else:
                                 tour,
                             )
                         )
-
-                        if os.path.exists(
-                            "flashscore_elo_compare.py"
-                        ):
-                            run_script(
-                                "flashscore_elo_compare.py"
-                            )
-
-                        for script in [
-                            "audit_generated_flashscore_aliases.py",
-                            "propose_alias_candidates.py",
-                        ]:
-                            if os.path.exists(script):
-                                run_script(script)
-
+                        
                         if manual_added or runtime_added:
                             st.success(
                                 f"{flash_name} → "
