@@ -424,6 +424,37 @@ review = read_csv_if_exists(
 candidates = read_csv_if_exists(
     "flashscore_alias_review_candidates.csv"
 )
+# Zobraz iba kandidátov, ktorí sa naozaj nachádzajú
+# v aktuálnych Today / Day+1 zápasoch.
+if not candidates.empty and not raw.empty:
+    current_players = set()
+
+    for _, match in raw.iterrows():
+        match_tour = clean(match.get("Tour", ""))
+
+        for side in ["Player 1", "Player 2"]:
+            player = clean(match.get(side, ""))
+
+            if player:
+                current_players.add(
+                    (
+                        match_tour.casefold(),
+                        player.casefold(),
+                    )
+                )
+
+    candidates = candidates[
+        candidates.apply(
+            lambda row: (
+                clean(row.get("Tour", "")).casefold(),
+                clean(
+                    row.get("FlashscoreName", "")
+                ).casefold(),
+            )
+            in current_players,
+            axis=1,
+        )
+    ].copy()
 players_master = read_csv_if_exists(
     "players_master.csv"
 )
