@@ -1140,6 +1140,7 @@ for raw_file in [
     "data/raw_flashscore/day_plus_1.txt",
     "data/raw_flashscore/today_links.txt",
     "data/raw_flashscore/day_plus_1_links.txt",
+    "flashscore_alias_still_unresolved.csv",
 ]:
     if os.path.exists(raw_file):
         with open(raw_file, "rb") as f:
