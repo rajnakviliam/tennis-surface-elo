@@ -504,9 +504,8 @@ raw_count = count_current_rows(
 shown_count = count_current_rows(
     "flashscore_elo_matches.csv"
 )
-skipped_count = max(
-    raw_count - shown_count,
-    0,
+skipped_count = count_current_rows(
+    "skipped_matches.csv"
 )
 alias_skip_count = count_alias_skips()
 
