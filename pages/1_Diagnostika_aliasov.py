@@ -424,54 +424,6 @@ review = read_csv_if_exists(
 candidates = read_csv_if_exists(
     "flashscore_alias_review_candidates.csv"
 )
-# Každý aktuálne chýbajúci alias zo skipped_matches.csv
-# musí mať kartičku aj vtedy, keď propose_alias_candidates.py
-# nevytvoril automatický návrh.
-if not skipped.empty and "Reason" in skipped.columns:
-    missing_alias_rows = []
-
-    for _, match in skipped.iterrows():
-        reason = clean(match.get("Reason", ""))
-        tour = clean(match.get("Tour", ""))
-
-        if reason == "player_1_not_in_aliases":
-            flash_name = clean(match.get("Player 1", ""))
-        elif reason == "player_2_not_in_aliases":
-            flash_name = clean(match.get("Player 2", ""))
-        else:
-            continue
-
-        if flash_name:
-            missing_alias_rows.append(
-                {
-                    "FlashscoreName": flash_name,
-                    "Tour": tour,
-                }
-            )
-
-    if missing_alias_rows:
-        missing_alias_df = pd.DataFrame(
-            missing_alias_rows
-        ).drop_duplicates()
-
-        if candidates.empty:
-            candidates = missing_alias_df.copy()
-        else:
-            candidates = pd.concat(
-                [
-                    candidates,
-                    missing_alias_df,
-                ],
-                ignore_index=True,
-            )
-
-            candidates = candidates.drop_duplicates(
-                subset=[
-                    "FlashscoreName",
-                    "Tour",
-                ],
-                keep="first",
-            )
 # Zobraz iba kandidátov, ktorí sa naozaj nachádzajú
 # v aktuálnych Today / Day+1 zápasoch.
 if not candidates.empty and not raw.empty:
