@@ -40,7 +40,7 @@ def parse_tournament_line(line):
     line = clean(line)
 
     m = re.match(
-        r"^(.+?),\s*(hard|clay|grass|indoor)$",
+        r"^(.+?),\s*(hard|clay|grass|indoor)(?:\s*\(indoor\))?$",
         line,
         re.IGNORECASE,
     )
@@ -50,13 +50,13 @@ def parse_tournament_line(line):
 
     tournament = clean(m.group(1))
     surface_raw = m.group(2).lower()
+
     surface = SURFACE_MAP.get(
         surface_raw,
         surface_raw,
     )
 
     return tournament, surface
-
 
 def parse_tour_line(line):
     line = clean(line)
