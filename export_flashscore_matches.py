@@ -354,8 +354,65 @@ def save_raw(page, label):
         encoding="utf-8",
     )
 
-    return text
+    # DIAGNOSTIKA:
+    # uloží odkazy z tenisových eventov,
+    # aby sme vedeli nájsť Flashscore match ID.
+    try:
+        links = page.locator("a").evaluate_all(
+            """
+            elements => elements
+                .map(el => ({
+                    text: (el.innerText || "").trim(),
+                    href: el.href || ""
+                }))
+                .filter(x =>
+                    x.href.includes("/match/") ||
+                    x.href.includes("mid=")
+                )
+            """
+        )
 
+        diagnostic_file = (
+            RAW_DIR
+            / f"{safe_name}_links.txt"
+        )
+
+        with diagnostic_file.open(
+            "w",
+            encoding="utf-8",
+        ) as f:
+            for item in links:
+                f.write(
+                    f'TEXT: {item["text"]}\\n'
+                )
+                f.write(
+                    f'HREF: {item["href"]}\\n'
+                )
+                f.write(
+                    "--------------------\\n"
+                )
+
+        print(
+            f"  Diagnostika odkazov: "
+            f"{len(links)}"
+        )
+
+        # Zobraz prvých 20 aj priamo v logu.
+        for item in links[:20]:
+            print(
+                "  LINK:",
+                item["text"],
+                "->",
+                item["href"],
+            )
+
+    except Exception as error:
+        print(
+            "  Chyba diagnostiky odkazov:",
+            error,
+        )
+
+    return text
 
 def click_next_day(page):
     try:
