@@ -58,7 +58,15 @@ def run_script(script):
             or line.startswith("Načítaných zápasov:")
             or line.startswith("Výsledných zápasov:")
             or line.startswith("Vyradených zápasov:")
+            or line.startswith("player_1_not_in_aliases:")
+            or line.startswith("player_2_not_in_aliases:")
+            or line.startswith("tour_mismatch:")
+            or line.startswith("player_1_not_in_rankings:")
+            or line.startswith("player_2_not_in_rankings:")
+            or line.startswith("missing_or_invalid_rank:")
+            or line.startswith("unknown_surface:")
         ):
+    lines.append(line)
             lines.append(line)
 
     if lines:
