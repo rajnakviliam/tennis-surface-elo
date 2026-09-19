@@ -66,7 +66,7 @@ def run_script(script):
             or line.startswith("missing_or_invalid_rank:")
             or line.startswith("unknown_surface:")
         ):
-    lines.append(line)
+            lines.append(line)
             lines.append(line)
 
     if lines:
