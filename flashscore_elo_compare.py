@@ -190,6 +190,8 @@ def main():
 
             p1_alias = (row.get("Player 1") or "").strip()
             p2_alias = (row.get("Player 2") or "").strip()
+            p1_key = p1_alias.casefold()
+            p2_key = p2_alias.casefold()
 
             if not p1_alias:
                 add_skipped(
@@ -209,7 +211,7 @@ def main():
                 )
                 continue
 
-            if p1_alias not in aliases:
+            if p1_key not in aliases:
                 add_skipped(
                     skipped,
                     stats,
