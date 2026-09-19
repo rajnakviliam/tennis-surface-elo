@@ -135,7 +135,27 @@ def is_valid_player_name(text):
         "SET 4",
         "SET 5",
     }
+
     if upper in blocked:
+        return False
+
+    # Flashscore cookie / privacy banner
+    privacy_phrases = [
+        "WE CARE ABOUT YOUR PRIVACY",
+        "WE AND OUR",
+        "PRIVACY POLICY",
+        "LIST OF PARTNERS",
+        "I ACCEPT",
+        "REJECT ALL",
+        "MANAGE PREFERENCES",
+        "PERSONALISED ADVERTISING",
+        "USE PRECISE GEOLOCATION",
+    ]
+
+    if any(
+        phrase in upper
+        for phrase in privacy_phrases
+    ):
         return False
 
     if is_time(text):
@@ -162,7 +182,6 @@ def is_valid_player_name(text):
         return False
 
     return True
-
 
 def find_players_after_status(
     lines,
