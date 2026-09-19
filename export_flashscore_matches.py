@@ -128,13 +128,13 @@ def is_valid_player_name(text):
         "CANCELLED",
         "POSTPONED",
         "WALKOVER",
+        "FRO",
         "SET 1",
         "SET 2",
         "SET 3",
         "SET 4",
         "SET 5",
     }
-
     if upper in blocked:
         return False
 
