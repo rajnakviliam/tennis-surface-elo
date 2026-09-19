@@ -250,25 +250,25 @@ def parse_body_text(text, date_label):
             i += 1
             continue
 
-            upper = line.upper()
+        upper = line.upper()
 
-            # Pri sekciách, ktoré nechceme spracúvať,
-            # vždy zruš predchádzajúci Tour.
-            if (
-                "DOUBLES" in upper
-                or "TEAMS" in upper
-                or "MIXED" in upper
-            ):
-                current_tour = ""
-                i += 1
-                continue
+        # Pri sekciách, ktoré nechceme spracúvať,
+        # vždy zruš predchádzajúci Tour.
+        if (
+            "DOUBLES" in upper
+            or "TEAMS" in upper
+            or "MIXED" in upper
+        ):
+            current_tour = ""
+            i += 1
+            continue
 
-tour = parse_tour_line(line)
+        tour = parse_tour_line(line)
 
-if tour:
-    current_tour = tour
-    i += 1
-    continue
+        if tour:
+            current_tour = tour
+            i += 1
+            continue
 
         if not (
             current_tournament
