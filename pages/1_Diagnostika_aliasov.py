@@ -1143,6 +1143,7 @@ for raw_file in [
     "flashscore_alias_still_unresolved.csv",
     "flashscore_generated_aliases.csv",
     "flashscore_matches.csv",
+    "skipped_matches.csv",
 ]:
     if os.path.exists(raw_file):
         with open(raw_file, "rb") as f:
