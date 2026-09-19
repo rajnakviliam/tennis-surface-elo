@@ -1138,6 +1138,8 @@ st.subheader("🧪 Raw Flashscore diagnostika")
 for raw_file in [
     "data/raw_flashscore/today.txt",
     "data/raw_flashscore/day_plus_1.txt",
+    "data/raw_flashscore/today_links.txt",
+    "data/raw_flashscore/day_plus_1_links.txt",
 ]:
     if os.path.exists(raw_file):
         with open(raw_file, "rb") as f:
