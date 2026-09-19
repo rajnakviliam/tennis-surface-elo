@@ -63,13 +63,12 @@ def load_aliases(path: Path) -> dict:
             tour = (row.get("Tour") or "").strip().upper()
 
             if alias and canonical and tour in {"ATP", "WTA"}:
-                aliases[alias] = {
+                aliases[alias.casefold()] = {
                     "TA_Name": canonical,
                     "Tour": tour,
                 }
 
     return aliases
-
 
 def optional_int(value):
     value = (value or "").strip()
