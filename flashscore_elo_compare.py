@@ -221,7 +221,7 @@ def main():
                 )
                 continue
 
-            if p2_alias not in aliases:
+            if p2_key not in aliases:
                 add_skipped(
                     skipped,
                     stats,
@@ -231,11 +231,11 @@ def main():
                 )
                 continue
 
-            p1 = aliases[p1_alias]["TA_Name"]
-            p2 = aliases[p2_alias]["TA_Name"]
-
-            tour1 = aliases[p1_alias]["Tour"]
-            tour2 = aliases[p2_alias]["Tour"]
+            p1 = aliases[p1_key]["TA_Name"]
+            p2 = aliases[p2_key]["TA_Name"]
+            
+            tour1 = aliases[p1_key]["Tour"]
+            tour2 = aliases[p2_key]["Tour"]
 
             if tour1 != tour2:
                 add_skipped(
