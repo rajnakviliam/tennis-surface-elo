@@ -55,6 +55,9 @@ def run_script(script):
             or line.startswith("Výstup:")
             or line.startswith("Súbor:")
             or line.startswith("Počet")
+            or line.startswith("Načítaných zápasov:")
+            or line.startswith("Výsledných zápasov:")
+            or line.startswith("Vyradených zápasov:")
         ):
             lines.append(line)
 
