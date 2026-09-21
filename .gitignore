@@ -16,4 +16,6 @@ name_map_suggestions.csv
 
 matches.html
 Tennis Explorer_*.html
-Tennis Explorer_*_files/
+Tennis Explorer_*_files/.venv/
+
+.venv/
