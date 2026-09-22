@@ -915,7 +915,7 @@ else:
                         f"pre {tour}."
                     )
 
-                        if selected_player:
+            if selected_player:
                 if st.button(
                     (
                         "✅ Potvrdiť: "
@@ -1029,8 +1029,8 @@ else:
                         st.error(
                             "Alias sa nepodarilo uložiť: "
                             f"{error}"
-                        )
-
+                        )            
+                        
             if st.button(
                 "🚫 Hráč nie je v Tennis Abstract",
                 key=(
