@@ -916,120 +916,120 @@ else:
                     )
 
                         if selected_player:
-                            if st.button(
-                                (
-                                    "✅ Potvrdiť: "
-                                    f"{selected_player}"
-                                ),
-                                key=(
-                                    f"approve_"
-                                    f"{tour}_{flash_name}"
-                                ),
-                                use_container_width=True,
-                            ):
-                                try:
-                                    # 1. Uložiť ručne potvrdený alias
-                                    manual_added, manual_msg = (
-                                        append_alias_to_file(
-                                            "manual_aliases.csv",
-                                            flash_name,
-                                            selected_player,
-                                            tour,
-                                        )
-                                    )
-            
-                                    # 2. Persistovať manual_aliases.csv na GitHub
-                                    if manual_added:
-                                        github_ok, github_msg = (
-                                            persist_file_to_github(
-                                                "manual_aliases.csv",
-                                                repo_path="manual_aliases.csv",
-                                                commit_message=(
-                                                    f"Add alias: "
-                                                    f"{flash_name} -> "
-                                                    f"{selected_player}"
-                                                ),
-                                            )
-                                        )
-            
-                                        if github_ok:
-                                            st.success(github_msg)
-                                        else:
-                                            st.warning(github_msg)
-            
-                                    # 3. Alias okamžite pridať aj do runtime aliases.csv
-                                    runtime_added, runtime_msg = (
-                                        append_alias_to_file(
-                                            "aliases.csv",
-                                            flash_name,
-                                            selected_player,
-                                            tour,
-                                        )
-                                    )
-            
-                                    if manual_added or runtime_added:
-                                        st.success(
-                                            f"{flash_name} → "
-                                            f"{selected_player}"
-                                        )
-                                    else:
-                                        st.info(
-                                            manual_msg
-                                            + " "
-                                            + runtime_msg
-                                        )
-            
-                                    # 4. Znovu prepočítať zápasy s novým aliasom
-                                    if os.path.exists(
-                                        "flashscore_elo_compare.py"
-                                    ):
-                                        run_script(
-                                            "flashscore_elo_compare.py"
-                                        )
-            
-                                    # 5. Znovu vytvoriť diagnostické súbory,
-                                    # aby potvrdený hráč zmizol zo zoznamu.
-                                    for script in [
-                                        "audit_generated_flashscore_aliases.py",
-                                        "propose_alias_candidates.py",
-                                    ]:
-                                        if os.path.exists(script):
-                                            run_script(script)
-            
-                                    # 6. Vyčistiť session state iba pre
-                                    # práve potvrdeného hráča.
-                                    state_prefixes = [
-                                        "candidate_",
-                                        "manual_picker_",
-                                        "manual_search_",
-                                        "manual_select_",
-                                        "open_manual_",
-                                        "approve_",
-                                    ]
-            
-                                    player_suffix = (
-                                        f"{tour}_{flash_name}"
-                                    )
-            
-                                    for prefix in state_prefixes:
-                                        state_key = (
-                                            f"{prefix}"
-                                            f"{player_suffix}"
-                                        )
-            
-                                        if state_key in st.session_state:
-                                            del st.session_state[
-                                                state_key
-                                            ]
-            
-                                    # 7. Až teraz prekresliť stránku.
-                                    st.rerun()
-            
-                                except Exception as error:
-                                    st.error(
-                                        "Alias sa nepodarilo uložiť: "
-                                        f"{error}"
-                                    )
+                if st.button(
+                    (
+                        "✅ Potvrdiť: "
+                        f"{selected_player}"
+                    ),
+                    key=(
+                        f"approve_"
+                        f"{tour}_{flash_name}"
+                    ),
+                    use_container_width=True,
+                ):
+                    try:
+                        # 1. Uložiť ručne potvrdený alias
+                        manual_added, manual_msg = (
+                            append_alias_to_file(
+                                "manual_aliases.csv",
+                                flash_name,
+                                selected_player,
+                                tour,
+                            )
+                        )
+
+                        # 2. Persistovať manual_aliases.csv na GitHub
+                        if manual_added:
+                            github_ok, github_msg = (
+                                persist_file_to_github(
+                                    "manual_aliases.csv",
+                                    repo_path="manual_aliases.csv",
+                                    commit_message=(
+                                        f"Add alias: "
+                                        f"{flash_name} -> "
+                                        f"{selected_player}"
+                                    ),
+                                )
+                            )
+
+                            if github_ok:
+                                st.success(github_msg)
+                            else:
+                                st.warning(github_msg)
+
+                        # 3. Alias okamžite pridať aj do runtime aliases.csv
+                        runtime_added, runtime_msg = (
+                            append_alias_to_file(
+                                "aliases.csv",
+                                flash_name,
+                                selected_player,
+                                tour,
+                            )
+                        )
+
+                        if manual_added or runtime_added:
+                            st.success(
+                                f"{flash_name} → "
+                                f"{selected_player}"
+                            )
+                        else:
+                            st.info(
+                                manual_msg
+                                + " "
+                                + runtime_msg
+                            )
+
+                        # 4. Znovu prepočítať zápasy s novým aliasom
+                        if os.path.exists(
+                            "flashscore_elo_compare.py"
+                        ):
+                            run_script(
+                                "flashscore_elo_compare.py"
+                            )
+
+                        # 5. Znovu vytvoriť diagnostické súbory,
+                        # aby potvrdený hráč zmizol zo zoznamu.
+                        for script in [
+                            "audit_generated_flashscore_aliases.py",
+                            "propose_alias_candidates.py",
+                        ]:
+                            if os.path.exists(script):
+                                run_script(script)
+
+                        # 6. Vyčistiť session state iba pre
+                        # práve potvrdeného hráča.
+                        state_prefixes = [
+                            "candidate_",
+                            "manual_picker_",
+                            "manual_search_",
+                            "manual_select_",
+                            "open_manual_",
+                            "approve_",
+                        ]
+
+                        player_suffix = (
+                            f"{tour}_{flash_name}"
+                        )
+
+                        for prefix in state_prefixes:
+                            state_key = (
+                                f"{prefix}"
+                                f"{player_suffix}"
+                            )
+
+                            if state_key in st.session_state:
+                                del st.session_state[
+                                    state_key
+                                ]
+
+                        # 7. Až teraz prekresliť stránku.
+                        st.rerun()
+
+                    except Exception as error:
+                        st.error(
+                            "Alias sa nepodarilo uložiť: "
+                            f"{error}"
+                        )
 
             if st.button(
                 "🚫 Hráč nie je v Tennis Abstract",
