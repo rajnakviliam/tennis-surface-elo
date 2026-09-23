@@ -58,6 +58,19 @@ def parse_tournament_line(line):
 
     return tournament, surface
 
+def is_excluded_low_level_tournament(tournament):
+    tournament = clean(tournament).upper()
+
+    excluded_prefixes = (
+        "M15 ",
+        "M25 ",
+        "W15 ",
+    )
+
+    return tournament.startswith(
+        excluded_prefixes
+    )
+
 def parse_tour_line(line):
     line = clean(line)
     upper = line.upper()
@@ -293,6 +306,14 @@ def parse_body_text(text, date_label):
             current_tournament
             and current_surface
             and current_tour
+        ):
+            i += 1
+            continue
+
+        # Najnižšie ITF turnaje nechceme
+        # posielať ďalej do Elo/alias pipeline.
+        if is_excluded_low_level_tournament(
+            current_tournament
         ):
             i += 1
             continue
