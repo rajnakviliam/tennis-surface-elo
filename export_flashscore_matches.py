@@ -142,6 +142,7 @@ def is_valid_player_name(text):
         "POSTPONED",
         "WALKOVER",
         "FRO",
+        "TIEBREAK",
         "SET 1",
         "SET 2",
         "SET 3",
