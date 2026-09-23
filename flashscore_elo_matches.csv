@@ -1,7 +1,7 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Rank 1;Rank 2;Rank Diff;Overall Elo Rank 1;Overall Elo Rank 2;Surface Elo Rank 1;Surface Elo Rank 2;Overall Elo 1;Overall Elo 2;Surface Elo 1;Surface Elo 2;Overall Elo Diff;Surface Elo Diff;Ranking Favorite;ELO Favorite;Has Elo 1;Has Elo 2;Both Have Elo
 Day+1;WTA;W50 Yecla (Spain);hard;00:00;Diletta Cherubini;Georgina Garcia Perez;386;721;335;444;459;476;452;1308.9;1291.7;1239.5;1259.5;17.2;20.0;Diletta Cherubini;Georgina Garcia Perez;True;True;True
 Day+1;WTA;W50 Yecla (Spain);hard;00:00;Miriana Tona;Nahia Berecoechea;374;505;131;383;;370;;1366.5;;1334.2;;;;Miriana Tona;;True;False;False
-Day+1;WTA;W50 Nanao (Japan);grass;04:30;Natsumi Kawaguchi;Sayaka Ishii;411;739;328;391;;429;;1359.8;;1324.4;;;;Natsumi Kawaguchi;;True;False;False
+Day+1;WTA;W50 Nanao (Japan);grass;04:00;Natsumi Kawaguchi;Sayaka Ishii;411;739;328;391;;429;;1359.8;;1324.4;;;;Natsumi Kawaguchi;;True;False;False
 Day+1;WTA;Seoul (South Korea);hard;05:00;Anna Bondar;Alina Charaeva;69;121;52;86;112;100;137;1738.0;1695.3;1664.7;1612.8;42.7;51.9;Anna Bondar;Anna Bondar;True;True;True
 Day+1;WTA;Seoul (South Korea);hard;05:00;Ye Xin Ma;Kimberly Birrell;175;60;115;289;103;260;84;1460.7;1707.0;1452.2;1691.7;246.3;239.5;Kimberly Birrell;Kimberly Birrell;True;True;True
 Day+1;ATP;Chengdu (China);hard;07:00;Nuno Borges;Camilo Ugo Carabelli;48;75;27;39;110;42;155;1817.1;1698.5;1773.3;1582.3;118.6;191.0;Nuno Borges;Nuno Borges;True;True;True
@@ -54,7 +54,6 @@ Day+1;ATP;Plovdiv 4 (Bulgaria);clay;16:00;Felix Gill;Iliyan Radulov;211;599;388;
 Day+1;ATP;St. Tropez (France);hard;17:30;Andrea Guerrieri;Jesper De Jong;169;95;74;153;123;151;138;1636.9;1680.0;1585.5;1599.5;43.1;14.0;Jesper De Jong;Jesper De Jong;True;True;True
 Day+1;ATP;San Diego 2 (USA);hard;19:00;Tristan Boyer;Sebastian Gorzny;208;444;236;195;284;202;265;1580.6;1488.7;1525.1;1459.6;91.9;65.5;Tristan Boyer;Tristan Boyer;True;True;True
 Day+1;WTA;W50 Berkeley, CA (USA);hard;19:00;Madison Brengle;Ekaterina Maklakova;207;467;260;221;409;208;394;1548.3;1343.3;1512.5;1318.3;205.0;194.2;Madison Brengle;Madison Brengle;True;True;True
-Today;WTA;W50 Yecla (Spain);hard;18:00;Kira Pavlova;Lucia Cortez Llorca;347;389;42;402;469;376;519;1349.6;1278.2;1329.3;1164.2;71.4;165.1;Kira Pavlova;Kira Pavlova;True;True;True
 Today;ATP;Buenos Aires 3 (Argentina);clay;18:30;Facundo Mena;Guido Ivan Justo;220;233;13;307;333;254;283;1469.5;1451.7;1463.5;1438.5;17.8;25.0;Facundo Mena;Facundo Mena;True;True;True
 Today;ATP;Buenos Aires 3 (Argentina);clay;20:00;Nicolas Kicker;Hugo Dellien;333;129;204;360;165;305;128;1432.9;1614.5;1419.1;1611.6;181.6;192.5;Hugo Dellien;Hugo Dellien;True;True;True
 Today;ATP;San Diego 2 (USA);hard;20:00;Patrick Maloney;Igor Ribeiro Marcondes;999;324;675;;312;;355;;1467.4;;1380.9;;;Igor Ribeiro Marcondes;;False;True;False
@@ -107,7 +106,8 @@ Today;WTA;W50 Plovdiv (Bulgaria);clay;FINISHED;Alessandra Mazzola;Rositsa Denche
 Today;WTA;W50 Plovdiv (Bulgaria);clay;FINISHED;Anja Stankovic;Alice Rame;494;280;214;;377;;312;;1370.3;;1376.3;;;Alice Rame;;False;True;False
 Today;WTA;W50 Yecla (Spain);hard;FINISHED;Margaux Rouvroy;Amandine Hesse;358;397;39;359;309;359;285;1387.5;1437.4;1343.3;1415.8;49.9;72.5;Margaux Rouvroy;Amandine Hesse;True;True;True
 Today;WTA;W50 Yecla (Spain);hard;FINISHED;Laura Hietaranta;Elza Tomase;503;751;248;495;;494;;1240.3;;1223.1;;;;Laura Hietaranta;;True;False;False
-Today;ATP;St. Tropez (France);hard;SET 1;Titouan Droguet;Borna Gojo;84;150;66;65;156;69;136;1777.6;1631.7;1724.9;1610.0;145.9;114.9;Titouan Droguet;Titouan Droguet;True;True;True
-Today;WTA;Ankara (Turkey);hard;SET 2;Han Shi;Ayla Aksu;242;216;26;284;268;245;235;1465.7;1485.3;1467.7;1475.5;19.6;7.8;Ayla Aksu;Ayla Aksu;True;True;True
+Today;WTA;W50 Yecla (Spain);hard;SET 1;Kira Pavlova;Lucia Cortez Llorca;347;389;42;402;469;376;519;1349.6;1278.2;1329.3;1164.2;71.4;165.1;Kira Pavlova;Kira Pavlova;True;True;True
+Today;ATP;St. Tropez (France);hard;SET 2;Titouan Droguet;Borna Gojo;84;150;66;65;156;69;136;1777.6;1631.7;1724.9;1610.0;145.9;114.9;Titouan Droguet;Titouan Droguet;True;True;True
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;SET 2;Victoria Milovanova;Dune Vaissaud;440;562;122;;;;;;;;;;;Victoria Milovanova;;False;False;False
+Today;WTA;Ankara (Turkey);hard;SET 3;Han Shi;Ayla Aksu;242;216;26;284;268;245;235;1465.7;1485.3;1467.7;1475.5;19.6;7.8;Ayla Aksu;Ayla Aksu;True;True;True
 Today;WTA;Singapore (Singapore);hard;WALKOVER;Elise Mertens;Barbora Krejcikova;19;44;25;20;27;22;26;1912.3;1874.2;1848.5;1819.9;38.1;28.6;Elise Mertens;Elise Mertens;True;True;True
