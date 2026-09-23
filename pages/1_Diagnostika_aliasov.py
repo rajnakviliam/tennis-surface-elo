@@ -978,24 +978,7 @@ else:
                                 + " "
                                 + runtime_msg
                             )
-
-                        # 4. Znovu prepočítať zápasy s novým aliasom
-                        if os.path.exists(
-                            "flashscore_elo_compare.py"
-                        ):
-                            run_script(
-                                "flashscore_elo_compare.py"
-                            )
-
-                        # 5. Znovu vytvoriť diagnostické súbory,
-                        # aby potvrdený hráč zmizol zo zoznamu.
-                        for script in [
-                            "audit_generated_flashscore_aliases.py",
-                            "propose_alias_candidates.py",
-                        ]:
-                            if os.path.exists(script):
-                                run_script(script)
-
+                        
                         # 6. Vyčistiť session state iba pre
                         # práve potvrdeného hráča.
                         state_prefixes = [
