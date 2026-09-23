@@ -14,6 +14,7 @@ from google_seen_matches import (
     update_after_refresh,
 )
 
+from github_persistence import persist_file_to_github
 
 PYTHON = sys.executable
 
@@ -447,6 +448,29 @@ with col1:
                 index / len(scripts)
             )
 
+        # Uložiť posledný úspešný stav zápasov na GitHub,
+        # aby ho aplikácia mala aj po reštarte Streamlit Cloud.
+        files_to_persist = [
+            "flashscore_matches.csv",
+            "flashscore_elo_matches.csv",
+            "skipped_matches.csv",
+        ]
+
+        for filename in files_to_persist:
+            if os.path.exists(filename):
+                github_ok, github_msg = persist_file_to_github(
+                    filename,
+                    repo_path=filename,
+                    commit_message=(
+                        f"Update Flashscore data: {filename}"
+                    ),
+                )
+
+                if not github_ok:
+                    st.warning(
+                        f"{filename}: {github_msg}"
+                    )
+        
         try:
             updated_df = update_after_refresh(
                 load_current_matches()
