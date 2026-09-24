@@ -34,24 +34,24 @@ Today;WTA;Singapore (Singapore);hard;FINISHED;Sakkari M.;Hibino N.
 Today;ATP;Buenos Aires 3 (Argentina);clay;FINISHED;Comesana F.;Aguilar Cardozo J.
 Today;ATP;Buenos Aires 3 (Argentina);clay;FINISHED;Roncadelli F.;Boscardin Dias P.
 Today;ATP;Buenos Aires 3 (Argentina);clay;SET 2;Coria F.;Ribeiro E.
-Today;ATP;Buenos Aires 3 (Argentina);clay;21:15;Ficovich J. P.;Barrena A.
-Today;ATP;Buenos Aires 3 (Argentina);clay;23:15;Prado Angelo J. C.;Aboian V.
+Today;ATP;Buenos Aires 3 (Argentina);clay;21:25;Ficovich J. P.;Barrena A.
+Today;ATP;Buenos Aires 3 (Argentina);clay;23:00;Prado Angelo J. C.;Aboian V.
 Today;ATP;Genova 2 (Italy);clay;FINISHED;Brancaccio R.;Petkovic M.
 Today;ATP;Genova 2 (Italy);clay;FINISHED;Forti F.;Juan Mano A.
 Today;ATP;Genova 2 (Italy);clay;FINISHED;Clarke J.;La Vela G.
-Today;ATP;Genova 2 (Italy);clay;SET 1;Caniato C. A.;Gentzsch T.
+Today;ATP;Genova 2 (Italy);clay;SET 2;Caniato C. A.;Gentzsch T.
 Today;ATP;Plovdiv 4 (Bulgaria);clay;FINISHED;Almazan Valiente I.;Mrva M.
 Today;ATP;Plovdiv 4 (Bulgaria);clay;FINISHED;Ivanov I.;Andreev A.
 Today;ATP;Plovdiv 4 (Bulgaria);clay;FINISHED;Forejtek J.;Chazal M.
 Today;ATP;Plovdiv 4 (Bulgaria);clay;FINISHED;Gill F.;Radulov I.
 Today;ATP;San Diego 2 (USA);hard;FINISHED;Smith K.;Dietrich D.
-Today;ATP;San Diego 2 (USA);hard;21:00;Boyer T.;Gorzny S.
-Today;ATP;San Diego 2 (USA);hard;21:00;Legout T.;Smith C.
+Today;ATP;San Diego 2 (USA);hard;21:05;Boyer T.;Gorzny S.
+Today;ATP;San Diego 2 (USA);hard;21:05;Legout T.;Smith C.
 Today;ATP;San Diego 2 (USA);hard;22:30;Blanch Dar.;Andrade A.
 Today;ATP;St. Tropez (France);hard;FINISHED;Harris B.;Cassone M.
 Today;ATP;St. Tropez (France);hard;FINISHED;Martineau M.;Masur D.
 Today;ATP;St. Tropez (France);hard;FINISHED;Butvilas E.;Mayot H.
-Today;ATP;St. Tropez (France);hard;SET 3;Guerrieri A.;De Jong J.
+Today;ATP;St. Tropez (France);hard;FINISHED;Guerrieri A.;De Jong J.
 Today;WTA;Ankara (Turkey);hard;FINISHED;Kostovic T.;Bertea E. R.
 Today;WTA;Ankara (Turkey);hard;FINISHED;Monnet C.;Gasanova A.
 Today;WTA;Ankara (Turkey);hard;FINISHED;Tian F.;Micic E.
@@ -80,14 +80,14 @@ Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;FINISHED;Lizunova A.;Samir S.
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;FINISHED;Abouelsaad H.;Golovina M.
 Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Branstine C.;Osuigwe W.
 Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Shcherbinina A.;Strakhova V.
-Today;WTA;W50 Berkeley, CA (USA);hard;SET 2;Preston J.;Ma C.
-Today;WTA;W50 Berkeley, CA (USA);hard;SET 2;Brengle M.;Maklakova E.
-Today;WTA;W50 Berkeley, CA (USA);hard;SET 1;Perez Alarcon L.;Goto R.
-Today;WTA;W50 Berkeley, CA (USA);hard;20:40;Chang H.;Shcherbinina A.
-Today;WTA;W50 Berkeley, CA (USA);hard;20:45;McDonald E.;Broadus S.
+Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Preston J.;Ma C.
+Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Brengle M.;Maklakova E.
+Today;WTA;W50 Berkeley, CA (USA);hard;SET 2;Perez Alarcon L.;Goto R.
 Today;WTA;W50 Berkeley, CA (USA);hard;21:10;Malmkjaer E. K.;Branstine C.
-Today;WTA;W50 Berkeley, CA (USA);hard;21:35;Bartashevich Y.;Rogers A. S.
-Today;WTA;W50 Berkeley, CA (USA);hard;21:40;Day K.;Laskevich E.
+Today;WTA;W50 Berkeley, CA (USA);hard;21:15;Chang H.;Shcherbinina A.
+Today;WTA;W50 Berkeley, CA (USA);hard;21:15;McDonald E.;Broadus S.
+Today;WTA;W50 Berkeley, CA (USA);hard;22:05;Bartashevich Y.;Rogers A. S.
+Today;WTA;W50 Berkeley, CA (USA);hard;22:05;Day K.;Laskevich E.
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Itaya R.;Hayasaka K.
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Lu J.;Deng T. T.
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Sawashiro K.;Abe H.
@@ -144,6 +144,7 @@ Day+1;ATP;San Diego 2 (USA);hard;01:30;Basavareddy N.;Hance K.
 Day+1;ATP;San Diego 2 (USA);hard;19:00;Dietrich D.;Searle H.
 Day+1;ATP;San Diego 2 (USA);hard;19:00;Marcondes I.;Gomez F. A.
 Day+1;ATP;St. Tropez (France);hard;11:00;Cassone M.;Masur D.
+Day+1;ATP;St. Tropez (France);hard;12:30;Mayot H.;De Jong J.
 Day+1;ATP;St. Tropez (France);hard;13:00;Prizmic D.;Glinka D.
 Day+1;ATP;St. Tropez (France);hard;17:30;Droguet T.;Lajal M.
 Day+1;WTA;Ankara (Turkey);hard;11:00;Kostovic T.;Tian F.
