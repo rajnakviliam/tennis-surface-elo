@@ -32,6 +32,7 @@ Day+1;WTA;W50 Plovdiv (Bulgaria);clay;11:30;Ane Mintegi Del Olmo;Ilinca Dalina A
 Day+1;ATP;Plovdiv 4 (Bulgaria);clay;12:30;Max Alcala Gurri;Pol Martin Tiffon;163;215;52;250;271;212;267;1526.8;1502.6;1513.0;1453.3;24.2;59.7;Max Alcala Gurri;Max Alcala Gurri;True;True;True
 Day+1;ATP;Plovdiv 4 (Bulgaria);clay;12:30;Calvin Hemery;Carlos Taberner;321;425;104;358;205;298;167;1434.9;1567.6;1427.1;1560.4;132.7;133.3;Calvin Hemery;Carlos Taberner;True;True;True
 Day+1;WTA;Singapore (Singapore);hard;12:30;Mirra Andreeva;Leylah Fernandez;5;31;26;9;47;7;35;2047.9;1818.7;1981.4;1798.1;229.2;183.3;Mirra Andreeva;Mirra Andreeva;True;True;True
+Day+1;ATP;St. Tropez (France);hard;12:30;Harold Mayot;Jesper De Jong;237;95;142;184;123;160;138;1591.0;1680.0;1577.7;1599.5;89.0;21.8;Jesper De Jong;Jesper De Jong;True;True;True
 Day+1;WTA;Tolentino (Italy);clay;12:30;Guiomar Maristany Zuleta De Reales;Rebeka Masarova;170;173;3;167;136;133;105;1609.5;1661.3;1588.1;1635.3;51.8;47.2;Guiomar Maristany Zuleta De Reales;Rebeka Masarova;True;True;True
 Day+1;WTA;W50 Yecla (Spain);hard;12:30;Carmen Gallardo Guevara;Georgina Garcia Perez;532;721;189;;459;;452;;1291.7;;1259.5;;;Carmen Gallardo Guevara;;False;True;False
 Day+1;WTA;W50 Yecla (Spain);hard;12:30;Kateryna Lazarenko;Nahia Berecoechea;745;505;240;;;;;;;;;;;Nahia Berecoechea;;False;False;False
@@ -59,16 +60,16 @@ Day+1;WTA;W50 Yecla (Spain);hard;17:30;Kira Pavlova;Angela Fita Boluda;347;228;1
 Day+1;ATP;San Diego 2 (USA);hard;19:00;Dylan Dietrich;Henry Searle;409;230;179;219;265;282;376;1552.4;1507.1;1445.1;1366.3;45.3;78.8;Henry Searle;Dylan Dietrich;True;True;True
 Day+1;ATP;San Diego 2 (USA);hard;19:00;Igor Ribeiro Marcondes;Federico Agustin Gomez;324;200;124;312;286;355;311;1467.4;1488.2;1380.9;1415.6;20.8;34.7;Federico Agustin Gomez;Federico Agustin Gomez;True;True;True
 Day+1;ATP;Laver Cup (World);hard;20:00;Rafael Jodar;Alexander Bublik;14;21;7;7;23;12;22;1987.4;1893.0;1904.1;1838.9;94.4;65.2;Rafael Jodar;Rafael Jodar;True;True;True
-Today;WTA;W50 Berkeley, CA (USA);hard;20:40;Hanna Chang;Alina Shcherbinina;297;555;258;397;;385;;1355.0;;1322.6;;;;Hanna Chang;;True;False;False
-Today;WTA;W50 Berkeley, CA (USA);hard;20:45;Ella Mcdonald;Savannah Broadus;454;299;155;380;235;464;226;1368.6;1521.1;1249.9;1489.8;152.5;239.9;Savannah Broadus;Savannah Broadus;True;True;True
-Today;ATP;San Diego 2 (USA);hard;21:00;Tristan Boyer;Sebastian Gorzny;208;444;236;195;284;202;265;1580.6;1488.7;1525.1;1459.6;91.9;65.5;Tristan Boyer;Tristan Boyer;True;True;True
-Today;ATP;San Diego 2 (USA);hard;21:00;Timo Legout;Colton Smith;410;205;205;302;222;269;211;1471.1;1551.3;1454.7;1514.5;80.2;59.8;Colton Smith;Colton Smith;True;True;True
+Today;ATP;San Diego 2 (USA);hard;21:05;Tristan Boyer;Sebastian Gorzny;208;444;236;195;284;202;265;1580.6;1488.7;1525.1;1459.6;91.9;65.5;Tristan Boyer;Tristan Boyer;True;True;True
+Today;ATP;San Diego 2 (USA);hard;21:05;Timo Legout;Colton Smith;410;205;205;302;222;269;211;1471.1;1551.3;1454.7;1514.5;80.2;59.8;Colton Smith;Colton Smith;True;True;True
 Today;WTA;W50 Berkeley, CA (USA);hard;21:10;Emma Kamper;Carson Branstine;952;630;322;;164;;183;;1612.9;;1541.2;;;Carson Branstine;;False;True;False
-Today;ATP;Buenos Aires 3 (Argentina);clay;21:15;Juan Pablo Ficovich;Alex Barrena;370;240;130;468;325;409;286;1327.4;1458.5;1334.2;1436.3;131.1;102.1;Alex Barrena;Alex Barrena;True;True;True
-Today;WTA;W50 Berkeley, CA (USA);hard;21:35;Yaroslava Bartashevich;Anna Sinclair Rogers;575;319;256;517;478;523;484;1181.5;1265.3;1132.5;1235.0;83.8;102.5;Anna Sinclair Rogers;Anna Sinclair Rogers;True;True;True
-Today;WTA;W50 Berkeley, CA (USA);hard;21:40;Kayla Day;Evialina Laskevich;118;547;429;153;;149;;1630.3;;1595.5;;;;Kayla Day;;True;False;False
+Today;WTA;W50 Berkeley, CA (USA);hard;21:15;Hanna Chang;Alina Shcherbinina;297;555;258;397;;385;;1355.0;;1322.6;;;;Hanna Chang;;True;False;False
+Today;WTA;W50 Berkeley, CA (USA);hard;21:15;Ella Mcdonald;Savannah Broadus;454;299;155;380;235;464;226;1368.6;1521.1;1249.9;1489.8;152.5;239.9;Savannah Broadus;Savannah Broadus;True;True;True
+Today;ATP;Buenos Aires 3 (Argentina);clay;21:25;Juan Pablo Ficovich;Alex Barrena;370;240;130;468;325;409;286;1327.4;1458.5;1334.2;1436.3;131.1;102.1;Alex Barrena;Alex Barrena;True;True;True
+Today;WTA;W50 Berkeley, CA (USA);hard;22:05;Yaroslava Bartashevich;Anna Sinclair Rogers;575;319;256;517;478;523;484;1181.5;1265.3;1132.5;1235.0;83.8;102.5;Anna Sinclair Rogers;Anna Sinclair Rogers;True;True;True
+Today;WTA;W50 Berkeley, CA (USA);hard;22:05;Kayla Day;Evialina Laskevich;118;547;429;153;;149;;1630.3;;1595.5;;;;Kayla Day;;True;False;False
 Today;ATP;San Diego 2 (USA);hard;22:30;Darwin Blanch;Andres Andrade;166;206;40;202;233;199;219;1571.5;1541.3;1528.1;1503.2;30.2;24.9;Darwin Blanch;Darwin Blanch;True;True;True
-Today;ATP;Buenos Aires 3 (Argentina);clay;23:15;Juan Carlos Prado Angelo;Valerio Aboian;164;350;186;206;381;165;324;1566.2;1415.5;1561.7;1400.2;150.7;161.5;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
+Today;ATP;Buenos Aires 3 (Argentina);clay;23:00;Juan Carlos Prado Angelo;Valerio Aboian;164;350;186;206;381;165;324;1566.2;1415.5;1561.7;1400.2;150.7;161.5;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
 Today;WTA;Ankara (Turkey);hard;FINISHED;Teodora Kostovic;Elena Ruxandra Bertea;159;282;123;162;305;180;388;1616.6;1442.3;1544.9;1320.3;174.3;224.6;Teodora Kostovic;Teodora Kostovic;True;True;True
 Today;WTA;Ankara (Turkey);hard;FINISHED;Carole Monnet;Anastasia Gasanova;206;195;11;230;227;253;231;1531.3;1535.8;1461.2;1487.7;4.5;26.5;Anastasia Gasanova;Anastasia Gasanova;True;True;True
 Today;WTA;Ankara (Turkey);hard;FINISHED;Fangran Tian;Elena Micic;260;285;25;270;338;249;321;1483.7;1409.2;1463.1;1388.6;74.5;74.5;Fangran Tian;Fangran Tian;True;True;True
@@ -121,6 +122,7 @@ Today;WTA;Singapore (Singapore);hard;FINISHED;Maria Sakkari;Nao Hibino;33;190;15
 Today;ATP;St. Tropez (France);hard;FINISHED;Billy Harris;Murphy Cassone;231;318;87;255;305;252;281;1519.7;1470.1;1468.8;1446.1;49.6;22.7;Billy Harris;Billy Harris;True;True;True
 Today;ATP;St. Tropez (France);hard;FINISHED;Matteo Martineau;Daniel Masur;276;406;130;421;329;374;299;1371.8;1456.8;1366.6;1425.4;85.0;58.8;Matteo Martineau;Daniel Masur;True;True;True
 Today;ATP;St. Tropez (France);hard;FINISHED;Edas Butvilas;Harold Mayot;198;237;39;198;184;172;160;1576.9;1591.0;1559.5;1577.7;14.1;18.2;Edas Butvilas;Harold Mayot;True;True;True
+Today;ATP;St. Tropez (France);hard;FINISHED;Andrea Guerrieri;Jesper De Jong;169;95;74;153;123;151;138;1636.9;1680.0;1585.5;1599.5;43.1;14.0;Jesper De Jong;Jesper De Jong;True;True;True
 Today;WTA;Tolentino (Italy);clay;FINISHED;Alice Tubello;Julia Grabher;230;111;119;240;158;190;127;1516.2;1626.7;1516.9;1595.5;110.5;78.6;Julia Grabher;Julia Grabher;True;True;True
 Today;WTA;Tolentino (Italy);clay;FINISHED;Ekaterine Gorgodze;Barbora Palicova;154;197;43;191;274;170;225;1587.8;1481.7;1545.8;1476.9;106.1;68.9;Ekaterine Gorgodze;Ekaterine Gorgodze;True;True;True
 Today;WTA;Tolentino (Italy);clay;FINISHED;Samira De Stefano;Oksana Selekhmeteva;193;101;92;184;152;148;144;1592.9;1631.9;1573.4;1575.3;39.0;1.9;Oksana Selekhmeteva;Oksana Selekhmeteva;True;True;True
@@ -140,6 +142,7 @@ Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;FINISHED;Anastasia Lizunova;Sandra S
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;FINISHED;Hania Abouelsaad;Maria Golovina;1312;418;894;;;;;;;;;;;Maria Golovina;;False;False;False
 Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Carson Branstine;Whitney Osuigwe;630;237;393;164;291;183;274;1612.9;1457.5;1541.2;1428.3;155.4;112.9;Whitney Osuigwe;Carson Branstine;True;True;True
 Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Alina Shcherbinina;Valeriya Strakhova;555;502;53;;518;;526;;1173.2;;1105.6;;;Valeriya Strakhova;;False;True;False
+Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Madison Brengle;Ekaterina Maklakova;207;467;260;221;409;208;394;1548.3;1343.3;1512.5;1318.3;205.0;194.2;Madison Brengle;Madison Brengle;True;True;True
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Jia Jing Lu;Tiana Tian Deng;391;820;429;390;;506;;1361.6;;1271.4;;;;Jia Jing Lu;;True;False;False
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Kanon Sawashiro;Hiromi Abe;716;356;360;;364;;345;;1380.7;;1365.3;;;Hiromi Abe;;False;True;False
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Mutsumi Uemura;Hikaru Sato;840;466;374;;;;;;;;;;;Hikaru Sato;;False;False;False
@@ -159,9 +162,7 @@ Today;WTA;W50 Yecla (Spain);hard;FINISHED;Miriana Tona;Nahia Berecoechea;374;505
 Today;WTA;W50 Yecla (Spain);hard;FINISHED;Kira Pavlova;Elza Tomase;347;751;404;402;;376;;1349.6;;1329.3;;;;Kira Pavlova;;True;False;False
 Today;WTA;W50 Yecla (Spain);hard;FINISHED;Margaux Rouvroy;Carmen Gallardo Guevara;358;532;174;359;;359;;1387.5;;1343.3;;;;Margaux Rouvroy;;True;False;False
 Today;WTA;W50 Yecla (Spain);hard;FINISHED;Charo Esquiva Banuls;Juliana Giaccio;769;933;164;;;;;;;;;;;Charo Esquiva Banuls;;False;False;False
-Today;ATP;Genova 2 (Italy);clay;SET 1;Carlo Alberto Caniato;Tom Gentzsch;386;162;224;380;181;316;146;1416.2;1596.6;1408.6;1590.3;180.4;181.7;Tom Gentzsch;Tom Gentzsch;True;True;True
 Today;WTA;Tolentino (Italy);clay;SET 1;Veronika Erjavec;Nuria Brancaccio;149;229;80;210;249;159;204;1560.2;1505.3;1560.4;1498.9;54.9;61.5;Veronika Erjavec;Veronika Erjavec;True;True;True
-Today;WTA;W50 Berkeley, CA (USA);hard;SET 1;Lucciana Perez Alarcon;Reina Goto;332;407;75;281;;270;;1475.5;;1431.6;;;;Lucciana Perez Alarcon;;True;False;False
 Today;ATP;Buenos Aires 3 (Argentina);clay;SET 2;Federico Coria;Eduardo Ribeiro;902;355;547;283;507;247;491;1489.2;1267.5;1472.2;1253.9;221.7;218.3;Eduardo Ribeiro;Federico Coria;True;True;True
-Today;WTA;W50 Berkeley, CA (USA);hard;SET 2;Madison Brengle;Ekaterina Maklakova;207;467;260;221;409;208;394;1548.3;1343.3;1512.5;1318.3;205.0;194.2;Madison Brengle;Madison Brengle;True;True;True
-Today;ATP;St. Tropez (France);hard;SET 3;Andrea Guerrieri;Jesper De Jong;169;95;74;153;123;151;138;1636.9;1680.0;1585.5;1599.5;43.1;14.0;Jesper De Jong;Jesper De Jong;True;True;True
+Today;ATP;Genova 2 (Italy);clay;SET 2;Carlo Alberto Caniato;Tom Gentzsch;386;162;224;380;181;316;146;1416.2;1596.6;1408.6;1590.3;180.4;181.7;Tom Gentzsch;Tom Gentzsch;True;True;True
+Today;WTA;W50 Berkeley, CA (USA);hard;SET 2;Lucciana Perez Alarcon;Reina Goto;332;407;75;281;;270;;1475.5;;1431.6;;;;Lucciana Perez Alarcon;;True;False;False
