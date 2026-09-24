@@ -22,15 +22,9 @@ Day+1;WTA;Porto (Portugal);hard;12:00;Maria Timofeeva;Gabriela Andrea Knutson;88
 Day+1;ATP;Buenos Aires 3 (Argentina);clay;15:00;Facundo Mena;Nicolas Kicker;220;333;113;307;360;254;305;1469.5;1432.9;1463.5;1419.1;36.6;44.4;Facundo Mena;Facundo Mena;True;True;True
 Day+1;ATP;San Diego 2 (USA);hard;19:00;Dylan Dietrich;Henry Searle;409;230;179;219;265;282;376;1552.4;1507.1;1445.1;1366.3;45.3;78.8;Henry Searle;Dylan Dietrich;True;True;True
 Day+1;ATP;San Diego 2 (USA);hard;19:00;Igor Ribeiro Marcondes;Federico Agustin Gomez;324;200;124;312;286;355;311;1467.4;1488.2;1380.9;1415.6;20.8;34.7;Federico Agustin Gomez;Federico Agustin Gomez;True;True;True
-Today;ATP;Chengdu (China);hard;09:00;Federico Cina;Camilo Ugo Carabelli;170;75;95;189;110;175;155;1586.0;1698.5;1555.5;1582.3;112.5;26.8;Camilo Ugo Carabelli;Camilo Ugo Carabelli;True;True;True
-Today;ATP;Chengdu (China);hard;09:00;James Duckworth;Lorenzo Sonego;65;86;21;126;96;118;84;1676.7;1716.2;1637.4;1694.6;39.5;57.2;James Duckworth;Lorenzo Sonego;True;True;True
-Today;ATP;Chengdu (China);hard;09:00;Tallon Griekspoor;Denis Shapovalov;55;50;5;54;59;38;36;1793.2;1787.8;1779.7;1785.6;5.4;5.9;Denis Shapovalov;Denis Shapovalov;True;True;True
-Today;WTA;W50 Plovdiv (Bulgaria);clay;09:00;Caijsa Wilda Hennemann;Gaia Maduzzi;243;479;236;261;;240;;1493.3;;1462.2;;;;Caijsa Wilda Hennemann;;True;False;False
-Today;WTA;W50 Plovdiv (Bulgaria);clay;09:00;Dunja Maric;Alessandra Mazzola;546;402;144;;464;;439;;1287.2;;1272.1;;;Alessandra Mazzola;;False;True;False
-Today;WTA;W50 Plovdiv (Bulgaria);clay;09:00;Ane Mintegi Del Olmo;Beatrise Zeltina;264;436;172;320;452;292;384;1428.9;1304.1;1396.9;1308.5;124.8;88.4;Ane Mintegi Del Olmo;Ane Mintegi Del Olmo;True;True;True
-Today;ATP;Hangzhou (China);hard;09:15;Rinky Hijikata;Dalibor Svrcina;82;128;46;85;138;87;120;1738.8;1654.2;1693.0;1635.2;84.6;57.8;Rinky Hijikata;Rinky Hijikata;True;True;True
-Today;WTA;Singapore (Singapore);hard;09:15;Xin Yu Wang;Joanna Garland;40;168;128;61;196;66;160;1776.8;1579.1;1732.0;1573.3;197.7;158.7;Xin Yu Wang;Xin Yu Wang;True;True;True
-Today;ATP;Hangzhou (China);hard;09:30;Bu Yunchaokete;Michael Zheng;111;92;19;119;58;114;52;1685.3;1788.2;1645.1;1744.5;102.9;99.4;Michael Zheng;Michael Zheng;True;True;True
+Today;WTA;Singapore (Singapore);hard;09:25;Xin Yu Wang;Joanna Garland;40;168;128;61;196;66;160;1776.8;1579.1;1732.0;1573.3;197.7;158.7;Xin Yu Wang;Xin Yu Wang;True;True;True
+Today;ATP;Chengdu (China);hard;09:30;Federico Cina;Camilo Ugo Carabelli;170;75;95;189;110;175;155;1586.0;1698.5;1555.5;1582.3;112.5;26.8;Camilo Ugo Carabelli;Camilo Ugo Carabelli;True;True;True
+Today;ATP;Chengdu (China);hard;09:30;James Duckworth;Lorenzo Sonego;65;86;21;126;96;118;84;1676.7;1716.2;1637.4;1694.6;39.5;57.2;James Duckworth;Lorenzo Sonego;True;True;True
 Today;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;09:30;Alena Kovackova;Ilary Pistola;400;1091;691;260;;238;;1494.4;;1464.7;;;;Alena Kovackova;;True;False;False
 Today;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;09:30;Vittoria Paganetti;Romane Longueville;486;860;374;;;;;;;;;;;Vittoria Paganetti;;False;False;False
 Today;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;09:30;Joelle Lilly Sophie Steur;Marie Mettraux;279;511;232;267;;236;;1486.4;;1466.4;;;;Joelle Lilly Sophie Steur;;True;False;False
@@ -40,27 +34,25 @@ Today;WTA;Seoul (South Korea);hard;09:45;Jelena Ostapenko;Taylah Preston;32;94;6
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;09:45;Anastasia Lizunova;Sandra Samir;1044;394;650;;;;;;;;;;;Sandra Samir;;False;False;False
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;09:45;Victoria Milovanova;Federica Sacco;440;702;262;;;;;;;;;;;Victoria Milovanova;;False;False;False
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;09:45;Anna Sedysheva;Mara Guth;947;482;465;;;;;;;;;;;Mara Guth;;False;False;False
-Today;ATP;Chengdu (China);hard;10:20;Miomir Kecmanovic;Nikoloz Basilashvili;60;145;85;80;190;83;189;1749.5;1582.5;1697.8;1540.5;167.0;157.3;Miomir Kecmanovic;Miomir Kecmanovic;True;True;True
-Today;ATP;Chengdu (China);hard;10:20;Moise Kouame;Alexandre Muller;191;135;56;295;162;268;145;1479.8;1616.2;1456.5;1593.1;136.4;136.6;Alexandre Muller;Alexandre Muller;True;True;True
-Today;ATP;Chengdu (China);hard;10:20;Juncheng Shang;Adrian Mannarino;253;78;175;94;134;107;122;1717.7;1663.1;1657.8;1634.0;54.6;23.8;Adrian Mannarino;Juncheng Shang;True;True;True
+Today;ATP;Hangzhou (China);hard;10:15;Bu Yunchaokete;Michael Zheng;111;92;19;119;58;114;52;1685.3;1788.2;1645.1;1744.5;102.9;99.4;Michael Zheng;Michael Zheng;True;True;True
 Today;ATP;Hangzhou (China);hard;10:30;Mattia Bellucci;Kamil Majchrzak;88;73;15;92;69;90;77;1725.5;1773.6;1679.0;1713.1;48.1;34.1;Kamil Majchrzak;Kamil Majchrzak;True;True;True
 Today;ATP;St. Tropez (France);hard;10:30;Billy Harris;Murphy Cassone;231;318;87;255;305;252;281;1519.7;1470.1;1468.8;1446.1;49.6;22.7;Billy Harris;Billy Harris;True;True;True
 Today;WTA;W50 Plovdiv (Bulgaria);clay;10:30;Valeria Garnevska;Anja Stankovic;1381;494;887;;;;;;;;;;;Anja Stankovic;;False;False;False
 Today;WTA;W50 Plovdiv (Bulgaria);clay;10:30;Sapfo Sakellaridi;Lidia Encheva;446;364;82;528;276;525;259;1119.6;1479.0;1123.8;1441.5;359.4;317.7;Lidia Encheva;Lidia Encheva;True;True;True
 Today;WTA;W50 Plovdiv (Bulgaria);clay;10:30;Elizara Yaneva;Laura Mair;153;437;284;218;500;203;481;1553.3;1233.8;1498.9;1230.1;319.5;268.8;Elizara Yaneva;Elizara Yaneva;True;True;True
+Today;ATP;Chengdu (China);hard;10:40;Miomir Kecmanovic;Nikoloz Basilashvili;60;145;85;80;190;83;189;1749.5;1582.5;1697.8;1540.5;167.0;157.3;Miomir Kecmanovic;Miomir Kecmanovic;True;True;True
+Today;ATP;Chengdu (China);hard;10:40;Moise Kouame;Alexandre Muller;191;135;56;295;162;268;145;1479.8;1616.2;1456.5;1593.1;136.4;136.6;Alexandre Muller;Alexandre Muller;True;True;True
+Today;ATP;Chengdu (China);hard;10:40;Juncheng Shang;Adrian Mannarino;253;78;175;94;134;107;122;1717.7;1663.1;1657.8;1634.0;54.6;23.8;Adrian Mannarino;Juncheng Shang;True;True;True
 Today;WTA;Ankara (Turkey);hard;11:00;Teodora Kostovic;Elena Ruxandra Bertea;159;282;123;162;305;180;388;1616.6;1442.3;1544.9;1320.3;174.3;224.6;Teodora Kostovic;Teodora Kostovic;True;True;True
 Today;WTA;Ankara (Turkey);hard;11:00;Carole Monnet;Anastasia Gasanova;206;195;11;230;227;253;231;1531.3;1535.8;1461.2;1487.7;4.5;26.5;Anastasia Gasanova;Anastasia Gasanova;True;True;True
 Today;WTA;Ankara (Turkey);hard;11:00;Fangran Tian;Elena Micic;260;285;25;270;338;249;321;1483.7;1409.2;1463.1;1388.6;74.5;74.5;Fangran Tian;Fangran Tian;True;True;True
-Today;ATP;Hangzhou (China);hard;11:00;Jie Cui;Adolfo Daniel Vallejo;456;58;398;438;100;405;165;1359.6;1711.0;1339.9;1573.3;351.4;233.4;Adolfo Daniel Vallejo;Adolfo Daniel Vallejo;True;True;True
 Today;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;11:00;Mia Horvit;Martina Colmegna;712;331;381;;489;;469;;1253.8;;1241.6;;;Martina Colmegna;;False;True;False
 Today;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;11:00;Tena Lukas;Sara Cakarevic;409;543;134;451;510;426;489;1304.4;1202.3;1281.4;1210.4;102.1;71.0;Tena Lukas;Tena Lukas;True;True;True
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;11:00;Hania Abouelsaad;Maria Golovina;1312;418;894;;;;;;;;;;;Maria Golovina;;False;False;False
 Today;WTA;W50 Yecla (Spain);hard;11:00;Emily Appleton;Kateryna Lazarenko;429;745;316;443;;443;;1308.9;;1272.2;;;;Emily Appleton;;True;False;False
 Today;WTA;W50 Yecla (Spain);hard;11:00;Diletta Cherubini;Georgina Garcia Perez;386;721;335;444;459;476;452;1308.9;1291.7;1239.5;1259.5;17.2;20.0;Diletta Cherubini;Georgina Garcia Perez;True;True;True
 Today;WTA;W50 Yecla (Spain);hard;11:00;Miriana Tona;Nahia Berecoechea;374;505;131;383;;370;;1366.5;;1334.2;;;;Miriana Tona;;True;False;False
-Today;ATP;Chengdu (China);hard;11:50;Martin Damm;Shintaro Mochizuki;106;125;19;104;218;103;232;1708.5;1555.9;1661.9;1489.0;152.6;172.9;Martin Damm;Martin Damm;True;True;True
-Today;ATP;Chengdu (China);hard;11:50;Lloyd Harris;Aleksandar Kovacevic;136;80;56;95;136;88;124;1717.1;1658.5;1683.9;1630.7;58.6;53.2;Aleksandar Kovacevic;Lloyd Harris;True;True;True
-Today;ATP;Chengdu (China);hard;11:50;Alexander Shevchenko;Hubert Hurkacz;109;46;63;154;31;146;40;1634.3;1847.4;1589.8;1776.7;213.1;186.9;Hubert Hurkacz;Hubert Hurkacz;True;True;True
+Today;ATP;Hangzhou (China);hard;11:45;Jie Cui;Adolfo Daniel Vallejo;456;58;398;438;100;405;165;1359.6;1711.0;1339.9;1573.3;351.4;233.4;Adolfo Daniel Vallejo;Adolfo Daniel Vallejo;True;True;True
 Today;ATP;Hangzhou (China);hard;12:00;Fajing Sun;Roman Safiullin;314;102;212;365;61;321;76;1430.5;1785.8;1409.3;1714.7;355.3;305.4;Roman Safiullin;Roman Safiullin;True;True;True
 Today;ATP;Plovdiv 4 (Bulgaria);clay;12:00;Izan Almazan Valiente;Maxim Mrva;466;213;253;;249;;224;;1528.0;;1500.4;;;Maxim Mrva;;False;True;False
 Today;ATP;Plovdiv 4 (Bulgaria);clay;12:00;Ivan Ivanov;Adrian Andreev;505;819;314;516;;546;;1253.6;;1139.1;;;;Ivan Ivanov;;True;False;False
@@ -68,14 +60,17 @@ Today;WTA;Porto (Portugal);hard;12:00;Veronika Podrez;Mia Pohankova;125;212;87;2
 Today;ATP;St. Tropez (France);hard;12:00;Matteo Martineau;Daniel Masur;276;406;130;421;329;374;299;1371.8;1456.8;1366.6;1425.4;85.0;58.8;Matteo Martineau;Daniel Masur;True;True;True
 Today;WTA;W50 Plovdiv (Bulgaria);clay;12:00;Loes Ebeling Koning;Jule Niemeier;422;463;41;335;301;307;269;1410.5;1444.0;1381.5;1427.0;33.5;45.5;Loes Ebeling Koning;Jule Niemeier;True;True;True
 Today;WTA;W50 Plovdiv (Bulgaria);clay;12:00;Ipek Oz;Ilinca Dalina Amariei;360;651;291;299;;268;;1447.2;;1428.4;;;;Ipek Oz;;True;False;False
+Today;ATP;Chengdu (China);hard;12:10;Martin Damm;Shintaro Mochizuki;106;125;19;104;218;103;232;1708.5;1555.9;1661.9;1489.0;152.6;172.9;Martin Damm;Martin Damm;True;True;True
+Today;ATP;Chengdu (China);hard;12:10;Lloyd Harris;Aleksandar Kovacevic;136;80;56;95;136;88;124;1717.1;1658.5;1683.9;1630.7;58.6;53.2;Aleksandar Kovacevic;Lloyd Harris;True;True;True
+Today;ATP;Chengdu (China);hard;12:10;Alexander Shevchenko;Hubert Hurkacz;109;46;63;154;31;146;40;1634.3;1847.4;1589.8;1776.7;213.1;186.9;Hubert Hurkacz;Hubert Hurkacz;True;True;True
 Today;WTA;Singapore (Singapore);hard;12:30;Tatiana Prozorova;Alexandra Eala;180;18;162;137;14;117;17;1658.2;1969.9;1637.5;1907.2;311.7;269.7;Alexandra Eala;Alexandra Eala;True;True;True
 Today;WTA;Tolentino (Italy);clay;12:30;Alice Tubello;Julia Grabher;230;111;119;240;158;190;127;1516.2;1626.7;1516.9;1595.5;110.5;78.6;Julia Grabher;Julia Grabher;True;True;True
 Today;WTA;W50 Yecla (Spain);hard;12:30;Kira Pavlova;Elza Tomase;347;751;404;402;;376;;1349.6;;1329.3;;;;Kira Pavlova;;True;False;False
 Today;WTA;W50 Yecla (Spain);hard;12:30;Margaux Rouvroy;Carmen Gallardo Guevara;358;532;174;359;;359;;1387.5;;1343.3;;;;Margaux Rouvroy;;True;False;False
 Today;ATP;Genova 2 (Italy);clay;13:00;Raul Brancaccio;Mika Petkovic;229;458;229;304;539;269;538;1470.8;1179.7;1451.4;1174.4;291.1;277.0;Raul Brancaccio;Raul Brancaccio;True;True;True
-Today;ATP;Chengdu (China);hard;13:20;Juan Manuel Cerundolo;Yi Zhou;53;273;220;48;345;80;315;1797.4;1439.4;1705.2;1414.0;358.0;291.2;Juan Manuel Cerundolo;Juan Manuel Cerundolo;True;True;True
 Today;WTA;Porto (Portugal);hard;13:30;Naiktha Bains;Reese Brantmeier;376;385;9;346;304;307;295;1400.4;1442.3;1397.2;1409.3;41.9;12.1;Naiktha Bains;Reese Brantmeier;True;True;True
 Today;ATP;St. Tropez (France);hard;13:30;Edas Butvilas;Harold Mayot;198;237;39;198;184;172;160;1576.9;1591.0;1559.5;1577.7;14.1;18.2;Edas Butvilas;Harold Mayot;True;True;True
+Today;ATP;Chengdu (China);hard;13:40;Juan Manuel Cerundolo;Yi Zhou;53;273;220;48;345;80;315;1797.4;1439.4;1705.2;1414.0;358.0;291.2;Juan Manuel Cerundolo;Juan Manuel Cerundolo;True;True;True
 Today;ATP;Hangzhou (China);hard;14:00;Zhizhen Zhang;Coleman Wong;168;108;60;163;124;157;108;1615.6;1677.3;1580.3;1656.4;61.7;76.1;Coleman Wong;Coleman Wong;True;True;True
 Today;WTA;Porto (Portugal);hard;14:00;Angelina Voloshchuk;Harmony Tan;353;236;117;287;178;263;171;1461.2;1596.5;1445.2;1555.8;135.3;110.6;Harmony Tan;Harmony Tan;True;True;True
 Today;WTA;Singapore (Singapore);hard;14:00;Maria Sakkari;Nao Hibino;33;190;157;36;222;29;207;1838.3;1547.4;1812.9;1516.2;290.9;296.7;Maria Sakkari;Maria Sakkari;True;True;True
@@ -106,10 +101,13 @@ Today;WTA;W50 Berkeley, CA (USA);hard;22:00;Kayla Day;Evialina Laskevich;118;547
 Today;ATP;San Diego 2 (USA);hard;22:30;Darwin Blanch;Andres Andrade;166;206;40;202;233;199;219;1571.5;1541.3;1528.1;1503.2;30.2;24.9;Darwin Blanch;Darwin Blanch;True;True;True
 Today;ATP;Buenos Aires 3 (Argentina);clay;23:00;Juan Carlos Prado Angelo;Valerio Aboian;164;350;186;206;381;165;324;1566.2;1415.5;1561.7;1400.2;150.7;161.5;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
 Today;ATP;Hangzhou (China);hard;FINISHED;Sho Shimabukuro;Hugo Gaston;93;97;4;158;125;168;112;1625.5;1677.2;1568.5;1652.0;51.7;83.5;Sho Shimabukuro;Hugo Gaston;True;True;True
+Today;ATP;Hangzhou (China);hard;FINISHED;Dane Sweeny;Taro Daniel;110;193;83;264;182;262;201;1507.7;1595.1;1461.7;1525.4;87.4;63.7;Dane Sweeny;Taro Daniel;True;True;True
 Today;WTA;Hangzhou (China);hard;FINISHED;Anhelina Kalinina;Jana Otzipka;48;474;426;68;509;81;474;1770.0;1206.2;1697.9;1241.8;563.8;456.1;Anhelina Kalinina;Anhelina Kalinina;True;True;True
 Today;ATP;San Diego 2 (USA);hard;FINISHED;Keegan Smith;Dylan Dietrich;194;409;215;349;219;336;282;1438.2;1552.4;1398.1;1445.1;114.2;47.0;Keegan Smith;Dylan Dietrich;True;True;True
 Today;WTA;Seoul (South Korea);hard;FINISHED;Anna Bondar;Alina Charaeva;69;121;52;86;112;100;137;1738.0;1695.3;1664.7;1612.8;42.7;51.9;Anna Bondar;Anna Bondar;True;True;True
 Today;WTA;Seoul (South Korea);hard;FINISHED;Ye Xin Ma;Kimberly Birrell;175;60;115;289;103;260;84;1460.7;1707.0;1452.2;1691.7;246.3;239.5;Kimberly Birrell;Kimberly Birrell;True;True;True
+Today;WTA;Seoul (South Korea);hard;FINISHED;Yeon Woo Ku;Elena Gabriela Ruse;185;66;119;234;44;212;57;1524.1;1822.8;1507.1;1745.0;298.7;237.9;Elena Gabriela Ruse;Elena Gabriela Ruse;True;True;True
+Today;WTA;Singapore (Singapore);hard;FINISHED;Talia Gibson;Viktoria Morvayova;63;296;233;95;412;70;372;1717.0;1341.1;1726.9;1332.3;375.9;394.6;Talia Gibson;Talia Gibson;True;True;True
 Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Carson Branstine;Whitney Osuigwe;630;237;393;164;291;183;274;1612.9;1457.5;1541.2;1428.3;155.4;112.9;Whitney Osuigwe;Carson Branstine;True;True;True
 Today;WTA;W50 Berkeley, CA (USA);hard;FINISHED;Alina Shcherbinina;Valeriya Strakhova;555;502;53;;518;;526;;1173.2;;1105.6;;;Valeriya Strakhova;;False;True;False
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Jia Jing Lu;Tiana Tian Deng;391;820;429;390;;506;;1361.6;;1271.4;;;;Jia Jing Lu;;True;False;False
@@ -117,13 +115,15 @@ Today;WTA;W50 Nanao (Japan);grass;FINISHED;Kanon Sawashiro;Hiromi Abe;716;356;36
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Mutsumi Uemura;Hikaru Sato;840;466;374;;;;;;;;;;;Hikaru Sato;;False;False;False
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Natsumi Kawaguchi;Sayaka Ishii;411;739;328;391;;429;;1359.8;;1324.4;;;;Natsumi Kawaguchi;;True;False;False
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Kurumi Tamura;Michika Ozeki;1444;655;789;;;;;;;;;;;Michika Ozeki;;False;False;False
+Today;ATP;Chengdu (China);hard;SET 1;Tallon Griekspoor;Denis Shapovalov;55;50;5;54;59;38;36;1793.2;1787.8;1779.7;1785.6;5.4;5.9;Denis Shapovalov;Denis Shapovalov;True;True;True
 Today;ATP;Hangzhou (China);hard;SET 1;Fabian Marozsan;Alex Bolt;59;165;106;76;220;73;213;1763.4;1551.7;1719.7;1509.6;211.7;210.1;Fabian Marozsan;Fabian Marozsan;True;True;True
+Today;ATP;Hangzhou (China);hard;SET 1;Rinky Hijikata;Dalibor Svrcina;82;128;46;85;138;87;120;1738.8;1654.2;1693.0;1635.2;84.6;57.8;Rinky Hijikata;Rinky Hijikata;True;True;True
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;SET 1;Zuzanna Pawlikowska;Ksenia Smirnova;380;706;326;418;;369;;1335.6;;1337.2;;;;Zuzanna Pawlikowska;;True;False;False
 Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;SET 1;Ekaterina Perelygina;Ulyana Hrabavets;524;826;302;;;;;;;;;;;Ekaterina Perelygina;;False;False;False
-Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;SET 1;Yuliya Hatouka;Ksenia Efremova;685;571;114;;;;;;;;;;;Ksenia Efremova;;False;False;False
-Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;SET 1;Elena Jamshidi;Esther Adeshina;880;458;422;;400;;426;;1353.1;;1290.0;;;Esther Adeshina;;False;True;False
-Today;ATP;Hangzhou (China);hard;SET 2;Dane Sweeny;Taro Daniel;110;193;83;264;182;262;201;1507.7;1595.1;1461.7;1525.4;87.4;63.7;Dane Sweeny;Taro Daniel;True;True;True
-Today;ATP;Hangzhou (China);hard;SET 2;Jaime Faria;Terence Atmane;68;83;15;45;82;67;72;1807.2;1748.7;1727.2;1719.8;58.5;7.4;Jaime Faria;Jaime Faria;True;True;True
-Today;WTA;Singapore (Singapore);hard;SET 2;Talia Gibson;Viktoria Morvayova;63;296;233;95;412;70;372;1717.0;1341.1;1726.9;1332.3;375.9;394.6;Talia Gibson;Talia Gibson;True;True;True
+Today;WTA;W50 Plovdiv (Bulgaria);clay;SET 1;Caijsa Wilda Hennemann;Gaia Maduzzi;243;479;236;261;;240;;1493.3;;1462.2;;;;Caijsa Wilda Hennemann;;True;False;False
+Today;WTA;W50 Plovdiv (Bulgaria);clay;SET 1;Dunja Maric;Alessandra Mazzola;546;402;144;;464;;439;;1287.2;;1272.1;;;Alessandra Mazzola;;False;True;False
+Today;WTA;W50 Plovdiv (Bulgaria);clay;SET 1;Ane Mintegi Del Olmo;Beatrise Zeltina;264;436;172;320;452;292;384;1428.9;1304.1;1396.9;1308.5;124.8;88.4;Ane Mintegi Del Olmo;Ane Mintegi Del Olmo;True;True;True
+Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;SET 2;Yuliya Hatouka;Ksenia Efremova;685;571;114;;;;;;;;;;;Ksenia Efremova;;False;False;False
+Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;SET 2;Elena Jamshidi;Esther Adeshina;880;458;422;;400;;426;;1353.1;;1290.0;;;Esther Adeshina;;False;True;False
+Today;ATP;Hangzhou (China);hard;SET 3;Jaime Faria;Terence Atmane;68;83;15;45;82;67;72;1807.2;1748.7;1727.2;1719.8;58.5;7.4;Jaime Faria;Jaime Faria;True;True;True
 Today;WTA;Hangzhou (China);hard;SET 3;Elina Svitolina;Greet Minnen;7;217;210;6;122;6;124;2050.8;1683.0;1988.1;1627.1;367.8;361.0;Elina Svitolina;Elina Svitolina;True;True;True
-Today;WTA;Seoul (South Korea);hard;SET 3;Yeon Woo Ku;Elena Gabriela Ruse;185;66;119;234;44;212;57;1524.1;1822.8;1507.1;1745.0;298.7;237.9;Elena Gabriela Ruse;Elena Gabriela Ruse;True;True;True
