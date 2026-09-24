@@ -1,17 +1,17 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2
-Today;ATP;Chengdu (China);hard;07:30;Cina F.;Ugo Carabelli C.
-Today;ATP;Chengdu (China);hard;07:30;Duckworth J.;Sonego L.
-Today;ATP;Chengdu (China);hard;07:30;Griekspoor T.;Shapovalov D.
-Today;ATP;Chengdu (China);hard;08:50;Kecmanovic M.;Basilashvili N.
-Today;ATP;Chengdu (China);hard;08:50;Kouame M.;Muller A.
-Today;ATP;Chengdu (China);hard;08:50;Shang J.;Mannarino A.
-Today;ATP;Chengdu (China);hard;10:20;Damm M.;Mochizuki S.
-Today;ATP;Chengdu (China);hard;10:20;Harris L.;Kovacevic A.
-Today;ATP;Chengdu (China);hard;10:20;Shevchenko A.;Hurkacz H.
-Today;ATP;Chengdu (China);hard;11:50;Cerundolo J. M.;Zhou Y.
-Today;ATP;Hangzhou (China);hard;SET 1;Shimabukuro S.;Gaston H.
+Today;ATP;Chengdu (China);hard;08:00;Cina F.;Ugo Carabelli C.
+Today;ATP;Chengdu (China);hard;08:00;Duckworth J.;Sonego L.
+Today;ATP;Chengdu (China);hard;08:00;Griekspoor T.;Shapovalov D.
+Today;ATP;Chengdu (China);hard;09:20;Kecmanovic M.;Basilashvili N.
+Today;ATP;Chengdu (China);hard;09:20;Kouame M.;Muller A.
+Today;ATP;Chengdu (China);hard;09:20;Shang J.;Mannarino A.
+Today;ATP;Chengdu (China);hard;10:50;Damm M.;Mochizuki S.
+Today;ATP;Chengdu (China);hard;10:50;Harris L.;Kovacevic A.
+Today;ATP;Chengdu (China);hard;10:50;Shevchenko A.;Hurkacz H.
+Today;ATP;Chengdu (China);hard;12:20;Cerundolo J. M.;Zhou Y.
+Today;ATP;Hangzhou (China);hard;SET 2;Shimabukuro S.;Gaston H.
 Today;ATP;Hangzhou (China);hard;SET 1;Sweeny D.;Daniel T.
-Today;ATP;Hangzhou (China);hard;07:30;Faria J.;Atmane T.
+Today;ATP;Hangzhou (China);hard;SET 1;Faria J.;Atmane T.
 Today;ATP;Hangzhou (China);hard;08:30;Hijikata R.;Svrcina D.
 Today;ATP;Hangzhou (China);hard;08:30;Marozsan F.;Bolt A.
 Today;ATP;Hangzhou (China);hard;09:00;Bu Y.;Zheng M.
@@ -23,7 +23,7 @@ Today;WTA;Hangzhou (China);hard;FINISHED;Kalinina A.;Otzipka J.
 Today;WTA;Hangzhou (China);hard;SET 1;Svitolina E.;Minnen G.
 Today;WTA;Seoul (South Korea);hard;SET 3;Bondar A.;Charaeva A.
 Today;WTA;Seoul (South Korea);hard;FINISHED;Ma Y.;Birrell K.
-Today;WTA;Seoul (South Korea);hard;SET 1;Ku Y.;Ruse G.
+Today;WTA;Seoul (South Korea);hard;SET 2;Ku Y.;Ruse G.
 Today;WTA;Seoul (South Korea);hard;09:00;Ostapenko J.;Preston T.
 Today;WTA;Singapore (Singapore);hard;SET 1;Gibson T.;Morvayova V.
 Today;WTA;Singapore (Singapore);hard;08:30;Wang Xin.;Garland J.
@@ -93,8 +93,8 @@ Today;WTA;W50 Nanao (Japan);grass;FINISHED;Lu J.;Deng T. T.
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Sawashiro K.;Abe H.
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Uemura M.;Sato H.
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Shimizu E.;Onozawa N.
-Today;WTA;W50 Nanao (Japan);grass;SET 3;Hosogi S.;Matsuda R.
-Today;WTA;W50 Nanao (Japan);grass;SET 3;Kawaguchi N.;Ishii S.
+Today;WTA;W50 Nanao (Japan);grass;FINISHED;Hosogi S.;Matsuda R.
+Today;WTA;W50 Nanao (Japan);grass;FINISHED;Kawaguchi N.;Ishii S.
 Today;WTA;W50 Nanao (Japan);grass;FINISHED;Tamura K.;Ozeki M.
 Today;WTA;W50 Plovdiv (Bulgaria);clay;09:00;Hennemann C. W.;Maduzzi G.
 Today;WTA;W50 Plovdiv (Bulgaria);clay;09:00;Maric D.;Mazzola A.
@@ -134,4 +134,6 @@ Day+1;WTA;Porto (Portugal);hard;12:00;Timofeeva M.;Knutson G.
 Day+1;WTA;Tolentino (Italy);clay;10:00;Maristany G.;Masarova R.
 Day+1;WTA;Tolentino (Italy);clay;10:00;Ristic M.;Pieri J.
 Day+1;WTA;W50 Nanao (Japan);grass;07:00;Deng T. T.;Ozeki M.
+Day+1;WTA;W50 Nanao (Japan);grass;07:00;Hosogi S.;Sato H.
+Day+1;WTA;W50 Nanao (Japan);grass;07:00;Ishii S.;Itaya R.
 Day+1;WTA;W50 Nanao (Japan);grass;07:00;Shimizu E.;Abe H.
