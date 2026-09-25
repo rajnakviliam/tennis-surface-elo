@@ -20,7 +20,6 @@ Day+1;ATP;Chengdu (China);hard;08:30;Federico Cina;Alexandre Muller;170;135;35;1
 Day+1;ATP;Chengdu (China);hard;08:30;Martin Damm;Hubert Hurkacz;106;46;60;104;31;103;40;1708.5;1847.4;1661.9;1776.7;138.9;114.8;Hubert Hurkacz;Hubert Hurkacz;True;True;True
 Day+1;ATP;Hangzhou (China);hard;09:00;Bu Yunchaokete;Kamil Majchrzak;111;73;38;119;69;114;77;1685.3;1773.6;1645.1;1713.1;88.3;68.0;Kamil Majchrzak;Kamil Majchrzak;True;True;True
 Day+1;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;09:00;Maria Golovina;Victoria Milovanova;418;440;22;;;;;;;;;;;Maria Golovina;;False;False;False
-Day+1;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;09:00;Zuzanna Pawlikowska;Yuliya Hatouka;380;685;305;418;;369;;1335.6;;1337.2;;;;Zuzanna Pawlikowska;;True;False;False
 Day+1;WTA;W50 Plovdiv (Bulgaria);clay;09:00;Elizara Yaneva;Caijsa Wilda Hennemann;153;243;90;218;261;203;240;1553.3;1493.3;1498.9;1462.2;60.0;36.7;Elizara Yaneva;Elizara Yaneva;True;True;True
 Day+1;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;10:00;Marie Mettraux;Alisa Oktiabreva;511;507;4;;205;;163;;1568.4;;1558.3;;;Alisa Oktiabreva;;False;True;False
 Day+1;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;10:00;Vittoria Paganetti;Alena Kovackova;486;400;86;;260;;238;;1494.4;;1464.7;;;Alena Kovackova;;False;True;False
@@ -28,7 +27,7 @@ Day+1;ATP;Chengdu (China);hard;10:30;Valentin Vacherot;Lloyd Harris;19;136;117;3
 Day+1;ATP;Hangzhou (China);hard;10:30;Daniil Medvedev;Valentin Royer;6;104;98;17;127;9;125;1935.9;1676.5;1917.5;1626.6;259.4;290.9;Daniil Medvedev;Daniil Medvedev;True;True;True
 Day+1;WTA;Ankara (Turkey);hard;13:00;Teodora Kostovic;Polina Iatcenko;159;178;19;162;135;180;139;1616.6;1661.4;1544.9;1607.7;44.8;62.8;Teodora Kostovic;Polina Iatcenko;True;True;True
 Day+1;ATP;Hangzhou (China);hard;13:30;Coleman Wong;Adolfo Daniel Vallejo;108;58;50;124;100;108;165;1677.3;1711.0;1656.4;1573.3;33.7;83.1;Adolfo Daniel Vallejo;Coleman Wong;True;True;True
-Today;ATP;Genova 2 (Italy);clay;15:20;Mika Petkovic;Francesco Forti;458;357;101;539;412;538;371;1179.7;1382.8;1174.4;1357.9;203.1;183.5;Francesco Forti;Francesco Forti;True;True;True
+Today;ATP;Genova 2 (Italy);clay;15:15;Mika Petkovic;Francesco Forti;458;357;101;539;412;538;371;1179.7;1382.8;1174.4;1357.9;203.1;183.5;Francesco Forti;Francesco Forti;True;True;True
 Today;WTA;Ankara (Turkey);hard;15:30;Deniz Dilek;Anastasia Gasanova;786;195;591;;227;;231;;1535.8;;1487.7;;;Anastasia Gasanova;;False;True;False
 Today;WTA;Porto (Portugal);hard;15:35;Mia Pohankova;Katie Swan;212;208;4;170;197;144;222;1606.4;1576.0;1601.3;1491.9;30.4;109.4;Katie Swan;Mia Pohankova;True;True;True
 Today;WTA;Porto (Portugal);hard;15:35;Maria Timofeeva;Gabriela Andrea Knutson;88;163;75;78;151;94;136;1754.6;1633.6;1678.4;1612.9;121.0;65.5;Maria Timofeeva;Maria Timofeeva;True;True;True
@@ -51,6 +50,7 @@ Today;ATP;San Diego 2 (USA);hard;21:00;Igor Ribeiro Marcondes;Federico Agustin G
 Today;ATP;Buenos Aires 3 (Argentina);clay;21:30;Juan Carlos Prado Angelo;Alex Barrena;164;240;76;206;325;165;286;1566.2;1458.5;1561.7;1436.3;107.7;125.4;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
 Today;WTA;W50 Berkeley, CA (USA);hard;21:30;Kayla Day;Anna Sinclair Rogers;118;319;201;153;478;149;484;1630.3;1265.3;1595.5;1235.0;365.0;360.5;Kayla Day;Kayla Day;True;True;True
 Today;ATP;San Diego 2 (USA);hard;23:00;Tristan Boyer;Timo Legout;208;410;202;195;302;202;269;1580.6;1471.1;1525.1;1454.7;109.5;70.4;Tristan Boyer;Tristan Boyer;True;True;True
+Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;23:00;Zuzanna Pawlikowska;Yuliya Hatouka;380;685;305;418;;369;;1335.6;;1337.2;;;;Zuzanna Pawlikowska;;True;False;False
 Today;WTA;Ankara (Turkey);hard;FINISHED;Teodora Kostovic;Fangran Tian;159;260;101;162;270;180;249;1616.6;1483.7;1544.9;1463.1;132.9;81.8;Teodora Kostovic;Teodora Kostovic;True;True;True
 Today;WTA;Ankara (Turkey);hard;FINISHED;Ksenia Zaytseva;Polina Iatcenko;442;178;264;503;135;467;139;1222.1;1661.4;1247.0;1607.7;439.3;360.7;Polina Iatcenko;Polina Iatcenko;True;True;True
 Today;WTA;Ankara (Turkey);hard;FINISHED;Berfu Cengiz;Han Shi;307;242;65;319;284;315;245;1429.1;1465.7;1393.5;1467.7;36.6;74.2;Han Shi;Han Shi;True;True;True
