@@ -1,9 +1,10 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Buenos Aires 3 (Argentina);clay;21:50;Aguilar Cardozo J.;Barrena A.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
-Today;WTA;Adana (Turkey) - Qualification;hard;FINISHED;Crawley F.;Lacinova A.;player_2_not_in_aliases;Lacinova A.
-Today;WTA;Adana (Turkey) - Qualification;hard;FINISHED;Keser M.;Bertea E. R.;player_1_not_in_aliases;Keser M.
-Today;WTA;Adana (Turkey) - Qualification;hard;FINISHED;Mert A.;Tikhonova A.;player_1_not_in_aliases;Mert A.
-Today;WTA;Adana (Turkey) - Qualification;hard;FINISHED;Ozdemir P.;Boisson L.;player_1_not_in_aliases;Ozdemir P.
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;11:30;Cado Z.;McDonald N.;player_1_not_in_aliases;Cado Z.
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;16:00;Erhard M.;Theate P.;player_2_not_in_aliases;Theate P.
-Day+1;ATP;Porto (Portugal) - Qualification;hard;15:00;Valdoleiros G.;Bertrand R.;player_1_not_in_aliases;Valdoleiros G.
+Today;ATP;Columbus (USA) - Qualification;hard;20:30;Trotter J. K.;Okonkwo A.;player_2_not_in_aliases;Okonkwo A.
+Today;ATP;Columbus (USA) - Qualification;hard;22:00;Vandecasteele Q.;Stearns P.;tour_mismatch;"Vandecasteele Q.=ATP; Stearns P.=WTA"
+Today;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Heredia S.;Storck F. L.;player_2_not_in_aliases;Storck F. L.
+Today;ATP;Curitiba (Brazil) - Qualification;clay;16:30;Rodriguez L. J.;Milani B.;player_2_not_in_aliases;Milani B.
+Today;ATP;Curitiba (Brazil) - Qualification;clay;18:00;Dickerson R.;Pissetti Vialle H.;player_2_not_in_aliases;Pissetti Vialle H.
+Today;ATP;Curitiba (Brazil) - Qualification;clay;19:30;Saraiva Dos Santos P. A.;Scheidt A.;player_2_not_in_aliases;Scheidt A.
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;11:30;Cado Z.;McDonald N.;player_1_not_in_aliases;Cado Z.
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;16:00;Erhard M.;Theate P.;player_2_not_in_aliases;Theate P.
+Today;ATP;Porto (Portugal) - Qualification;hard;15:00;Valdoleiros G.;Bertrand R.;player_1_not_in_aliases;Valdoleiros G.
