@@ -1,12 +1,24 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
 Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Trione R.;Oetzbach A.;player_1_not_in_aliases;Trione R.
-Today;ATP;Bari (Italy) - Qualification;clay;14:50;Colasanto F. G.;Andaloro F.;player_1_not_in_aliases;Colasanto F. G.
-Today;ATP;Columbus (USA) - Qualification;hard;20:30;Trotter J. K.;Okonkwo A.;player_2_not_in_aliases;Okonkwo A.
-Today;ATP;Columbus (USA) - Qualification;hard;22:00;Vandecasteele Q.;Stearns P.;tour_mismatch;"Vandecasteele Q.=ATP; Stearns P.=WTA"
-Today;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Heredia S.;Storck F. L.;player_2_not_in_aliases;Storck F. L.
-Today;ATP;Curitiba (Brazil) - Qualification;clay;16:30;Rodriguez L. J.;Milani B.;player_2_not_in_aliases;Milani B.
-Today;ATP;Curitiba (Brazil) - Qualification;clay;18:00;Dickerson R.;Pissetti Vialle H.;player_2_not_in_aliases;Pissetti Vialle H.
-Today;ATP;Curitiba (Brazil) - Qualification;clay;19:30;Saraiva Dos Santos P. A.;Scheidt A.;player_2_not_in_aliases;Scheidt A.
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;SET 1;Cado Z.;McDonald N.;player_1_not_in_aliases;Cado Z.
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;16:30;Erhard M.;Theate P.;player_2_not_in_aliases;Theate P.
-Today;ATP;Porto (Portugal) - Qualification;hard;15:00;Valdoleiros G.;Bertrand R.;player_1_not_in_aliases;Valdoleiros G.
+Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Colasanto F. G.;Andaloro F.;player_1_not_in_aliases;Colasanto F. G.
+Today;ATP;Columbus (USA) - Qualification;hard;20:55;Trotter J. K.;Okonkwo A.;player_2_not_in_aliases;Okonkwo A.
+Today;ATP;Columbus (USA) - Qualification;hard;22:25;Vandecasteele Q.;Stearns P.;tour_mismatch;"Vandecasteele Q.=ATP; Stearns P.=WTA"
+Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Heredia S.;Storck F. L.;player_2_not_in_aliases;Storck F. L.
+Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Rodriguez L. J.;Milani B.;player_2_not_in_aliases;Milani B.
+Today;ATP;Curitiba (Brazil) - Qualification;clay;SET 2;Dickerson R.;Pissetti Vialle H.;player_2_not_in_aliases;Pissetti Vialle H.
+Today;ATP;Curitiba (Brazil) - Qualification;clay;20:20;Saraiva Dos Santos P. A.;Scheidt A.;player_2_not_in_aliases;Scheidt A.
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Cado Z.;McDonald N.;player_1_not_in_aliases;Cado Z.
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Erhard M.;Theate P.;player_2_not_in_aliases;Theate P.
+Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Valdoleiros G.;Bertrand R.;player_1_not_in_aliases;Valdoleiros G.
+Day+1;WTA;Beijing (China) - Qualification;hard;05:00;Dart H.;Lemaitre T.;player_2_not_in_aliases;Lemaitre T.
+Day+1;WTA;Beijing (China) - Qualification;hard;06:30;Kawa K.;Matsuda R.;tour_mismatch;"Kawa K.=WTA; Matsuda R.=ATP"
+Day+1;WTA;Beijing (China) - Qualification;hard;08:00;Bassols M.;Nicholls O.;player_2_not_in_aliases;Nicholls O.
+Day+1;WTA;Beijing (China) - Qualification;hard;08:00;Kalieva E.;Perez E.;player_2_not_in_aliases;Perez E.
+Day+1;WTA;Beijing (China) - Qualification;hard;08:00;Mihalikova T.;Shi H.;player_1_not_in_aliases;Mihalikova T.
+Day+1;WTA;Beijing (China) - Qualification;hard;08:00;Sasnovich A.;Zhang J.;tour_mismatch;"Sasnovich A.=WTA; Zhang J.=ATP"
+Day+1;WTA;Beijing (China) - Qualification;hard;09:30;Eikeri U.;Lepchenko V.;player_1_not_in_aliases;Eikeri U.
+Day+1;WTA;Beijing (China) - Qualification;hard;11:00;Krawczyk D.;Astakhova D.;player_1_not_in_aliases;Krawczyk D.
+Day+1;WTA;Beijing (China) - Qualification;hard;11:00;Panova A.;Hontama M.;player_1_not_in_aliases;Panova A.
+Day+1;ATP;Jingshan (China) - Qualification;hard;05:30;Ding C.;Aguiard E.;player_1_not_in_aliases;Ding C.
+Day+1;ATP;Jingshan (China) - Qualification;hard;05:30;Huang J.;Moriya H.;player_1_not_in_aliases;Huang J.
+Day+1;ATP;Jingshan (China) - Qualification;hard;08:30;Xia Z.;Zhu E.;player_1_not_in_aliases;Xia Z.
