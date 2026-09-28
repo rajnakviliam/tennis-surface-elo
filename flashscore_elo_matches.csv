@@ -1,190 +1,174 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Rank 1;Rank 2;Rank Diff;Overall Elo Rank 1;Overall Elo Rank 2;Surface Elo Rank 1;Surface Elo Rank 2;Overall Elo 1;Overall Elo 2;Surface Elo 1;Surface Elo 2;Overall Elo Diff;Surface Elo Diff;Ranking Favorite;ELO Favorite;Has Elo 1;Has Elo 2;Both Have Elo
-Day+1;ATP;Columbus (USA) - Qualification;hard;00:30;Noah Zamora;Kaylan Bigun;765;596;169;;;;;;;;;;;Kaylan Bigun;;False;False;False
-Day+1;ATP;Columbus (USA) - Qualification;hard;00:55;Ilija Palavestra;Daniil Ostapenkov;1640;555;1085;;;;;;;;;;;Daniil Ostapenkov;;False;False;False
-Day+1;ATP;Columbus (USA) - Qualification;hard;02:05;Olukayode Alafia Damina Ayeni;Michael Bassem Sobhy;453;626;173;486;;448;;1305.2;;1305.3;;;;Olukayode Alafia Damina Ayeni;;True;False;False
-Day+1;ATP;Jingshan (China) - Qualification;hard;04:00;Omar Jasika;Chase Ferguson;392;604;212;490;;473;;1298.2;;1275.7;;;;Omar Jasika;;True;False;False
-Day+1;ATP;Jingshan (China) - Qualification;hard;04:00;Marat Sharipov;Naoya Honda;232;600;368;155;501;131;481;1632.9;1273.2;1619.8;1269.3;359.7;350.5;Marat Sharipov;Marat Sharipov;True;True;True
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;04:00;Rinky Hijikata;Camilo Ugo Carabelli;82;75;7;85;110;87;155;1738.8;1698.5;1693.0;1582.3;40.3;110.7;Camilo Ugo Carabelli;Rinky Hijikata;True;True;True
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;04:00;Zachary Svajda;Aleksandar Kovacevic;81;80;1;105;136;98;124;1708.1;1658.5;1668.2;1630.7;49.6;37.5;Aleksandar Kovacevic;Zachary Svajda;True;True;True
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;04:00;Stefanos Tsitsipas;Yoshihito Nishioka;44;210;166;26;116;25;106;1883.8;1688.7;1835.5;1659.2;195.1;176.3;Stefanos Tsitsipas;Stefanos Tsitsipas;True;True;True
-Day+1;ATP;Beijing (China) - Qualification;hard;05:00;Yannick Hanfmann;Tomas Machac;54;74;20;55;38;63;39;1793.0;1817.8;1731.6;1777.9;24.8;46.3;Yannick Hanfmann;Tomas Machac;True;True;True
-Day+1;ATP;Beijing (China) - Qualification;hard;05:00;Rigele Te;James Duckworth;839;65;774;;126;;118;;1676.7;;1637.4;;;James Duckworth;;False;True;False
-Day+1;WTA;Beijing (China) - Qualification;hard;05:00;Mina Hodzic;Zhuoxuan Bai;278;234;44;356;198;327;176;1392.4;1573.6;1383.2;1551.5;181.2;168.3;Zhuoxuan Bai;Zhuoxuan Bai;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;05:00;Yufei Ren;Ye Xin Ma;295;175;120;395;289;406;260;1357.8;1460.7;1310.1;1452.2;102.9;142.1;Ye Xin Ma;Ye Xin Ma;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;05:00;Dayana Yastremska;Jiaqi Wang;110;398;288;83;481;86;468;1743.6;1261.6;1686.4;1246.8;482.0;439.6;Dayana Yastremska;Dayana Yastremska;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;05:00;Carol Zhao;Vivian Wolff;767;240;527;388;337;330;272;1363.8;1409.6;1381.8;1430.5;45.8;48.7;Vivian Wolff;Vivian Wolff;True;True;True
-Day+1;WTA;Jingshan (China);hard;05:00;Sara Saito;Chenting Zhu;254;602;348;315;530;269;530;1432.2;1082.0;1432.4;1064.4;350.2;368.0;Sara Saito;Sara Saito;True;True;True
-Day+1;WTA;Jingshan (China);hard;05:00;Mei Yamaguchi;Wushuang Zheng;259;488;229;323;433;308;408;1424.6;1319.7;1397.2;1308.2;104.9;89.0;Mei Yamaguchi;Mei Yamaguchi;True;True;True
-Day+1;WTA;Jingshan (China);hard;05:00;Yidi Yang;Fiona Ferro;393;107;286;374;121;337;126;1372.0;1683.2;1367.9;1625.2;311.2;257.3;Fiona Ferro;Fiona Ferro;True;True;True
-Day+1;ATP;Jingshan (China) - Qualification;hard;05:00;Thomas Fancutt;Mitsuki Wei Kang Leong;688;421;267;;489;;458;;1301.6;;1294.2;;;Mitsuki Wei Kang Leong;;False;True;False
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;05:30;Arthur Fils;Martin Damm;11;106;95;5;104;5;103;2034.5;1708.5;1973.6;1661.9;326.0;311.7;Arthur Fils;Arthur Fils;True;True;True
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;05:30;Jaume Munar;Marcos Giron;66;85;19;75;113;49;104;1766.7;1693.3;1748.0;1660.1;73.4;87.9;Jaume Munar;Jaume Munar;True;True;True
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;05:30;Lorenzo Sonego;Kamil Majchrzak;86;73;13;96;69;84;77;1716.2;1773.6;1694.6;1713.1;57.4;18.5;Kamil Majchrzak;Kamil Majchrzak;True;True;True
-Day+1;ATP;Beijing (China) - Qualification;hard;06:30;Martin Landaluce;Marco Trungelliti;62;87;25;130;145;127;187;1667.9;1647.6;1625.0;1541.9;20.3;83.1;Martin Landaluce;Martin Landaluce;True;True;True
-Day+1;ATP;Beijing (China) - Qualification;hard;06:30;Alex Molcan;Vit Kopriva;96;71;25;89;115;116;123;1732.9;1689.8;1641.8;1632.3;43.1;9.5;Vit Kopriva;Alex Molcan;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;06:30;Yiming Dang;Xiaodi You;730;199;531;;303;;257;;1442.4;;1456.9;;;Xiaodi You;;False;True;False
-Day+1;WTA;Beijing (China) - Qualification;hard;06:30;Elsa Jacquemot;Zongyu Li;156;303;147;208;298;184;250;1564.8;1447.6;1541.2;1462.9;117.2;78.3;Elsa Jacquemot;Elsa Jacquemot;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;06:30;Andrea Lazaro Garcia;Tian Jialin;136;605;469;172;;186;;1602.5;;1538.1;;;;Andrea Lazaro Garcia;;True;False;False
-Day+1;WTA;Beijing (China) - Qualification;hard;06:30;Valeria Savinykh;Irene Burillo Escorihuela;644;205;439;408;225;391;305;1344.2;1538.7;1318.9;1397.8;194.5;78.9;Irene Burillo Escorihuela;Irene Burillo Escorihuela;True;True;True
-Day+1;WTA;Jingshan (China);hard;06:30;Jia Jing Lu;Hayu Kinoshita;391;215;176;390;317;374;288;1361.6;1429.4;1331.0;1413.3;67.8;82.3;Hayu Kinoshita;Hayu Kinoshita;True;True;True
-Day+1;WTA;Jingshan (China);hard;06:30;Sijia Wei;Yujia Huang;459;455;4;350;484;311;418;1396.9;1258.3;1396.0;1300.0;138.6;96.0;Yujia Huang;Sijia Wei;True;True;True
-Day+1;ATP;Jingshan (China) - Qualification;hard;07:00;Terence Atmane;Dominik Palan;83;622;539;82;541;72;542;1748.7;1176.6;1719.8;1157.7;572.1;562.1;Terence Atmane;Terence Atmane;True;True;True
-Day+1;ATP;Jingshan (China) - Qualification;hard;07:00;Sidharth Rawat;Alexandr Binda;654;490;164;542;474;548;468;1169.3;1321.8;1139.4;1283.3;152.5;143.9;Alexandr Binda;Alexandr Binda;True;True;True
-Day+1;ATP;Jingshan (China) - Qualification;hard;07:00;Adam Walton;Hikaru Shiraishi;99;539;440;107;;111;;1704.6;;1652.2;;;;Adam Walton;;True;False;False
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;07:30;Adolfo Daniel Vallejo;Taro Daniel;58;193;135;100;182;165;201;1711.0;1595.1;1573.3;1525.4;115.9;47.9;Adolfo Daniel Vallejo;Adolfo Daniel Vallejo;True;True;True
-Day+1;ATP;Beijing (China) - Qualification;hard;08:00;Yi Zhou;Pablo Carreno Busta;273;69;204;345;73;315;78;1439.4;1767.5;1414.0;1709.7;328.1;295.7;Pablo Carreno Busta;Pablo Carreno Busta;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;08:00;Shiyu Ye;Linda Fruhvirtova;748;177;571;;199;;172;;1572.7;;1554.3;;;Linda Fruhvirtova;;False;True;False
-Day+1;WTA;Beijing (China) - Qualification;hard;08:00;Tamara Zidansek;Ksenia Zaytseva;140;442;302;138;503;148;467;1657.9;1222.1;1599.0;1247.0;435.8;352.0;Tamara Zidansek;Tamara Zidansek;True;True;True
-Day+1;WTA;Jingshan (China);hard;08:00;Haruka Kaji;Emerson Jones;257;133;124;339;185;314;155;1408.1;1592.0;1394.1;1583.2;183.9;189.1;Emerson Jones;Emerson Jones;True;True;True
-Day+1;ATP;Jingshan (China) - Qualification;hard;08:30;Mattia Bellucci;Filip Peliwo;88;653;565;92;521;90;520;1725.5;1245.3;1679.0;1222.6;480.2;456.4;Mattia Bellucci;Mattia Bellucci;True;True;True
-Day+1;ATP;Jingshan (China) - Qualification;hard;08:30;Keisuke Saitoh;Koki Matsuda;548;478;70;;511;;505;;1260.0;;1240.0;;;Koki Matsuda;;False;True;False
-Day+1;ATP;Tokyo (Japan) - Qualification;hard;08:30;Shintaro Mochizuki;Jaime Faria;125;68;57;218;45;232;67;1555.9;1807.2;1489.0;1727.2;251.3;238.2;Jaime Faria;Jaime Faria;True;True;True
-Day+1;ATP;Beijing (China) - Qualification;hard;09:30;Jie Cui;Daniel Altmaier;456;67;389;438;98;405;121;1359.6;1712.8;1339.9;1634.4;353.2;294.5;Daniel Altmaier;Daniel Altmaier;True;True;True
-Day+1;ATP;Beijing (China) - Qualification;hard;09:30;Botic Van De Zandschulp;Valentin Royer;40;104;64;40;127;34;125;1816.8;1676.5;1789.6;1626.6;140.3;163.0;Botic Van De Zandschulp;Botic Van De Zandschulp;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;09:30;Robin Montgomery;Maria Aran Teixido Garcia;162;341;179;63;321;83;357;1773.6;1426.9;1692.1;1349.5;346.7;342.6;Robin Montgomery;Robin Montgomery;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;09:30;Rebecca Sramkova;Jodie Burrage;146;729;583;148;;134;;1639.7;;1617.0;;;;Rebecca Sramkova;;True;False;False
-Day+1;WTA;Beijing (China) - Qualification;hard;09:30;Ruien Zhang;Storm Hunter;631;179;452;498;109;491;90;1235.9;1697.9;1226.6;1684.2;462.0;457.6;Storm Hunter;Storm Hunter;True;True;True
-Day+1;ATP;Bari (Italy) - Qualification;clay;10:00;Franco Agamenone;John Sperle;367;692;325;429;;398;;1364.8;;1342.2;;;;Franco Agamenone;;True;False;False
-Day+1;ATP;Bari (Italy) - Qualification;clay;10:00;Imanol Lopez Morillo;Adrian Oetzbach;667;550;117;;;;;;;;;;;Adrian Oetzbach;;False;False;False
-Day+1;ATP;Bari (Italy) - Qualification;clay;10:00;Oleksandr Ovcharenko;Pierluigi Basile;615;547;68;;480;;439;;1313.6;;1311.5;;;Pierluigi Basile;;False;True;False
-Day+1;ATP;Beijing (China) - Qualification;hard;10:00;Miomir Kecmanovic;Adrian Mannarino;60;78;18;80;134;83;122;1749.5;1663.1;1697.8;1634.0;86.4;63.8;Miomir Kecmanovic;Miomir Kecmanovic;True;True;True
-Day+1;ATP;Jingshan (China) - Qualification;hard;10:00;Aleksandar Vukic;Ryan Seggerman;91;606;515;140;;126;;1652.9;;1626.1;;;;Aleksandar Vukic;;True;False;False
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;10:00;Niels Visker;Niels Mcdonald;414;489;75;449;460;392;506;1344.9;1334.1;1351.6;1238.4;10.8;113.2;Niels Visker;Niels Visker;True;True;True
-Day+1;WTA;Adana (Turkey);hard;10:30;Emiliana Arango;Anna Blinkova;137;87;50;176;96;166;93;1598.7;1716.4;1565.7;1679.4;117.7;113.7;Anna Blinkova;Anna Blinkova;True;True;True
-Day+1;WTA;Adana (Turkey);hard;10:30;Julia Riera;Anna Siskova;142;161;19;168;214;200;192;1607.2;1556.0;1520.2;1529.8;51.2;9.6;Julia Riera;Anna Siskova;True;True;True
-Day+1;WTA;Adana (Turkey);hard;10:30;Antonia Ruzic;Vendula Valdmannova;80;147;67;115;145;108;129;1691.8;1644.2;1657.2;1623.7;47.6;33.5;Antonia Ruzic;Antonia Ruzic;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;11:00;Maddison Inglis;Xinxin Yao;138;284;146;166;378;153;299;1609.8;1370.2;1586.0;1400.0;239.6;186.0;Maddison Inglis;Maddison Inglis;True;True;True
-Day+1;WTA;Beijing (China) - Qualification;hard;11:00;Anastasia Kulikova;Anna Lena Friedsam;314;266;48;256;239;223;228;1500.3;1517.5;1491.1;1488.4;17.2;2.7;Anna Lena Friedsam;Anastasia Kulikova;True;True;True
-Day+1;ATP;Chengdu (China);hard;11:00;Nikoloz Basilashvili;Alejandro Davidovich Fokina;145;29;116;190;21;189;21;1582.5;1895.2;1540.5;1843.4;312.7;302.9;Alejandro Davidovich Fokina;Alejandro Davidovich Fokina;True;True;True
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;11:00;Alexandre Reco;Patrick Zahraj;963;514;449;;519;;488;;1250.9;;1266.7;;;Patrick Zahraj;;False;True;False
-Day+1;ATP;Bari (Italy) - Qualification;clay;11:30;Federico Arnaboldi;Svyatoslav Gulin;495;567;72;461;498;452;479;1334.0;1280.5;1298.5;1264.8;53.5;33.7;Federico Arnaboldi;Federico Arnaboldi;True;True;True
-Day+1;ATP;Bari (Italy) - Qualification;clay;11:30;Matthew William Donald;Dimitris Sakellaridis;468;559;91;;;;;;;;;;;Matthew William Donald;;False;False;False
-Day+1;ATP;Bari (Italy) - Qualification;clay;11:30;Filippo Moroni;Fabrizio Andaloro;864;526;338;;;;;;;;;;;Fabrizio Andaloro;;False;False;False
-Day+1;ATP;Hangzhou (China);hard;11:30;Kyrian Jacquet;Andrey Rublev;107;25;82;133;28;128;27;1663.6;1879.7;1625.0;1825.1;216.1;200.1;Andrey Rublev;Andrey Rublev;True;True;True
-Day+1;WTA;Adana (Turkey);hard;12:00;Elena Ruxandra Bertea;Lucrezia Stefanini;282;123;159;305;127;388;111;1442.3;1673.1;1320.3;1651.8;230.8;331.5;Lucrezia Stefanini;Lucrezia Stefanini;True;True;True
-Day+1;WTA;Adana (Turkey);hard;12:00;Leolia Jeanjean;Suzan Lamens;108;214;106;118;174;132;168;1686.7;1601.8;1618.9;1559.9;84.9;59.0;Leolia Jeanjean;Leolia Jeanjean;True;True;True
-Day+1;WTA;Adana (Turkey);hard;12:00;Noma Noha Akugue;Fiona Crawley;128;227;99;193;173;182;170;1584.6;1602.3;1542.3;1556.3;17.7;14.0;Noma Noha Akugue;Fiona Crawley;True;True;True
-Day+1;ATP;Porto (Portugal) - Qualification;hard;12:00;Goncalo Marques;Christian Langmo;651;529;122;;515;;512;;1254.4;;1233.5;;;Christian Langmo;;False;True;False
-Day+1;ATP;Porto (Portugal) - Qualification;hard;12:00;Petr Nesterov;Marko Topo;300;362;62;334;340;296;257;1450.4;1447.1;1427.7;1465.2;3.3;37.5;Petr Nesterov;Marko Topo;True;True;True
-Day+1;ATP;Porto (Portugal) - Qualification;hard;12:00;Fausto Tabacco;Alejo Sanchez Quilez;528;364;164;;416;;369;;1376.9;;1370.8;;;Alejo Sanchez Quilez;;False;True;False
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;12:30;Manas Dhamne;Viktor Durasovic;396;467;71;477;476;454;430;1316.2;1317.4;1299.8;1317.5;1.2;17.7;Manas Dhamne;Viktor Durasovic;True;True;True
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;12:30;Filippo Romano;Ryan Peniston;306;508;202;455;394;300;372;1341.3;1407.6;1424.8;1368.6;66.3;56.2;Filippo Romano;Filippo Romano;True;True;True
-Day+1;ATP;Bari (Italy);clay;13:00;Lorenzo Angelini;Garrett Johns;575;442;133;;473;;467;;1323.2;;1284.6;;;Garrett Johns;;False;True;False
-Day+1;ATP;Bari (Italy);clay;13:00;Matteo Sciahbasi;Juan Cruz Martin Manzano;922;438;484;;434;;386;;1361.0;;1348.1;;;Juan Cruz Martin Manzano;;False;True;False
-Day+1;ATP;Chengdu (China);hard;13:00;Hubert Hurkacz;Denis Shapovalov;46;50;4;31;59;40;36;1847.4;1787.8;1776.7;1785.6;59.6;8.9;Hubert Hurkacz;Denis Shapovalov;True;True;True
-Day+1;WTA;Adana (Turkey);hard;13:30;Ksenia Efremova;Martyna Kubka;571;165;406;;147;;140;;1642.1;;1607.1;;;Martyna Kubka;;False;True;False
-Day+1;WTA;Adana (Turkey);hard;13:30;Viktoria Hruncakova;Anastasia Gasanova;209;195;14;247;227;239;231;1507.4;1535.8;1470.2;1487.7;28.4;17.5;Anastasia Gasanova;Anastasia Gasanova;True;True;True
-Day+1;ATP;Bari (Italy);clay;13:30;Buvaysar Gadamauri;Enrico Dalla Valle;267;317;50;350;355;328;309;1437.9;1435.8;1398.6;1413.0;2.1;14.4;Buvaysar Gadamauri;Enrico Dalla Valle;True;True;True
-Day+1;ATP;Hangzhou (China);hard;13:30;Daniil Medvedev;Roman Safiullin;6;102;96;17;61;9;76;1935.9;1785.8;1917.5;1714.7;150.1;202.8;Daniil Medvedev;Daniil Medvedev;True;True;True
-Day+1;ATP;Porto (Portugal);hard;13:30;Benjamin Bonzi;August Holmgren;90;242;152;77;293;71;286;1761.8;1481.3;1721.3;1438.3;280.5;283.0;Benjamin Bonzi;Benjamin Bonzi;True;True;True
-Day+1;ATP;Porto (Portugal) - Qualification;hard;13:30;Anton Matusevich;Robin Bertrand;311;379;68;352;458;323;406;1437.3;1338.7;1407.2;1337.7;98.6;69.5;Anton Matusevich;Anton Matusevich;True;True;True
-Day+1;ATP;Porto (Portugal) - Qualification;hard;13:30;Luca Potenza;Lui Maxted;538;394;144;387;463;354;439;1411.5;1333.4;1382.6;1310.7;78.1;71.9;Lui Maxted;Luca Potenza;True;True;True
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;14:00;Mathys Erhard;Alberto Barroso Campos;360;699;339;372;;335;;1423.4;;1398.7;;;;Mathys Erhard;;True;False;False
-Day+1;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;14:00;Leonardo Rossi;Yanis Ghazouani Durand;545;521;24;;;;;;;;;;;Yanis Ghazouani Durand;;False;False;False
-Day+1;ATP;Bari (Italy);clay;14:30;Mika Petkovic;Vitaliy Sachko;458;180;278;539;227;538;207;1179.7;1548.0;1174.4;1517.5;368.3;343.1;Vitaliy Sachko;Vitaliy Sachko;True;True;True
-Day+1;ATP;Bari (Italy);clay;15:00;Zsombor Piros;Benjamin Hassan;114;428;314;101;301;86;250;1710.9;1471.7;1675.3;1467.1;239.2;208.2;Zsombor Piros;Zsombor Piros;True;True;True
-Day+1;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Bruno Fernandez;Victor Hugo Remondy Pagotto;613;851;238;549;;552;;1130.0;;1117.3;;;;Bruno Fernandez;;True;False;False
-Day+1;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Samuel Heredia;Juan Sebastian Osorio;647;731;84;546;;549;;1137.8;;1134.3;;;;Samuel Heredia;;True;False;False
-Day+1;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Lorenzo Joaquin Rodriguez;Wilson Leite;518;717;199;534;;534;;1193.3;;1184.1;;;;Lorenzo Joaquin Rodriguez;;True;False;False
-Day+1;ATP;Porto (Portugal);hard;15:00;Max Basing;Mili Poljicak;241;291;50;209;285;206;447;1562.7;1488.5;1521.2;1305.3;74.2;215.9;Max Basing;Max Basing;True;True;True
-Day+1;ATP;Porto (Portugal);hard;15:30;Grigor Dimitrov;Daniel Rincon;127;260;133;84;207;70;194;1743.4;1565.5;1722.6;1536.0;177.9;186.6;Grigor Dimitrov;Grigor Dimitrov;True;True;True
-Day+1;ATP;Columbus (USA) - Qualification;hard;16:00;Oliver Okonkwo;Shunsuke Mitsui;909;536;373;;;;;;;;;;;Shunsuke Mitsui;;False;False;False
-Day+1;ATP;Columbus (USA) - Qualification;hard;16:00;Luca Staeheli;Alex Rybakov;451;511;60;;446;;433;;1352.1;;1315.8;;;Luca Staeheli;;False;True;False
-Day+1;ATP;Curitiba (Brazil) - Qualification;clay;16:30;Ryan Dickerson;Jose Pereira;691;837;146;537;;532;;1180.8;;1186.9;;;;Ryan Dickerson;;True;False;False
-Day+1;ATP;Curitiba (Brazil) - Qualification;clay;16:30;Paulo Andre Saraiva Dos Santos;Gabriel Schenekenberg;472;1168;696;543;;544;;1167.1;;1150.3;;;;Paulo Andre Saraiva Dos Santos;;True;False;False
-Day+1;ATP;Mouilleron-Le-Captif (France);hard;16:30;Dan Added;Gauthier Onclin;374;172;202;445;279;410;250;1354.1;1491.9;1335.0;1471.5;137.8;136.5;Gauthier Onclin;Gauthier Onclin;True;True;True
-Day+1;ATP;Mouilleron-Le-Captif (France);hard;16:30;Jack Pinnington Jones;Thomas Faurel;192;340;148;215;423;192;441;1556.4;1369.2;1538.2;1308.6;187.2;229.6;Jack Pinnington Jones;Jack Pinnington Jones;True;True;True
-Day+1;ATP;Porto (Portugal);hard;16:30;Michael Mmoh;Laslo Djere;148;181;33;187;122;163;141;1587.4;1681.3;1573.9;1598.8;93.9;24.9;Michael Mmoh;Laslo Djere;True;True;True
-Day+1;ATP;Porto (Portugal);hard;17:00;Jerome Kym;Tiago Torres;285;354;69;174;417;170;423;1603.2;1375.7;1564.8;1327.2;227.5;237.6;Jerome Kym;Jerome Kym;True;True;True
-Day+1;ATP;Curitiba (Brazil);clay;19:00;Guido Ivan Justo;Franco Roncadelli;233;264;31;333;335;283;274;1451.7;1450.2;1438.5;1448.7;1.5;10.2;Guido Ivan Justo;Franco Roncadelli;True;True;True
-Day+1;ATP;Curitiba (Brazil);clay;19:00;Felipe Meligeni Alves;Carlos Maria Zarate;463;344;119;359;533;278;531;1434.9;1199.9;1443.7;1187.0;235.0;256.7;Carlos Maria Zarate;Felipe Meligeni Alves;True;True;True
-Day+1;ATP;Mouilleron-Le-Captif (France);hard;19:00;Pierre Hugues Herbert;Sascha Gueymard Wayenburg;278;217;61;212;238;184;205;1560.0;1536.9;1545.8;1521.4;23.1;24.4;Sascha Gueymard Wayenburg;Pierre Hugues Herbert;True;True;True
-Day+1;ATP;Columbus (USA);hard;20:30;Daniel Milavsky;Blaise Bicknell;312;399;87;296;499;295;502;1474.4;1275.8;1429.2;1247.3;198.6;181.9;Daniel Milavsky;Daniel Milavsky;True;True;True
-Day+1;ATP;Columbus (USA);hard;20:30;Tyler Zink;Mitchell Krueger;337;372;35;465;317;445;290;1331.1;1464.1;1306.2;1436.3;133.0;130.1;Tyler Zink;Mitchell Krueger;True;True;True
-Day+1;ATP;Curitiba (Brazil);clay;20:30;Gonzalo Villanueva;Juan Carlos Prado Angelo;328;164;164;401;206;342;165;1399.8;1566.2;1386.1;1561.7;166.4;175.6;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
-Day+1;ATP;Mouilleron-Le-Captif (France);hard;20:30;Clement Tabur;Matteo Martineau;160;276;116;228;421;208;374;1547.8;1371.8;1517.9;1366.6;176.0;151.3;Clement Tabur;Clement Tabur;True;True;True
-Day+1;ATP;Columbus (USA);hard;22:00;Mees Rottgering;Edward Winter;335;338;3;167;396;158;363;1614.2;1406.9;1579.4;1373.9;207.3;205.5;Mees Rottgering;Mees Rottgering;True;True;True
-Day+1;ATP;Columbus (USA);hard;22:00;Braden Shick;Ozan Baris;202;416;214;248;;212;;1528.8;;1511.5;;;;Braden Shick;;True;False;False
-Day+1;ATP;Curitiba (Brazil);clay;23:45;Gustavo Heide;Hernan Casanova;120;397;277;179;385;132;323;1600.1;1413.7;1605.8;1400.3;186.4;205.5;Gustavo Heide;Gustavo Heide;True;True;True
-Today;ATP;Columbus (USA) - Qualification;hard;23:25;Nicolas Oliveira;Li Tu;801;533;268;;308;;274;;1469.3;;1451.9;;;Li Tu;;False;True;False
-Today;WTA;Adana (Turkey) - Qualification;hard;FINISHED;Viktoria Hruncakova;Anastasia Tikhonova;209;250;41;247;413;239;395;1507.4;1341.1;1470.2;1318.2;166.3;152.0;Viktoria Hruncakova;Viktoria Hruncakova;True;True;True
-Today;WTA;Adana (Turkey) - Qualification;hard;FINISHED;Erika Andreeva;Elena Micic;211;285;74;238;338;238;321;1517.7;1409.2;1470.9;1388.6;108.5;82.3;Erika Andreeva;Erika Andreeva;True;True;True
-Today;WTA;Adana (Turkey) - Qualification;hard;FINISHED;Fiona Crawley;Lois Boisson;227;269;42;173;126;170;188;1602.3;1674.3;1556.3;1535.2;72.0;21.1;Fiona Crawley;Fiona Crawley;True;True;True
-Today;WTA;Ankara (Turkey);hard;FINISHED;Berfu Cengiz;Teodora Kostovic;307;159;148;319;162;315;180;1429.1;1616.6;1393.5;1544.9;187.5;151.4;Teodora Kostovic;Teodora Kostovic;True;True;True
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Duje Ajdukovic;Imanol Lopez Morillo;345;667;322;322;;289;;1461.2;;1433.3;;;;Duje Ajdukovic;;True;False;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Filip Misolic;Oleksandr Ovcharenko;476;615;139;201;;97;;1574.1;;1645.3;;;;Filip Misolic;;True;False;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Franco Agamenone;Ignacio Parisca;367;655;288;429;;398;;1364.8;;1342.2;;;;Franco Agamenone;;True;False;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Federico Arnaboldi;Federico Iannaccone;495;588;93;461;;452;;1334.0;;1298.5;;;;Federico Arnaboldi;;True;False;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Kai Wehnelt;Pierluigi Basile;611;547;64;;480;;439;;1313.6;;1311.5;;;Pierluigi Basile;;False;True;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;John Sperle;Giuseppe La Vela;692;553;139;;;;;;;;;;;Giuseppe La Vela;;False;False;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Filippo Francesco Garbero;Dimitris Sakellaridis;1418;559;859;;;;;;;;;;;Dimitris Sakellaridis;;False;False;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Luis Carlos Alvarez;Svyatoslav Gulin;762;567;195;;498;;479;;1280.5;;1264.8;;;Svyatoslav Gulin;;False;True;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Matthew William Donald;Carles Cordoba;468;829;361;;;;;;;;;;;Matthew William Donald;;False;False;False
-Today;ATP;Bari (Italy) - Qualification;clay;FINISHED;Gianmarco Ferrari;Filippo Moroni;488;864;376;;;;;;;;;;;Gianmarco Ferrari;;False;False;False
-Today;ATP;Chengdu (China);hard;FINISHED;Jenson Brooksby;Nikoloz Basilashvili;77;145;68;99;190;93;189;1712.0;1582.5;1675.2;1540.5;129.5;134.7;Jenson Brooksby;Jenson Brooksby;True;True;True
-Today;ATP;Chengdu (China);hard;FINISHED;Alexandre Muller;Alejandro Davidovich Fokina;135;29;106;162;21;145;21;1616.2;1895.2;1593.1;1843.4;279.0;250.3;Alejandro Davidovich Fokina;Alejandro Davidovich Fokina;True;True;True
-Today;ATP;Chengdu (China);hard;FINISHED;Adrian Mannarino;Denis Shapovalov;78;50;28;134;59;122;36;1663.1;1787.8;1634.0;1785.6;124.7;151.6;Denis Shapovalov;Denis Shapovalov;True;True;True
-Today;ATP;Chengdu (China);hard;FINISHED;Lloyd Harris;Hubert Hurkacz;136;46;90;95;31;88;40;1717.1;1847.4;1683.9;1776.7;130.3;92.8;Hubert Hurkacz;Hubert Hurkacz;True;True;True
-Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Ryan Colby;Shunsuke Mitsui;636;536;100;;;;;;;;;;;Shunsuke Mitsui;;False;False;False
-Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Luca Staeheli;Bruno Kuzuhara;451;663;212;;;;;;;;;;;Luca Staeheli;;False;False;False
-Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Keaton Hance;Michael Antonius;865;624;241;;;;;;;;;;;Michael Antonius;;False;False;False
-Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Andrej Martin;Oliver Okonkwo;371;909;538;332;;379;;1451.8;;1363.7;;;;Andrej Martin;;True;False;False
-Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Matthew Forbes;Alex Rybakov;763;511;252;;446;;433;;1352.1;;1315.8;;;Alex Rybakov;;False;True;False
-Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Joao Victor Couto Loureiro;Victor Hugo Remondy Pagotto;883;851;32;;;;;;;;;;;Victor Hugo Remondy Pagotto;;False;False;False
-Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Jefferson Wendler Filho;Juan Sebastian Osorio;1190;731;459;;;;;;;;;;;Juan Sebastian Osorio;;False;False;False
-Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Justin Roberts;Wilson Leite;976;717;259;;;;;;;;;;;Wilson Leite;;False;False;False
-Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Bruno Fernandez;Federico Zeballos;613;1174;561;549;;552;;1130.0;;1117.3;;;;Bruno Fernandez;;True;False;False
-Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Gabriel Schenekenberg;Victor Braga;1168;1417;249;;;;;;;;;;;Gabriel Schenekenberg;;False;False;False
-Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Rafael Tosetto;Jose Pereira;880;837;43;;;;;;;;;;;Jose Pereira;;False;False;False
-Today;ATP;Curitiba (Brazil) - Qualification;clay;FINISHED;Pedro Sakamoto;Joao Vitor Goncalves Ceolin;506;1090;584;522;;512;;1244.8;;1228.9;;;;Pedro Sakamoto;;True;False;False
-Today;ATP;Genova 2 (Italy);clay;FINISHED;Luka Mikrut;Carlo Alberto Caniato;214;386;172;175;380;106;316;1603.1;1416.2;1628.4;1408.6;186.9;219.8;Luka Mikrut;Luka Mikrut;True;True;True
-Today;ATP;Hangzhou (China);hard;FINISHED;Fabian Marozsan;Kyrian Jacquet;59;107;48;76;133;73;128;1763.4;1663.6;1719.7;1625.0;99.8;94.7;Fabian Marozsan;Fabian Marozsan;True;True;True
-Today;ATP;Hangzhou (China);hard;FINISHED;Hugo Gaston;Andrey Rublev;97;25;72;125;28;112;27;1677.2;1879.7;1652.0;1825.1;202.5;173.1;Andrey Rublev;Andrey Rublev;True;True;True
-Today;ATP;Hangzhou (China);hard;FINISHED;Roman Safiullin;Bu Yunchaokete;102;111;9;61;119;76;114;1785.8;1685.3;1714.7;1645.1;100.5;69.6;Roman Safiullin;Roman Safiullin;True;True;True
-Today;ATP;Hangzhou (China);hard;FINISHED;Daniil Medvedev;Coleman Wong;6;108;102;17;124;9;108;1935.9;1677.3;1917.5;1656.4;258.6;261.1;Daniil Medvedev;Daniil Medvedev;True;True;True
-Today;WTA;Jingshan (China) - Qualification;hard;FINISHED;Priska Madelyn Nugroho;Yujia Huang;365;455;90;445;484;423;418;1307.9;1258.3;1295.4;1300.0;49.6;4.6;Priska Madelyn Nugroho;Yujia Huang;True;True;True
-Today;WTA;Jingshan (China) - Qualification;hard;FINISHED;Amelia Rajecki;Chengyiyi Yuan;392;432;40;414;522;471;528;1340.8;1152.4;1245.8;1070.0;188.4;175.8;Amelia Rajecki;Amelia Rajecki;True;True;True
-Today;WTA;Jingshan (China) - Qualification;hard;FINISHED;Kristiana Sidorova;Meiqi Guo;408;638;230;415;456;366;462;1339.9;1295.7;1338.3;1251.4;44.2;86.9;Kristiana Sidorova;Kristiana Sidorova;True;True;True
-Today;WTA;Jingshan (China) - Qualification;hard;FINISHED;Jiaqi Wang;Wushuang Zheng;398;488;90;481;433;468;408;1261.6;1319.7;1246.8;1308.2;58.1;61.4;Jiaqi Wang;Wushuang Zheng;True;True;True
-Today;ATP;Laver Cup (World);hard;FINISHED;Alexander Zverev;Learner Tien;2;13;11;3;16;3;14;2118.7;1936.4;2057.4;1901.4;182.3;156.0;Alexander Zverev;Alexander Zverev;True;True;True
-Today;WTA;Laver Cup (World);hard;FINISHED;Anhelina Kalinina;Karolina Muchova;48;8;40;68;15;81;14;1770.0;1961.0;1697.9;1913.4;191.0;215.5;Karolina Muchova;Karolina Muchova;True;True;True
-Today;WTA;Laver Cup (World);hard;FINISHED;Elina Svitolina;Linda Noskova;7;6;1;6;7;6;9;2050.8;2048.9;1988.1;1963.8;1.9;24.3;Linda Noskova;Elina Svitolina;True;True;True
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Justin Boulais;Alexandre Reco;418;963;545;440;;419;;1358.5;;1331.3;;;;Justin Boulais;;True;False;False
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Patrick Zahraj;Karl Poling;514;460;54;519;503;488;476;1250.9;1270.6;1266.7;1272.9;19.7;6.2;Karl Poling;Karl Poling;True;True;True
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Niels Visker;Tom Paris;414;664;250;449;414;392;386;1344.9;1377.4;1351.6;1355.9;32.5;4.3;Niels Visker;Tom Paris;True;True;True
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Filippo Romano;Kenny De Schepper;306;925;619;455;;300;;1341.3;;1424.8;;;;Filippo Romano;;True;False;False
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Jelle Sels;Ryan Peniston;562;508;54;481;394;414;372;1312.5;1407.6;1333.0;1368.6;95.1;35.6;Ryan Peniston;Ryan Peniston;True;True;True
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Manas Dhamne;Maxime Janvier;396;620;224;477;502;454;498;1316.2;1271.8;1299.8;1256.3;44.4;43.5;Manas Dhamne;Manas Dhamne;True;True;True
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Matisse Bobichon;Viktor Durasovic;566;467;99;;476;;430;;1317.4;;1317.5;;;Viktor Durasovic;;False;True;False
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Alberto Barroso Campos;Thijs Boogaard;699;481;218;;;;;;;;;;;Thijs Boogaard;;False;False;False
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Yanis Ghazouani Durand;Emile Hudd;521;459;62;;;;;;;;;;;Emile Hudd;;False;False;False
-Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;FINISHED;Constantin Bittoun Kouzmine;Leonardo Rossi;434;545;111;527;;521;;1238.6;;1222.0;;;;Constantin Bittoun Kouzmine;;True;False;False
-Today;ATP;Plovdiv 4 (Bulgaria);clay;FINISHED;Max Alcala Gurri;Jonas Forejtek;163;433;270;250;435;212;408;1526.8;1360.3;1513.0;1334.4;166.5;178.6;Max Alcala Gurri;Max Alcala Gurri;True;True;True
-Today;WTA;Porto (Portugal);hard;FINISHED;Maria Timofeeva;Reese Brantmeier;88;385;297;78;304;94;295;1754.6;1442.3;1678.4;1409.3;312.3;269.1;Maria Timofeeva;Maria Timofeeva;True;True;True
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Alexander Donski;Alejo Sanchez Quilez;523;364;159;398;416;291;369;1402.3;1376.9;1435.4;1370.8;25.4;64.6;Alejo Sanchez Quilez;Alexander Donski;True;True;True
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Rafael Izquierdo Luque;Fausto Tabacco;700;528;172;;;;;;;;;;;Fausto Tabacco;;False;False;False
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Petr Nesterov;Giorgio Tabacco;300;733;433;334;;296;;1450.4;;1427.7;;;;Petr Nesterov;;True;False;False
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Georgii Kravchenko;Goncalo Marques;307;651;344;384;;338;;1414.4;;1395.2;;;;Georgii Kravchenko;;True;False;False
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Mario Gonzalez Fernandez;Marko Topo;568;362;206;;340;;257;;1447.1;;1465.2;;;Marko Topo;;False;True;False
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Anton Matusevich;Tiago Cacao;311;678;367;352;;323;;1437.3;;1407.2;;;;Anton Matusevich;;True;False;False
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Christian Langmo;Eliakim Coulibaly;529;369;160;515;366;512;297;1254.4;1430.0;1233.5;1427.3;175.6;193.8;Eliakim Coulibaly;Eliakim Coulibaly;True;True;True
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Ivan Marrero Curbelo;Luca Potenza;339;538;199;444;387;446;354;1355.8;1411.5;1305.9;1382.6;55.7;76.7;Ivan Marrero Curbelo;Luca Potenza;True;True;True
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Francisco Rocha;Lui Maxted;854;394;460;;463;;439;;1333.4;;1310.7;;;Lui Maxted;;False;True;False
-Today;ATP;Porto (Portugal) - Qualification;hard;FINISHED;Michael Geerts;Vladyslav Orlov;343;502;159;432;;390;;1361.5;;1352.5;;;;Michael Geerts;;True;False;False
-Today;ATP;San Diego 2 (USA);hard;FINISHED;Nishesh Basavareddy;Dylan Dietrich;167;409;242;109;219;113;282;1699.7;1552.4;1652.0;1445.1;147.3;206.9;Nishesh Basavareddy;Nishesh Basavareddy;True;True;True
-Today;WTA;Seoul (South Korea);hard;FINISHED;Maya Joint;Kimberly Birrell;99;60;39;102;103;92;84;1708.2;1707.0;1679.7;1691.7;1.2;12.0;Kimberly Birrell;Kimberly Birrell;True;True;True
-Today;WTA;Singapore (Singapore);hard;FINISHED;Leylah Fernandez;Talia Gibson;31;63;32;47;95;35;70;1818.7;1717.0;1798.1;1726.9;101.7;71.2;Leylah Fernandez;Leylah Fernandez;True;True;True
-Today;ATP;St. Tropez (France);hard;FINISHED;Titouan Droguet;Harold Mayot;84;237;153;65;184;69;160;1777.6;1591.0;1724.9;1577.7;186.6;147.2;Titouan Droguet;Titouan Droguet;True;True;True
-Today;WTA;Tolentino (Italy);clay;FINISHED;Guiomar Maristany Zuleta De Reales;Julia Grabher;170;111;59;167;158;133;127;1609.5;1626.7;1588.1;1595.5;17.2;7.4;Julia Grabher;Julia Grabher;True;True;True
-Today;WTA;W35 Santa Margherita di Pula 8 (Italy);clay;FINISHED;Alisa Oktiabreva;Alena Kovackova;507;400;107;205;260;163;238;1568.4;1494.4;1558.3;1464.7;74.0;93.6;Alena Kovackova;Alisa Oktiabreva;True;True;True
-Today;WTA;W35 Sharm ElSheikh 2 (Egypt);hard;FINISHED;Yuliya Hatouka;Maria Golovina;685;418;267;;;;;;;;;;;Maria Golovina;;False;False;False
-Today;WTA;W50 Nanao (Japan);grass;FINISHED;Sakura Hosogi;Hiromi Abe;346;356;10;347;364;327;345;1399.7;1380.7;1374.8;1365.3;19.0;9.5;Sakura Hosogi;Sakura Hosogi;True;True;True
-Today;WTA;W50 Plovdiv (Bulgaria);clay;FINISHED;Elizara Yaneva;Ane Mintegi Del Olmo;153;264;111;218;320;203;292;1553.3;1428.9;1498.9;1396.9;124.4;102.0;Elizara Yaneva;Elizara Yaneva;True;True;True
-Today;WTA;W50 Yecla (Spain);hard;FINISHED;Charo Esquiva Banuls;Carmen Gallardo Guevara;769;532;237;;;;;;;;;;;Carmen Gallardo Guevara;;False;False;False
-Today;ATP;Buenos Aires 3 (Argentina);clay;SET 1;Alex Barrena;Facundo Mena;240;220;20;325;307;286;254;1458.5;1469.5;1436.3;1463.5;11.0;27.2;Facundo Mena;Facundo Mena;True;True;True
-Today;ATP;Curitiba (Brazil) - Qualification;clay;SET 1;Boris Arias;Santiago De La Fuente;1292;724;568;;;;;;;;;;;Santiago De La Fuente;;False;False;False
-Today;ATP;San Diego 2 (USA);hard;SET 1;Nishesh Basavareddy;Igor Ribeiro Marcondes;167;324;157;109;312;113;355;1699.7;1467.4;1652.0;1380.9;232.3;271.1;Nishesh Basavareddy;Nishesh Basavareddy;True;True;True
-Today;WTA;W50 Berkeley, CA (USA);hard;SET 1;Kayla Day;Janae Preston;118;781;663;153;;149;;1630.3;;1595.5;;;;Kayla Day;;True;False;False
-Today;ATP;Porto (Portugal) - Qualification;hard;SET 2;Joao Domingues;Vadym Ursu;598;403;195;;524;;522;;1242.7;;1221.7;;;Vadym Ursu;;False;True;False
-Today;ATP;Columbus (USA) - Qualification;hard;SET 3;Duncan Chan;Denis Petak;486;1132;646;375;;359;;1419.2;;1378.4;;;;Duncan Chan;;True;False;False
-Today;WTA;Adana (Turkey) - Qualification;hard;WALKOVER;Gina Feistel;Elena Ruxandra Bertea;324;282;42;336;305;413;388;1409.7;1442.3;1302.5;1320.3;32.6;17.8;Elena Ruxandra Bertea;Elena Ruxandra Bertea;True;True;True
+Day+1;ATP;Tokyo (Japan) - Qualification;hard;03:00;Stefanos Tsitsipas;Rinky Hijikata;44;82;38;26;85;25;87;1883.8;1738.8;1835.5;1693.0;145.0;142.5;Stefanos Tsitsipas;Stefanos Tsitsipas;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Alex Bolt;Semen Pankin;165;419;254;220;497;213;485;1551.7;1283.1;1509.6;1268.0;268.6;241.6;Alex Bolt;Alex Bolt;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Matthew Dellavedova;Andre Ilagan;270;184;86;540;208;539;191;1178.4;1564.4;1167.1;1538.4;386.0;371.3;Andre Ilagan;Andre Ilagan;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Lloyd Harris;Alexis Galarneau;136;179;43;95;192;88;198;1717.1;1581.3;1683.9;1533.9;135.8;150.0;Lloyd Harris;Lloyd Harris;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Masamichi Imamura;Petr Bar Biryukov;408;269;139;492;439;484;383;1295.6;1358.7;1268.2;1358.9;63.1;90.7;Petr Bar Biryukov;Petr Bar Biryukov;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;James Mccabe;Federico Cina;255;170;85;339;189;328;175;1447.3;1586.0;1404.2;1555.5;138.7;151.3;Federico Cina;Federico Cina;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Stefanos Sakellaridis;Yuta Shimizu;134;393;259;166;376;142;345;1614.4;1418.4;1598.3;1390.1;196.0;208.2;Stefanos Sakellaridis;Stefanos Sakellaridis;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Akira Santillan;Luka Pavlovic;313;201;112;419;256;389;236;1372.9;1519.1;1352.7;1486.7;146.2;134.0;Luka Pavlovic;Luka Pavlovic;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Bernard Tomic;Fajing Sun;182;314;132;243;365;220;321;1532.6;1430.5;1502.4;1409.3;102.1;93.1;Bernard Tomic;Bernard Tomic;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Arthur Weber;Yanki Erel;405;329;76;456;364;438;312;1340.4;1430.6;1311.1;1415.4;90.2;104.3;Yanki Erel;Yanki Erel;True;True;True
+Day+1;ATP;Jingshan (China);hard;05:00;Michael Zheng;Yaojie Zeng;92;994;902;58;;52;;1788.2;;1744.5;;;;Michael Zheng;;True;False;False
+Day+1;WTA;Jingshan (China);hard;05:00;Jessica Bouzas Maneiro;Fangran Tian;93;260;167;92;270;106;249;1724.1;1483.7;1660.0;1463.1;240.4;196.9;Jessica Bouzas Maneiro;Jessica Bouzas Maneiro;True;True;True
+Day+1;WTA;Jingshan (China);hard;05:00;Tyra Caterina Grant;Aliona Falei;150;220;70;120;250;169;216;1683.5;1504.7;1558.4;1501.4;178.8;57.0;Tyra Caterina Grant;Tyra Caterina Grant;True;True;True
+Day+1;WTA;Jingshan (China);hard;05:00;Alevtina Ibragimova;Daria Khomutsianskaya;166;286;120;161;354;193;332;1617.1;1393.4;1529.5;1378.8;223.7;150.7;Alevtina Ibragimova;Alevtina Ibragimova;True;True;True
+Day+1;WTA;Jingshan (China);hard;05:00;Kristina Mladenovic;Sofia Costoulas;823;152;671;330;226;298;198;1417.3;1537.5;1401.5;1526.5;120.2;125.0;Sofia Costoulas;Sofia Costoulas;True;True;True
+Day+1;WTA;Jingshan (China);hard;05:00;Viktoria Morvayova;Sara Sorribes Tormo;296;188;108;412;143;372;157;1341.1;1645.5;1332.3;1577.5;304.4;245.2;Sara Sorribes Tormo;Sara Sorribes Tormo;True;True;True
+Day+1;WTA;Jingshan (China);hard;05:00;Kyoka Okamura;Ru Xi Wu;322;810;488;358;;358;;1390.0;;1345.1;;;;Kyoka Okamura;;True;False;False
+Day+1;WTA;Jingshan (China);hard;05:00;Amelia Rajecki;Yafan Wang;392;572;180;414;;471;;1340.8;;1245.8;;;;Amelia Rajecki;;True;False;False
+Day+1;WTA;Jingshan (China);hard;05:00;Alexandra Shubladze;Rina Saigo;158;281;123;237;416;220;379;1517.9;1338.9;1495.3;1328.0;179.0;167.3;Alexandra Shubladze;Alexandra Shubladze;True;True;True
+Day+1;WTA;Jingshan (China);hard;05:00;Kristiana Sidorova;Daria Egorova;408;352;56;415;;366;;1339.9;;1338.3;;;;Daria Egorova;;True;False;False
+Day+1;WTA;Jingshan (China);hard;05:00;Katarina Zavatska;Sofya Lansere;262;274;12;246;375;302;312;1508.7;1371.3;1399.4;1395.5;137.4;3.9;Katarina Zavatska;Katarina Zavatska;True;True;True
+Day+1;ATP;Jingshan (China) - Qualification;hard;05:00;Marat Sharipov;Mitsuki Wei Kang Leong;232;421;189;155;489;131;458;1632.9;1301.6;1619.8;1294.2;331.3;325.6;Marat Sharipov;Marat Sharipov;True;True;True
+Day+1;WTA;Adana (Turkey);hard;10:00;Lucia Bronzetti;Lois Boisson;130;269;139;156;126;177;188;1628.1;1674.3;1548.8;1535.2;46.2;13.6;Lucia Bronzetti;Lucia Bronzetti;True;True;True
+Day+1;WTA;Adana (Turkey);hard;10:00;Dalma Galfi;Julia Grabher;145;111;34;160;158;167;197;1621.0;1626.7;1560.8;1527.6;5.7;33.2;Julia Grabher;Dalma Galfi;True;True;True
+Day+1;WTA;Adana (Turkey);hard;10:00;Polina Iatcenko;Ekaterine Gorgodze;178;154;24;135;191;139;199;1661.4;1587.8;1607.7;1524.0;73.6;83.7;Ekaterine Gorgodze;Polina Iatcenko;True;True;True
+Day+1;WTA;Adana (Turkey);hard;10:00;Teodora Kostovic;Berfu Cengiz;159;307;148;162;319;180;315;1616.6;1429.1;1544.9;1393.5;187.5;151.4;Teodora Kostovic;Teodora Kostovic;True;True;True
+Day+1;WTA;Adana (Turkey);hard;10:00;Carole Monnet;Cagla Buyukakcay;206;447;241;230;434;253;400;1531.3;1318.2;1461.2;1315.8;213.1;145.4;Carole Monnet;Carole Monnet;True;True;True
+Day+1;WTA;Adana (Turkey);hard;10:00;Elena Pridankina;Ayla Aksu;196;216;20;188;268;187;235;1589.8;1485.3;1537.8;1475.5;104.5;62.3;Elena Pridankina;Elena Pridankina;True;True;True
+Day+1;WTA;Adana (Turkey);hard;10:00;Lola Radivojevic;Melisa Ercan;172;669;497;259;;258;;1495.2;;1453.8;;;;Lola Radivojevic;;True;False;False
+Day+1;WTA;Adana (Turkey);hard;10:00;Anastasia Tikhonova;Simona Waltert;250;97;153;413;139;395;150;1341.1;1657.4;1318.2;1589.4;316.3;271.2;Simona Waltert;Simona Waltert;True;True;True
+Day+1;ATP;Bari (Italy);clay;10:00;Geoffrey Blancaneaux;Dimitar Kuzmanov;441;358;83;436;328;387;307;1359.9;1457.0;1347.9;1415.3;97.1;67.4;Dimitar Kuzmanov;Dimitar Kuzmanov;True;True;True
+Day+1;ATP;Bari (Italy);clay;10:00;Gianluca Cadenasso;Benito Sanchez Martinez;219;900;681;292;;261;;1482.6;;1457.4;;;;Gianluca Cadenasso;;True;False;False
+Day+1;ATP;Bari (Italy);clay;10:00;Pol Martin Tiffon;Laurent Lokoli;215;375;160;271;343;267;284;1502.6;1440.9;1453.3;1437.1;61.7;16.2;Pol Martin Tiffon;Pol Martin Tiffon;True;True;True
+Day+1;ATP;Bari (Italy);clay;10:00;Samuele Pieri;Andrej Martin;395;371;24;479;332;458;299;1314.7;1451.8;1295.1;1425.2;137.1;130.1;Andrej Martin;Andrej Martin;True;True;True
+Day+1;ATP;Bari (Italy);clay;10:00;Carlos Taberner;Elmer Moller;425;176;249;205;262;167;209;1567.6;1510.2;1560.4;1514.9;57.4;45.5;Elmer Moller;Carlos Taberner;True;True;True
+Day+1;ATP;Mouilleron-Le-Captif (France);hard;10:00;Liam Broady;Dominic Stricker;203;266;63;252;188;228;188;1521.9;1587.1;1493.6;1540.6;65.2;47.0;Liam Broady;Dominic Stricker;True;True;True
+Day+1;ATP;Mouilleron-Le-Captif (France);hard;10:00;Clement Chidekh;David Goffin;177;390;213;211;139;178;130;1560.8;1654.1;1552.3;1620.1;93.3;67.8;Clement Chidekh;David Goffin;True;True;True
+Day+1;ATP;Mouilleron-Le-Captif (France);hard;10:00;Daniil Glinka;Henry Bernet;173;482;309;245;369;203;402;1531.5;1426.0;1525.1;1343.0;105.5;182.1;Daniil Glinka;Daniil Glinka;True;True;True
+Day+1;ATP;Mouilleron-Le-Captif (France);hard;10:00;Billy Harris;Felix Balshaw;231;195;36;255;161;252;162;1519.7;1620.8;1468.8;1575.8;101.1;107.0;Felix Balshaw;Felix Balshaw;True;True;True
+Day+1;ATP;Mouilleron-Le-Captif (France);hard;10:00;Philip Henning;Tristan Schoolkate;268;152;116;374;176;298;167;1420.1;1602.3;1426.4;1569.3;182.2;142.9;Tristan Schoolkate;Tristan Schoolkate;True;True;True
+Day+1;ATP;Mouilleron-Le-Captif (France);hard;10:00;Mark Lajal;Lucas Poullain;143;325;182;149;297;132;278;1644.5;1473.8;1618.8;1449.7;170.7;169.1;Mark Lajal;Mark Lajal;True;True;True
+Day+1;ATP;Porto (Portugal);hard;11:00;Cezar Cretu;Henrique Rocha;272;116;156;254;157;258;166;1520.6;1626.9;1464.6;1569.5;106.3;104.9;Henrique Rocha;Henrique Rocha;True;True;True
+Day+1;ATP;Porto (Portugal);hard;11:00;Moez Echargui;Damir Dzumhur;378;100;278;287;151;259;147;1487.9;1639.3;1463.9;1589.7;151.4;125.8;Damir Dzumhur;Damir Dzumhur;True;True;True
+Day+1;ATP;Porto (Portugal);hard;11:00;Hugo Grenier;Carl Emil Overbeck;289;290;1;258;514;233;509;1515.8;1255.5;1488.5;1236.2;260.3;252.3;Hugo Grenier;Hugo Grenier;True;True;True
+Day+1;ATP;Porto (Portugal);hard;11:00;David Jorda Sanchis;Jesper De Jong;216;95;121;371;123;472;138;1425.9;1680.0;1277.8;1599.5;254.1;321.7;Jesper De Jong;Jesper De Jong;True;True;True
+Day+1;ATP;Porto (Portugal);hard;11:00;Toby Samuel;Mackenzie Mcdonald;98;156;58;46;178;35;150;1803.9;1600.3;1786.8;1587.7;203.6;199.1;Toby Samuel;Toby Samuel;True;True;True
+Day+1;ATP;Porto (Portugal);hard;11:00;Otto Virtanen;Tiago Pereira;103;332;229;128;495;115;492;1676.4;1284.2;1643.8;1261.8;392.2;382.0;Otto Virtanen;Otto Virtanen;True;True;True
+Day+1;ATP;Curitiba (Brazil);clay;15:00;Lucas Andrade Da Silva;Genaro Alberto Olivieri;767;274;493;;318;;281;;1463.8;;1439.1;;;Genaro Alberto Olivieri;;False;True;False
+Day+1;ATP;Curitiba (Brazil);clay;15:00;Alex Barrena;Tomas Barrios Vera;240;137;103;325;199;286;186;1458.5;1575.9;1436.3;1537.8;117.4;101.5;Tomas Barrios Vera;Tomas Barrios Vera;True;True;True
+Day+1;ATP;Curitiba (Brazil);clay;15:00;Luis Guto Miguel;Facundo Mena;657;220;437;426;307;399;254;1368.2;1469.5;1340.2;1463.5;101.3;123.3;Facundo Mena;Facundo Mena;True;True;True
+Day+1;ATP;Curitiba (Brazil);clay;15:00;Joao Lucas Reis Da Silva;Murkel Alejandro Dellien Velasco;224;423;199;280;475;240;446;1491.5;1320.0;1476.6;1309.1;171.5;167.5;Joao Lucas Reis Da Silva;Joao Lucas Reis Da Silva;True;True;True
+Day+1;ATP;Curitiba (Brazil);clay;15:00;Thiago Seyboth Wild;Pedro Boscardin Dias;138;284;146;173;397;145;353;1605.4;1402.5;1590.5;1374.7;202.9;215.8;Thiago Seyboth Wild;Thiago Seyboth Wild;True;True;True
+Day+1;ATP;Curitiba (Brazil);clay;15:00;Matias Soto;Lautaro Midon;246;197;49;341;230;294;192;1441.8;1544.2;1429.2;1531.6;102.4;102.4;Lautaro Midon;Lautaro Midon;True;True;True
+Day+1;ATP;Curitiba (Brazil);clay;15:00;Miguel Tobon;Juan Bautista Torres;497;277;220;482;373;451;327;1310.1;1420.3;1299.9;1399.1;110.2;99.2;Juan Bautista Torres;Juan Bautista Torres;True;True;True
+Day+1;ATP;Columbus (USA);hard;16:00;Darwin Blanch;Patrick Maloney;166;999;833;202;;199;;1571.5;;1528.1;;;;Darwin Blanch;;True;False;False
+Day+1;ATP;Columbus (USA);hard;16:00;Dylan Dietrich;J J Wolf;409;218;191;219;159;282;140;1552.4;1624.5;1445.1;1599.3;72.1;154.2;J J Wolf;J J Wolf;True;True;True
+Day+1;ATP;Columbus (USA);hard;16:00;Nikita Filin;Aidan Mayo;1206;356;850;;362;;320;;1432.4;;1410.3;;;Aidan Mayo;;False;True;False
+Day+1;ATP;Columbus (USA);hard;16:00;Stefan Kozlov;Aidan Kim;292;628;336;395;;360;;1407.5;;1378.1;;;;Stefan Kozlov;;True;False;False
+Day+1;ATP;Columbus (USA);hard;16:00;Igor Ribeiro Marcondes;Andrew Fenty;324;431;107;312;528;355;527;1467.4;1237.4;1380.9;1209.5;230.0;171.4;Igor Ribeiro Marcondes;Igor Ribeiro Marcondes;True;True;True
+Day+1;ATP;Columbus (USA);hard;16:00;Brandon Nakashima;Jack Kennedy;16;388;372;18;263;18;337;1917.6;1508.9;1875.2;1395.9;408.7;479.3;Brandon Nakashima;Brandon Nakashima;True;True;True
+Day+1;ATP;Columbus (USA);hard;16:00;Trevor Svajda;Andres Andrade;501;206;295;246;233;223;219;1530.7;1541.3;1498.1;1503.2;10.6;5.1;Andres Andrade;Andres Andrade;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;06:40;Yiming Dang;Xiaodi You;730;199;531;;303;;257;;1442.4;;1456.9;;;Xiaodi You;;False;True;False
+Today;WTA;Beijing (China) - Qualification;hard;06:55;Elsa Jacquemot;Zongyu Li;156;303;147;208;298;184;250;1564.8;1447.6;1541.2;1462.9;117.2;78.3;Elsa Jacquemot;Elsa Jacquemot;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;06:55;Valeria Savinykh;Irene Burillo Escorihuela;644;205;439;408;225;391;305;1344.2;1538.7;1318.9;1397.8;194.5;78.9;Irene Burillo Escorihuela;Irene Burillo Escorihuela;True;True;True
+Today;ATP;Jingshan (China) - Qualification;hard;07:00;Sidharth Rawat;Alexandr Binda;654;490;164;542;474;548;468;1169.3;1321.8;1139.4;1283.3;152.5;143.9;Alexandr Binda;Alexandr Binda;True;True;True
+Today;ATP;Tokyo (Japan) - Qualification;hard;07:00;Jaume Munar;Marcos Giron;66;85;19;75;113;49;104;1766.7;1693.3;1748.0;1660.1;73.4;87.9;Jaume Munar;Jaume Munar;True;True;True
+Today;ATP;Beijing (China) - Qualification;hard;07:10;Martin Landaluce;Marco Trungelliti;62;87;25;130;145;127;187;1667.9;1647.6;1625.0;1541.9;20.3;83.1;Martin Landaluce;Martin Landaluce;True;True;True
+Today;ATP;Jingshan (China) - Qualification;hard;07:10;Adam Walton;Hikaru Shiraishi;99;539;440;107;;111;;1704.6;;1652.2;;;;Adam Walton;;True;False;False
+Today;ATP;Beijing (China) - Qualification;hard;07:30;Alex Molcan;Vit Kopriva;96;71;25;89;115;116;123;1732.9;1689.8;1641.8;1632.3;43.1;9.5;Vit Kopriva;Alex Molcan;True;True;True
+Today;WTA;Jingshan (China);hard;07:30;Jia Jing Lu;Hayu Kinoshita;391;215;176;390;317;374;288;1361.6;1429.4;1331.0;1413.3;67.8;82.3;Hayu Kinoshita;Hayu Kinoshita;True;True;True
+Today;ATP;Jingshan (China) - Qualification;hard;07:50;Terence Atmane;Dominik Palan;83;622;539;82;541;72;542;1748.7;1176.6;1719.8;1157.7;572.1;562.1;Terence Atmane;Terence Atmane;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;08:00;Shiyu Ye;Linda Fruhvirtova;748;177;571;;199;;172;;1572.7;;1554.3;;;Linda Fruhvirtova;;False;True;False
+Today;ATP;Jingshan (China) - Qualification;hard;08:30;Mattia Bellucci;Filip Peliwo;88;653;565;92;521;90;520;1725.5;1245.3;1679.0;1222.6;480.2;456.4;Mattia Bellucci;Mattia Bellucci;True;True;True
+Today;ATP;Jingshan (China) - Qualification;hard;08:30;Keisuke Saitoh;Koki Matsuda;548;478;70;;511;;505;;1260.0;;1240.0;;;Koki Matsuda;;False;True;False
+Today;ATP;Tokyo (Japan) - Qualification;hard;08:30;Shintaro Mochizuki;Jaime Faria;125;68;57;218;45;232;67;1555.9;1807.2;1489.0;1727.2;251.3;238.2;Jaime Faria;Jaime Faria;True;True;True
+Today;ATP;Tokyo (Japan) - Qualification;hard;08:30;Lorenzo Sonego;Kamil Majchrzak;86;73;13;96;69;84;77;1716.2;1773.6;1694.6;1713.1;57.4;18.5;Kamil Majchrzak;Kamil Majchrzak;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;08:40;Tamara Zidansek;Ksenia Zaytseva;140;442;302;138;503;148;467;1657.9;1222.1;1599.0;1247.0;435.8;352.0;Tamara Zidansek;Tamara Zidansek;True;True;True
+Today;ATP;Beijing (China) - Qualification;hard;09:00;Yi Zhou;Pablo Carreno Busta;273;69;204;345;73;315;78;1439.4;1767.5;1414.0;1709.7;328.1;295.7;Pablo Carreno Busta;Pablo Carreno Busta;True;True;True
+Today;WTA;Jingshan (China);hard;09:00;Haruka Kaji;Emerson Jones;257;133;124;339;185;314;155;1408.1;1592.0;1394.1;1583.2;183.9;189.1;Emerson Jones;Emerson Jones;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;09:30;Rebecca Sramkova;Jodie Burrage;146;729;583;148;;134;;1639.7;;1617.0;;;;Rebecca Sramkova;;True;False;False
+Today;WTA;Beijing (China) - Qualification;hard;09:55;Robin Montgomery;Maria Aran Teixido Garcia;162;341;179;63;321;83;357;1773.6;1426.9;1692.1;1349.5;346.7;342.6;Robin Montgomery;Robin Montgomery;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;09:55;Ruien Zhang;Storm Hunter;631;179;452;498;109;491;90;1235.9;1697.9;1226.6;1684.2;462.0;457.6;Storm Hunter;Storm Hunter;True;True;True
+Today;ATP;Bari (Italy) - Qualification;clay;10:00;Franco Agamenone;John Sperle;367;692;325;429;;398;;1364.8;;1342.2;;;;Franco Agamenone;;True;False;False
+Today;ATP;Bari (Italy) - Qualification;clay;10:00;Imanol Lopez Morillo;Adrian Oetzbach;667;550;117;;;;;;;;;;;Adrian Oetzbach;;False;False;False
+Today;ATP;Bari (Italy) - Qualification;clay;10:00;Oleksandr Ovcharenko;Pierluigi Basile;615;547;68;;480;;439;;1313.6;;1311.5;;;Pierluigi Basile;;False;True;False
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;10:00;Niels Visker;Niels Mcdonald;414;489;75;449;460;392;506;1344.9;1334.1;1351.6;1238.4;10.8;113.2;Niels Visker;Niels Visker;True;True;True
+Today;ATP;Tokyo (Japan) - Qualification;hard;10:00;Adolfo Daniel Vallejo;Taro Daniel;58;193;135;100;182;165;201;1711.0;1595.1;1573.3;1525.4;115.9;47.9;Adolfo Daniel Vallejo;Adolfo Daniel Vallejo;True;True;True
+Today;ATP;Beijing (China) - Qualification;hard;10:15;Jie Cui;Daniel Altmaier;456;67;389;438;98;405;121;1359.6;1712.8;1339.9;1634.4;353.2;294.5;Daniel Altmaier;Daniel Altmaier;True;True;True
+Today;WTA;Adana (Turkey);hard;10:30;Emiliana Arango;Anna Blinkova;137;87;50;176;96;166;93;1598.7;1716.4;1565.7;1679.4;117.7;113.7;Anna Blinkova;Anna Blinkova;True;True;True
+Today;WTA;Adana (Turkey);hard;10:30;Julia Riera;Anna Siskova;142;161;19;168;214;200;192;1607.2;1556.0;1520.2;1529.8;51.2;9.6;Julia Riera;Anna Siskova;True;True;True
+Today;WTA;Adana (Turkey);hard;10:30;Antonia Ruzic;Vendula Valdmannova;80;147;67;115;145;108;129;1691.8;1644.2;1657.2;1623.7;47.6;33.5;Antonia Ruzic;Antonia Ruzic;True;True;True
+Today;ATP;Beijing (China) - Qualification;hard;10:30;Botic Van De Zandschulp;Valentin Royer;40;104;64;40;127;34;125;1816.8;1676.5;1789.6;1626.6;140.3;163.0;Botic Van De Zandschulp;Botic Van De Zandschulp;True;True;True
+Today;ATP;Beijing (China) - Qualification;hard;10:40;Miomir Kecmanovic;Adrian Mannarino;60;78;18;80;134;83;122;1749.5;1663.1;1697.8;1634.0;86.4;63.8;Miomir Kecmanovic;Miomir Kecmanovic;True;True;True
+Today;ATP;Jingshan (China) - Qualification;hard;10:50;Aleksandar Vukic;Ryan Seggerman;91;606;515;140;;126;;1652.9;;1626.1;;;;Aleksandar Vukic;;True;False;False
+Today;WTA;Beijing (China) - Qualification;hard;11:00;Anastasia Kulikova;Anna Lena Friedsam;314;266;48;256;239;223;228;1500.3;1517.5;1491.1;1488.4;17.2;2.7;Anna Lena Friedsam;Anastasia Kulikova;True;True;True
+Today;ATP;Chengdu (China);hard;11:00;Nikoloz Basilashvili;Alejandro Davidovich Fokina;145;29;116;190;21;189;21;1582.5;1895.2;1540.5;1843.4;312.7;302.9;Alejandro Davidovich Fokina;Alejandro Davidovich Fokina;True;True;True
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;11:00;Alexandre Reco;Patrick Zahraj;963;514;449;;519;;488;;1250.9;;1266.7;;;Patrick Zahraj;;False;True;False
+Today;ATP;Bari (Italy) - Qualification;clay;11:30;Federico Arnaboldi;Svyatoslav Gulin;495;567;72;461;498;452;479;1334.0;1280.5;1298.5;1264.8;53.5;33.7;Federico Arnaboldi;Federico Arnaboldi;True;True;True
+Today;ATP;Bari (Italy) - Qualification;clay;11:30;Matthew William Donald;Dimitris Sakellaridis;468;559;91;;;;;;;;;;;Matthew William Donald;;False;False;False
+Today;ATP;Bari (Italy) - Qualification;clay;11:30;Filippo Moroni;Fabrizio Andaloro;864;526;338;;;;;;;;;;;Fabrizio Andaloro;;False;False;False
+Today;ATP;Hangzhou (China);hard;11:30;Kyrian Jacquet;Andrey Rublev;107;25;82;133;28;128;27;1663.6;1879.7;1625.0;1825.1;216.1;200.1;Andrey Rublev;Andrey Rublev;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;11:45;Maddison Inglis;Xinxin Yao;138;284;146;166;378;153;299;1609.8;1370.2;1586.0;1400.0;239.6;186.0;Maddison Inglis;Maddison Inglis;True;True;True
+Today;WTA;Adana (Turkey);hard;12:00;Elena Ruxandra Bertea;Lucrezia Stefanini;282;123;159;305;127;388;111;1442.3;1673.1;1320.3;1651.8;230.8;331.5;Lucrezia Stefanini;Lucrezia Stefanini;True;True;True
+Today;WTA;Adana (Turkey);hard;12:00;Leolia Jeanjean;Suzan Lamens;108;214;106;118;174;132;168;1686.7;1601.8;1618.9;1559.9;84.9;59.0;Leolia Jeanjean;Leolia Jeanjean;True;True;True
+Today;WTA;Adana (Turkey);hard;12:00;Noma Noha Akugue;Fiona Crawley;128;227;99;193;173;182;170;1584.6;1602.3;1542.3;1556.3;17.7;14.0;Noma Noha Akugue;Fiona Crawley;True;True;True
+Today;ATP;Porto (Portugal) - Qualification;hard;12:00;Goncalo Marques;Christian Langmo;651;529;122;;515;;512;;1254.4;;1233.5;;;Christian Langmo;;False;True;False
+Today;ATP;Porto (Portugal) - Qualification;hard;12:00;Petr Nesterov;Marko Topo;300;362;62;334;340;296;257;1450.4;1447.1;1427.7;1465.2;3.3;37.5;Petr Nesterov;Marko Topo;True;True;True
+Today;ATP;Porto (Portugal) - Qualification;hard;12:00;Fausto Tabacco;Alejo Sanchez Quilez;528;364;164;;416;;369;;1376.9;;1370.8;;;Alejo Sanchez Quilez;;False;True;False
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;12:30;Manas Dhamne;Viktor Durasovic;396;467;71;477;476;454;430;1316.2;1317.4;1299.8;1317.5;1.2;17.7;Manas Dhamne;Viktor Durasovic;True;True;True
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;12:30;Filippo Romano;Ryan Peniston;306;508;202;455;394;300;372;1341.3;1407.6;1424.8;1368.6;66.3;56.2;Filippo Romano;Filippo Romano;True;True;True
+Today;ATP;Bari (Italy);clay;13:00;Lorenzo Angelini;Garrett Johns;575;442;133;;473;;467;;1323.2;;1284.6;;;Garrett Johns;;False;True;False
+Today;ATP;Bari (Italy);clay;13:00;Matteo Sciahbasi;Juan Cruz Martin Manzano;922;438;484;;434;;386;;1361.0;;1348.1;;;Juan Cruz Martin Manzano;;False;True;False
+Today;ATP;Chengdu (China);hard;13:00;Hubert Hurkacz;Denis Shapovalov;46;50;4;31;59;40;36;1847.4;1787.8;1776.7;1785.6;59.6;8.9;Hubert Hurkacz;Denis Shapovalov;True;True;True
+Today;WTA;Adana (Turkey);hard;13:30;Ksenia Efremova;Martyna Kubka;571;165;406;;147;;140;;1642.1;;1607.1;;;Martyna Kubka;;False;True;False
+Today;WTA;Adana (Turkey);hard;13:30;Viktoria Hruncakova;Anastasia Gasanova;209;195;14;247;227;239;231;1507.4;1535.8;1470.2;1487.7;28.4;17.5;Anastasia Gasanova;Anastasia Gasanova;True;True;True
+Today;ATP;Bari (Italy);clay;13:30;Buvaysar Gadamauri;Enrico Dalla Valle;267;317;50;350;355;328;309;1437.9;1435.8;1398.6;1413.0;2.1;14.4;Buvaysar Gadamauri;Enrico Dalla Valle;True;True;True
+Today;ATP;Hangzhou (China);hard;13:30;Daniil Medvedev;Roman Safiullin;6;102;96;17;61;9;76;1935.9;1785.8;1917.5;1714.7;150.1;202.8;Daniil Medvedev;Daniil Medvedev;True;True;True
+Today;ATP;Porto (Portugal);hard;13:30;Benjamin Bonzi;August Holmgren;90;242;152;77;293;71;286;1761.8;1481.3;1721.3;1438.3;280.5;283.0;Benjamin Bonzi;Benjamin Bonzi;True;True;True
+Today;ATP;Porto (Portugal) - Qualification;hard;13:30;Anton Matusevich;Robin Bertrand;311;379;68;352;458;323;406;1437.3;1338.7;1407.2;1337.7;98.6;69.5;Anton Matusevich;Anton Matusevich;True;True;True
+Today;ATP;Porto (Portugal) - Qualification;hard;13:30;Luca Potenza;Lui Maxted;538;394;144;387;463;354;439;1411.5;1333.4;1382.6;1310.7;78.1;71.9;Lui Maxted;Luca Potenza;True;True;True
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;14:00;Mathys Erhard;Alberto Barroso Campos;360;699;339;372;;335;;1423.4;;1398.7;;;;Mathys Erhard;;True;False;False
+Today;ATP;Mouilleron-Le-Captif (France) - Qualification;hard;14:00;Leonardo Rossi;Yanis Ghazouani Durand;545;521;24;;;;;;;;;;;Yanis Ghazouani Durand;;False;False;False
+Today;ATP;Bari (Italy);clay;14:30;Mika Petkovic;Vitaliy Sachko;458;180;278;539;227;538;207;1179.7;1548.0;1174.4;1517.5;368.3;343.1;Vitaliy Sachko;Vitaliy Sachko;True;True;True
+Today;ATP;Bari (Italy);clay;15:00;Zsombor Piros;Benjamin Hassan;114;428;314;101;301;86;250;1710.9;1471.7;1675.3;1467.1;239.2;208.2;Zsombor Piros;Zsombor Piros;True;True;True
+Today;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Bruno Fernandez;Victor Hugo Remondy Pagotto;613;851;238;549;;552;;1130.0;;1117.3;;;;Bruno Fernandez;;True;False;False
+Today;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Samuel Heredia;Juan Sebastian Osorio;647;731;84;546;;549;;1137.8;;1134.3;;;;Samuel Heredia;;True;False;False
+Today;ATP;Curitiba (Brazil) - Qualification;clay;15:00;Lorenzo Joaquin Rodriguez;Wilson Leite;518;717;199;534;;534;;1193.3;;1184.1;;;;Lorenzo Joaquin Rodriguez;;True;False;False
+Today;ATP;Porto (Portugal);hard;15:00;Max Basing;Mili Poljicak;241;291;50;209;285;206;447;1562.7;1488.5;1521.2;1305.3;74.2;215.9;Max Basing;Max Basing;True;True;True
+Today;ATP;Porto (Portugal) - Qualification;hard;15:00;Michael Geerts;Joao Domingues;343;598;255;432;;390;;1361.5;;1352.5;;;;Michael Geerts;;True;False;False
+Today;ATP;Porto (Portugal);hard;15:30;Grigor Dimitrov;Daniel Rincon;127;260;133;84;207;70;194;1743.4;1565.5;1722.6;1536.0;177.9;186.6;Grigor Dimitrov;Grigor Dimitrov;True;True;True
+Today;ATP;Columbus (USA) - Qualification;hard;16:00;Oliver Okonkwo;Shunsuke Mitsui;909;536;373;;;;;;;;;;;Shunsuke Mitsui;;False;False;False
+Today;ATP;Columbus (USA) - Qualification;hard;16:00;Luca Staeheli;Alex Rybakov;451;511;60;;446;;433;;1352.1;;1315.8;;;Luca Staeheli;;False;True;False
+Today;ATP;Curitiba (Brazil) - Qualification;clay;16:30;Ryan Dickerson;Jose Pereira;691;837;146;537;;532;;1180.8;;1186.9;;;;Ryan Dickerson;;True;False;False
+Today;ATP;Curitiba (Brazil) - Qualification;clay;16:30;Pedro Sakamoto;Santiago De La Fuente;506;724;218;522;;512;;1244.8;;1228.9;;;;Pedro Sakamoto;;True;False;False
+Today;ATP;Curitiba (Brazil) - Qualification;clay;16:30;Paulo Andre Saraiva Dos Santos;Gabriel Schenekenberg;472;1168;696;543;;544;;1167.1;;1150.3;;;;Paulo Andre Saraiva Dos Santos;;True;False;False
+Today;ATP;Mouilleron-Le-Captif (France);hard;16:30;Dan Added;Gauthier Onclin;374;172;202;445;279;410;250;1354.1;1491.9;1335.0;1471.5;137.8;136.5;Gauthier Onclin;Gauthier Onclin;True;True;True
+Today;ATP;Mouilleron-Le-Captif (France);hard;16:30;Jack Pinnington Jones;Thomas Faurel;192;340;148;215;423;192;441;1556.4;1369.2;1538.2;1308.6;187.2;229.6;Jack Pinnington Jones;Jack Pinnington Jones;True;True;True
+Today;ATP;Porto (Portugal);hard;16:30;Michael Mmoh;Laslo Djere;148;181;33;187;122;163;141;1587.4;1681.3;1573.9;1598.8;93.9;24.9;Michael Mmoh;Laslo Djere;True;True;True
+Today;ATP;Porto (Portugal);hard;17:00;Jerome Kym;Tiago Torres;285;354;69;174;417;170;423;1603.2;1375.7;1564.8;1327.2;227.5;237.6;Jerome Kym;Jerome Kym;True;True;True
+Today;ATP;Columbus (USA) - Qualification;hard;17:30;Duncan Chan;Keaton Hance;486;865;379;375;;359;;1419.2;;1378.4;;;;Duncan Chan;;True;False;False
+Today;ATP;Columbus (USA) - Qualification;hard;17:30;James Trotter;Li Tu;446;533;87;408;308;380;274;1390.5;1469.3;1363.0;1451.9;78.8;88.9;James Trotter;Li Tu;True;True;True
+Today;ATP;Columbus (USA) - Qualification;hard;19:00;Olukayode Alafia Damina Ayeni;Kaylan Bigun;453;596;143;486;;448;;1305.2;;1305.3;;;;Olukayode Alafia Damina Ayeni;;True;False;False
+Today;ATP;Columbus (USA) - Qualification;hard;19:00;Quinn Vandecasteele;Daniil Ostapenkov;465;555;90;311;;275;;1467.9;;1451.2;;;;Quinn Vandecasteele;;True;False;False
+Today;ATP;Curitiba (Brazil);clay;19:00;Guido Ivan Justo;Franco Roncadelli;233;264;31;333;335;283;274;1451.7;1450.2;1438.5;1448.7;1.5;10.2;Guido Ivan Justo;Franco Roncadelli;True;True;True
+Today;ATP;Curitiba (Brazil);clay;19:00;Felipe Meligeni Alves;Carlos Maria Zarate;463;344;119;359;533;278;531;1434.9;1199.9;1443.7;1187.0;235.0;256.7;Carlos Maria Zarate;Felipe Meligeni Alves;True;True;True
+Today;ATP;Mouilleron-Le-Captif (France);hard;19:00;Pierre Hugues Herbert;Sascha Gueymard Wayenburg;278;217;61;212;238;184;205;1560.0;1536.9;1545.8;1521.4;23.1;24.4;Sascha Gueymard Wayenburg;Pierre Hugues Herbert;True;True;True
+Today;ATP;Columbus (USA);hard;20:30;Daniel Milavsky;Blaise Bicknell;312;399;87;296;499;295;502;1474.4;1275.8;1429.2;1247.3;198.6;181.9;Daniel Milavsky;Daniel Milavsky;True;True;True
+Today;ATP;Columbus (USA);hard;20:30;Tyler Zink;Mitchell Krueger;337;372;35;465;317;445;290;1331.1;1464.1;1306.2;1436.3;133.0;130.1;Tyler Zink;Mitchell Krueger;True;True;True
+Today;ATP;Curitiba (Brazil);clay;20:30;Gonzalo Villanueva;Juan Carlos Prado Angelo;328;164;164;401;206;342;165;1399.8;1566.2;1386.1;1561.7;166.4;175.6;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
+Today;ATP;Mouilleron-Le-Captif (France);hard;20:30;Clement Tabur;Matteo Martineau;160;276;116;228;421;208;374;1547.8;1371.8;1517.9;1366.6;176.0;151.3;Clement Tabur;Clement Tabur;True;True;True
+Today;ATP;Columbus (USA);hard;22:00;Mees Rottgering;Edward Winter;335;338;3;167;396;158;363;1614.2;1406.9;1579.4;1373.9;207.3;205.5;Mees Rottgering;Mees Rottgering;True;True;True
+Today;ATP;Columbus (USA);hard;22:00;Braden Shick;Ozan Baris;202;416;214;248;;212;;1528.8;;1511.5;;;;Braden Shick;;True;False;False
+Today;ATP;Curitiba (Brazil);clay;23:45;Gustavo Heide;Hernan Casanova;120;397;277;179;385;132;323;1600.1;1413.7;1605.8;1400.3;186.4;205.5;Gustavo Heide;Gustavo Heide;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Mina Hodzic;Zhuoxuan Bai;278;234;44;356;198;327;176;1392.4;1573.6;1383.2;1551.5;181.2;168.3;Zhuoxuan Bai;Zhuoxuan Bai;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Carol Zhao;Vivian Wolff;767;240;527;388;337;330;272;1363.8;1409.6;1381.8;1430.5;45.8;48.7;Vivian Wolff;Vivian Wolff;True;True;True
+Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Ilija Palavestra;Daniil Ostapenkov;1640;555;1085;;;;;;;;;;;Daniil Ostapenkov;;False;False;False
+Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Noah Zamora;Kaylan Bigun;765;596;169;;;;;;;;;;;Kaylan Bigun;;False;False;False
+Today;ATP;Columbus (USA) - Qualification;hard;FINISHED;Olukayode Alafia Damina Ayeni;Michael Bassem Sobhy;453;626;173;486;;448;;1305.2;;1305.3;;;;Olukayode Alafia Damina Ayeni;;True;False;False
+Today;WTA;Jingshan (China);hard;FINISHED;Sara Saito;Chenting Zhu;254;602;348;315;530;269;530;1432.2;1082.0;1432.4;1064.4;350.2;368.0;Sara Saito;Sara Saito;True;True;True
+Today;WTA;Jingshan (China);hard;FINISHED;Mei Yamaguchi;Wushuang Zheng;259;488;229;323;433;308;408;1424.6;1319.7;1397.2;1308.2;104.9;89.0;Mei Yamaguchi;Mei Yamaguchi;True;True;True
+Today;ATP;Jingshan (China) - Qualification;hard;FINISHED;Omar Jasika;Chase Ferguson;392;604;212;490;;473;;1298.2;;1275.7;;;;Omar Jasika;;True;False;False
+Today;ATP;Jingshan (China) - Qualification;hard;FINISHED;Marat Sharipov;Naoya Honda;232;600;368;155;501;131;481;1632.9;1273.2;1619.8;1269.3;359.7;350.5;Marat Sharipov;Marat Sharipov;True;True;True
+Today;ATP;Jingshan (China) - Qualification;hard;FINISHED;Thomas Fancutt;Mitsuki Wei Kang Leong;688;421;267;;489;;458;;1301.6;;1294.2;;;Mitsuki Wei Kang Leong;;False;True;False
+Today;ATP;Tokyo (Japan) - Qualification;hard;FINISHED;Rinky Hijikata;Camilo Ugo Carabelli;82;75;7;85;110;87;155;1738.8;1698.5;1693.0;1582.3;40.3;110.7;Camilo Ugo Carabelli;Rinky Hijikata;True;True;True
+Today;ATP;Tokyo (Japan) - Qualification;hard;FINISHED;Stefanos Tsitsipas;Yoshihito Nishioka;44;210;166;26;116;25;106;1883.8;1688.7;1835.5;1659.2;195.1;176.3;Stefanos Tsitsipas;Stefanos Tsitsipas;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;SET 1;Andrea Lazaro Garcia;Tian Jialin;136;605;469;172;;186;;1602.5;;1538.1;;;;Andrea Lazaro Garcia;;True;False;False
+Today;WTA;Jingshan (China);hard;SET 1;Sijia Wei;Yujia Huang;459;455;4;350;484;311;418;1396.9;1258.3;1396.0;1300.0;138.6;96.0;Yujia Huang;Sijia Wei;True;True;True
+Today;ATP;Beijing (China) - Qualification;hard;SET 2;Yannick Hanfmann;Tomas Machac;54;74;20;55;38;63;39;1793.0;1817.8;1731.6;1777.9;24.8;46.3;Yannick Hanfmann;Tomas Machac;True;True;True
+Today;ATP;Beijing (China) - Qualification;hard;SET 2;Rigele Te;Arthur Gea;839;61;778;;66;;41;;1777.4;;1774.4;;;Arthur Gea;;False;True;False
+Today;ATP;Tokyo (Japan) - Qualification;hard;SET 2;Zachary Svajda;Aleksandar Kovacevic;81;80;1;105;136;98;124;1708.1;1658.5;1668.2;1630.7;49.6;37.5;Aleksandar Kovacevic;Zachary Svajda;True;True;True
+Today;ATP;Tokyo (Japan) - Qualification;hard;SET 2;Arthur Fils;Martin Damm;11;106;95;5;104;5;103;2034.5;1708.5;1973.6;1661.9;326.0;311.7;Arthur Fils;Arthur Fils;True;True;True
+Today;WTA;Beijing (China) - Qualification;hard;SET 3;Yufei Ren;Ye Xin Ma;295;175;120;395;289;406;260;1357.8;1460.7;1310.1;1452.2;102.9;142.1;Ye Xin Ma;Ye Xin Ma;True;True;True
+Today;WTA;Jingshan (China);hard;SET 3;Yidi Yang;Fiona Ferro;393;107;286;374;121;337;126;1372.0;1683.2;1367.9;1625.2;311.2;257.3;Fiona Ferro;Fiona Ferro;True;True;True
