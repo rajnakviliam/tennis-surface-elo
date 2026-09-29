@@ -8,7 +8,7 @@ Today;ATP;Beijing (China) - Qualification;hard;FINISHED;Mannarino A.;Carreno-Bus
 Today;ATP;Tokyo (Japan) - Qualification;hard;FINISHED;Tsitsipas S.;Hijikata R.
 Today;ATP;Tokyo (Japan) - Qualification;hard;FINISHED;Munar J.;Kovacevic A.
 Today;ATP;Tokyo (Japan) - Qualification;hard;FINISHED;Fils A.;Majchrzak K.
-Today;ATP;Tokyo (Japan) - Qualification;hard;SET 3;Vallejo D.;Faria J.
+Today;ATP;Tokyo (Japan) - Qualification;hard;FINISHED;Vallejo D.;Faria J.
 Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Dart H.;Ma Y.
 Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Jacquemot E.;Wolff V.
 Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Kawa K.;Savinykh V.
@@ -18,12 +18,12 @@ Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Lazaro Garcia A.;Fruhvir
 Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Kalieva E.;Shi H.
 Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Sasnovich A.;Lepchenko V.
 Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Montgomery R.;Friedsam A-L.
-Today;WTA;Beijing (China) - Qualification;hard;SET 2;Inglis M.;Astakhova D.
-Today;WTA;Beijing (China) - Qualification;hard;SET 1;Burrage J.;Hontama M.
-Today;WTA;Beijing (China) - Qualification;hard;09:50;Zaytseva K.;Hunter S.
-Today;ATP;Bari (Italy);clay;10:00;Blancaneaux G.;Kuzmanov D.
-Today;ATP;Bari (Italy);clay;10:00;Cadenasso G.;Sanchez Martinez B.
-Today;ATP;Bari (Italy);clay;10:00;Wallin O.;Donald M.
+Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Inglis M.;Astakhova D.
+Today;WTA;Beijing (China) - Qualification;hard;SET 3;Burrage J.;Hontama M.
+Today;WTA;Beijing (China) - Qualification;hard;FINISHED;Zaytseva K.;Hunter S.
+Today;ATP;Bari (Italy);clay;SET 1;Blancaneaux G.;Kuzmanov D.
+Today;ATP;Bari (Italy);clay;SET 1;Cadenasso G.;Sanchez Martinez B.
+Today;ATP;Bari (Italy);clay;SET 1;Wallin O.;Donald M.
 Today;ATP;Bari (Italy);clay;11:30;Andaloro F.;Clarke J.
 Today;ATP;Bari (Italy);clay;11:30;Giustino L.;Sperle J.
 Today;ATP;Bari (Italy);clay;11:30;Wiskandt M.;Basile P.
@@ -60,11 +60,11 @@ Today;ATP;Curitiba (Brazil);clay;21:00;Heredia S.;Schiessl J. E.
 Today;ATP;Curitiba (Brazil);clay;23:30;Miguel L. A.;Mena F.
 Today;ATP;Jingshan (China);hard;FINISHED;Santillan A.;Pavlovic L.
 Today;ATP;Jingshan (China);hard;FINISHED;Weber A.;Erel Y.
-Today;ATP;Jingshan (China);hard;SET 2;Sakellaridis S.;Shimizu Y.
-Today;ATP;Jingshan (China);hard;SET 1;Zheng M.;Zeng Y.
-Today;ATP;Jingshan (China);hard;SET 2;Bolt A.;Pankin S.
-Today;ATP;Jingshan (China);hard;10:20;Dellavedova M.;Ilagan A.
-Today;ATP;Jingshan (China);hard;10:25;Tomic B.;Sun F.
+Today;ATP;Jingshan (China);hard;FINISHED;Sakellaridis S.;Shimizu Y.
+Today;ATP;Jingshan (China);hard;FINISHED;Zheng M.;Zeng Y.
+Today;ATP;Jingshan (China);hard;FINISHED;Bolt A.;Pankin S.
+Today;ATP;Jingshan (China);hard;SET 1;Dellavedova M.;Ilagan A.
+Today;ATP;Jingshan (China);hard;10:30;Tomic B.;Sun F.
 Today;ATP;Mouilleron-Le-Captif (France);hard;11:00;Harris B.;Balshaw F.
 Today;ATP;Mouilleron-Le-Captif (France);hard;12:30;Ghazouani Durand Y.;Budkov Kjaer N.
 Today;ATP;Mouilleron-Le-Captif (France);hard;12:30;Romano F.;Wendelken H.
@@ -107,10 +107,10 @@ Today;WTA;Jingshan (China);hard;FINISHED;Shubladze A.;Saigo R.
 Today;WTA;Jingshan (China);hard;FINISHED;Morvayova V.;Sorribes Tormo S.
 Today;WTA;Jingshan (China);hard;FINISHED;Okamura K.;Wu R. X.
 Today;WTA;Jingshan (China);hard;FINISHED;Sidorova K.;Egorova D.
-Today;WTA;Jingshan (China);hard;SET 1;Ibragimova A.;Khomutsianskaya D.
-Today;WTA;Jingshan (China);hard;10:30;Rajecki A.;Wang Y.
+Today;WTA;Jingshan (China);hard;SET 2;Ibragimova A.;Khomutsianskaya D.
+Today;WTA;Jingshan (China);hard;11:00;Rajecki A.;Wang Y.
 Today;WTA;Jingshan (China);hard;11:15;Zavatska K.;Lansere S.
-Today;WTA;Jingshan (China);hard;11:55;Bouzas Maneiro J.;Tian F.
+Today;WTA;Jingshan (China);hard;12:10;Bouzas Maneiro J.;Tian F.
 Today;WTA;W100 Templeton, CA (USA);hard;20:30;Pareja J.;Frodin T.
 Today;WTA;W100 Templeton, CA (USA);hard;22:00;Brengle M.;Xu M.
 Today;WTA;W100 Templeton, CA (USA);hard;22:00;Penickova A.;Urhobo A.
@@ -118,14 +118,14 @@ Today;WTA;W100 Templeton, CA (USA);hard;22:00;Rogers A. S.;Pace F.
 Today;WTA;W35 Baza (Spain);hard;12:00;Lollia M.;Ansari C.
 Today;WTA;W35 Baza (Spain);hard;12:00;Oliver Sanchez M.;Cervino Ruiz C.
 Today;WTA;W35 Baza (Spain);hard;12:00;Spink I.;Rey Garcia A.
-Today;WTA;W35 Baza (Spain);hard;13:30;Ivanov V.;Candiotto A.
-Today;WTA;W35 Baza (Spain);hard;14:00;Hietaranta L.;Vagramov A.
-Today;WTA;W35 Baza (Spain);hard;14:00;Vismane D.;Szabo B.
+Today;WTA;W35 Baza (Spain);hard;13:00;Hietaranta L.;Vagramov A.
+Today;WTA;W35 Baza (Spain);hard;13:00;Ivanov V.;Candiotto A.
+Today;WTA;W35 Baza (Spain);hard;13:00;Vismane D.;Szabo B.
 Today;WTA;W35 Baza (Spain);hard;15:00;Ryser V.;Radwanska U.
 Today;WTA;W35 Baza (Spain);hard;19:00;Berecoechea N.;Boskovic L.
-Today;WTA;W35 Reims (France);hard;14:30;Desai Z.;Monnot A.
+Today;WTA;W35 Reims (France);hard;13:30;Desai Z.;Monnot A.
+Today;WTA;W35 Reims (France);hard;13:30;Vlasselaer C.;Firman A.
 Today;WTA;W35 Reims (France);hard;14:30;Leonard M.;Boulard L.
-Today;WTA;W35 Reims (France);hard;14:30;Vlasselaer C.;Firman A.
 Today;WTA;W35 Reims (France);hard;16:00;Renard E.;Du Pree B.
 Today;WTA;W35 Reims (France);hard;16:00;Van den Broek I. L.;Lene E.
 Today;WTA;W35 Reims (France);hard;18:30;Nahimana S.;Crinebouch H.
@@ -139,8 +139,8 @@ Today;WTA;W75 Quinta do Lago (Portugal);hard;11:00;Pereira De Aguiar G.;Bandecch
 Today;WTA;W75 Quinta do Lago (Portugal);hard;12:00;Collins K.;Sebestova I.
 Today;WTA;W75 Quinta do Lago (Portugal);hard;12:00;Klimovicova L.;Bonardi B.
 Today;WTA;W75 Quinta do Lago (Portugal);hard;12:00;Tan H.;Tanguilig C.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;14:00;Sebov K.;Lim A.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;14:00;Sedlackova P.;Nilsson L.
+Today;WTA;W75 Quinta do Lago (Portugal);hard;13:30;Sebov K.;Lim A.
+Today;WTA;W75 Quinta do Lago (Portugal);hard;13:30;Sedlackova P.;Nilsson L.
 Day+1;ATP;Beijing (China);hard;04:00;Borges N.;Djokovic N.
 Day+1;ATP;Beijing (China);hard;04:00;Bublik A.;Mensik J.
 Day+1;ATP;Beijing (China);hard;04:00;Buse I.;Halys Q.
