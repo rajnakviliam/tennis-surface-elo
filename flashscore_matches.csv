@@ -1,5 +1,5 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2
-Today;ATP;Chengdu (China);hard;SET 2;Hurkacz H.;Davidovich Fokina A.
+Today;ATP;Chengdu (China);hard;FINISHED;Hurkacz H.;Davidovich Fokina A.
 Today;ATP;Hangzhou (China);hard;SET 2;Medvedev D.;Rublev A.
 Today;ATP;Beijing (China) - Qualification;hard;FINISHED;Machac T.;Gea A.
 Today;ATP;Beijing (China) - Qualification;hard;FINISHED;Trungelliti M.;Molcan A.
@@ -28,9 +28,9 @@ Today;ATP;Bari (Italy);clay;FINISHED;Wiskandt M.;Basile P.
 Today;ATP;Bari (Italy);clay;SET 3;Giustino L.;Sperle J.
 Today;ATP;Bari (Italy);clay;FINISHED;Andaloro F.;Clarke J.
 Today;ATP;Bari (Italy);clay;SET 2;Lopez Morillo I.;Krumich M.
-Today;ATP;Bari (Italy);clay;14:55;Giunta M.;Arnaboldi F.
-Today;ATP;Bari (Italy);clay;15:05;Pieri S.;Martin A.
-Today;ATP;Bari (Italy);clay;15:20;Martin Tiffon P.;Lokoli L.
+Today;ATP;Bari (Italy);clay;SET 1;Giunta M.;Arnaboldi F.
+Today;ATP;Bari (Italy);clay;15:30;Martin Tiffon P.;Lokoli L.
+Today;ATP;Bari (Italy);clay;15:30;Pieri S.;Martin A.
 Today;ATP;Bari (Italy);clay;16:20;Taberner C.;Moller E.
 Today;ATP;Columbus (USA);hard;16:00;Perot R.;Ostapenkov D.
 Today;ATP;Columbus (USA);hard;16:00;Shelbayh A.;Tu L.
@@ -42,10 +42,10 @@ Today;ATP;Columbus (USA);hard;20:30;Chan D.;Smith C.
 Today;ATP;Columbus (USA);hard;20:30;Svajda T.;Andrade A.
 Today;ATP;Columbus (USA);hard;22:00;Bigun K.;Smith K.
 Today;ATP;Columbus (USA);hard;23:00;Kozlov S.;Kim A.
-Today;ATP;Curitiba (Brazil);clay;15:00;Meligeni Alves F.;Zarate C. M.
-Today;ATP;Curitiba (Brazil);clay;15:00;Reis Da Silva J.;Dellien Velasco M. A.
-Today;ATP;Curitiba (Brazil);clay;15:00;Soto M.;Midon L.
-Today;ATP;Curitiba (Brazil);clay;15:00;Tobon M.;Torres J. B.
+Today;ATP;Curitiba (Brazil);clay;15:10;Meligeni Alves F.;Zarate C. M.
+Today;ATP;Curitiba (Brazil);clay;SET 1;Reis Da Silva J.;Dellien Velasco M. A.
+Today;ATP;Curitiba (Brazil);clay;15:10;Soto M.;Midon L.
+Today;ATP;Curitiba (Brazil);clay;15:10;Tobon M.;Torres J. B.
 Today;ATP;Curitiba (Brazil);clay;16:30;Heide G.;Casanova H.
 Today;ATP;Curitiba (Brazil);clay;16:30;Pucinelli de Almeida M.;Saraiva Dos Santos P. A.
 Today;ATP;Curitiba (Brazil);clay;16:30;Rodriguez L. J.;Barrios Vera T.
@@ -68,7 +68,7 @@ Today;ATP;Jingshan (China);hard;FINISHED;Tomic B.;Sun F.
 Today;ATP;Mouilleron-Le-Captif (France);hard;FINISHED;Harris B.;Balshaw F.
 Today;ATP;Mouilleron-Le-Captif (France);hard;FINISHED;Romano F.;Wendelken H.
 Today;ATP;Mouilleron-Le-Captif (France);hard;SET 2;Barroso Campos A.;Schwaerzler J. J.
-Today;ATP;Mouilleron-Le-Captif (France);hard;SET 1;Ghazouani Durand Y.;Budkov Kjaer N.
+Today;ATP;Mouilleron-Le-Captif (France);hard;SET 2;Ghazouani Durand Y.;Budkov Kjaer N.
 Today;ATP;Mouilleron-Le-Captif (France);hard;15:55;Reco A.;Bertola R.
 Today;ATP;Mouilleron-Le-Captif (France);hard;17:25;Lajal M.;Poullain L.
 Today;ATP;Mouilleron-Le-Captif (France);hard;19:00;Chidekh C.;Goffin D.
@@ -76,11 +76,11 @@ Today;ATP;Mouilleron-Le-Captif (France);hard;20:30;Durasovic V.;Blanchet U.
 Today;ATP;Porto (Portugal);hard;FINISHED;Jorda Sanchis D.;De Jong J.
 Today;ATP;Porto (Portugal);hard;FINISHED;Marques G.;Nesterov P.
 Today;ATP;Porto (Portugal);hard;FINISHED;Tabacco F.;Rincon D.
-Today;ATP;Porto (Portugal);hard;SET 2;Matusevich A.;Guerrieri A.
-Today;ATP;Porto (Portugal);hard;SET 1;Cretu C.;Rocha H.
-Today;ATP;Porto (Portugal);hard;SET 1;Samuel T.;McDonald M.
-Today;ATP;Porto (Portugal);hard;15:15;Grenier H.;Overbeck C. E.
+Today;ATP;Porto (Portugal);hard;SET 3;Matusevich A.;Guerrieri A.
+Today;ATP;Porto (Portugal);hard;SET 2;Cretu C.;Rocha H.
+Today;ATP;Porto (Portugal);hard;SET 2;Samuel T.;McDonald M.
 Today;ATP;Porto (Portugal);hard;15:40;Virtanen O.;Pereira T.
+Today;ATP;Porto (Portugal);hard;15:45;Grenier H.;Overbeck C. E.
 Today;ATP;Porto (Portugal);hard;15:45;Sanchez Quilez A.;Fearnley J.
 Today;ATP;Porto (Portugal);hard;16:45;Potenza L.;Montes-De La Torre I.
 Today;ATP;Porto (Portugal);hard;17:10;Echargui M.;Dzumhur D.
@@ -97,7 +97,7 @@ Today;WTA;Adana (Turkey);hard;FINISHED;Tikhonova A.;Waltert S.
 Today;WTA;Adana (Turkey);hard;FINISHED;Galfi D.;Micic E.
 Today;WTA;Adana (Turkey);hard;FINISHED;Bronzetti L.;Boisson L.
 Today;WTA;Adana (Turkey);hard;FINISHED;Radivojevic L.;Ercan M.
-Today;WTA;Adana (Turkey);hard;SET 1;Iatcenko P.;Andreeva E.
+Today;WTA;Adana (Turkey);hard;SET 2;Iatcenko P.;Andreeva E.
 Today;WTA;Adana (Turkey);hard;SET 2;Efremova K.;Kubka M.
 Today;WTA;Adana (Turkey);hard;16:05;Monnet C.;Buyukakcay C.
 Today;WTA;Adana (Turkey);hard;17:35;Kostovic T.;Cengiz B.
@@ -121,13 +121,13 @@ Today;WTA;W35 Baza (Spain);hard;FINISHED;Lollia M.;Ansari C.
 Today;WTA;W35 Baza (Spain);hard;SET 2;Hietaranta L.;Vagramov A.
 Today;WTA;W35 Baza (Spain);hard;SET 2;Vismane D.;Szabo B.
 Today;WTA;W35 Baza (Spain);hard;SET 2;Ivanov V.;Candiotto A.
-Today;WTA;W35 Baza (Spain);hard;15:10;Ryser V.;Radwanska U.
+Today;WTA;W35 Baza (Spain);hard;15:20;Ryser V.;Radwanska U.
 Today;WTA;W35 Baza (Spain);hard;19:00;Berecoechea N.;Boskovic L.
-Today;WTA;W35 Reims (France);hard;14:40;Leonard M.;Boulard L.
-Today;WTA;W35 Reims (France);hard;14:45;Desai Z.;Monnot A.
-Today;WTA;W35 Reims (France);hard;14:55;Vlasselaer C.;Firman A.
-Today;WTA;W35 Reims (France);hard;15:50;Renard E.;Du Pree B.
-Today;WTA;W35 Reims (France);hard;16:00;Van den Broek I. L.;Lene E.
+Today;WTA;W35 Reims (France);hard;SET 1;Leonard M.;Boulard L.
+Today;WTA;W35 Reims (France);hard;15:20;Vlasselaer C.;Firman A.
+Today;WTA;W35 Reims (France);hard;15:25;Desai Z.;Monnot A.
+Today;WTA;W35 Reims (France);hard;15:45;Renard E.;Du Pree B.
+Today;WTA;W35 Reims (France);hard;16:20;Van den Broek I. L.;Lene E.
 Today;WTA;W35 Reims (France);hard;18:30;Nahimana S.;Crinebouch H.
 Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Wan I W.;Kitahara Y.
 Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Uemura M.;Lopez E.
@@ -138,9 +138,9 @@ Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Pereira De Aguiar G.;Bande
 Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Jorge F.;Franco Dias T.
 Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Collins K.;Sebestova I.
 Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Tan H.;Tanguilig C.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;SET 2;Klimovicova L.;Bonardi B.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;14:55;Sebov K.;Lim A.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;14:55;Sedlackova P.;Nilsson L.
+Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Klimovicova L.;Bonardi B.
+Today;WTA;W75 Quinta do Lago (Portugal);hard;SET 1;Sebov K.;Lim A.
+Today;WTA;W75 Quinta do Lago (Portugal);hard;SET 1;Sedlackova P.;Nilsson L.
 Day+1;ATP;Beijing (China);hard;05:00;Khachanov K.;Auger-Aliassime F.
 Day+1;ATP;Beijing (China);hard;07:00;Struff J-L.;Tirante T. A.
 Day+1;ATP;Beijing (China);hard;08:30;Cerundolo J. M.;Bu Y.
