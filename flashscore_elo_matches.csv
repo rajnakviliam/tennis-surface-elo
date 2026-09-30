@@ -74,7 +74,6 @@ Day+1;ATP;Mouilleron-Le-Captif (France);hard;16:00;Clement Chidekh;Ugo Blanchet;
 Day+1;ATP;Bari (Italy);clay;16:30;Pierluigi Basile;Martin Krumich;542;254;288;479;333;440;299;1313.6;1448.8;1311.5;1422.6;135.2;111.1;Martin Krumich;Martin Krumich;True;True;True
 Day+1;ATP;Mouilleron-Le-Captif (France);hard;19:00;Harold Mayot;Tristan Schoolkate;191;153;38;157;189;134;177;1627.4;1581.2;1612.8;1548.2;46.2;64.6;Tristan Schoolkate;Harold Mayot;True;True;True
 Day+1;WTA;W100 Templeton, CA (USA);hard;19:00;Malaika Rapolu;Akasha Urhobo;313;179;134;250;229;245;292;1502.3;1531.4;1467.9;1412.4;29.1;55.5;Akasha Urhobo;Malaika Rapolu;True;True;True
-Today;WTA;W100 Templeton, CA (USA);hard;20:00;Lea Ma;Victoria Hu;283;546;263;316;503;305;497;1431.3;1194.8;1396.9;1191.9;236.5;205.0;Lea Ma;Lea Ma;True;True;True
 Today;ATP;Curitiba (Brazil);clay;23:30;Joao Lucas Reis Da Silva;Matheus Pucinelli De Almeida;231;270;39;282;293;240;231;1491.5;1475.3;1476.6;1481.6;16.2;5.0;Joao Lucas Reis Da Silva;Matheus Pucinelli De Almeida;True;True;True
 Today;WTA;Adana (Turkey);hard;FINISHED;Erika Andreeva;Simona Waltert;213;98;115;249;136;260;148;1503.3;1657.4;1455.6;1589.3;154.1;133.7;Simona Waltert;Simona Waltert;True;True;True
 Today;WTA;Adana (Turkey);hard;FINISHED;Lois Boisson;Martyna Kubka;274;173;101;124;164;185;155;1674.3;1612.4;1535.2;1576.1;61.9;40.9;Martyna Kubka;Martyna Kubka;True;True;True
@@ -142,6 +141,7 @@ Today;ATP;Tokyo (Japan);hard;FINISHED;Alejandro Tabilo;Tommy Paul;31;16;15;50;12
 Today;ATP;Tokyo (Japan);hard;FINISHED;Arthur Fils;Luca Van Assche;9;43;34;5;64;5;64;2034.5;1774.6;1973.6;1730.3;259.9;243.3;Arthur Fils;Arthur Fils;True;True;True
 Today;ATP;Tokyo (Japan);hard;FINISHED;Matteo Arnaldi;Rei Sakamoto;37;137;100;77;145;91;127;1754.9;1647.4;1676.5;1624.7;107.5;51.8;Matteo Arnaldi;Matteo Arnaldi;True;True;True
 Today;WTA;W100 Templeton, CA (USA);hard;FINISHED;Annika Penickova;Akasha Urhobo;555;179;376;;229;;292;;1531.4;;1412.4;;;Akasha Urhobo;;False;True;False
+Today;WTA;W100 Templeton, CA (USA);hard;FINISHED;Kayla Cross;Whitney Osuigwe;166;241;75;258;289;226;278;1496.8;1457.5;1490.7;1428.3;39.3;62.4;Kayla Cross;Kayla Cross;True;True;True
 Today;WTA;W35 Baza (Spain);hard;FINISHED;Cadence Brace;Elza Tomase;249;710;461;311;;280;;1438.8;;1427.6;;;;Cadence Brace;;True;False;False
 Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Naiktha Bains;Maria Martinez Vaquero;347;496;149;303;506;267;494;1445.2;1187.8;1442.6;1206.4;257.4;236.2;Naiktha Bains;Naiktha Bains;True;True;True
 Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Ayana Akli;Polona Hercog;279;237;42;291;223;265;218;1454.6;1541.5;1444.6;1496.0;86.9;51.4;Polona Hercog;Polona Hercog;True;True;True
@@ -149,6 +149,6 @@ Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Lisa Pigato;Jasmijn Gimbre
 Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Matilde Jorge;Elena Malygina;250;268;18;321;292;284;249;1424.3;1453.6;1421.5;1465.2;29.3;43.7;Matilde Jorge;Elena Malygina;True;True;True
 Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Kira Pavlova;Alicia Dudeney;342;251;91;402;285;376;248;1349.5;1466.9;1329.2;1466.7;117.4;137.5;Alicia Dudeney;Alicia Dudeney;True;True;True
 Today;WTA;Adana (Turkey);hard;SET 1;Cagla Buyukakcay;Lucrezia Stefanini;427;125;302;430;126;391;110;1320.4;1673.0;1317.9;1651.7;352.6;333.8;Lucrezia Stefanini;Lucrezia Stefanini;True;True;True
-Today;ATP;Mouilleron-Le-Captif (France);hard;SET 1;Lucas Poullain;Remy Bertola;334;226;108;294;245;275;245;1473.8;1528.1;1449.7;1473.4;54.3;23.7;Remy Bertola;Remy Bertola;True;True;True
+Today;WTA;W100 Templeton, CA (USA);hard;SET 1;Lea Ma;Victoria Hu;283;546;263;316;503;305;497;1431.3;1194.8;1396.9;1191.9;236.5;205.0;Lea Ma;Lea Ma;True;True;True
 Today;WTA;W100 Templeton, CA (USA);hard;SET 1;Ella Mcdonald;Savannah Broadus;423;302;121;383;237;460;227;1368.6;1520.9;1249.9;1489.3;152.3;239.4;Savannah Broadus;Savannah Broadus;True;True;True
-Today;WTA;W100 Templeton, CA (USA);hard;SET 3;Kayla Cross;Whitney Osuigwe;166;241;75;258;289;226;278;1496.8;1457.5;1490.7;1428.3;39.3;62.4;Kayla Cross;Kayla Cross;True;True;True
+Today;ATP;Mouilleron-Le-Captif (France);hard;SET 2;Lucas Poullain;Remy Bertola;334;226;108;294;245;275;245;1473.8;1528.1;1449.7;1473.4;54.3;23.7;Remy Bertola;Remy Bertola;True;True;True
