@@ -6,6 +6,7 @@ from datetime import datetime as dt
 from zoneinfo import ZoneInfo
 
 import pandas as pd
+import requests
 import streamlit as st
 
 from google_seen_matches import (
@@ -73,6 +74,48 @@ def run_script(script):
     if lines:
         st.text("\n".join(lines))
 
+def download_latest_elo_from_github():
+    base_url = (
+        "https://raw.githubusercontent.com/"
+        "rajnakviliam/tennis-surface-elo/main/"
+    )
+
+    files = [
+        "atp_elo.csv",
+        "wta_elo.csv",
+        "atp_rankings.csv",
+        "wta_rankings.csv",
+    ]
+
+    for filename in files:
+        url = base_url + filename
+
+        response = requests.get(
+            url,
+            timeout=30,
+        )
+        response.raise_for_status()
+
+        # Najprv uložiť do dočasného súboru.
+        temp_filename = filename + ".tmp"
+
+        with open(temp_filename, "wb") as file:
+            file.write(response.content)
+
+        # Ochrana pred prázdnym alebo chybným downloadom.
+        if len(response.content) < 1000:
+            if os.path.exists(temp_filename):
+                os.remove(temp_filename)
+
+            raise ValueError(
+                f"{filename} je podozrivo malý."
+            )
+
+        # Až po úspešnom stiahnutí nahradiť pôvodný súbor.
+        os.replace(
+            temp_filename,
+            filename,
+        )
 
 def show(value):
     if pd.isna(value) or value == "":
@@ -505,11 +548,21 @@ with col2:
         "📈 Aktualizovať Elo",
         use_container_width=True,
     ):
+        try:
+            st.write(
+                "Sťahujem najnovšie Elo a rankingy z GitHubu..."
+            )
+
+            download_latest_elo_from_github()
+
+        except Exception as error:
+            st.error(
+                "Nepodarilo sa stiahnuť Elo a rankingy "
+                f"z GitHubu: {error}"
+            )
+            st.stop()
+
         scripts = [
-            "get_atp_elo_final.py",
-            "get_wta_elo_final.py",
-            "get_atp_rankings.py",
-            "get_wta_rankings.py",
             "create_players_master.py",
             "create_name_map.py",
             "flashscore_elo_compare.py",
@@ -528,8 +581,10 @@ with col2:
             )
 
         st.success(
-            "Elo, ATP/WTA rankingy a porovnanie boli aktualizované."
+            "Najnovšie Elo a ATP/WTA rankingy boli "
+            "načítané z GitHubu a porovnanie bolo aktualizované."
         )
+
         st.rerun()
 
 
