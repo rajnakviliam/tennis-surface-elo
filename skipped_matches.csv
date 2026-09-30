@@ -1,16 +1,12 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;WTA;W35 Reims (France);hard;FINISHED;Renard E.;Du Pree B.;player_1_not_in_aliases;Renard E.
-Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Wan I W.;Kitahara Y.;player_1_not_in_aliases;Wan I W.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Ortega Redondo P.;Rouvroy M.;player_1_not_in_aliases;Ortega Redondo P.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Pereira De Aguiar G.;Bandecchi S.;player_1_not_in_aliases;Pereira De Aguiar G.
-Today;WTA;W75 Quinta do Lago (Portugal);hard;FINISHED;Sebov K.;Lim A.;tour_mismatch;"Sebov K.=WTA; Lim A.=ATP"
-Day+1;WTA;W35 Baza (Spain);hard;11:30;Ngounoue M.;Coromina Boluda A. M.;player_1_not_in_aliases;Ngounoue M.
-Day+1;WTA;W35 Reims (France);hard;10:00;Chiarello K.;Djoubri S.;player_2_not_in_aliases;Djoubri S.
-Day+1;WTA;W35 Reims (France);hard;10:00;Nesmianovych A.;Dittmann G. M.;player_1_not_in_aliases;Nesmianovych A.
-Day+1;WTA;W35 Reims (France);hard;10:00;Ramirez E.;Martynov D.;player_1_not_in_aliases;Ramirez E.
-Day+1;WTA;W35 Wagga Wagga (Australia);hard;02:00;Mushika Mio;Abela C.;player_2_not_in_aliases;Abela C.
-Day+1;WTA;W35 Wagga Wagga (Australia);hard;02:00;Stevens A.;Sato H.;player_1_not_in_rankings;Amy Stevens
-Day+1;WTA;W35 Wagga Wagga (Australia);hard;03:00;Muramatsu C.;Yuhan L.;player_2_not_in_aliases;Yuhan L.
-Day+1;WTA;W35 Wagga Wagga (Australia);hard;04:30;Arakawa H.;Kosaka R.;player_2_not_in_aliases;Kosaka R.
-Day+1;WTA;W35 Wagga Wagga (Australia);hard;04:30;Onozawa N.;Subasic A.;player_1_not_in_aliases;Onozawa N.
-Day+1;WTA;W75 Quinta do Lago (Portugal);hard;14:00;Werner C.;Vedder E.;player_1_not_in_aliases;Werner C.
+Today;WTA;W100 Templeton, CA (USA);hard;19:00;Dolehide C.;Chan J.;player_2_not_in_aliases;Chan J.
+Today;WTA;W35 Baza (Spain);hard;11:30;Ngounoue M.;Coromina Boluda A. M.;player_1_not_in_aliases;Ngounoue M.
+Today;WTA;W35 Reims (France);hard;10:00;Ramirez E.;Martynov D.;player_1_not_in_aliases;Ramirez E.
+Today;WTA;W35 Reims (France);hard;11:30;Nesmianovych A.;Dittmann G. M.;player_1_not_in_aliases;Nesmianovych A.
+Today;WTA;W35 Reims (France);hard;18:00;Chiarello K.;Djoubri S.;player_2_not_in_aliases;Djoubri S.
+Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Mushika Mio;Abela C.;player_2_not_in_aliases;Abela C.
+Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Stevens A.;Sato H.;player_1_not_in_rankings;Amy Stevens
+Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Muramatsu C.;Yuhan L.;player_2_not_in_aliases;Yuhan L.
+Today;WTA;W35 Wagga Wagga (Australia);hard;SET 2;Onozawa N.;Subasic A.;player_1_not_in_aliases;Onozawa N.
+Today;WTA;W35 Wagga Wagga (Australia);hard;07:25;Arakawa H.;Kosaka R.;player_2_not_in_aliases;Kosaka R.
+Today;WTA;W75 Quinta do Lago (Portugal);hard;14:00;Werner C.;Vedder E.;player_1_not_in_aliases;Werner C.
