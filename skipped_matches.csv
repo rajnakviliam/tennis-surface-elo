@@ -1,22 +1,2 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Beijing (China);hard;14:30;Bu Y.;Djokovic N.;player_1_not_in_aliases;Bu Y.
-Today;ATP;Bari (Italy);clay;13:00;Dalla Valle E.;Martin Manzano J. C.;player_2_not_in_aliases;Martin Manzano J. C.
-Today;ATP;Bari (Italy);clay;16:30;Donald M.;Krumich M.;player_1_not_in_aliases;Donald M.
-Today;ATP;Columbus (USA);hard;18:30;Blanch Dar.;Dietrich D.;player_1_not_in_aliases;Blanch Dar.
-Today;ATP;Curitiba (Brazil);clay;18:15;Boscardin Dias P.;Miguel L. A.;player_2_not_in_aliases;Miguel L. A.
-Today;ATP;Mouilleron-Le-Captif (France);hard;13:30;Poullain L.;Schwaerzler J. J.;player_2_not_in_aliases;Schwaerzler J. J.
-Today;ATP;Porto (Portugal);hard;12:00;Grenier H.;Montes-De La Torre I.;player_2_not_in_aliases;Montes-De La Torre I.
-Today;WTA;W100 Templeton, CA (USA);hard;FINISHED;Dolehide C.;Fakih K.;player_2_not_in_aliases;Fakih K.
-Today;WTA;W100 Templeton, CA (USA);hard;20:00;McDonald E.;Penickova K.;player_2_not_in_aliases;Penickova K.
-Today;WTA;W100 Templeton, CA (USA);hard;21:30;Brengle M.;Van Impe A.;player_2_not_in_aliases;Van Impe A.
-Today;WTA;W35 Baza (Spain);hard;10:15;Ryser V.;Esquiva Banuls C.;player_2_not_in_aliases;Esquiva Banuls C.
-Today;WTA;W35 Baza (Spain);hard;11:45;Cervino Ruiz C.;Berecoechea N.;player_1_not_in_aliases;Cervino Ruiz C.
-Today;WTA;W35 Baza (Spain);hard;13:15;Ivanov V.;Giaccio J.;player_1_not_in_aliases;Ivanov V.
-Today;WTA;W35 Reims (France);hard;12:00;Leonard M.;Van den Broek I. L.;player_2_not_in_aliases;Van den Broek I. L.
-Today;WTA;W35 Reims (France);hard;12:00;Serban I. M.;Du Pree B.;player_1_not_in_aliases;Serban I. M.
-Today;WTA;W35 Reims (France);hard;15:30;Brockmann T. J.;Djoubri S.;player_1_not_in_aliases;Brockmann T. J.
-Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Uemura M.;Simes A.;player_2_not_in_aliases;Simes A.
-Today;WTA;W35 Wagga Wagga (Australia);hard;SET 2;Mushika Mio;Kitahara Y.;player_1_not_in_aliases;Mushika Mio
-Today;WTA;W35 Wagga Wagga (Australia);hard;INTERRUPTED;Sawashiro K.;Hanatani N.;player_1_not_in_aliases;Sawashiro K.
-Today;WTA;W35 Wagga Wagga (Australia);hard;SET 1;Sato N.;Sato H.;player_1_not_in_aliases;Sato N.
-Day+1;WTA;Beijing (China);hard;05:00;Sun X.;Bucsa C.;player_1_not_in_aliases;Sun X.
+Today;WTA;W35 Reims (France);hard;15:30;Brockmann T. J.;Djoubri S.;player_2_not_in_aliases;Djoubri S.
