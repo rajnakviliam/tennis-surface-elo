@@ -6,8 +6,8 @@ Today;ATP;Beijing (China);hard;12:30;Cerundolo F.;Mensik J.
 Today;ATP;Beijing (China);hard;13:00;Zverev A.;Shang J.
 Today;ATP;Tokyo (Japan);hard;FINISHED;Shapovalov D.;Tabilo A.
 Today;ATP;Tokyo (Japan);hard;FINISHED;Alcaraz C.;Arnaldi M.
-Today;ATP;Tokyo (Japan);hard;SET 1;Berrettini M.;Vallejo D.
-Today;ATP;Tokyo (Japan);hard;10:30;Humbert U.;Lehecka J.
+Today;ATP;Tokyo (Japan);hard;SET 2;Berrettini M.;Vallejo D.
+Today;ATP;Tokyo (Japan);hard;11:00;Humbert U.;Lehecka J.
 Today;WTA;Beijing (China);hard;FINISHED;Gauff C.;Osorio C.
 Today;WTA;Beijing (China);hard;FINISHED;Krueger A.;Li A.
 Today;WTA;Beijing (China);hard;FINISHED;Vekic D.;Zhu L.
@@ -16,10 +16,10 @@ Today;WTA;Beijing (China);hard;FINISHED;Sakkari M.;Hunter S.
 Today;WTA;Beijing (China);hard;FINISHED;Ostapenko J.;Badosa P.
 Today;WTA;Beijing (China);hard;FINISHED;Gao X.;Swiatek I.
 Today;WTA;Beijing (China);hard;SET 3;Siniakova K.;Svitolina E.
-Today;WTA;Beijing (China);hard;SET 1;Rakhimova K.;Fernandez L.
-Today;WTA;Beijing (China);hard;10:05;Bencic B.;Zakharova A.
-Today;WTA;Beijing (China);hard;10:05;Zheng Q.;Kalinskaya A.
-Today;WTA;Beijing (China);hard;10:30;Jovic I.;Dart H.
+Today;WTA;Beijing (China);hard;SET 2;Rakhimova K.;Fernandez L.
+Today;WTA;Beijing (China);hard;SET 1;Bencic B.;Zakharova A.
+Today;WTA;Beijing (China);hard;SET 1;Zheng Q.;Kalinskaya A.
+Today;WTA;Beijing (China);hard;10:45;Jovic I.;Dart H.
 Today;WTA;Beijing (China);hard;11:00;Sun X.;Bucsa C.
 Today;WTA;Beijing (China);hard;12:00;Bouzkova M.;Birrell K.
 Today;WTA;Beijing (China);hard;13:00;Kartal S.;Wang Xin.
@@ -40,14 +40,6 @@ Today;WTA;Adana (Turkey);hard;14:00;Andreeva E.;Boisson L.
 Today;WTA;Adana (Turkey);hard;15:30;Ruzic A.;Jeanjean L.
 Today;WTA;Jingshan (China);hard;FINISHED;Jones E.;Shubladze A.
 Today;WTA;Jingshan (China);hard;FINISHED;Bouzas Maneiro J.;Falei A.
-Today;WTA;Suzhou (China) - Qualification;hard;10:00;Huang Yujia;Khomutsianskaya D.
-Today;WTA;Suzhou (China) - Qualification;hard;10:00;Shi H.;Yuan C.
-Today;WTA;Suzhou (China) - Qualification;hard;10:00;Yang Y.;Saigo R.
-Today;WTA;Suzhou (China) - Qualification;hard;11:30;Lu J.;Li Z.
-Today;WTA;Suzhou (China) - Qualification;hard;11:30;Nugroho P. M.;Okamura K.
-Today;WTA;Suzhou (China) - Qualification;hard;11:30;Zavatska K.;Sidorova K.
-Today;WTA;Suzhou (China) - Qualification;hard;13:00;Zheng W.;Qu Y.
-Today;WTA;Suzhou (China) - Qualification;hard;13:00;Matsuda R.;Wei S.
 Today;WTA;W35 Baza (Spain);hard;11:00;Hesse A.;Esquiva Banuls C.
 Today;WTA;W35 Baza (Spain);hard;12:30;Cervino Ruiz C.;Ivanov V.
 Today;WTA;W35 Reims (France);hard;14:30;Nahimana S.;Van den Broek I. L.
@@ -57,6 +49,7 @@ Today;WTA;W35 Wagga Wagga (Australia);hard;INTERRUPTED;Uemura M.;Mushika Mio
 Today;WTA;W35 Wagga Wagga (Australia);hard;06:45;Sawashiro K.;Sato N.
 Today;WTA;W75 Quinta do Lago (Portugal);hard;11:00;Pigato L.;Swan K.
 Today;WTA;W75 Quinta do Lago (Portugal);hard;12:30;Vedder E.;Rouvroy M.
+Day+1;ATP;Beijing (China);hard;04:00;De Minaur A.;Rublev A.
 Day+1;ATP;Beijing (China);hard;04:00;Hurkacz H.;Khachanov K.
 Day+1;ATP;Tokyo (Japan);hard;04:00;Munar J.;Jacquet K.
 Day+1;ATP;Tokyo (Japan);hard;06:00;Alcaraz C.;Shapovalov D.
@@ -72,5 +65,13 @@ Day+1;WTA;Beijing (China);hard;05:00;Ostapenko J.;Mertens E.
 Day+1;WTA;Beijing (China);hard;05:00;Snigur D.;Preston T.
 Day+1;WTA;Beijing (China);hard;05:00;Vekic D.;Swiatek I.
 Day+1;WTA;Jingshan (China);hard;06:30;Bouzas Maneiro J.;Shubladze A.
+Day+1;WTA;Suzhou (China) - Qualification;hard;04:00;Huang Yujia;Khomutsianskaya D.
+Day+1;WTA;Suzhou (China) - Qualification;hard;04:00;Lu J.;Li Z.
+Day+1;WTA;Suzhou (China) - Qualification;hard;04:00;Zheng W.;Qu Y.
+Day+1;WTA;Suzhou (China) - Qualification;hard;05:30;Shi H.;Yuan C.
+Day+1;WTA;Suzhou (China) - Qualification;hard;05:30;Yang Y.;Saigo R.
+Day+1;WTA;Suzhou (China) - Qualification;hard;05:30;Zavatska K.;Sidorova K.
+Day+1;WTA;Suzhou (China) - Qualification;hard;07:00;Matsuda R.;Wei S.
+Day+1;WTA;Suzhou (China) - Qualification;hard;07:00;Nugroho P. M.;Okamura K.
 Day+1;WTA;W100 Templeton, CA (USA);hard;02:00;Brengle M.;Pareja J.
 Day+1;WTA;W100 Templeton, CA (USA);hard;02:00;Maria T.;McDonald E.
