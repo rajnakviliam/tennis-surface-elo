@@ -1,17 +1,69 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;WTA;Beijing (China);hard;12:00;Sun X.;Bucsa C.;player_1_not_in_aliases;Sun X.
-Today;ATP;Bari (Italy);clay;15:00;Martin Manzano J. C.;Donald M.;player_1_not_in_aliases;Martin Manzano J. C.
-Today;ATP;Columbus (USA);hard;18:30;Dietrich D.;Andrade A.;player_1_not_in_aliases;Dietrich D.
-Today;ATP;Mouilleron-Le-Captif (France);hard;14:30;Schwaerzler J. J.;Gueymard Wayenburg S.;player_1_not_in_aliases;Schwaerzler J. J.
-Today;ATP;Porto (Portugal);hard;12:00;Jorda Sanchis D.;Montes-De La Torre I.;player_2_not_in_aliases;Montes-De La Torre I.
-Today;WTA;W35 Baza (Spain);hard;SET 1;Hesse A.;Esquiva Banuls C.;player_2_not_in_aliases;Esquiva Banuls C.
-Today;WTA;W35 Baza (Spain);hard;12:30;Cervino Ruiz C.;Ivanov V.;player_1_not_in_aliases;Cervino Ruiz C.
-Today;WTA;W35 Reims (France);hard;14:30;Nahimana S.;Van den Broek I. L.;player_2_not_in_aliases;Van den Broek I. L.
-Today;WTA;W35 Reims (France);hard;16:00;Djoubri S.;Du Pree B.;player_1_not_in_aliases;Djoubri S.
+Today;WTA;Beijing (China);hard;FINISHED;Sun X.;Bucsa C.;player_1_not_in_aliases;Sun X.
+Today;ATP;Bari (Italy);clay;FINISHED;Martin Manzano J. C.;Donald M.;player_1_not_in_aliases;Martin Manzano J. C.
+Today;ATP;Columbus (USA);hard;FINISHED;Dietrich D.;Andrade A.;player_1_not_in_aliases;Dietrich D.
+Today;ATP;Mouilleron-Le-Captif (France);hard;FINISHED;Schwaerzler J. J.;Gueymard Wayenburg S.;player_1_not_in_aliases;Schwaerzler J. J.
+Today;ATP;Porto (Portugal);hard;FINISHED;Jorda Sanchis D.;Montes-De La Torre I.;player_2_not_in_aliases;Montes-De La Torre I.
+Today;WTA;W35 Baza (Spain);hard;FINISHED;Hesse A.;Esquiva Banuls C.;player_2_not_in_aliases;Esquiva Banuls C.
+Today;WTA;W35 Baza (Spain);hard;FINISHED;Cervino Ruiz C.;Ivanov V.;player_1_not_in_aliases;Cervino Ruiz C.
+Today;WTA;W35 Reims (France);hard;FINISHED;Nahimana S.;Van den Broek I. L.;player_2_not_in_aliases;Van den Broek I. L.
+Today;WTA;W35 Reims (France);hard;FINISHED;Djoubri S.;Du Pree B.;player_1_not_in_aliases;Djoubri S.
 Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Sawashiro K.;Hanatani N.;player_1_not_in_aliases;Sawashiro K.
 Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Uemura M.;Mushika Mio;player_2_not_in_aliases;Mushika Mio
-Today;WTA;W35 Wagga Wagga (Australia);hard;SET 1;Sawashiro K.;Sato N.;player_1_not_in_aliases;Sawashiro K.
+Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Sawashiro K.;Sato N.;player_1_not_in_aliases;Sawashiro K.
+Day+1;WTA;Beijing (China);hard;05:00;Gauff C.;Sun X.;player_2_not_in_aliases;Sun X.
+Day+1;ATP;Bari (Italy);clay;11:00;Martin Manzano J. C.;Pieri S.;player_1_not_in_aliases;Martin Manzano J. C.
+Day+1;ATP;Columbus (USA);hard;17:00;Dietrich D.;Shelbayh A.;player_1_not_in_aliases;Dietrich D.
+Day+1;ATP;Porto (Portugal);hard;12:00;Rocha H.;Montes-De La Torre I.;player_2_not_in_aliases;Montes-De La Torre I.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;11:00;Esculcas T.;Misolic F.;player_1_not_in_aliases;Esculcas T.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;11:00;Nikles J.;Bernardo M.;player_2_not_in_aliases;Bernardo M.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;11:00;Valdoleiros G.;Orlov V.;player_1_not_in_aliases;Valdoleiros G.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;12:30;Cacao T.;Karol M.;player_1_not_in_aliases;Cacao T.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;12:30;Schoen P.;Barroso Campos A.;player_1_not_in_aliases;Schoen P.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;12:30;Wallin O.;Rodenas P.;player_2_not_in_aliases;Rodenas P.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;14:00;Izquierdo Luque R.;Hassan B.;player_1_not_in_aliases;Izquierdo Luque R.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;14:00;Maia H.;Barranco Cosano J.;player_1_not_in_aliases;Maia H.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;14:00;Nijboer R.;Hipfl N.;player_1_not_in_aliases;Nijboer R.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;15:30;Krutykh O.;Rocha F.;player_2_not_in_aliases;Rocha F.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;15:30;Perez Contri S.;Barrientos N.;player_1_not_in_aliases;Perez Contri S.
+Day+1;ATP;Braga (Portugal) - Qualification;clay;15:30;Pieczonka F.;Oetzbach A.;player_2_not_in_aliases;Oetzbach A.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;10:00;Cocola S.;Vives Marcos P.;player_1_not_in_aliases;Cocola S.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;11:30;Marti Pujolras A.;Moroni F.;player_1_not_in_aliases;Marti Pujolras A.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;13:00;Guna R.;Sakellaridis D.;player_1_not_in_aliases;Guna R.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;13:00;Ivanovski K.;La Vela G.;player_1_not_in_aliases;Ivanovski K.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;13:00;Parisca I.;Ghetu G.;player_1_not_in_aliases;Parisca I.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;14:30;Andaloro F.;Cerny M.;player_1_not_in_aliases;Andaloro F.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;14:30;Langmo C.;Recek D.;player_2_not_in_aliases;Recek D.
+Day+1;ATP;Palermo (Italy) - Qualification;clay;14:30;Ovcharenko O.;Angelini L.;player_1_not_in_aliases;Ovcharenko O.
+Day+1;ATP;Villena (Spain) - Qualification;hard;11:00;Fita Juan S.;Kravchenko G.;player_1_not_in_aliases;Fita Juan S.
+Day+1;ATP;Villena (Spain) - Qualification;hard;12:30;Grenier H.;Pujol Navarro B.;player_2_not_in_aliases;Pujol Navarro B.
+Day+1;ATP;Villena (Spain) - Qualification;hard;12:30;Stricker D.;Carrascosa Diaz E.;player_2_not_in_aliases;Carrascosa Diaz E.
+Day+1;ATP;Villena (Spain) - Qualification;hard;14:00;Chen C.;Nesterov P.;player_1_not_in_aliases;Chen C.
+Day+1;ATP;Villena (Spain) - Qualification;hard;14:00;Henning P.;Boogaard T.;player_2_not_in_aliases;Boogaard T.
+Day+1;ATP;Villena (Spain) - Qualification;hard;14:00;Rehberg M. H.;Cukierman D.;player_1_not_in_aliases;Rehberg M. H.
+Day+1;ATP;Villena (Spain) - Qualification;hard;15:30;Barton H.;Latinovic S.;player_2_not_in_aliases;Latinovic S.
+Day+1;ATP;Villena (Spain) - Qualification;hard;15:30;Brady P.;Poljicak M.;player_1_not_in_aliases;Brady P.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;04:00;Kachmazov A.;Chen Y. L.;player_1_not_in_aliases;Kachmazov A.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;04:00;Rai A.;Lomakin G.;player_1_not_in_aliases;Rai A.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;05:30;Banthia S.;Takahashi Y.;player_1_not_in_aliases;Banthia S.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;05:30;Purcell M.;De Cuyper J.;player_1_not_in_aliases;Purcell M.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;05:30;Yamasaki J.;Borisiouk M.;player_1_not_in_aliases;Yamasaki J.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;07:00;Agafonov E.;Zhukov M.;player_1_not_in_aliases;Agafonov E.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;07:00;Bayldon B.;Ichikawa T.;player_1_not_in_aliases;Bayldon B.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;07:00;Saitoh K.;Wang Z.;player_2_not_in_aliases;Wang Z.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;08:30;Kikuchi Y.;Ogura K.;player_1_not_in_aliases;Kikuchi Y.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;08:30;Matsuda R.;Betov S.;player_1_not_in_aliases;Matsuda R.
+Day+1;ATP;Wuning 3 (China) - Qualification;hard;08:30;Seggerman R.;Tajima N.;player_1_not_in_aliases;Seggerman R.
+Day+1;WTA;Samsun (Turkey) - Qualification;hard;11:00;Golovina M.;Micic E.;player_1_not_in_aliases;Golovina M.
+Day+1;WTA;Samsun (Turkey) - Qualification;hard;11:00;Noha Akugue N.;Yoruk I.;player_2_not_in_aliases;Yoruk I.
+Day+1;WTA;Samsun (Turkey) - Qualification;hard;12:30;Tikhonova A.;Tkacheva M.;player_2_not_in_aliases;Tkacheva M.
+Day+1;WTA;Samsun (Turkey) - Qualification;hard;13:00;Turkmen D.;Falkowska W.;player_1_not_in_aliases;Turkmen D.
+Day+1;WTA;Samsun (Turkey) - Qualification;hard;14:30;Altinel A.;Bolkvadze M.;player_1_not_in_aliases;Altinel A.
+Day+1;WTA;Samsun (Turkey) - Qualification;hard;14:30;Werner C.;Kulambayeva Z.;player_1_not_in_aliases;Werner C.
 Day+1;WTA;Suzhou (China) - Qualification;hard;04:00;Huang Yujia;Khomutsianskaya D.;player_1_not_in_aliases;Huang Yujia
 Day+1;WTA;Suzhou (China) - Qualification;hard;04:00;Zheng W.;Qu Y.;player_2_not_in_aliases;Qu Y.
 Day+1;WTA;Suzhou (China) - Qualification;hard;07:00;Matsuda R.;Wei S.;player_1_not_in_aliases;Matsuda R.
 Day+1;WTA;Suzhou (China) - Qualification;hard;07:00;Nugroho P. M.;Okamura K.;player_1_not_in_aliases;Nugroho P. M.
+Day+1;WTA;W35 Baza (Spain);hard;12:00;Esquiva Banuls C.;Ivanov V.;player_1_not_in_aliases;Esquiva Banuls C.
+Day+1;WTA;W35 Reims (France);hard;15:00;Van den Broek I. L.;Du Pree B.;player_1_not_in_aliases;Van den Broek I. L.
+Day+1;WTA;W35 Wagga Wagga (Australia);hard;03:30;Mushika Mio;Sato N.;player_1_not_in_aliases;Mushika Mio
