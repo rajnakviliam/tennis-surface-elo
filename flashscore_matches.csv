@@ -1,18 +1,18 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2
 Today;ATP;Beijing (China);hard;FINISHED;Hurkacz H.;Khachanov K.
-Today;ATP;Beijing (China);hard;09:10;De Minaur A.;Rublev A.
+Today;ATP;Beijing (China);hard;SET 1;De Minaur A.;Rublev A.
 Today;ATP;Beijing (China);hard;10:30;Medvedev D.;Cerundolo F.
 Today;ATP;Beijing (China);hard;13:00;Zverev A.;Djokovic N.
 Today;ATP;Tokyo (Japan);hard;FINISHED;Munar J.;Jacquet K.
 Today;ATP;Tokyo (Japan);hard;FINISHED;Alcaraz C.;Shapovalov D.
-Today;ATP;Tokyo (Japan);hard;09:05;Vacherot V.;Fils A.
+Today;ATP;Tokyo (Japan);hard;SET 1;Vacherot V.;Fils A.
 Today;ATP;Tokyo (Japan);hard;10:30;Lehecka J.;Vallejo D.
 Today;WTA;Beijing (China);hard;FINISHED;Bartunkova N.;Sabalenka A.
 Today;WTA;Beijing (China);hard;FINISHED;Kraus S.;Yastremska D.
 Today;WTA;Beijing (China);hard;FINISHED;Alexandrova E.;Shnaider D.
 Today;WTA;Beijing (China);hard;FINISHED;Kudermetova P.;Andreeva M.
-Today;WTA;Beijing (China);hard;SET 1;Noskova L.;Golubic V.
-Today;WTA;Beijing (China);hard;09:15;Snigur D.;Preston T.
+Today;WTA;Beijing (China);hard;SET 2;Noskova L.;Golubic V.
+Today;WTA;Beijing (China);hard;SET 1;Snigur D.;Preston T.
 Today;WTA;Beijing (China);hard;13:00;Bejlek S.;Osaka N.
 Today;WTA;Beijing (China);hard;14:30;Muchova K.;Samsonova L.
 Today;ATP;Bari (Italy);clay;11:00;Martin Manzano J. C.;Pieri S.
@@ -75,14 +75,14 @@ Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Kachmazov A.;Chen Y. L.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Yamasaki J.;Borisiouk M.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Banthia S.;Takahashi Y.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Saitoh K.;Wang Z.
-Today;ATP;Wuning 3 (China) - Qualification;hard;SET 2;Agafonov E.;Zhukov M.
-Today;ATP;Wuning 3 (China) - Qualification;hard;SET 2;Seggerman R.;Tajima N.
-Today;ATP;Wuning 3 (China) - Qualification;hard;09:05;Bayldon B.;Ichikawa T.
-Today;ATP;Wuning 3 (China) - Qualification;hard;09:30;Purcell M.;De Cuyper J.
-Today;ATP;Wuning 3 (China) - Qualification;hard;10:30;Kikuchi Y.;Ogura K.
-Today;ATP;Wuning 3 (China) - Qualification;hard;11:00;Matsuda R.;Betov S.
+Today;ATP;Wuning 3 (China) - Qualification;hard;SET 3;Agafonov E.;Zhukov M.
+Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Seggerman R.;Tajima N.
+Today;ATP;Wuning 3 (China) - Qualification;hard;SET 1;Bayldon B.;Ichikawa T.
+Today;ATP;Wuning 3 (China) - Qualification;hard;09:30;Kikuchi Y.;Ogura K.
+Today;ATP;Wuning 3 (China) - Qualification;hard;10:00;Purcell M.;De Cuyper J.
+Today;ATP;Wuning 3 (China) - Qualification;hard;11:30;Matsuda R.;Betov S.
 Today;WTA;Adana (Turkey);hard;17:00;Jeanjean L.;Boisson L.
-Today;WTA;Jingshan (China);hard;SET 2;Bouzas Maneiro J.;Shubladze A.
+Today;WTA;Jingshan (China);hard;FINISHED;Bouzas Maneiro J.;Shubladze A.
 Today;WTA;Samsun (Turkey) - Qualification;hard;11:00;Golovina M.;Micic E.
 Today;WTA;Samsun (Turkey) - Qualification;hard;11:00;Noha Akugue N.;Yoruk I.
 Today;WTA;Samsun (Turkey) - Qualification;hard;12:30;Tikhonova A.;Tkacheva M.
@@ -94,9 +94,9 @@ Today;WTA;Samsun (Turkey) - Qualification;hard;14:30;Werner C.;Kulambayeva Z.
 Today;WTA;Suzhou (China) - Qualification;hard;FINISHED;Huang Yujia;Khomutsianskaya D.
 Today;WTA;Suzhou (China) - Qualification;hard;FINISHED;Lu J.;Li Z.
 Today;WTA;Suzhou (China) - Qualification;hard;FINISHED;Zheng W.;Qu Y.
-Today;WTA;Suzhou (China) - Qualification;hard;SET 1;Zavatska K.;Sidorova K.
-Today;WTA;Suzhou (China) - Qualification;hard;SET 1;Shi H.;Yuan C.
-Today;WTA;Suzhou (China) - Qualification;hard;SET 1;Yang Y.;Saigo R.
+Today;WTA;Suzhou (China) - Qualification;hard;SET 2;Zavatska K.;Sidorova K.
+Today;WTA;Suzhou (China) - Qualification;hard;SET 2;Shi H.;Yuan C.
+Today;WTA;Suzhou (China) - Qualification;hard;SET 2;Yang Y.;Saigo R.
 Today;WTA;Suzhou (China) - Qualification;hard;10:15;Matsuda R.;Wei S.
 Today;WTA;Suzhou (China) - Qualification;hard;10:15;Nugroho P. M.;Okamura K.
 Today;WTA;W100 Templeton, CA (USA);hard;WALKOVER;Maria T.;McDonald E.
@@ -106,7 +106,7 @@ Today;WTA;W35 Baza (Spain);hard;12:00;Esquiva Banuls C.;Ivanov V.
 Today;WTA;W35 Reims (France);hard;15:00;Van den Broek I. L.;Du Pree B.
 Today;WTA;W35 Wagga Wagga (Australia);hard;FINISHED;Mushika Mio;Sato N.
 Today;WTA;W75 Quinta do Lago (Portugal);hard;11:30;Pigato L.;Vedder E.
-Day+1;ATP;Tokyo (Japan);hard;03:00;Alcaraz C.;Munar J.
+Day+1;ATP;Tokyo (Japan);hard;09:00;Alcaraz C.;Munar J.
 Day+1;WTA;Beijing (China);hard;05:00;Bencic B.;Li A.
 Day+1;WTA;Beijing (China);hard;05:00;Bouzkova M.;Zheng Q.
 Day+1;WTA;Beijing (China);hard;05:00;Charaeva A.;Kartal S.
