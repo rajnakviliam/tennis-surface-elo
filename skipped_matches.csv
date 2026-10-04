@@ -1,18 +1,20 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Antofagasta (Chile) - Qualification;clay;15:00;Aguilar Cardozo J.;De La Fuente S.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
-Today;ATP;Antofagasta (Chile) - Qualification;clay;18:00;Kicker N.;Cossu M.;player_2_not_in_aliases;Cossu M.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;18:00;Pereira J.;Huertas Del Pino Cordova A.;player_2_not_in_aliases;Huertas Del Pino Cordova A.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;19:30;Matta A.;Cigarran T.;player_1_not_in_aliases;Matta A.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;21:00;Ortiz Gamonal D.;Zeitune M.;player_1_not_in_aliases;Ortiz Gamonal D.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Aguilar Cardozo J.;De La Fuente S.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
+Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 1;Pereira J.;Huertas Del Pino Cordova A.;player_2_not_in_aliases;Huertas Del Pino Cordova A.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;19:25;Kicker N.;Cossu M.;player_2_not_in_aliases;Cossu M.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;20:55;Matta A.;Cigarran T.;player_1_not_in_aliases;Matta A.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;21:55;Ortiz Gamonal D.;Zeitune M.;player_1_not_in_aliases;Ortiz Gamonal D.
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Esculcas T.;Misolic F.;player_1_not_in_aliases;Esculcas T.
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Nikles J.;Bernardo M.;player_2_not_in_aliases;Bernardo M.
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Valdoleiros G.;Orlov V.;player_1_not_in_aliases;Valdoleiros G.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Kachmazov A.;Chen Y. L.;player_2_not_in_aliases;Chen Y. L.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Saitoh K.;Wang Z.;player_2_not_in_aliases;Wang Z.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Bayldon B.;Ichikawa T.;player_1_not_in_aliases;Bayldon B.
-Today;WTA;Samsun (Turkey) - Qualification;hard;13:05;Lacinova A.;Smith A.;player_1_not_in_aliases;Lacinova A.
-Today;WTA;Samsun (Turkey) - Qualification;hard;14:30;Altinel A.;Bolkvadze M.;player_1_not_in_aliases;Altinel A.
-Today;WTA;Samsun (Turkey) - Qualification;hard;14:30;Werner C.;Kulambayeva Z.;player_1_not_in_aliases;Werner C.
+Today;WTA;Samsun (Turkey) - Qualification;hard;FINISHED;Lacinova A.;Smith A.;player_1_not_in_aliases;Lacinova A.
+Today;WTA;Samsun (Turkey) - Qualification;hard;FINISHED;Werner C.;Yashina E.;player_1_not_in_aliases;Werner C.
+Today;WTA;Samsun (Turkey) - Qualification;hard;FINISHED;Altinel A.;Bolkvadze M.;player_1_not_in_aliases;Altinel A.
 Today;WTA;Suzhou (China) - Qualification;hard;FINISHED;Matsuda R.;Wei S.;tour_mismatch;"Matsuda R.=ATP; Wei S.=WTA"
 Day+1;ATP;Shanghai (China) - Qualification;hard;09:00;Hong S. C.;Sakamoto R.;player_1_not_in_aliases;Hong S. C.
+Day+1;ATP;Antofagasta (Chile) - Qualification;clay;15:00;Aguilar Cardozo J.;Rodriguez L. J.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
 Day+1;ATP;Wuning 3 (China) - Qualification;hard;05:30;Purcell M.;Bayldon B.;player_2_not_in_aliases;Bayldon B.
+Day+1;WTA;Samsun (Turkey) - Qualification;hard;10:30;Werner C.;Falkowska W.;player_1_not_in_aliases;Werner C.
