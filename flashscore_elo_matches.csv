@@ -99,9 +99,9 @@ Day+1;ATP;Villena (Spain);hard;16:00;Maxi Carrascosa Diaz;Borna Gojo;1556;148;14
 Day+1;ATP;Villena (Spain);hard;17:30;Pablo Llamas Ruiz;Luca Nardi;144;247;103;143;212;164;176;1648.3;1559.9;1563.3;1550.4;88.4;12.9;Pablo Llamas Ruiz;Pablo Llamas Ruiz;True;True;True
 Day+1;ATP;Palermo (Italy);clay;18:00;Louis Wessels;Andrej Martin;430;380;50;;329;;295;;1451.8;;1425.2;;;Andrej Martin;;False;True;False
 Day+1;ATP;Palermo (Italy);clay;20:00;Jonas Forejtek;Sandro Kopp;337;310;27;383;400;329;351;1411.6;1394.9;1391.7;1377.0;16.7;14.7;Sandro Kopp;Jonas Forejtek;True;True;True
-Today;ATP;Curitiba (Brazil);clay;19:00;Gustavo Heide;Guido Ivan Justo;122;239;117;177;330;131;282;1600.1;1449.3;1605.8;1436.5;150.8;169.3;Gustavo Heide;Gustavo Heide;True;True;True
 Today;ATP;Antofagasta (Chile) - Qualification;clay;19:40;Mateus Alves;Bautista De La Pena;417;1478;1061;524;;499;;1244.5;;1246.9;;;;Mateus Alves;;True;False;False
 Today;ATP;Antofagasta (Chile) - Qualification;clay;19:55;Lucio Ratti;Joao Victor Couto Loureiro;383;977;594;454;;418;;1340.1;;1327.8;;;;Lucio Ratti;;True;False;False
+Today;ATP;Curitiba (Brazil);clay;20:05;Gustavo Heide;Guido Ivan Justo;122;239;117;177;330;131;282;1600.1;1449.3;1605.8;1436.5;150.8;169.3;Gustavo Heide;Gustavo Heide;True;True;True
 Today;WTA;W100 Templeton, CA (USA);hard;21:00;Tatjana Maria;Madison Brengle;84;208;124;90;218;120;204;1734.2;1548.4;1634.6;1512.5;185.8;122.1;Tatjana Maria;Tatjana Maria;True;True;True
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Franco Ribero;Lorenzo Joaquin Rodriguez;707;538;169;;536;;537;;1187.6;;1178.4;;;Lorenzo Joaquin Rodriguez;;False;True;False
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Joao Eduardo Schiessl;Benjamin Torrealba;512;801;289;535;;527;;1201.5;;1203.0;;;;Joao Eduardo Schiessl;;True;False;False
@@ -170,6 +170,7 @@ Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Hugo Grenier;Bruno Pujol
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Philip Henning;Thijs Boogaard;266;481;215;374;;296;;1420.1;;1426.4;;;;Philip Henning;;True;False;False
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Max Hans Rehberg;Daniel Cukierman;274;1378;1104;297;;251;;1471.9;;1470.9;;;;Max Hans Rehberg;;True;False;False
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Charles Chen;Petr Nesterov;1572;301;1271;;363;;304;;1431.0;;1418.0;;;Petr Nesterov;;False;True;False
+Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Joshua Sheehy;Ivan Marrero Curbelo;769;365;404;;438;;445;;1355.8;;1305.9;;;Ivan Marrero Curbelo;;False;True;False
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Hynek Barton;Stefan Latinovic;283;1331;1048;286;;255;;1486.2;;1467.3;;;;Hynek Barton;;True;False;False
 Today;WTA;W100 Templeton, CA (USA);hard;FINISHED;Madison Brengle;Julieta Pareja;208;265;57;218;145;204;141;1548.4;1645.2;1512.5;1604.4;96.8;91.9;Madison Brengle;Julieta Pareja;True;True;True
 Today;WTA;W35 Baza (Spain);hard;FINISHED;Charo Esquiva Banuls;Valentina Ivanov;544;474;70;;;;;;;;;;;Valentina Ivanov;;False;False;False
@@ -184,10 +185,9 @@ Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Ryan Seggerman;Naoki Ta
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Yuta Kikuchi;Kosuke Ogura;950;817;133;;;;;;;;;;;Kosuke Ogura;;False;False;False
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Max Purcell;Julien De Cuyper;680;1251;571;;;;;;;;;;;Max Purcell;;False;False;False
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Ryuki Matsuda;Sergey Betov;686;1631;945;;;;;;;;;;;Ryuki Matsuda;;False;False;False
-Today;WTA;Adana (Turkey);hard;SET 2;Leolia Jeanjean;Lois Boisson;109;274;165;117;124;130;185;1686.7;1674.3;1618.9;1535.2;12.4;83.7;Leolia Jeanjean;Leolia Jeanjean;True;True;True
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Nicolas Bruna;Alan Magadan;1009;514;495;;386;;373;;1411.3;;1356.0;;;Alan Magadan;;False;True;False
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Hernan Casanova;Wilson Leite;407;729;322;399;;341;;1395.4;;1382.0;;;;Hernan Casanova;;True;False;False
-Today;ATP;Villena (Spain) - Qualification;hard;SET 2;Patrick Brady;Mili Poljicak;710;293;417;;285;;446;;1488.5;;1305.3;;;Mili Poljicak;;False;True;False
-Today;ATP;Villena (Spain) - Qualification;hard;SET 3;Joshua Sheehy;Ivan Marrero Curbelo;769;365;404;;438;;445;;1355.8;;1305.9;;;Ivan Marrero Curbelo;;False;True;False
+Today;WTA;Adana (Turkey);hard;INTERRUPTED;Leolia Jeanjean;Lois Boisson;109;274;165;117;124;130;185;1686.7;1674.3;1618.9;1535.2;12.4;83.7;Leolia Jeanjean;Leolia Jeanjean;True;True;True
+Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 3;Nicolas Bruna;Alan Magadan;1009;514;495;;386;;373;;1411.3;;1356.0;;;Alan Magadan;;False;True;False
+Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 3;Hernan Casanova;Wilson Leite;407;729;322;399;;341;;1395.4;;1382.0;;;;Hernan Casanova;;True;False;False
+Today;ATP;Villena (Spain) - Qualification;hard;SET 3;Patrick Brady;Mili Poljicak;710;293;417;;285;;446;;1488.5;;1305.3;;;Mili Poljicak;;False;True;False
 Today;WTA;W100 Templeton, CA (USA);hard;WALKOVER;Tatjana Maria;Ella Mcdonald;84;423;339;90;383;120;460;1734.2;1368.6;1634.6;1249.9;365.6;384.7;Tatjana Maria;Tatjana Maria;True;True;True
 Today;WTA;W35 Reims (France);hard;WALKOVER;Isis Louise Van Den Broek;Britt Du Pree;619;321;298;;326;;276;;1418.8;;1430.2;;;Britt Du Pree;;False;True;False
