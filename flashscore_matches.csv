@@ -17,7 +17,7 @@ Today;WTA;Beijing (China);hard;FINISHED;Bejlek S.;Osaka N.
 Today;WTA;Beijing (China);hard;FINISHED;Muchova K.;Samsonova L.
 Today;ATP;Bari (Italy);clay;FINISHED;Martin Manzano J. C.;Pieri S.
 Today;ATP;Columbus (USA);hard;FINISHED;Dietrich D.;Shelbayh A.
-Today;ATP;Curitiba (Brazil);clay;19:00;Heide G.;Justo G. I.
+Today;ATP;Curitiba (Brazil);clay;20:05;Heide G.;Justo G. I.
 Today;ATP;Jingshan (China);hard;FINISHED;Bellucci M.;Harris L.
 Today;ATP;Mouilleron-Le-Captif (France);hard;FINISHED;Gueymard Wayenburg S.;Chidekh C.
 Today;ATP;Porto (Portugal);hard;FINISHED;Rocha H.;Montes-De La Torre I.
@@ -25,13 +25,13 @@ Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Aguilar Cardozo J.;D
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Ribero F.;Rodriguez L. J.
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Schiessl J. E.;Torrealba B.
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Munk Mesa B.;Fernandez B.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Bruna N.;Magadan A.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Casanova H.;Leite W.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 1;Pereira J.;Huertas Del Pino Cordova A.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;19:25;Kicker N.;Cossu M.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 3;Bruna N.;Magadan A.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 3;Casanova H.;Leite W.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Pereira J.;Huertas Del Pino Cordova A.
 Today;ATP;Antofagasta (Chile) - Qualification;clay;19:40;Alves M.;De La Pena B.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;19:55;Kicker N.;Cossu M.
 Today;ATP;Antofagasta (Chile) - Qualification;clay;19:55;Ratti L.;Loureiro J. V. C.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;20:55;Matta A.;Cigarran T.
+Today;ATP;Antofagasta (Chile) - Qualification;clay;21:25;Matta A.;Cigarran T.
 Today;ATP;Antofagasta (Chile) - Qualification;clay;21:55;Ortiz Gamonal D.;Zeitune M.
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Esculcas T.;Misolic F.
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Nikles J.;Bernardo M.
@@ -66,8 +66,8 @@ Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Grenier H.;Pujol Navarro
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Henning P.;Boogaard T.
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Rehberg M. H.;Cukierman D.
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Chen C.;Nesterov P.
-Today;ATP;Villena (Spain) - Qualification;hard;SET 2;Brady P.;Poljicak M.
-Today;ATP;Villena (Spain) - Qualification;hard;SET 3;Sheehy J.;Marrero Curbelo I.
+Today;ATP;Villena (Spain) - Qualification;hard;SET 3;Brady P.;Poljicak M.
+Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Sheehy J.;Marrero Curbelo I.
 Today;ATP;Villena (Spain) - Qualification;hard;FINISHED;Barton H.;Latinovic S.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Honda N.;Tamm K.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Rai A.;Lomakin G.
@@ -81,7 +81,7 @@ Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Bayldon B.;Ichikawa T.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Kikuchi Y.;Ogura K.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Purcell M.;De Cuyper J.
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Matsuda R.;Betov S.
-Today;WTA;Adana (Turkey);hard;SET 2;Jeanjean L.;Boisson L.
+Today;WTA;Adana (Turkey);hard;INTERRUPTED;Jeanjean L.;Boisson L.
 Today;WTA;Jingshan (China);hard;FINISHED;Bouzas Maneiro J.;Shubladze A.
 Today;WTA;Samsun (Turkey) - Qualification;hard;FINISHED;Golovina M.;Micic E.
 Today;WTA;Samsun (Turkey) - Qualification;hard;FINISHED;Noha Akugue N.;Yoruk I.
