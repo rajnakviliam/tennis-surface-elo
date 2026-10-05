@@ -1,16 +1,18 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
 Today;ATP;Shanghai (China) - Qualification;hard;FINISHED;Hong S. C.;Sakamoto R.;player_1_not_in_aliases;Hong S. C.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Aguilar Cardozo J.;Rodriguez L. J.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
+Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Aguilar Cardozo J.;Rodriguez L. J.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
 Today;ATP;Wuning 3 (China) - Qualification;hard;WALKOVER;Purcell M.;Bayldon B.;player_2_not_in_aliases;Bayldon B.
 Today;WTA;Samsun (Turkey) - Qualification;hard;FINISHED;Werner C.;Falkowska W.;player_1_not_in_aliases;Werner C.
 Today;WTA;W50 Heraklion 3 (Greece);clay;FINISHED;Chatziavraam E.;Giza L.;player_1_not_in_aliases;Chatziavraam E.
 Today;WTA;W50 Heraklion 3 (Greece);clay;FINISHED;Muzinic H.;Poulka M. E.;player_1_not_in_aliases;Muzinic H.
 Today;WTA;W50 Heraklion 3 (Greece);clay;FINISHED;Nikolaidou S.;Di Girolami T.;player_1_not_in_aliases;Nikolaidou S.
-Today;WTA;W50 Heraklion 3 (Greece);clay;SET 2;Schmidt L.;Veleva V.;player_1_not_in_aliases;Schmidt L.
-Today;WTA;W50 Heraklion 3 (Greece);clay;16:30;Kryvoruchko S.;Ogescu S.;player_1_not_in_aliases;Kryvoruchko S.
+Today;WTA;W50 Heraklion 3 (Greece);clay;FINISHED;Schmidt L.;Veleva V.;player_1_not_in_aliases;Schmidt L.
+Today;WTA;W50 Heraklion 3 (Greece);clay;SET 2;Kryvoruchko S.;Ogescu S.;player_1_not_in_aliases;Kryvoruchko S.
+Day+1;WTA;Samsun (Turkey);hard;10:00;Egribel E.;Werner C.;player_1_not_in_aliases;Egribel E.
 Day+1;WTA;Samsun (Turkey);hard;10:00;Mert A.;Hruncakova V.;player_1_not_in_aliases;Mert A.
 Day+1;WTA;W35 Seville (Spain);clay;10:00;Chiesa E.;Cabassers Morros A.;player_2_not_in_aliases;Cabassers Morros A.
 Day+1;WTA;W35 Seville (Spain);clay;10:00;Fernandez Sanchez A.;Martinez Cirez C.;player_1_not_in_aliases;Fernandez Sanchez A.
 Day+1;WTA;W35 Seville (Spain);clay;10:00;Garcia Cid Ma.;Fernandez A.;player_2_not_in_aliases;Fernandez A.
 Day+1;WTA;W35 Seville (Spain);clay;10:00;Gomez O'Hayon V.;Sara A.;player_1_not_in_aliases;Gomez O'Hayon V.
+Day+1;WTA;W50 Heraklion 3 (Greece);clay;10:00;Schmidt L.;Serban R.;player_1_not_in_aliases;Schmidt L.
 Day+1;WTA;W50 Heraklion 3 (Greece);clay;10:00;Tubello A.;Muzinic H.;player_2_not_in_aliases;Muzinic H.
