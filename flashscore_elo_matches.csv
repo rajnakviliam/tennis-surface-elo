@@ -75,8 +75,14 @@ Day+1;ATP;Braga (Portugal);clay;11:00;Johan Nikles;Miguel Damas;391;342;49;434;3
 Day+1;ATP;Braga (Portugal);clay;11:00;Tiago Pereira;Pol Martin Tiffon;339;209;130;496;254;489;242;1284.2;1516.3;1257.9;1473.7;232.1;215.8;Pol Martin Tiffon;Pol Martin Tiffon;True;True;True
 Day+1;ATP;Braga (Portugal);clay;11:00;Patrick Schoen;Andrej Nedic;362;241;121;;276;;251;;1494.7;;1465.8;;;Andrej Nedic;;False;True;False
 Day+1;ATP;Palermo (Italy);clay;11:00;Pierluigi Basile;Massimo Giunta;542;388;154;479;520;440;501;1313.6;1248.6;1311.5;1244.8;65.0;66.7;Massimo Giunta;Pierluigi Basile;True;True;True
+Day+1;ATP;Palermo (Italy);clay;11:00;Gianluca Cadenasso;Filippo Moroni;222;864;642;339;;300;;1444.6;;1421.4;;;;Gianluca Cadenasso;;True;False;False
 Day+1;ATP;Palermo (Italy);clay;11:00;Carlo Alberto Caniato;Max Wiskandt;314;382;68;267;502;225;474;1504.9;1278.5;1499.0;1271.2;226.4;227.8;Carlo Alberto Caniato;Carlo Alberto Caniato;True;True;True
 Day+1;ATP;Palermo (Italy);clay;11:00;Jay Clarke;Gabriele Piraino;236;386;150;309;430;277;368;1464.7;1367.6;1440.0;1358.5;97.1;81.5;Jay Clarke;Jay Clarke;True;True;True
+Day+1;ATP;Palermo (Italy);clay;11:00;Buvaysar Gadamauri;Pedro Vives Marcos;265;533;268;351;;325;;1437.9;;1398.6;;;;Buvaysar Gadamauri;;True;False;False
+Day+1;ATP;Palermo (Italy);clay;11:00;Ivan Gakhov;Yanaki Milev;446;611;165;378;;353;;1417.7;;1372.4;;;;Ivan Gakhov;;True;False;False
+Day+1;ATP;Palermo (Italy);clay;11:00;Kalin Ivanovski;Alejandro Moro Canas;749;230;519;;240;;215;;1534.6;;1506.0;;;Alejandro Moro Canas;;False;True;False
+Day+1;ATP;Palermo (Italy);clay;11:00;Zdenek Kolar;Dimitris Sakellaridis;189;557;368;308;;272;;1465.0;;1445.6;;;;Zdenek Kolar;;True;False;False
+Day+1;ATP;Palermo (Italy);clay;11:00;Christian Langmo;Lorenzo Giustino;524;210;314;518;305;551;290;1254.4;1467.3;1134.7;1429.6;212.9;294.9;Lorenzo Giustino;Lorenzo Giustino;True;True;True
 Day+1;ATP;Palermo (Italy);clay;11:00;Samuele Pieri;Martin Krumich;398;254;144;497;333;482;299;1283.8;1448.8;1264.8;1422.6;165.0;157.8;Martin Krumich;Martin Krumich;True;True;True
 Day+1;ATP;Palermo (Italy);clay;11:00;Luca Potenza;Enrico Dalla Valle;536;320;216;384;367;409;318;1411.5;1426.8;1331.8;1404.1;15.3;72.3;Enrico Dalla Valle;Enrico Dalla Valle;True;True;True
 Day+1;ATP;Palermo (Italy);clay;11:00;Michele Ribecai;Benito Sanchez Martinez;277;901;624;396;;424;;1399.8;;1321.5;;;;Michele Ribecai;;True;False;False
@@ -106,13 +112,14 @@ Day+1;ATP;Antofagasta (Chile);clay;15:00;Juan Bautista Torres;Pedro Boscardin Di
 Day+1;ATP;Villena (Spain);hard;16:00;Edas Butvilas;Max Hans Rehberg;203;274;71;187;297;161;251;1584.2;1471.9;1567.4;1470.9;112.3;96.5;Edas Butvilas;Edas Butvilas;True;True;True
 Day+1;ATP;M15+H Rodez (France);hard;18:00;Daniel Jade;Kenny De Schepper;614;959;345;;;;;;;;;;;Daniel Jade;;False;False;False
 Day+1;ATP;Villena (Spain);hard;18:00;Damir Dzumhur;Georgii Kravchenko;102;309;207;151;380;145;336;1639.3;1414.4;1589.7;1395.2;224.9;194.5;Damir Dzumhur;Damir Dzumhur;True;True;True
-Today;ATP;Antofagasta (Chile);clay;19:00;Murkel Alejandro Dellien Velasco;Juan Estevez;403;354;49;462;521;426;508;1331.4;1247.4;1320.5;1236.5;84.0;84.0;Juan Estevez;Murkel Alejandro Dellien Velasco;True;True;True
-Today;ATP;Antofagasta (Chile);clay;19:00;Gonzalo Villanueva;Nick Hardt;329;275;54;408;354;352;301;1387.4;1435.2;1373.5;1421.0;47.8;47.5;Nick Hardt;Nick Hardt;True;True;True
+Today;ATP;Antofagasta (Chile);clay;19:10;Murkel Alejandro Dellien Velasco;Juan Estevez;403;354;49;462;521;426;508;1331.4;1247.4;1320.5;1236.5;84.0;84.0;Juan Estevez;Murkel Alejandro Dellien Velasco;True;True;True
+Today;ATP;Antofagasta (Chile);clay;19:10;Gonzalo Villanueva;Nick Hardt;329;275;54;408;354;352;301;1387.4;1435.2;1373.5;1421.0;47.8;47.5;Nick Hardt;Nick Hardt;True;True;True
 Today;ATP;Palermo (Italy);clay;20:00;Jonas Forejtek;Sandro Kopp;337;310;27;383;400;329;351;1411.6;1394.9;1391.7;1377.0;16.7;14.7;Sandro Kopp;Jonas Forejtek;True;True;True
 Today;ATP;Antofagasta (Chile);clay;21:00;Genaro Alberto Olivieri;Valerio Aboian;291;341;50;331;370;296;312;1449.2;1425.9;1424.6;1410.6;23.3;14.0;Genaro Alberto Olivieri;Genaro Alberto Olivieri;True;True;True
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Hernan Casanova;Bernardo Munk Mesa;407;1190;783;399;;341;;1395.4;;1382.0;;;;Hernan Casanova;;True;False;False
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Joao Eduardo Schiessl;Alan Magadan;512;514;2;535;386;527;373;1201.5;1411.3;1203.0;1356.0;209.8;153.0;Joao Eduardo Schiessl;Alan Magadan;True;True;True
 Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Mateus Alves;Jose Pereira;417;838;421;524;;499;;1244.5;;1246.9;;;;Mateus Alves;;True;False;False
+Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Nicolas Kicker;Thiago Cigarran;345;617;272;340;;289;;1442.8;;1430.0;;;;Nicolas Kicker;;True;False;False
 Today;ATP;Beijing (China);hard;FINISHED;Alex De Minaur;Hubert Hurkacz;10;39;29;9;30;10;31;1959.3;1864.7;1927.0;1800.6;94.6;126.4;Alex De Minaur;Alex De Minaur;True;True;True
 Today;WTA;Beijing (China);hard;FINISHED;Donna Vekic;Iga Swiatek;40;9;31;77;5;86;5;1758.8;2103.3;1692.6;2067.5;344.5;374.9;Iga Swiatek;Iga Swiatek;True;True;True
 Today;WTA;Beijing (China);hard;FINISHED;Iva Jovic;Kamilla Rakhimova;13;76;63;12;88;12;78;1975.9;1739.0;1921.2;1710.3;236.9;210.9;Iva Jovic;Iva Jovic;True;True;True
@@ -125,6 +132,7 @@ Today;WTA;Beijing (China);hard;FINISHED;Coco Gauff;Xinran Sun;4;582;578;3;;3;;21
 Today;ATP;Braga (Portugal);clay;FINISHED;Zsombor Piros;Tristan Boyer;113;202;89;99;186;86;168;1710.9;1586.8;1675.3;1557.4;124.1;117.9;Zsombor Piros;Zsombor Piros;True;True;True
 Today;ATP;Braga (Portugal);clay;FINISHED;Duje Ajdukovic;Filip Cristian Jianu;348;285;63;314;425;284;389;1461.2;1369.9;1433.3;1344.9;91.3;88.4;Filip Cristian Jianu;Duje Ajdukovic;True;True;True
 Today;ATP;Braga (Portugal);clay;FINISHED;Goncalo Marques;Nikolas Sanchez Izquierdo;652;156;496;;224;;191;;1550.5;;1532.1;;;Nikolas Sanchez Izquierdo;;False;True;False
+Today;ATP;Braga (Portugal);clay;FINISHED;Vilius Gaubas;Joao Domingues;141;596;455;191;;193;;1580.9;;1525.5;;;;Vilius Gaubas;;True;False;False
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Johan Nikles;Vladyslav Orlov;391;501;110;434;;386;;1359.7;;1347.8;;;;Johan Nikles;;True;False;False
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Patrick Schoen;Filip Misolic;362;468;106;;196;;96;;1574.1;;1645.3;;;Patrick Schoen;;False;True;False
 Today;ATP;Braga (Portugal) - Qualification;clay;FINISHED;Olle Wallin;Tiago Cacao;415;643;228;422;;380;;1371.9;;1351.1;;;;Olle Wallin;;True;False;False
@@ -200,10 +208,8 @@ Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Keisuke Saitoh;Yusuke T
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Kristjan Tamm;Martin Borisiouk;1111;861;250;;;;;;;;;;;Martin Borisiouk;;False;False;False
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Ryan Seggerman;Maxim Zhukov;612;726;114;;;;;;;;;;;Ryan Seggerman;;False;False;False
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Ryuki Matsuda;Yuta Kikuchi;686;950;264;;;;;;;;;;;Ryuki Matsuda;;False;False;False
-Today;ATP;Palermo (Italy);clay;SET 1;Louis Wessels;Andrej Martin;430;380;50;;329;;295;;1451.8;;1425.2;;;Andrej Martin;;False;True;False
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Lucio Ratti;Maximo Zeitune;383;558;175;454;555;418;557;1340.1;1103.5;1327.8;1092.2;236.6;235.6;Lucio Ratti;Lucio Ratti;True;True;True
-Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 2;Nicolas Kicker;Thiago Cigarran;345;617;272;340;;289;;1442.8;;1430.0;;;;Nicolas Kicker;;True;False;False
 Today;ATP;Braga (Portugal);clay;SET 2;Thiago Monteiro;Elmer Moller;232;175;57;205;258;180;207;1564.7;1510.2;1544.8;1514.9;54.5;29.9;Elmer Moller;Thiago Monteiro;True;True;True
-Today;ATP;Braga (Portugal);clay;SET 2;Vilius Gaubas;Joao Domingues;141;596;455;191;;193;;1580.9;;1525.5;;;;Vilius Gaubas;;True;False;False
+Today;ATP;Palermo (Italy);clay;SET 2;Louis Wessels;Andrej Martin;430;380;50;;329;;295;;1451.8;;1425.2;;;Andrej Martin;;False;True;False
 Today;ATP;Villena (Spain);hard;SET 2;Pablo Llamas Ruiz;Luca Nardi;144;247;103;143;212;164;176;1648.3;1559.9;1563.3;1550.4;88.4;12.9;Pablo Llamas Ruiz;Pablo Llamas Ruiz;True;True;True
+Today;ATP;Antofagasta (Chile) - Qualification;clay;SET 3;Lucio Ratti;Maximo Zeitune;383;558;175;454;555;418;557;1340.1;1103.5;1327.8;1092.2;236.6;235.6;Lucio Ratti;Lucio Ratti;True;True;True
 Today;ATP;Palermo (Italy) - Qualification;clay;WALKOVER;Gerard Campana Lee;Pedro Vives Marcos;515;533;18;452;;451;;1342.3;;1304.7;;;;Gerard Campana Lee;;True;False;False
