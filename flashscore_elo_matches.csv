@@ -38,6 +38,7 @@ Day+1;ATP;Palermo (Italy);clay;11:00;Samuele Pieri;Martin Krumich;398;254;144;49
 Day+1;ATP;Palermo (Italy);clay;11:00;Luca Potenza;Enrico Dalla Valle;536;320;216;384;367;409;318;1411.5;1426.8;1331.8;1404.1;15.3;72.3;Enrico Dalla Valle;Enrico Dalla Valle;True;True;True
 Day+1;ATP;Palermo (Italy);clay;11:00;Oriol Roca Batalla;Francesco Passaro;308;225;83;342;220;305;212;1442.1;1551.8;1418.4;1510.8;109.7;92.4;Francesco Passaro;Francesco Passaro;True;True;True
 Day+1;ATP;Palermo (Italy);clay;11:00;Carlos Sanchez Jover;Francesco Forti;328;330;2;392;389;338;334;1402.9;1408.7;1384.0;1388.5;5.8;4.5;Carlos Sanchez Jover;Francesco Forti;True;True;True
+Day+1;ATP;Tokyo (Japan);hard;11:00;Carlos Alcaraz;Jiri Lehecka;3;23;20;2;14;2;14;2148.9;1948.5;2079.8;1903.3;200.4;176.5;Carlos Alcaraz;Carlos Alcaraz;True;True;True
 Day+1;ATP;Villena (Spain);hard;11:00;Daniil Glinka;Gauthier Onclin;173;169;4;227;281;188;249;1549.3;1491.9;1539.1;1471.5;57.4;67.6;Gauthier Onclin;Daniil Glinka;True;True;True
 Day+1;ATP;Villena (Spain);hard;11:00;August Holmgren;Pedro Martinez;245;130;115;290;204;284;181;1481.3;1565.4;1438.3;1545.9;84.1;107.6;Pedro Martinez;Pedro Martinez;True;True;True
 Day+1;ATP;Villena (Spain);hard;11:00;Abedallah Shelbayh;David Jorda Sanchis;346;212;134;280;332;238;435;1492.4;1449.2;1478.5;1315.7;43.2;162.8;David Jorda Sanchis;Abedallah Shelbayh;True;True;True
@@ -47,17 +48,14 @@ Day+1;ATP;Antofagasta (Chile);clay;15:00;Felipe Meligeni Alves;Juan Pablo Varill
 Day+1;ATP;Antofagasta (Chile);clay;15:00;Franco Roncadelli;Tomas Barrios Vera;259;135;124;358;194;287;185;1434.3;1575.9;1430.8;1537.8;141.6;107.0;Tomas Barrios Vera;Tomas Barrios Vera;True;True;True
 Day+1;ATP;Antofagasta (Chile);clay;15:00;Thiago Seyboth Wild;Matias Soto;136;248;112;171;343;147;292;1605.4;1441.8;1590.5;1429.2;163.6;161.3;Thiago Seyboth Wild;Thiago Seyboth Wild;True;True;True
 Day+1;ATP;Antofagasta (Chile);clay;15:00;Juan Bautista Torres;Pedro Boscardin Dias;276;262;14;394;359;342;314;1401.9;1433.0;1381.8;1409.0;31.1;27.2;Pedro Boscardin Dias;Pedro Boscardin Dias;True;True;True
-Today;WTA;Samsun (Turkey);hard;13:35;Polina Iatcenko;Suzan Lamens;160;215;55;134;172;137;165;1661.7;1601.8;1613.7;1559.9;59.9;53.8;Polina Iatcenko;Polina Iatcenko;True;True;True
-Today;WTA;Samsun (Turkey) - Qualification;hard;13:45;Alana Smith;Dalila Jakupovic;488;385;103;494;399;479;350;1228.6;1354.1;1233.3;1354.9;125.5;121.6;Dalila Jakupovic;Dalila Jakupovic;True;True;True
-Today;ATP;Villena (Spain) - Qualification;hard;13:45;Hynek Barton;Petr Nesterov;283;301;18;286;363;255;304;1486.2;1431.0;1467.3;1418.0;55.2;49.3;Hynek Barton;Hynek Barton;True;True;True
-Today;ATP;Shanghai (China) - Qualification;hard;13:50;Coleman Wong;Cruz Hewitt;100;322;222;109;256;96;230;1698.3;1513.7;1673.3;1490.3;184.6;183.0;Coleman Wong;Coleman Wong;True;True;True
-Today;ATP;Braga (Portugal);clay;14:30;Zsombor Piros;Tristan Boyer;113;202;89;99;186;86;168;1710.9;1586.8;1675.3;1557.4;124.1;117.9;Zsombor Piros;Zsombor Piros;True;True;True
+Today;ATP;Braga (Portugal);clay;14:00;Zsombor Piros;Tristan Boyer;113;202;89;99;186;86;168;1710.9;1586.8;1675.3;1557.4;124.1;117.9;Zsombor Piros;Zsombor Piros;True;True;True
+Today;ATP;Shanghai (China) - Qualification;hard;14:20;Coleman Wong;Cruz Hewitt;100;322;222;109;256;96;230;1698.3;1513.7;1673.3;1490.3;184.6;183.0;Coleman Wong;Coleman Wong;True;True;True
 Today;WTA;Samsun (Turkey);hard;14:30;Dominika Salkova;Himeno Sakatsume;126;120;6;175;163;150;151;1596.2;1612.8;1586.0;1586.0;16.6;0.0;Himeno Sakatsume;;True;True;True
 Today;ATP;Villena (Spain);hard;14:45;Daniel Rincon;Alejo Sanchez Quilez;257;370;113;213;418;201;368;1559.3;1376.9;1524.5;1370.8;182.4;153.7;Daniel Rincon;Daniel Rincon;True;True;True
-Today;ATP;Villena (Spain);hard;15:00;Dino Prizmic;Jack Pinnington Jones;95;197;102;48;216;72;189;1799.7;1556.4;1713.4;1538.2;243.3;175.2;Dino Prizmic;Dino Prizmic;True;True;True
+Today;ATP;Villena (Spain);hard;15:30;Dino Prizmic;Jack Pinnington Jones;95;197;102;48;216;72;189;1799.7;1556.4;1713.4;1538.2;243.3;175.2;Dino Prizmic;Dino Prizmic;True;True;True
 Today;ATP;Braga (Portugal);clay;16:00;Thiago Monteiro;Elmer Moller;232;175;57;205;258;180;207;1564.7;1510.2;1544.8;1514.9;54.5;29.9;Elmer Moller;Thiago Monteiro;True;True;True
-Today;ATP;Villena (Spain);hard;16:05;Moez Echargui;Raul Brancaccio;371;227;144;299;319;281;332;1470.2;1458.6;1443.5;1399.0;11.6;44.5;Raul Brancaccio;Moez Echargui;True;True;True
 Today;ATP;Antofagasta (Chile) - Qualification;clay;16:30;Lucio Ratti;Maximo Zeitune;383;558;175;454;555;418;557;1340.1;1103.5;1327.8;1092.2;236.6;235.6;Lucio Ratti;Lucio Ratti;True;True;True
+Today;ATP;Villena (Spain);hard;17:00;Moez Echargui;Raul Brancaccio;371;227;144;299;319;281;332;1470.2;1458.6;1443.5;1399.0;11.6;44.5;Raul Brancaccio;Moez Echargui;True;True;True
 Today;ATP;Villena (Spain);hard;17:30;Pablo Llamas Ruiz;Luca Nardi;144;247;103;143;212;164;176;1648.3;1559.9;1563.3;1550.4;88.4;12.9;Pablo Llamas Ruiz;Pablo Llamas Ruiz;True;True;True
 Today;ATP;Antofagasta (Chile);clay;19:00;Gonzalo Villanueva;Nick Hardt;329;275;54;408;354;352;301;1387.4;1435.2;1373.5;1421.0;47.8;47.5;Nick Hardt;Nick Hardt;True;True;True
 Today;ATP;Palermo (Italy);clay;20:00;Jonas Forejtek;Sandro Kopp;337;310;27;383;400;329;351;1411.6;1394.9;1391.7;1377.0;16.7;14.7;Sandro Kopp;Jonas Forejtek;True;True;True
@@ -85,6 +83,7 @@ Today;ATP;Shanghai (China) - Qualification;hard;FINISHED;Billy Harris;Dalibor Sv
 Today;ATP;Shanghai (China) - Qualification;hard;FINISHED;Martin Damm;Pavel Kotov;103;182;79;103;174;108;139;1708.5;1602.3;1660.1;1601.3;106.2;58.8;Martin Damm;Martin Damm;True;True;True
 Today;ATP;Shanghai (China) - Qualification;hard;FINISHED;Alexander Shevchenko;Yoshihito Nishioka;109;214;105;155;117;151;110;1628.8;1688.7;1582.4;1659.2;59.9;76.8;Alexander Shevchenko;Yoshihito Nishioka;True;True;True
 Today;ATP;Shanghai (China) - Qualification;hard;FINISHED;Dane Sweeny;Tristan Schoolkate;110;153;43;273;189;276;177;1496.4;1581.2;1449.2;1548.2;84.8;99.0;Dane Sweeny;Tristan Schoolkate;True;True;True
+Today;ATP;Shanghai (China) - Qualification;hard;FINISHED;Rio Noguchi;Alexandre Muller;216;132;84;287;150;246;129;1485.6;1640.1;1472.8;1620.2;154.5;147.4;Alexandre Muller;Alexandre Muller;True;True;True
 Today;WTA;Suzhou (China);hard;FINISHED;Alevtina Ibragimova;Rebecca Sramkova;168;152;16;168;155;187;139;1609.8;1632.4;1534.4;1605.9;22.6;71.5;Rebecca Sramkova;Rebecca Sramkova;True;True;True
 Today;WTA;Suzhou (China);hard;FINISHED;Elsa Jacquemot;Claire Liu;165;97;68;204;93;181;97;1564.8;1723.8;1541.3;1672.6;159.0;131.3;Claire Liu;Claire Liu;True;True;True
 Today;WTA;Suzhou (China);hard;FINISHED;Sofia Costoulas;Darya Astakhova;159;187;28;234;227;203;220;1526.2;1537.0;1513.8;1495.5;10.8;18.3;Sofia Costoulas;Sofia Costoulas;True;True;True
@@ -102,12 +101,14 @@ Today;ATP;Wuning 3 (China);hard;FINISHED;Semen Pankin;Marat Sharipov;425;238;187
 Today;ATP;Wuning 3 (China);hard;FINISHED;Luca Castelnuovo;Akira Santillan;447;317;130;495;421;487;385;1285.7;1373.5;1265.9;1353.4;87.8;87.5;Akira Santillan;Akira Santillan;True;True;True
 Today;ATP;Wuning 3 (China) - Qualification;hard;FINISHED;Keisuke Saitoh;Yusuke Takahashi;550;723;173;;510;;507;;1267.7;;1243.3;;;Keisuke Saitoh;;False;True;False
 Today;ATP;Beijing (China);hard;SET 1;Novak Djokovic;Daniil Medvedev;11;6;5;4;11;4;7;2047.2;1956.0;1997.1;1936.4;91.2;60.7;Daniil Medvedev;Novak Djokovic;True;True;True
-Today;ATP;Braga (Portugal) - Qualification;clay;SET 1;Oleksii Krutykh;Filip Pieczonka;449;902;453;464;;443;;1330.3;;1310.1;;;;Oleksii Krutykh;;True;False;False
-Today;WTA;Samsun (Turkey);hard;SET 1;Lucia Bronzetti;Fiona Crawley;132;234;102;158;194;176;195;1628.2;1574.4;1548.8;1526.4;53.8;22.4;Lucia Bronzetti;Lucia Bronzetti;True;True;True
-Today;ATP;Shanghai (China) - Qualification;hard;SET 1;Alex Bolt;Lloyd Harris;183;125;58;218;82;207;76;1556.3;1742.1;1515.5;1709.0;185.8;193.5;Lloyd Harris;Lloyd Harris;True;True;True
+Today;WTA;Samsun (Turkey);hard;SET 1;Polina Iatcenko;Suzan Lamens;160;215;55;134;172;137;165;1661.7;1601.8;1613.7;1559.9;59.9;53.8;Polina Iatcenko;Polina Iatcenko;True;True;True
+Today;WTA;Samsun (Turkey) - Qualification;hard;SET 1;Alana Smith;Dalila Jakupovic;488;385;103;494;399;479;350;1228.6;1354.1;1233.3;1354.9;125.5;121.6;Dalila Jakupovic;Dalila Jakupovic;True;True;True
 Today;ATP;Shanghai (China) - Qualification;hard;SET 1;Kimmer Coppejans;Nishesh Basavareddy;229;139;90;247;81;270;83;1525.8;1743.8;1452.4;1698.4;218.0;246.0;Nishesh Basavareddy;Nishesh Basavareddy;True;True;True
 Today;ATP;Villena (Spain) - Qualification;hard;SET 1;Philip Henning;Ivan Marrero Curbelo;266;365;99;374;438;296;445;1420.1;1355.8;1426.4;1305.9;64.3;120.5;Philip Henning;Philip Henning;True;True;True
-Today;ATP;Shanghai (China) - Qualification;hard;SET 2;Jie Cui;Aleksandar Vukic;458;112;346;439;149;422;133;1355.0;1642.6;1330.7;1614.6;287.6;283.9;Aleksandar Vukic;Aleksandar Vukic;True;True;True
+Today;ATP;Villena (Spain) - Qualification;hard;SET 1;Hynek Barton;Petr Nesterov;283;301;18;286;363;255;304;1486.2;1431.0;1467.3;1418.0;55.2;49.3;Hynek Barton;Hynek Barton;True;True;True
+Today;ATP;Braga (Portugal) - Qualification;clay;SET 2;Oleksii Krutykh;Filip Pieczonka;449;902;453;464;;443;;1330.3;;1310.1;;;;Oleksii Krutykh;;True;False;False
+Today;WTA;Samsun (Turkey);hard;SET 2;Lucia Bronzetti;Fiona Crawley;132;234;102;158;194;176;195;1628.2;1574.4;1548.8;1526.4;53.8;22.4;Lucia Bronzetti;Lucia Bronzetti;True;True;True
 Today;ATP;Shanghai (China) - Qualification;hard;SET 2;Mattia Bellucci;Elias Ymer;91;192;101;96;265;104;244;1714.2;1505.2;1666.2;1473.9;209.0;192.3;Mattia Bellucci;Mattia Bellucci;True;True;True
+Today;ATP;Shanghai (China) - Qualification;hard;SET 2;Alex Bolt;Lloyd Harris;183;125;58;218;82;207;76;1556.3;1742.1;1515.5;1709.0;185.8;193.5;Lloyd Harris;Lloyd Harris;True;True;True
 Today;ATP;Palermo (Italy) - Qualification;clay;SET 3;Daniel Siniakov;Yanaki Milev;511;611;100;;;;;;;;;;;Daniel Siniakov;;False;False;False
-Today;ATP;Shanghai (China) - Qualification;hard;SET 3;Rio Noguchi;Alexandre Muller;216;132;84;287;150;246;129;1485.6;1640.1;1472.8;1620.2;154.5;147.4;Alexandre Muller;Alexandre Muller;True;True;True
+Today;ATP;Shanghai (China) - Qualification;hard;SET 3;Jie Cui;Aleksandar Vukic;458;112;346;439;149;422;133;1355.0;1642.6;1330.7;1614.6;287.6;283.9;Aleksandar Vukic;Aleksandar Vukic;True;True;True
