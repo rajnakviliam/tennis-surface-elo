@@ -1,6 +1,6 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
 Today;ATP;Antofagasta (Chile);clay;23:00;Aguilar Cardozo J.;Villalon N.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
-Today;WTA;Samsun (Turkey);hard;18:20;Egribel E.;Werner C.;player_1_not_in_aliases;Egribel E.
+Today;WTA;Samsun (Turkey);hard;19:55;Egribel E.;Werner C.;player_1_not_in_aliases;Egribel E.
 Today;WTA;W35 Lagos (Portugal);hard;FINISHED;Xu B.;Medvedeva M.;player_1_not_in_aliases;Xu B.
 Today;WTA;W35 Lagos (Portugal);hard;FINISHED;Brown B.;Arifullina A.;player_1_not_in_aliases;Brown B.
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;22:30;Chan J.;Bosio V.;player_1_not_in_aliases;Chan J.
@@ -14,15 +14,18 @@ Today;WTA;W50 Burgas (Bulgaria);clay;FINISHED;Ebeling Koning L.;Naidenova T.;pla
 Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Amiraghyan A.;Mazzoni J.;player_2_not_in_aliases;Mazzoni J.
 Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Daems J.;Krznaric N.;player_2_not_in_aliases;Krznaric N.
 Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Tubello A.;Muzinic H.;player_2_not_in_aliases;Muzinic H.
-Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Amorim G.;Rey Garcia A.;player_1_not_in_aliases;Amorim G.
-Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Du Pree B.;Gibbs K.;player_2_not_in_aliases;Gibbs K.
-Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Hays G.;Bonardi B.;player_1_not_in_aliases;Hays G.
-Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Ivantsiv M.;Santos A.F.;player_2_not_in_aliases;Santos A.F.
+Day+1;ATP;M15+H Rodez (France);hard;12:00;Eldin R.;Boutleux N.;player_2_not_in_aliases;Boutleux N.
+Day+1;ATP;M15+H Rodez (France);hard;18:00;Barreira Bonzom V.;Baluska Y.;player_1_not_in_aliases;Barreira Bonzom V.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:30;Du Pree B.;Gibbs K.;player_2_not_in_aliases;Gibbs K.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:30;Hays G.;Bonardi B.;player_1_not_in_aliases;Hays G.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:30;Ivantsiv M.;Santos A.F.;player_2_not_in_aliases;Santos A.F.
+Day+1;WTA;W35 Lagos (Portugal);hard;13:00;Amorim G.;Rey Garcia A.;player_1_not_in_aliases;Amorim G.
 Day+1;WTA;W35 Las Vegas, NV 2 (USA);hard;19:00;Kha N.;Cherubini D.;player_1_not_in_aliases;Kha N.
-Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Bhopal A.;Ewald W.;player_1_not_in_aliases;Bhopal A.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;12:00;Bhopal A.;Ewald W.;player_1_not_in_aliases;Bhopal A.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;12:00;Lemaitre T.;Berezina P.;player_1_not_in_aliases;Lemaitre T.
 Day+1;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;12:00;Chiesa D.;Meyer Auf Der Heide L.;player_2_not_in_aliases;Meyer Auf Der Heide L.
 Day+1;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;14:00;Andrienko M.;Molaro N. A.;player_2_not_in_aliases;Molaro N. A.
-Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Burchak A.;Steiner V.;player_1_not_in_aliases;Burchak A.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;17:00;Burchak A.;Steiner V.;player_1_not_in_aliases;Burchak A.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;02:00;Wan I W.;Sibai J.;player_1_not_in_aliases;Wan I W.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;03:30;Onozawa N.;Sato H.;player_1_not_in_aliases;Onozawa N.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;03:30;Stevens A.;Adams J.;player_1_not_in_rankings;Amy Stevens
