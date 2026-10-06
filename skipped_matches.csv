@@ -39,6 +39,8 @@ Today;WTA;W35 Lagos (Portugal);hard;SET 2;Cervino Ruiz C.;Lopez Martinez C.;play
 Today;WTA;W35 Lagos (Portugal);hard;16:20;Munk Mortensen R.;Jialin T.;player_2_not_in_aliases;Jialin T.
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;22:30;Chan J.;Bosio V.;player_1_not_in_aliases;Chan J.
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;22:30;Hazelitt J.;Penickova A.;player_1_not_in_aliases;Hazelitt J.
+Today;WTA;W35 Las Vegas, NV 2 (USA);hard;23:30;Hejtmanek A.;Chang H.;player_1_not_in_aliases;Hejtmanek A.
+Today;WTA;W35 Las Vegas, NV 2 (USA);hard;23:30;Penickova K.;Shcherbinina A.;player_1_not_in_aliases;Penickova K.
 Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Hinojosa Gomez J.;Kmiecik A.;player_1_not_in_aliases;Hinojosa Gomez J.
 Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Rutlauka S.;Zoldakova D.;player_1_not_in_aliases;Rutlauka S.
 Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Quadre B. Q.;Bertacchi A.;player_1_not_in_aliases;Quadre B. Q.
@@ -84,6 +86,10 @@ Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Oz I.;Herazo Gonzalez M.;player
 Today;WTA;W50 Heraklion 2 (Greece);clay;SET 3;Korokozidi E.;Bertea E. R.;player_1_not_in_aliases;Korokozidi E.
 Today;WTA;W50 Lexington, SC (USA);hard;18:30;Bajraliu L.;Ma L.;player_1_not_in_aliases;Bajraliu L.
 Today;WTA;W50 Lexington, SC (USA);hard;18:30;Rapolu M.;Hewitt D.;player_2_not_in_aliases;Hewitt D.
+Day+1;ATP;Braga (Portugal);clay;12:30;Schoen P.;Nedic A.;player_1_not_in_aliases;Schoen P.
+Day+1;ATP;Braga (Portugal);clay;14:00;Broska F.;Neumayer L.;player_1_not_in_aliases;Broska F.
+Day+1;ATP;Braga (Portugal);clay;15:30;McDonald M.;Nijboer R.;player_2_not_in_aliases;Nijboer R.
+Day+1;ATP;Braga (Portugal);clay;15:30;Moeller M.;Torres T.;player_2_not_in_aliases;Torres T.
 Day+1;ATP;Palermo (Italy);clay;11:00;Cadenasso G.;Giunta M.;player_2_not_in_aliases;Giunta M.
 Day+1;ATP;Villena (Spain);hard;11:00;Butvilas E.;Rehberg M. H.;player_2_not_in_aliases;Rehberg M. H.
 Day+1;ATP;Villena (Spain);hard;11:00;Dzumhur D.;Kravchenko G.;player_2_not_in_aliases;Kravchenko G.
@@ -97,8 +103,6 @@ Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Mikulskyte J.;Rajeshwaran Revathi M.;p
 Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Petretic L.;Martinez Vaquero M.;player_1_not_in_aliases;Petretic L.
 Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Savinykh V.;Cabrera L.;player_1_not_in_aliases;Savinykh V.
 Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Van den Broek I. L.;Novak K.;player_1_not_in_aliases;Van den Broek I. L.
-Day+1;WTA;W35 Las Vegas, NV 2 (USA);hard;00:00;Hejtmanek A.;Chang H.;player_1_not_in_aliases;Hejtmanek A.
-Day+1;WTA;W35 Las Vegas, NV 2 (USA);hard;00:00;Penickova K.;Shcherbinina A.;player_1_not_in_aliases;Penickova K.
 Day+1;WTA;W35 Las Vegas, NV 2 (USA);hard;19:00;Fakih K.;Korpanec Davies A.;player_1_not_in_aliases;Fakih K.
 Day+1;WTA;W35 Las Vegas, NV 2 (USA);hard;19:00;Kha N.;Cherubini D.;player_1_not_in_aliases;Kha N.
 Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Barrera Aguirre I.;Lim J.;player_1_not_in_aliases;Barrera Aguirre I.
