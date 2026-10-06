@@ -1,23 +1,128 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Shanghai (China) - Qualification;hard;FINISHED;Hong S. C.;Sakamoto R.;player_1_not_in_aliases;Hong S. C.
-Today;ATP;Antofagasta (Chile) - Qualification;clay;FINISHED;Aguilar Cardozo J.;Rodriguez L. J.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
-Today;ATP;Wuning 3 (China) - Qualification;hard;WALKOVER;Purcell M.;Bayldon B.;player_2_not_in_aliases;Bayldon B.
-Today;WTA;Samsun (Turkey) - Qualification;hard;FINISHED;Werner C.;Falkowska W.;player_1_not_in_aliases;Werner C.
-Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Chatziavraam E.;Giza L.;player_1_not_in_aliases;Chatziavraam E.
-Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Muzinic H.;Poulka M. E.;player_1_not_in_aliases;Muzinic H.
-Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Nikolaidou S.;Di Girolami T.;player_1_not_in_aliases;Nikolaidou S.
-Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Schmidt L.;Veleva V.;player_1_not_in_aliases;Schmidt L.
-Today;WTA;W50 Heraklion 2 (Greece);clay;FINISHED;Kryvoruchko S.;Ogescu S.;player_1_not_in_aliases;Kryvoruchko S.
-Day+1;ATP;Antofagasta (Chile);clay;15:00;Aguilar Cardozo J.;Villalon N.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
-Day+1;WTA;Samsun (Turkey);hard;10:00;Egribel E.;Werner C.;player_1_not_in_aliases;Egribel E.
-Day+1;WTA;Samsun (Turkey);hard;10:00;Mert A.;Hruncakova V.;player_1_not_in_aliases;Mert A.
-Day+1;WTA;W35 Lagos (Portugal);hard;12:00;Xu B.;Medvedeva M.;player_1_not_in_aliases;Xu B.
-Day+1;WTA;W35 Lagos (Portugal);hard;13:30;Brown B.;Arifullina A.;player_1_not_in_aliases;Brown B.
-Day+1;WTA;W35 Monastir 6 (Tunisia);hard;13:30;Quadre B. Q.;Bertacchi A.;player_1_not_in_aliases;Quadre B. Q.
-Day+1;WTA;W35 Seville (Spain);clay;10:00;Chiesa E.;Cabassers Morros A.;player_2_not_in_aliases;Cabassers Morros A.
-Day+1;WTA;W35 Seville (Spain);clay;10:00;Fernandez Sanchez A.;Martinez Cirez C.;player_1_not_in_aliases;Fernandez Sanchez A.
-Day+1;WTA;W35 Seville (Spain);clay;10:00;Garcia Cid Ma.;Fernandez A.;player_2_not_in_aliases;Fernandez A.
-Day+1;WTA;W35 Seville (Spain);clay;10:00;Gomez O'Hayon V.;Sara A.;player_1_not_in_aliases;Gomez O'Hayon V.
-Day+1;WTA;W50 Burgas (Bulgaria);clay;12:00;Ebeling Koning L.;Naidenova T.;player_2_not_in_aliases;Naidenova T.
+Today;ATP;Shanghai (China) - Qualification;hard;07:30;Te R.;Simakin I.;player_1_not_in_aliases;Te R.
+Today;ATP;Antofagasta (Chile);clay;15:00;Heredia S.;Ribeiro E.;player_1_not_in_aliases;Heredia S.
+Today;ATP;Antofagasta (Chile);clay;15:00;Tobon M.;Cigarran T.;player_2_not_in_aliases;Cigarran T.
+Today;ATP;Antofagasta (Chile);clay;18:00;Munk Mesa B.;Reis Da Silva J.;player_1_not_in_aliases;Munk Mesa B.
+Today;ATP;Antofagasta (Chile);clay;18:00;Prado Angelo J. C.;Schiessl J. E.;player_2_not_in_aliases;Schiessl J. E.
+Today;ATP;Antofagasta (Chile);clay;19:30;Pereira J.;Midon L.;player_1_not_in_aliases;Pereira J.
+Today;ATP;Antofagasta (Chile);clay;23:00;Aguilar Cardozo J.;Villalon N.;player_2_not_in_aliases;Villalon N.
+Today;ATP;Braga (Portugal);clay;12:30;Schoen P.;Nedic A.;player_1_not_in_aliases;Schoen P.
+Today;ATP;Braga (Portugal);clay;14:00;McDonald M.;Nijboer R.;player_2_not_in_aliases;Nijboer R.
+Today;ATP;Braga (Portugal);clay;15:30;Broska F.;Neumayer L.;player_1_not_in_aliases;Broska F.
+Today;ATP;Braga (Portugal);clay;15:30;Moeller M.;Torres T.;player_2_not_in_aliases;Torres T.
+Today;ATP;Palermo (Italy);clay;10:00;Gadamauri B.;Vives Marcos P.;player_2_not_in_aliases;Vives Marcos P.
+Today;ATP;Palermo (Italy);clay;10:00;Ribecai M.;Sanchez Martinez B.;player_2_not_in_aliases;Sanchez Martinez B.
+Today;ATP;Palermo (Italy);clay;11:30;Basile P.;Giunta M.;player_2_not_in_aliases;Giunta M.
+Today;ATP;Palermo (Italy);clay;11:30;Cadenasso G.;Moroni F.;player_2_not_in_aliases;Moroni F.
+Today;ATP;Palermo (Italy);clay;13:00;Ivanovski K.;Moro Canas A.;player_1_not_in_aliases;Ivanovski K.
+Today;ATP;Villena (Spain);hard;11:00;Balshaw F.;Schwaerzler J. J.;player_2_not_in_aliases;Schwaerzler J. J.
+Today;ATP;Villena (Spain);hard;16:00;Butvilas E.;Rehberg M. H.;player_2_not_in_aliases;Rehberg M. H.
+Today;ATP;Villena (Spain);hard;18:00;Dzumhur D.;Kravchenko G.;player_2_not_in_aliases;Kravchenko G.
+Today;ATP;Wuning 3 (China);hard;FINISHED;Purcell M.;Peliwo F.;player_1_not_in_aliases;Purcell M.
+Today;ATP;Wuning 3 (China);hard;SET 3;Jasika O.;Borisiouk M.;player_2_not_in_aliases;Borisiouk M.
+Today;ATP;Wuning 3 (China);hard;FINISHED;Sun F.;Wang A.;player_2_not_in_aliases;Wang A.
+Today;ATP;Wuning 3 (China);hard;07:15;Leong M. W. K.;Rawat S.;player_1_not_in_aliases;Leong M. W. K.
+Today;ATP;Wuning 3 (China);hard;08:10;Seggerman R.;Shiraishi H.;player_1_not_in_aliases;Seggerman R.
+Today;ATP;Wuning 3 (China);hard;08:40;Zhu E.;Matsuda K.;player_1_not_in_aliases;Zhu E.
+Today;ATP;Wuning 3 (China);hard;08:45;Hara Friend J. D.;Kikuchi Y.;player_2_not_in_aliases;Kikuchi Y.
+Today;ATP;Wuning 3 (China);hard;10:15;Kachmazov A.;Broom C.;player_1_not_in_aliases;Kachmazov A.
+Today;ATP;Wuning 3 (China);hard;10:40;Samrej K.;Aguiard E.;player_2_not_in_aliases;Aguiard E.
+Today;WTA;Samsun (Turkey);hard;10:30;Mert A.;Hruncakova V.;player_1_not_in_aliases;Mert A.
+Today;WTA;Samsun (Turkey);hard;12:00;Waltert S.;Ercan M.;player_2_not_in_aliases;Ercan M.
+Today;WTA;Samsun (Turkey);hard;17:00;Egribel E.;Werner C.;player_1_not_in_aliases;Egribel E.
+Today;WTA;Suzhou (China);hard;07:00;Khomutsianskaya D.;Grant T. C.;player_1_not_in_aliases;Khomutsianskaya D.
+Today;WTA;Suzhou (China);hard;08:00;Putintseva Y.;Shao Y.;player_2_not_in_aliases;Shao Y.
+Today;ATP;M15+H Rodez (France);hard;13:00;Gobat A.;Mueller C.;player_1_not_in_aliases;Gobat A.
+Today;ATP;M15+H Rodez (France);hard;14:30;Brouwer G.;Trufelli T.;player_2_not_in_aliases;Trufelli T.
+Today;ATP;M15+H Rodez (France);hard;14:30;Tailleu P. A.;Malige M.;player_1_not_in_aliases;Tailleu P. A.
+Today;ATP;M15+H Rodez (France);hard;18:00;Jade D.;De Schepper K.;player_1_not_in_aliases;Jade D.
+Today;WTA;W35 Lagos (Portugal);hard;12:00;Kotliar Y.;Jurna E.;player_2_not_in_aliases;Jurna E.
+Today;WTA;W35 Lagos (Portugal);hard;12:00;Kujovic K.;Moccia C.;player_1_not_in_aliases;Kujovic K.
+Today;WTA;W35 Lagos (Portugal);hard;12:00;Xu B.;Medvedeva M.;player_1_not_in_aliases;Xu B.
+Today;WTA;W35 Lagos (Portugal);hard;13:30;Brown B.;Arifullina A.;player_1_not_in_aliases;Brown B.
+Today;WTA;W35 Lagos (Portugal);hard;13:30;Cervino Ruiz C.;Lopez Martinez C.;player_1_not_in_aliases;Cervino Ruiz C.
+Today;WTA;W35 Lagos (Portugal);hard;13:30;Lazarenko K.;Cembranos P.;player_1_not_in_aliases;Lazarenko K.
+Today;WTA;W35 Lagos (Portugal);hard;15:00;Munk Mortensen R.;Jialin T.;player_2_not_in_aliases;Jialin T.
+Today;WTA;W35 Monastir 6 (Tunisia);hard;13:30;Hinojosa Gomez J.;Kmiecik A.;player_1_not_in_aliases;Hinojosa Gomez J.
+Today;WTA;W35 Monastir 6 (Tunisia);hard;13:30;Quadre B. Q.;Bertacchi A.;player_1_not_in_aliases;Quadre B. Q.
+Today;WTA;W35 Monastir 6 (Tunisia);hard;13:30;Rutlauka S.;Zoldakova D.;player_1_not_in_aliases;Rutlauka S.
+Today;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;12:30;Bennemann E.;Ezzat Y.;player_2_not_in_aliases;Ezzat Y.
+Today;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;12:30;Cakarevic S.;Bohrer Martins C.;player_2_not_in_aliases;Bohrer Martins C.
+Today;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;12:30;Vladson L.;Zeltina B.;player_1_not_in_aliases;Vladson L.
+Today;WTA;W35 Seville (Spain);clay;09:30;Candiotto A.;Lovric P.;player_2_not_in_aliases;Lovric P.
+Today;WTA;W35 Seville (Spain);clay;09:30;Fernandez Sanchez A.;Martinez Cirez C.;player_1_not_in_aliases;Fernandez Sanchez A.
+Today;WTA;W35 Seville (Spain);clay;09:30;Teixido Garcia A.;Nguyen Tan L.;player_1_not_in_aliases;Teixido Garcia A.
+Today;WTA;W35 Seville (Spain);clay;09:30;Yesypchuk D.;Wobker I.;player_1_not_in_aliases;Yesypchuk D.
+Today;WTA;W35 Seville (Spain);clay;11:00;Diaz Adrover C.;Solar Donoso L.;player_2_not_in_aliases;Solar Donoso L.
+Today;WTA;W35 Seville (Spain);clay;11:00;Garcia Cid Ma.;Fernandez A.;player_1_not_in_aliases;Garcia Cid Ma.
+Today;WTA;W35 Seville (Spain);clay;11:00;Leme Da Silva N. V.;Roura Llaverias R.;player_1_not_in_aliases;Leme Da Silva N. V.
+Today;WTA;W35 Seville (Spain);clay;12:00;Chiesa E.;Cabassers Morros A.;player_1_not_in_aliases;Chiesa E.
+Today;WTA;W35 Seville (Spain);clay;12:30;Ce G.;Mettraux M.;player_2_not_in_aliases;Mettraux M.
+Today;WTA;W35 Seville (Spain);clay;12:30;Geerlings Martinez A.;Boehner L.;player_2_not_in_aliases;Boehner L.
+Today;WTA;W35 Seville (Spain);clay;12:30;Oliver Sanchez M.;Zantedeschi A.;player_1_not_in_aliases;Oliver Sanchez M.
+Today;WTA;W35 Seville (Spain);clay;14:00;Cortez Llorca L.;Teixido Garcia M.;player_2_not_in_aliases;Teixido Garcia M.
+Today;WTA;W35 Seville (Spain);clay;14:00;Gomez O'Hayon V.;Sara A.;player_1_not_in_aliases;Gomez O'Hayon V.
+Today;WTA;W35 Seville (Spain);clay;14:00;Lopez Alcaraz E.;Hennemann C. W.;player_1_not_in_aliases;Lopez Alcaraz E.
+Today;WTA;W35 Villeneuve d'Ascq (France);hard;10:30;Dittmann G. M.;Hageman M.;player_1_not_in_aliases;Dittmann G. M.
+Today;WTA;W35 Villeneuve d'Ascq (France);hard;10:30;Schunk N.;Weckerle M.;player_2_not_in_aliases;Weckerle M.
+Today;WTA;W35 Villeneuve d'Ascq (France);hard;12:00;Leonard M.;Thamm M.;player_2_not_in_aliases;Thamm M.
+Today;WTA;W35 Villeneuve d'Ascq (France);hard;12:00;Stusek J.;Coppez K.;player_1_not_in_aliases;Stusek J.
+Today;WTA;W35 Villeneuve d'Ascq (France);hard;15:00;Villet M.;Chiarello K.;player_1_not_in_aliases;Villet M.
+Today;WTA;W35 Villeneuve d'Ascq (France);hard;16:30;Iliev S.;Bougouffa H.;player_2_not_in_aliases;Bougouffa H.
+Today;WTA;W35 Villeneuve d'Ascq (France);hard;18:00;Vlasselaer C.;Mpetshi Perricard D.;player_1_not_in_aliases;Vlasselaer C.
+Today;WTA;W50 Burgas (Bulgaria);clay;09:00;Garnevska V.;Zhenikhova S.;player_1_not_in_aliases;Garnevska V.
+Today;WTA;W50 Burgas (Bulgaria);clay;10:30;Ivanova I.;Simionescu D.;player_1_not_in_aliases;Ivanova I.
+Today;WTA;W50 Burgas (Bulgaria);clay;10:30;Kovackova A.;Hercog P.;player_1_not_in_aliases;Kovackova A.
+Today;WTA;W50 Burgas (Bulgaria);clay;12:00;Ebeling Koning L.;Naidenova T.;player_1_not_in_aliases;Ebeling Koning L.
+Today;WTA;W50 Heraklion 2 (Greece);clay;09:00;Amiraghyan A.;Mazzoni J.;player_1_not_in_aliases;Amiraghyan A.
+Today;WTA;W50 Heraklion 2 (Greece);clay;09:00;Bertoldo J.;Romanova L.;player_1_not_in_aliases;Bertoldo J.
+Today;WTA;W50 Heraklion 2 (Greece);clay;09:00;Chudejova M.;Cvetkovic A.;player_1_not_in_aliases;Chudejova M.
+Today;WTA;W50 Heraklion 2 (Greece);clay;09:00;Mazzoni E.;Maric D.;player_1_not_in_aliases;Mazzoni E.
+Today;WTA;W50 Heraklion 2 (Greece);clay;10:30;Daems J.;Krznaric N.;player_1_not_in_aliases;Daems J.
+Today;WTA;W50 Heraklion 2 (Greece);clay;10:30;Longueville R.;Pikkaart C.;player_1_not_in_aliases;Longueville R.
+Today;WTA;W50 Heraklion 2 (Greece);clay;10:30;Todoni C. N.;Groth G.;player_1_not_in_aliases;Todoni C. N.
+Today;WTA;W50 Heraklion 2 (Greece);clay;10:30;Yardley S.;La Cagnina N.;player_1_not_in_aliases;Yardley S.
+Today;WTA;W50 Heraklion 2 (Greece);clay;12:00;Curmi F.;Laron M.;player_2_not_in_aliases;Laron M.
+Today;WTA;W50 Heraklion 2 (Greece);clay;12:00;Korokozidi E.;Bertea E. R.;player_1_not_in_aliases;Korokozidi E.
+Today;WTA;W50 Heraklion 2 (Greece);clay;12:00;Oz I.;Herazo Gonzalez M.;player_2_not_in_aliases;Herazo Gonzalez M.
+Today;WTA;W50 Heraklion 2 (Greece);clay;12:00;Tubello A.;Muzinic H.;player_2_not_in_aliases;Muzinic H.
+Today;WTA;W50 Lexington, SC (USA);hard;18:30;Bajraliu L.;Ma L.;player_1_not_in_aliases;Bajraliu L.
+Today;WTA;W50 Lexington, SC (USA);hard;18:30;Rapolu M.;Hewitt D.;player_2_not_in_aliases;Hewitt D.
+Day+1;ATP;Shanghai (China);hard;04:00;van Assche L.;Bu Y.;player_2_not_in_aliases;Bu Y.
+Day+1;ATP;Wuning 3 (China);hard;04:00;Derepasko T.;Peliwo F.;player_1_not_in_aliases;Derepasko T.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Amorim G.;Rey Garcia A.;player_1_not_in_aliases;Amorim G.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Dapkute I.;Voloshchuk A.;player_1_not_in_aliases;Dapkute I.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Du Pree B.;Gibbs K.;player_1_not_in_aliases;Du Pree B.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Hays G.;Bonardi B.;player_1_not_in_aliases;Hays G.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Ivantsiv M.;Santos A.F.;player_1_not_in_aliases;Ivantsiv M.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Mikulskyte J.;Rajeshwaran Revathi M.;player_2_not_in_aliases;Rajeshwaran Revathi M.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Petretic L.;Martinez Vaquero M.;player_1_not_in_aliases;Petretic L.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Savinykh V.;Cabrera L.;player_1_not_in_aliases;Savinykh V.
+Day+1;WTA;W35 Lagos (Portugal);hard;11:00;Van den Broek I. L.;Novak K.;player_1_not_in_aliases;Van den Broek I. L.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Barrera Aguirre I.;Lim J.;player_1_not_in_aliases;Barrera Aguirre I.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Bhopal A.;Ewald W.;player_1_not_in_aliases;Bhopal A.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Efremova K.;Biolay S.;player_1_not_in_aliases;Efremova K.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Kuzmova K.;Soriano Santiago M.;player_2_not_in_aliases;Soriano Santiago M.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Zhu C.;Tupitsyna E.;player_2_not_in_aliases;Tupitsyna E.
+Day+1;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;10:00;Price G.;Senic N.;player_1_not_in_aliases;Price G.
+Day+1;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;10:00;Steur J. L. S.;Taraba Wallberg N.;player_1_not_in_aliases;Steur J. L. S.
+Day+1;WTA;W35 Santa Margherita di Pula 9 (Italy);clay;10:00;Zanolini C.;Pedone G.;player_1_not_in_aliases;Zanolini C.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Burchak A.;Steiner V.;player_1_not_in_aliases;Burchak A.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Carpentier N.;Dodin O.;player_1_not_in_aliases;Carpentier N.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Lukosiute A.;Nahimana S.;player_1_not_in_aliases;Lukosiute A.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Maquet M.;Lene E.;player_1_not_in_aliases;Maquet M.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Martynov D.;Dal S.;player_2_not_in_aliases;Dal S.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Monnot A.;Daniel J.;player_2_not_in_aliases;Daniel J.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Myatovic J.;Visscher S. J.;player_1_not_in_aliases;Myatovic J.
+Day+1;WTA;W35 Villeneuve d'Ascq (France);hard;10:00;Veldman K.;Desai Z.;player_1_not_in_aliases;Veldman K.
+Day+1;WTA;W50 Burgas (Bulgaria);clay;09:00;Amariei I. D.;Ivanova N.;player_1_not_in_aliases;Amariei I. D.
+Day+1;WTA;W50 Burgas (Bulgaria);clay;09:00;Sobolieva A.;Krastenova G.;player_1_not_in_aliases;Sobolieva A.
+Day+1;WTA;W50 Burgas (Bulgaria);clay;09:00;Vogt M.;Encheva L.;player_1_not_in_aliases;Vogt M.
+Day+1;WTA;W50 Burgas (Bulgaria);clay;09:00;Yaneva E.;Popa G. S.;player_2_not_in_aliases;Popa G. S.
+Day+1;WTA;W50 Heraklion 2 (Greece);clay;10:00;Giza L.;Pigossi L.;player_1_not_in_aliases;Giza L.
+Day+1;WTA;W50 Heraklion 2 (Greece);clay;10:00;Matoula M.;Di Girolami T.;player_2_not_in_aliases;Di Girolami T.
+Day+1;WTA;W50 Heraklion 2 (Greece);clay;10:00;Papamichail D.;Ogescu S.;player_2_not_in_aliases;Ogescu S.
 Day+1;WTA;W50 Heraklion 2 (Greece);clay;10:00;Schmidt L.;Serban R.;player_1_not_in_aliases;Schmidt L.
-Day+1;WTA;W50 Heraklion 2 (Greece);clay;10:00;Tubello A.;Muzinic H.;player_2_not_in_aliases;Muzinic H.
+Day+1;WTA;W50 Lexington, SC (USA);hard;16:00;Brace C.;Clarke C.;player_2_not_in_aliases;Clarke C.
+Day+1;WTA;W50 Lexington, SC (USA);hard;16:00;Strakhova V.;Carle M. L.;player_2_not_in_aliases;Carle M. L.
+Day+1;WTA;W50 Lexington, SC (USA);hard;16:00;Xu M.;Schuman A.;player_2_not_in_aliases;Schuman A.
