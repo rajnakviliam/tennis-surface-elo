@@ -1,9 +1,10 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Antofagasta (Chile);clay;17:30;Aguilar Cardozo J.;Midon L.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
-Today;WTA;Samsun (Turkey);hard;16:05;Werner C.;Blinkova A.;player_1_not_in_aliases;Werner C.
+Today;ATP;Antofagasta (Chile);clay;17:35;Aguilar Cardozo J.;Midon L.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
+Today;WTA;Samsun (Turkey);hard;SET 1;Werner C.;Blinkova A.;player_1_not_in_aliases;Werner C.
 Today;ATP;M15+H Rodez (France);hard;FINISHED;Boutleux N.;Dalmasso G.;player_1_not_in_aliases;Boutleux N.
 Today;ATP;M15+H Rodez (France);hard;FINISHED;Barreira Bonzom V.;Hudd E.;player_1_not_in_aliases;Barreira Bonzom V.
 Today;WTA;W35 Lagos (Portugal);hard;FINISHED;Xu B.;Jialin T.;player_1_not_in_aliases;Xu B.
-Today;WTA;W35 Monastir 6 (Tunisia);hard;SET 3;Lemaitre T.;Tupitsyna E.;player_1_not_in_aliases;Lemaitre T.
+Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Lemaitre T.;Tupitsyna E.;player_1_not_in_aliases;Lemaitre T.
 Today;WTA;W35 Villeneuve d'Ascq (France);hard;16:20;Iliev S.;Burchak A.;player_2_not_in_aliases;Burchak A.
-Today;WTA;W50 Lexington, SC (USA);hard;16:00;Bergkvist Larsson B.;Dunyon J.;player_1_not_in_aliases;Bergkvist Larsson B.
+Today;WTA;W50 Lexington, SC (USA);hard;SET 1;Bergkvist Larsson B.;Dunyon J.;player_1_not_in_aliases;Bergkvist Larsson B.
+Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Lemaitre T.;Paszun A.;player_1_not_in_aliases;Lemaitre T.
