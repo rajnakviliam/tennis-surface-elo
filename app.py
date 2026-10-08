@@ -9,6 +9,11 @@ import pandas as pd
 import requests
 import streamlit as st
 
+from alias_pipeline import (
+    apply_generated_safe_aliases,
+    apply_manual_aliases_to_runtime,
+)
+
 from google_seen_matches import (
     add_saved_status,
     set_pinned,
@@ -474,22 +479,91 @@ with col1:
         "🎾 Aktualizovať zápasy",
         use_container_width=True,
     ):
-        scripts = [
-            "export_flashscore_matches.py",
-            "flashscore_elo_compare.py",
+        # 1. Stiahnuť aktuálne zápasy z Flashscore.
+        st.write(
+            "Spúšťam: export_flashscore_matches.py"
+        )
+        run_script(
+            "export_flashscore_matches.py"
+        )
+
+        progress = st.progress(0.15)
+
+        # 2. Obnoviť ručne uložené aliasy.
+        manual_added = (
+            apply_manual_aliases_to_runtime()
+        )
+
+        if manual_added:
+            st.write(
+                f"Ručných aliasov obnovených: "
+                f"{manual_added}"
+            )
+
+        progress.progress(0.25)
+
+        # 3. Vytvoriť a preveriť automatické aliasy.
+        alias_scripts = [
+            "generate_flashscore_aliases.py",
+            "audit_generated_flashscore_aliases.py",
+            "propose_alias_candidates.py",
         ]
 
-        progress = st.progress(0)
-
         for index, script in enumerate(
-            scripts,
+            alias_scripts,
             start=1,
         ):
-            st.write(f"Spúšťam: {script}")
-            run_script(script)
+            if os.path.exists(script):
+                st.write(f"Spúšťam: {script}")
+                run_script(script)
+
             progress.progress(
-                index / len(scripts)
+                0.25 + (index / len(alias_scripts)) * 0.35
             )
+
+        # 4. Bezpečné automatické aliasy pridať
+        # do runtime aliases.csv.
+        generated_added, collisions = (
+            apply_generated_safe_aliases()
+        )
+
+        if generated_added:
+            st.write(
+                "Automaticky pridaných bezpečných "
+                f"aliasov: {generated_added}"
+            )
+
+        if collisions:
+            st.warning(
+                f"{collisions} generovaných aliasov "
+                "sa nepridalo pre kolíziu."
+            )
+
+        progress.progress(0.70)
+
+        # 5. Až teraz vytvoriť finálny Elo výstup.
+        st.write(
+            "Spúšťam: flashscore_elo_compare.py"
+        )
+        run_script(
+            "flashscore_elo_compare.py"
+        )
+
+        progress.progress(0.85)
+
+        # 6. Diagnostické súbory prepočítať
+        # nad finálnym stavom.
+        for script in [
+            "audit_generated_flashscore_aliases.py",
+            "propose_alias_candidates.py",
+        ]:
+            if os.path.exists(script):
+                st.write(
+                    f"Spúšťam znova: {script}"
+                )
+                run_script(script)
+
+        progress.progress(1.0)
 
         # Uložiť posledný úspešný stav zápasov na GitHub,
         # aby ho aplikácia mala aj po reštarte Streamlit Cloud.
