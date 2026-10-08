@@ -77,10 +77,12 @@ Day+1;WTA;W50 Lexington, SC (USA);hard;16:00;Kaitlyn Carnicella;Lucciana Perez A
 Day+1;WTA;W50 Lexington, SC (USA);hard;16:00;Arantxa Rus;Whitney Osuigwe;258;241;17;246;289;208;278;1509.1;1457.5;1508.8;1428.3;51.6;80.5;Whitney Osuigwe;Arantxa Rus;True;True;True
 Day+1;ATP;Palermo (Italy);clay;16:30;Yanaki Milev;Carlos Sanchez Jover;611;328;283;;392;;338;;1402.9;;1384.0;;;Carlos Sanchez Jover;;False;True;False
 Day+1;ATP;Palermo (Italy);clay;17:00;Massimo Giunta;Alejandro Moro Canas;388;230;158;520;240;501;215;1248.6;1534.6;1244.8;1506.0;286.0;261.2;Alejandro Moro Canas;Alejandro Moro Canas;True;True;True
+Day+1;ATP;M15+H Rodez (France);hard;17:30;Daniel Jade;Adrien Gobat;614;1154;540;;;;;;;;;;;Daniel Jade;;False;False;False
 Day+1;ATP;Villena (Spain);hard;17:30;Pablo Llamas Ruiz;Pedro Martinez;144;130;14;143;204;164;181;1648.3;1565.4;1563.3;1545.9;82.9;17.4;Pedro Martinez;Pablo Llamas Ruiz;True;True;True
 Day+1;WTA;W35 Las Vegas, NV 2 (USA);hard;19:00;Annika Penickova;Janae Preston;555;589;34;;;;;;;;;;;Annika Penickova;;False;False;False
 Day+1;WTA;W35 Las Vegas, NV 2 (USA);hard;19:00;Mell Elizabeth Reasco Gonzalez;Francesca Pace;350;293;57;490;469;385;448;1237.7;1269.6;1321.1;1262.8;31.9;58.3;Francesca Pace;Mell Elizabeth Reasco Gonzalez;True;True;True
-Today;ATP;Antofagasta (Chile);clay;22:15;Juan Carlos Prado Angelo;Pedro Boscardin Dias;159;262;103;214;359;171;314;1559.0;1433.0;1553.0;1409.0;126.0;144.0;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
+Day+1;ATP;Palermo (Italy);clay;19:30;Enrico Dalla Valle;Francesco Passaro;320;225;95;367;220;318;212;1426.8;1551.8;1404.1;1510.8;125.0;106.7;Francesco Passaro;Francesco Passaro;True;True;True
+Today;ATP;Antofagasta (Chile);clay;22:20;Juan Carlos Prado Angelo;Pedro Boscardin Dias;159;262;103;214;359;171;314;1559.0;1433.0;1553.0;1409.0;126.0;144.0;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
 Today;ATP;Antofagasta (Chile);clay;FINISHED;Gustavo Heide;Eduardo Ribeiro;122;340;218;177;473;131;448;1600.1;1320.6;1605.8;1306.4;279.5;299.4;Gustavo Heide;Gustavo Heide;True;True;True
 Today;ATP;Antofagasta (Chile);clay;FINISHED;Miguel Tobon;Tomas Barrios Vera;499;135;364;481;194;455;185;1310.1;1575.9;1299.9;1537.8;265.8;237.9;Tomas Barrios Vera;Tomas Barrios Vera;True;True;True
 Today;WTA;Beijing (China);hard;FINISHED;Karolina Muchova;Nikola Bartunkova;8;34;26;14;32;14;39;1963.8;1850.3;1916.6;1788.2;113.5;128.4;Karolina Muchova;Karolina Muchova;True;True;True
@@ -149,6 +151,7 @@ Today;WTA;W35 Las Vegas, NV 2 (USA);hard;FINISHED;Kate Fakih;Francesca Pace;904;
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;FINISHED;Thea Frodin;Diletta Cherubini;547;384;163;;440;;466;;1308.9;;1239.5;;;Diletta Cherubini;;False;True;False
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;FINISHED;Janae Preston;Hanna Chang;589;297;292;;397;;383;;1355.1;;1322.7;;;Hanna Chang;;False;True;False
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;FINISHED;Mell Elizabeth Reasco Gonzalez;Kristina Penickova;350;638;288;490;;385;;1237.7;;1321.1;;;;Mell Elizabeth Reasco Gonzalez;;True;False;False
+Today;WTA;W35 Las Vegas, NV 2 (USA);hard;FINISHED;Lexington Reed;Edda Mamedova;934;753;181;;;;;;;;;;;Edda Mamedova;;False;False;False
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;FINISHED;Victoria Rodriguez;Annika Penickova;591;555;36;410;;382;;1341.4;;1323.8;;;;Annika Penickova;;True;False;False
 Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Ella Haavisto;Amelia Paszun;900;766;134;;;;;;;;;;;Amelia Paszun;;False;False;False
 Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Katarina Kuzmova;Sophia Biolay;289;774;485;450;;419;;1303.2;;1297.2;;;;Katarina Kuzmova;;True;False;False
@@ -212,5 +215,4 @@ Today;ATP;Wuning 3 (China);hard;FINISHED;Ryan Seggerman;Kaichi Uchida;612;379;23
 Today;ATP;Wuning 3 (China);hard;FINISHED;Fajing Sun;Kasidit Samrej;299;389;90;324;387;292;349;1453.6;1410.6;1431.2;1383.5;43.0;47.7;Fajing Sun;Fajing Sun;True;True;True
 Today;ATP;Wuning 3 (China);hard;FINISHED;Evan Zhu;Alibek Kachmazov;502;613;111;;;;;;;;;;;Evan Zhu;;False;False;False
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;SET 2;Francesca Mattioli;Victoria Bosio;935;309;626;;484;;470;;1249.3;;1236.8;;;Victoria Bosio;;False;True;False
-Today;WTA;W35 Las Vegas, NV 2 (USA);hard;SET 2;Lexington Reed;Edda Mamedova;934;753;181;;;;;;;;;;;Edda Mamedova;;False;False;False
 Today;WTA;W35 Las Vegas, NV 2 (USA);hard;SET 2;Anastasia Abbagnato;Emma Kamper;590;827;237;425;;432;;1330.6;;1284.1;;;;Anastasia Abbagnato;;True;False;False
