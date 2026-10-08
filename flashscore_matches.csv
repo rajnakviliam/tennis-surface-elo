@@ -1,20 +1,20 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2
-Today;ATP;Shanghai (China);hard;06:05;Borges N.;Diaz Acosta F.
-Today;ATP;Shanghai (China);hard;06:05;Coppejans K.;Tsitsipas S.
-Today;ATP;Shanghai (China);hard;06:05;Kotov P.;Griekspoor T.
-Today;ATP;Shanghai (China);hard;06:05;Munar J.;Brooksby J.
-Today;ATP;Shanghai (China);hard;06:05;Ugo Carabelli C.;Simakin I.
+Today;ATP;Shanghai (China);hard;SET 1;Borges N.;Diaz Acosta F.
+Today;ATP;Shanghai (China);hard;SET 2;Coppejans K.;Tsitsipas S.
+Today;ATP;Shanghai (China);hard;SET 2;Kotov P.;Griekspoor T.
+Today;ATP;Shanghai (China);hard;SET 1;Munar J.;Brooksby J.
+Today;ATP;Shanghai (China);hard;SET 2;Ugo Carabelli C.;Simakin I.
 Today;ATP;Shanghai (China);hard;07:30;Hurkacz H.;Duckworth J.
-Today;ATP;Shanghai (China);hard;07:30;Navone M.;Carreno-Busta P.
-Today;ATP;Shanghai (China);hard;07:30;Tirante T. A.;Medjedovic H.
 Today;ATP;Shanghai (China);hard;07:30;Tomic B.;Arnaldi M.
 Today;ATP;Shanghai (China);hard;07:30;Vallejo D.;Royer V.
+Today;ATP;Shanghai (China);hard;08:00;Navone M.;Carreno-Busta P.
+Today;ATP;Shanghai (China);hard;08:00;Tirante T. A.;Medjedovic H.
 Today;ATP;Shanghai (China);hard;09:00;Cerundolo J. M.;Mejia N.
 Today;ATP;Shanghai (China);hard;09:00;Giron M.;Baez S.
-Today;ATP;Shanghai (China);hard;09:00;Landaluce M.;Struff J-L.
-Today;ATP;Shanghai (China);hard;09:00;Marozsan F.;Svajda Z.
-Today;ATP;Shanghai (China);hard;10:30;Kopriva V.;Bergs Z.
+Today;ATP;Shanghai (China);hard;09:30;Landaluce M.;Struff J-L.
+Today;ATP;Shanghai (China);hard;09:30;Marozsan F.;Svajda Z.
 Today;ATP;Shanghai (China);hard;10:30;Van De Zandschulp B.;Merida Aguilar D.
+Today;ATP;Shanghai (China);hard;11:00;Kopriva V.;Bergs Z.
 Today;ATP;Shanghai (China);hard;12:00;van Assche L.;Bu Y.
 Today;ATP;Shanghai (China);hard;13:30;Norrie C.;Svrcina D.
 Today;WTA;Beijing (China);hard;09:00;Muchova K.;Bartunkova N.
@@ -43,18 +43,18 @@ Today;ATP;Villena (Spain);hard;13:30;Dzumhur D.;Shelbayh A.
 Today;ATP;Villena (Spain);hard;14:00;Rehberg M. H.;Barton H.
 Today;ATP;Villena (Spain);hard;15:30;Llamas Ruiz P.;Nesterov P.
 Today;ATP;Villena (Spain);hard;18:30;Rincon D.;Martinez P.
-Today;ATP;Wuning 3 (China);hard;SET 2;Hara Friend J. D.;Leong M. W. K.
-Today;ATP;Wuning 3 (China);hard;SET 2;Seggerman R.;Uchida K.
-Today;ATP;Wuning 3 (China);hard;06:30;Sun F.;Samrej K.
-Today;ATP;Wuning 3 (China);hard;06:30;Zhu E.;Kachmazov A.
+Today;ATP;Wuning 3 (China);hard;FINISHED;Hara Friend J. D.;Leong M. W. K.
+Today;ATP;Wuning 3 (China);hard;FINISHED;Seggerman R.;Uchida K.
+Today;ATP;Wuning 3 (China);hard;SET 1;Sun F.;Samrej K.
+Today;ATP;Wuning 3 (China);hard;07:20;Zhu E.;Kachmazov A.
 Today;WTA;Samsun (Turkey);hard;10:00;Dudeney A.;Aksu A.
 Today;WTA;Samsun (Turkey);hard;11:30;Waltert S.;Klimovicova L.
 Today;WTA;Samsun (Turkey);hard;13:30;Bolkvadze M.;Andreescu B.
 Today;WTA;Samsun (Turkey);hard;15:00;Werner C.;Blinkova A.
-Today;WTA;Suzhou (China);hard;SET 3;Bai Z.;Jones E.
-Today;WTA;Suzhou (China);hard;SET 3;Kalieva E.;Korpatsch T.
-Today;WTA;Suzhou (China);hard;06:05;Oliynykova O.;Falei A.
-Today;WTA;Suzhou (China);hard;06:05;Zavatska K.;Khomutsianskaya D.
+Today;WTA;Suzhou (China);hard;FINISHED;Bai Z.;Jones E.
+Today;WTA;Suzhou (China);hard;FINISHED;Kalieva E.;Korpatsch T.
+Today;WTA;Suzhou (China);hard;SET 1;Zavatska K.;Khomutsianskaya D.
+Today;WTA;Suzhou (China);hard;SET 1;Oliynykova O.;Falei A.
 Today;ATP;M15+H Rodez (France);hard;10:30;Boutleux N.;Dalmasso G.
 Today;ATP;M15+H Rodez (France);hard;10:30;Massard L.;Malige M.
 Today;ATP;M15+H Rodez (France);hard;12:00;Prihodko O.;Garcian A.
@@ -150,6 +150,8 @@ Day+1;ATP;Palermo (Italy);clay;11:00;Ribecai M.;Forejtek J.
 Day+1;ATP;Wuning 3 (China);hard;04:00;Derepasko T.;Jasika O.
 Day+1;ATP;Wuning 3 (China);hard;04:00;Saitoh K.;Santillan A.
 Day+1;WTA;Samsun (Turkey);hard;10:00;Stefanini L.;Iatcenko P.
+Day+1;WTA;Suzhou (China);hard;04:00;Bai Z.;Okamura K.
+Day+1;WTA;Suzhou (China);hard;04:00;Sasnovich A.;Kalieva E.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;01:00;Arakawa H.;Wan I W.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;01:00;Kaji H.;Sato N.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;01:00;Sato H.;Kitahara Y.
