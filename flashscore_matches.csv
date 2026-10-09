@@ -1,18 +1,18 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2
-Today;ATP;Shanghai (China);hard;SET 2;Gea A.;Humbert U.
-Today;ATP;Shanghai (China);hard;SET 2;Mannarino A.;Cobolli F.
-Today;ATP;Shanghai (China);hard;SET 2;Sakamoto R.;Rublev A.
-Today;ATP;Shanghai (China);hard;SET 2;Shelton B.;Altmaier D.
-Today;ATP;Shanghai (China);hard;07:30;Berrettini M.;Nakashima B.
-Today;ATP;Shanghai (China);hard;07:30;Halys Q.;Blockx A.
-Today;ATP;Shanghai (China);hard;07:30;Hanfmann Y.;Tiafoe F.
-Today;ATP;Shanghai (China);hard;07:30;Zverev A.;Wu Y.
-Today;ATP;Shanghai (China);hard;09:00;Davidovich Fokina A.;Brooksby J.
-Today;ATP;Shanghai (China);hard;09:00;De Minaur A.;Molcan A.
-Today;ATP;Shanghai (China);hard;09:00;Khachanov K.;Fery A.
-Today;ATP;Shanghai (China);hard;10:30;Bublik A.;Machac T.
-Today;ATP;Shanghai (China);hard;10:30;Cerundolo F.;Safiullin R.
-Today;ATP;Shanghai (China);hard;10:30;Kecmanovic M.;Mensik J.
+Today;ATP;Shanghai (China);hard;FINISHED;Gea A.;Humbert U.
+Today;ATP;Shanghai (China);hard;FINISHED;Mannarino A.;Cobolli F.
+Today;ATP;Shanghai (China);hard;FINISHED;Sakamoto R.;Rublev A.
+Today;ATP;Shanghai (China);hard;FINISHED;Shelton B.;Altmaier D.
+Today;ATP;Shanghai (China);hard;SET 1;Berrettini M.;Nakashima B.
+Today;ATP;Shanghai (China);hard;SET 1;Halys Q.;Blockx A.
+Today;ATP;Shanghai (China);hard;SET 1;Zverev A.;Wu Y.
+Today;ATP;Shanghai (China);hard;08:45;Hanfmann Y.;Tiafoe F.
+Today;ATP;Shanghai (China);hard;09:30;Davidovich Fokina A.;Brooksby J.
+Today;ATP;Shanghai (China);hard;WALKOVER;De Minaur A.;Molcan A.
+Today;ATP;Shanghai (China);hard;10:15;Khachanov K.;Fery A.
+Today;ATP;Shanghai (China);hard;11:00;Cerundolo F.;Safiullin R.
+Today;ATP;Shanghai (China);hard;11:00;Kecmanovic M.;Mensik J.
+Today;ATP;Shanghai (China);hard;11:45;Bublik A.;Machac T.
 Today;ATP;Shanghai (China);hard;12:00;Djokovic N.;Hurkacz H.
 Today;ATP;Shanghai (China);hard;13:30;Zhou Y.;Musetti L.
 Today;WTA;Beijing (China);hard;09:00;Zheng Q.;Svitolina E.
@@ -34,17 +34,17 @@ Today;ATP;Villena (Spain);hard;13:30;Shelbayh A.;Glinka D.
 Today;ATP;Villena (Spain);hard;16:00;Djere L.;Barton H.
 Today;ATP;Villena (Spain);hard;17:30;Llamas Ruiz P.;Martinez P.
 Today;ATP;Wuning 3 (China);hard;FINISHED;Derepasko T.;Jasika O.
-Today;ATP;Wuning 3 (China);hard;SET 3;Saitoh K.;Santillan A.
-Today;ATP;Wuning 3 (China);hard;SET 1;Sun F.;Kachmazov A.
-Today;ATP;Wuning 3 (China);hard;07:20;Hara Friend J. D.;Seggerman R.
+Today;ATP;Wuning 3 (China);hard;FINISHED;Saitoh K.;Santillan A.
+Today;ATP;Wuning 3 (China);hard;FINISHED;Sun F.;Kachmazov A.
+Today;ATP;Wuning 3 (China);hard;FINISHED;Hara Friend J. D.;Seggerman R.
 Today;WTA;Samsun (Turkey);hard;11:00;Aksu A.;Crawley F.
 Today;WTA;Samsun (Turkey);hard;12:30;Stefanini L.;Iatcenko P.
 Today;WTA;Samsun (Turkey);hard;14:00;Waltert S.;Sakatsume H.
 Today;WTA;Samsun (Turkey);hard;15:30;Andreescu B.;Blinkova A.
 Today;WTA;Suzhou (China);hard;FINISHED;Bai Z.;Okamura K.
-Today;WTA;Suzhou (China);hard;SET 2;Zavatska K.;Zarazua R.
-Today;WTA;Suzhou (China);hard;SET 2;Sasnovich A.;Kalieva E.
-Today;WTA;Suzhou (China);hard;07:30;Falei A.;Sramkova R.
+Today;WTA;Suzhou (China);hard;FINISHED;Zavatska K.;Zarazua R.
+Today;WTA;Suzhou (China);hard;FINISHED;Sasnovich A.;Kalieva E.
+Today;WTA;Suzhou (China);hard;SET 2;Falei A.;Sramkova R.
 Today;ATP;M15+H Rodez (France);hard;11:00;Garcian A.;Dalmasso G.
 Today;ATP;M15+H Rodez (France);hard;11:00;Penzlin J.;Hudd E.
 Today;ATP;M15+H Rodez (France);hard;12:30;Massard L.;Sels J.
@@ -104,5 +104,8 @@ Day+1;ATP;Shanghai (China);hard;04:00;Tirante T. A.;Jodar R.
 Day+1;ATP;Shanghai (China);hard;04:00;Ugo Carabelli C.;Auger-Aliassime F.
 Day+1;ATP;Shanghai (China);hard;04:00;Van De Zandschulp B.;Michelsen A.
 Day+1;WTA;Beijing (China);hard;05:00;Andreeva M.;Bartunkova N.
+Day+1;ATP;Wuning 3 (China);hard;05:00;Saitoh K.;Hara Friend J. D.
+Day+1;ATP;Wuning 3 (China);hard;06:30;Kachmazov A.;Jasika O.
+Day+1;WTA;Suzhou (China);hard;04:00;Okamura K.;Kalieva E.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;01:00;Sato N.;Sato H.
 Day+1;WTA;W35 Wagga Wagga 2 (Australia);hard;01:00;Wan I W.;Shibahara E.
