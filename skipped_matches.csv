@@ -1,6 +1,6 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Catania (Italy) - Qualification;clay;SET 2;Kovac T.;Gulin S.;player_1_not_in_aliases;Kovac T.
-Today;ATP;Catania (Italy) - Qualification;clay;14:30;Marino P. G.;Siniakov D.;player_1_not_in_aliases;Marino P. G.
+Today;ATP;Catania (Italy) - Qualification;clay;FINISHED;Kovac T.;Gulin S.;player_1_not_in_aliases;Kovac T.
+Today;ATP;Catania (Italy) - Qualification;clay;14:40;Marino P. G.;Siniakov D.;player_1_not_in_aliases;Marino P. G.
 Today;ATP;Catania (Italy) - Qualification;clay;16:00;Consolo S.;Iannaccone F.;player_1_not_in_aliases;Consolo S.
 Today;ATP;Jinan (China) - Qualification;hard;07:00;Pavlovic L.;Shi K.;player_2_not_in_aliases;Shi K.
 Today;ATP;Jinan (China) - Qualification;hard;FINISHED;Draxl L.;Du Y.;player_2_not_in_aliases;Du Y.
@@ -20,7 +20,6 @@ Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;22:30;Suarez L.;Huertas De
 Today;WTA;Lisbon (Portugal) - Qualification;clay;FINISHED;Santos A.F.;Lukas T.;player_1_not_in_aliases;Santos A.F.
 Today;WTA;Mallorca (Spain) - Qualification;clay;FINISHED;Shinikova I.;Kucmova A.;player_2_not_in_aliases;Kucmova A.
 Today;WTA;Mallorca (Spain) - Qualification;clay;FINISHED;Nguyen Tan L.;Sagrista Bermejo M.;player_2_not_in_aliases;Sagrista Bermejo M.
-Today;WTA;Mallorca (Spain) - Qualification;clay;SET 1;Encheva L.;CORRECTION;player_2_not_in_aliases;CORRECTION
 Today;WTA;Rovereto (Italy) - Qualification;hard;SET 2;Tamindzic A.;Brockmann T. J.;player_1_not_in_aliases;Tamindzic A.
 Today;WTA;Rovereto (Italy) - Qualification;hard;15:30;Novak K.;Werner C.;player_2_not_in_aliases;Werner C.
 Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Pawlikowska Z.;Lemaitre T.;player_2_not_in_aliases;Lemaitre T.
