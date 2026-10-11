@@ -1,18 +1,27 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;WTA;W35 Monastir 6 (Tunisia);hard;FINISHED;Skliar P.;Lemaitre T.;player_2_not_in_aliases;Lemaitre T.
-Day+1;ATP;Catania (Italy) - Qualification;clay;10:00;Consolo S.;Iannaccone F.;player_1_not_in_aliases;Consolo S.
-Day+1;ATP;Catania (Italy) - Qualification;clay;10:00;Kovac T.;Gulin S.;player_1_not_in_aliases;Kovac T.
-Day+1;ATP;Catania (Italy) - Qualification;clay;10:00;Marino P. G.;Siniakov D.;player_1_not_in_aliases;Marino P. G.
-Day+1;ATP;Jinan (China) - Qualification;hard;07:00;Draxl L.;Du Y.;player_2_not_in_aliases;Du Y.
-Day+1;ATP;Jinan (China) - Qualification;hard;08:30;Delaney Je.;Uchida K.;player_1_not_in_aliases;Delaney Je.
-Day+1;ATP;Jinan (China) - Qualification;hard;10:00;Shi K.;Santillan A.;player_1_not_in_aliases;Shi K.
-Day+1;ATP;Jinan (China) - Qualification;hard;11:30;Sharipov M.;Jiang Z.;tour_mismatch;"Sharipov M.=ATP; Jiang Z.=WTA"
-Day+1;ATP;Olbia (Italy) - Qualification;hard;10:00;Vargiu D.;Visker N.;player_1_not_in_aliases;Vargiu D.
-Day+1;ATP;Olbia (Italy) - Qualification;hard;13:00;Erhard M.;Rocco L.;player_2_not_in_aliases;Rocco L.
-Day+1;ATP;Olbia (Italy) - Qualification;hard;14:30;Lokoli L.;Dessi M.;player_2_not_in_aliases;Dessi M.
-Day+1;ATP;Roanne (France) - Qualification;hard;10:00;Gomez G.;Catry R.;player_1_not_in_aliases;Gomez G.
-Day+1;WTA;Mallorca (Spain) - Qualification;clay;10:00;Nguyen Tan L.;Sagrista Bermejo M.;player_2_not_in_aliases;Sagrista Bermejo M.
-Day+1;WTA;Mallorca (Spain) - Qualification;clay;10:00;Shinikova I.;Kucmova A.;player_2_not_in_aliases;Kucmova A.
-Day+1;WTA;Rovereto (Italy) - Qualification;hard;13:30;Tamindzic A.;Brockmann T. J.;player_1_not_in_aliases;Tamindzic A.
-Day+1;WTA;Rovereto (Italy) - Qualification;hard;15:00;Novak K.;Werner C.;player_2_not_in_aliases;Werner C.
-Day+1;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Pawlikowska Z.;Lemaitre T.;player_2_not_in_aliases;Lemaitre T.
+Today;ATP;Catania (Italy) - Qualification;clay;11:30;Marino P. G.;Siniakov D.;player_1_not_in_aliases;Marino P. G.
+Today;ATP;Catania (Italy) - Qualification;clay;12:00;Kovac T.;Gulin S.;player_1_not_in_aliases;Kovac T.
+Today;ATP;Catania (Italy) - Qualification;clay;13:00;Consolo S.;Iannaccone F.;player_1_not_in_aliases;Consolo S.
+Today;ATP;Jinan (China) - Qualification;hard;07:00;Draxl L.;Du Y.;player_2_not_in_aliases;Du Y.
+Today;ATP;Jinan (China) - Qualification;hard;08:30;Delaney Je.;Uchida K.;player_1_not_in_aliases;Delaney Je.
+Today;ATP;Jinan (China) - Qualification;hard;10:00;Shi K.;Santillan A.;player_1_not_in_aliases;Shi K.
+Today;ATP;Jinan (China) - Qualification;hard;11:30;Sharipov M.;Jiang Z.;tour_mismatch;"Sharipov M.=ATP; Jiang Z.=WTA"
+Today;ATP;Maia (Portugal) - Qualification;clay;15:00;Sanchez Quilez A.;Leote Prata V.;player_2_not_in_aliases;Leote Prata V.
+Today;ATP;Maia (Portugal) - Qualification;clay;15:00;Schoen P.;Valdoleiros G.;player_2_not_in_aliases;Valdoleiros G.
+Today;ATP;Olbia (Italy) - Qualification;hard;10:00;Vargiu D.;Visker N.;player_1_not_in_aliases;Vargiu D.
+Today;ATP;Olbia (Italy) - Qualification;hard;13:00;Erhard M.;Rocco L.;player_2_not_in_aliases;Rocco L.
+Today;ATP;Olbia (Italy) - Qualification;hard;14:30;Lokoli L.;Dessi M.;player_2_not_in_aliases;Dessi M.
+Today;ATP;Roanne (France) - Qualification;hard;16:00;Gomez G.;Catry R.;player_1_not_in_aliases;Gomez G.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;18:00;Donoso N.;Fernandez B.;player_1_not_in_aliases;Donoso N.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;19:30;Casanova H.;Bobiere A.;player_2_not_in_aliases;Bobiere A.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;19:30;Rodriguez Taverna S.;Ciancaglini N.;player_2_not_in_aliases;Ciancaglini N.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;19:30;Rodriguez L. J.;Cuellar Lorberg A. E.;player_2_not_in_aliases;Cuellar Lorberg A. E.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;22:30;Suarez L.;Huertas Del Pino Cordova A.;player_2_not_in_aliases;Huertas Del Pino Cordova A.
+Today;WTA;Lisbon (Portugal) - Qualification;clay;12:00;Santos A.F.;Lukas T.;player_1_not_in_aliases;Santos A.F.
+Today;WTA;Mallorca (Spain) - Qualification;clay;10:00;Nguyen Tan L.;Sagrista Bermejo M.;player_2_not_in_aliases;Sagrista Bermejo M.
+Today;WTA;Mallorca (Spain) - Qualification;clay;10:00;Shinikova I.;Kucmova A.;player_2_not_in_aliases;Kucmova A.
+Today;WTA;Rovereto (Italy) - Qualification;hard;13:30;Tamindzic A.;Brockmann T. J.;player_1_not_in_aliases;Tamindzic A.
+Today;WTA;Rovereto (Italy) - Qualification;hard;15:00;Novak K.;Werner C.;player_2_not_in_aliases;Werner C.
+Today;WTA;W35 Monastir 6 (Tunisia);hard;11:00;Pawlikowska Z.;Lemaitre T.;player_2_not_in_aliases;Lemaitre T.
+Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Aguilar Cardozo J.;Meligeni Alves F.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
+Day+1;WTA;Rovereto (Italy);hard;10:00;Salkova D.;Visentin E.;player_2_not_in_aliases;Visentin E.
