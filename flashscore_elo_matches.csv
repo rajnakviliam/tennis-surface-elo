@@ -51,6 +51,7 @@ Day+1;ATP;Maia (Portugal) - Qualification;clay;11:00;Florian Broska;Sergi Perez 
 Day+1;ATP;Maia (Portugal) - Qualification;clay;11:00;Benjamin Hassan;Ryan Nijboer;491;412;79;316;531;266;517;1460.5;1232.4;1452.5;1221.1;228.1;231.4;Ryan Nijboer;Benjamin Hassan;True;True;True
 Day+1;ATP;Maia (Portugal) - Qualification;clay;11:00;Patrick Schoen;Michael Vrbensky;362;751;389;;;;;;;;;;;Patrick Schoen;;False;False;False
 Day+1;ATP;Catania (Italy) - Qualification;clay;11:30;Pavel Lagutin;Oleksandr Ovcharenko;406;615;209;;;;;;;;;;;Pavel Lagutin;;False;False;False
+Day+1;ATP;Catania (Italy) - Qualification;clay;11:30;Alex Marti Pujolras;Kai Wehnelt;497;607;110;;;;;;;;;;;Alex Marti Pujolras;;False;False;False
 Day+1;WTA;Mallorca (Spain);clay;11:30;Maria Aran Teixido Garcia;Laura Samson;348;113;235;319;148;282;85;1426.9;1642.4;1399.4;1663.3;215.5;263.9;Laura Samson;Laura Samson;True;True;True
 Day+1;WTA;Mallorca (Spain);clay;11:30;Eva Vedder;Francesca Curmi;201;236;35;251;208;240;181;1501.6;1556.8;1459.7;1531.8;55.2;72.1;Eva Vedder;Francesca Curmi;True;True;True
 Day+1;WTA;Mallorca (Spain) - Qualification;clay;11:30;Lidia Encheva;Daria Yesypchuk;357;494;137;276;;258;;1479.0;;1441.5;;;;Lidia Encheva;;True;False;False
@@ -102,18 +103,18 @@ Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Rodrigo Pacheco Mendez;Juan Estevez;
 Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Eduardo Ribeiro;Juan Carlos Prado Angelo;340;159;181;473;214;448;171;1320.6;1559.0;1306.4;1553.0;238.4;246.6;Juan Carlos Prado Angelo;Juan Carlos Prado Angelo;True;True;True
 Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Juan Bautista Torres;Alex Barrena;276;220;56;394;241;342;206;1401.9;1532.5;1381.8;1515.2;130.6;133.4;Alex Barrena;Alex Barrena;True;True;True
 Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Gonzalo Villanueva;Carlos Maria Zarate;329;347;18;408;541;352;544;1387.4;1178.9;1373.5;1166.8;208.5;206.7;Gonzalo Villanueva;Gonzalo Villanueva;True;True;True
+Day+1;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;16:00;Mateus Alves;Bruno Fernandez;417;597;180;524;553;499;555;1244.5;1120.1;1246.9;1107.9;124.4;139.0;Mateus Alves;Mateus Alves;True;True;True
 Day+1;ATP;Roanne (France);hard;16:30;Sascha Gueymard Wayenburg;Liam Broady;218;208;10;237;249;204;225;1536.9;1521.9;1521.4;1493.6;15.0;27.8;Liam Broady;Sascha Gueymard Wayenburg;True;True;True
 Day+1;WTA;Rovereto (Italy);hard;17:00;Linda Klimovicova;Lucie Havlickova;206;185;21;241;207;209;170;1514.9;1557.2;1507.3;1554.2;42.3;46.9;Lucie Havlickova;Lucie Havlickova;True;True;True
 Day+1;WTA;Rovereto (Italy);hard;18:00;Lisa Pigato;Julia Avdeeva;114;195;81;153;269;123;244;1635.9;1485.0;1629.1;1469.1;150.9;160.0;Lisa Pigato;Lisa Pigato;True;True;True
 Day+1;ATP;Roanne (France);hard;18:30;Hugo Gaston;Daniel Jade;87;614;527;112;;99;;1696.0;;1669.6;;;;Hugo Gaston;;True;False;False
 Day+1;WTA;Rovereto (Italy);hard;19:30;Mona Barthel;Lucia Bronzetti;186;132;54;197;158;178;176;1571.6;1628.2;1547.2;1548.8;56.6;1.6;Lucia Bronzetti;Lucia Bronzetti;True;True;True
 Day+1;ATP;Roanne (France);hard;20:00;Hugo Grenier;Benjamin Bonzi;284;90;194;270;74;250;69;1500.5;1761.8;1471.4;1721.3;261.3;249.9;Benjamin Bonzi;Benjamin Bonzi;True;True;True
-Today;ATP;Maia (Portugal) - Qualification;clay;18:50;Diogo Marques;Oleksii Krutykh;1356;449;907;;464;;443;;1330.3;;1310.1;;;Oleksii Krutykh;;False;True;False
-Today;WTA;W35 Las Vegas, NV 2 (USA);hard;19:00;Emma Kamper;Francesca Pace;827;293;534;;469;;448;;1269.6;;1262.8;;;Francesca Pace;;False;True;False
+Today;ATP;Maia (Portugal) - Qualification;clay;19:30;Diogo Marques;Oleksii Krutykh;1356;449;907;;464;;443;;1330.3;;1310.1;;;Oleksii Krutykh;;False;True;False
 Today;ATP;Roanne (France) - Qualification;hard;20:15;Oleg Prihodko;Patrick Brady;452;710;258;486;;381;;1305.3;;1358.2;;;;Oleg Prihodko;;True;False;False
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:00;Boris Arias;Thiago Cigarran;1290;617;673;;;;;;;;;;;Thiago Cigarran;;False;False;False
 Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:00;Franco Ribero;Maximo Zeitune;707;558;149;;555;;557;;1103.5;;1092.2;;;Maximo Zeitune;;False;True;False
 Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:00;Paulo Andre Saraiva Dos Santos;Santiago De La Fuente;435;728;293;545;;547;;1167.1;;1150.3;;;;Paulo Andre Saraiva Dos Santos;;True;False;False
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:30;Boris Arias;Thiago Cigarran;1290;617;673;;;;;;;;;;;Thiago Cigarran;;False;False;False
 Today;WTA;Beijing (China);hard;FINISHED;Qinwen Zheng;Mirra Andreeva;54;5;49;22;9;21;9;1896.6;2029.4;1879.0;1963.0;132.8;84.0;Mirra Andreeva;Mirra Andreeva;True;True;True
 Today;ATP;Braga (Portugal);clay;FINISHED;Elmer Moller;Matej Dodig;175;171;4;258;164;207;141;1510.2;1615.2;1514.9;1597.4;105.0;82.5;Matej Dodig;Matej Dodig;True;True;True
 Today;ATP;Catania (Italy) - Qualification;clay;FINISHED;Radu David Turcanu;Pedro Vives Marcos;685;533;152;;;;;;;;;;;Pedro Vives Marcos;;False;False;False
@@ -206,12 +207,13 @@ Today;WTA;Wuhan (China) - Qualification;hard;FINISHED;Han Shi;Kamilla Rakhimova;
 Today;WTA;Wuhan (China) - Qualification;hard;FINISHED;Lanlana Tararudee;Caty Mcnally;63;72;9;89;37;73;49;1738.1;1836.7;1724.5;1758.0;98.6;33.5;Lanlana Tararudee;Caty Mcnally;True;True;True
 Today;WTA;Wuhan (China) - Qualification;hard;FINISHED;Anna Bondar;Mananchaya Sawangkaew;64;90;26;78;82;85;84;1757.9;1746.7;1692.8;1694.5;11.2;1.7;Anna Bondar;Mananchaya Sawangkaew;True;True;True
 Today;ATP;Wuning 3 (China);hard;FINISHED;Jay Dylan Hara Friend;Alibek Kachmazov;255;613;358;200;;193;;1568.0;;1536.5;;;;Jay Dylan Hara Friend;;True;False;False
-Today;ATP;Maia (Portugal) - Qualification;clay;INTERRUPTED;Darwin Blanch;Milos Karol;163;576;413;197;402;217;362;1572.4;1393.1;1504.0;1365.7;179.3;138.3;Darwin Blanch;Darwin Blanch;True;True;True
 Today;ATP;Roanne (France) - Qualification;hard;SET 1;Etienne Donnet;Amir Omarkhanov;994;610;384;;;;;;;;;;;Amir Omarkhanov;;False;False;False
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 1;Federico Zeballos;Samuel Heredia;1174;655;519;;549;;552;;1137.8;;1134.3;;;Samuel Heredia;;False;True;False
-Today;WTA;W50 Lexington, SC (USA);hard;SET 1;Astra Sharma;Kaitlyn Carnicella;1181;951;230;;;;;;;;;;;Kaitlyn Carnicella;;False;False;False
+Today;WTA;W35 Las Vegas, NV 2 (USA);hard;SET 1;Emma Kamper;Francesca Pace;827;293;534;;469;;448;;1269.6;;1262.8;;;Francesca Pace;;False;True;False
 Today;ATP;Catania (Italy) - Qualification;clay;SET 2;Maxime Chazal;Yanaki Milev;420;611;191;494;;490;;1289.6;;1257.6;;;;Maxime Chazal;;True;False;False
+Today;ATP;Maia (Portugal) - Qualification;clay;SET 2;Darwin Blanch;Milos Karol;163;576;413;197;402;217;362;1572.4;1393.1;1504.0;1365.7;179.3;138.3;Darwin Blanch;Darwin Blanch;True;True;True
 Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 2;Luis Britto;Wilson Leite;1583;729;854;;;;;;;;;;;Wilson Leite;;False;False;False
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 2;Federico Zeballos;Samuel Heredia;1174;655;519;;549;;552;;1137.8;;1134.3;;;Samuel Heredia;;False;True;False
+Today;WTA;W50 Lexington, SC (USA);hard;SET 2;Astra Sharma;Kaitlyn Carnicella;1181;951;230;;;;;;;;;;;Kaitlyn Carnicella;;False;False;False
 Today;ATP;Antofagasta (Chile);clay;SET 3;Thiago Seyboth Wild;Joao Lucas Reis Da Silva;136;231;95;171;282;147;240;1605.4;1491.5;1590.5;1476.6;113.9;113.9;Thiago Seyboth Wild;Thiago Seyboth Wild;True;True;True
 Today;ATP;Maia (Portugal) - Qualification;clay;SET 3;Alejo Sanchez Quilez;Vasco Leote Prata;370;1674;1304;418;;456;;1376.9;;1297.3;;;;Alejo Sanchez Quilez;;True;False;False
 Today;ATP;Roanne (France) - Qualification;hard;SET 3;Jakub Paul;Niels Mcdonald;1081;492;589;;458;;510;;1334.1;;1238.4;;;Niels Mcdonald;;False;True;False
