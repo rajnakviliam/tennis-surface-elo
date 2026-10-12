@@ -23,18 +23,18 @@ Today;ATP;Catania (Italy);clay;FINISHED;Gadamauri B.;Kopp S.
 Today;ATP;Catania (Italy);clay;FINISHED;Piraino G.;Gill F.
 Today;ATP;Catania (Italy);clay;FINISHED;Cuenin S.;Almazan Valiente I.
 Today;ATP;Catania (Italy);clay;FINISHED;Forti F.;Kolar Z.
-Today;ATP;Maia (Portugal);clay;SET 3;Nagal S.;Rocha H.
-Today;ATP;Maia (Portugal);clay;20:45;Martin Tiffon P.;Rocha F.
+Today;ATP;Maia (Portugal);clay;FINISHED;Nagal S.;Rocha H.
+Today;ATP;Maia (Portugal);clay;SET 1;Martin Tiffon P.;Rocha F.
 Today;ATP;Olbia (Italy);hard;FINISHED;Guerrieri A.;Shelbayh A.
 Today;ATP;Olbia (Italy);hard;FINISHED;Kasnikowski M.;Cretu C.
 Today;ATP;Olbia (Italy);hard;FINISHED;Carboni L.;McDonald M.
 Today;ATP;Roanne (France);hard;FINISHED;Gueymard Wayenburg S.;Broady L.
 Today;ATP;Roanne (France);hard;FINISHED;Brunold M.;Domenc M.
 Today;ATP;Roanne (France);hard;FINISHED;Gaston H.;Jade D.
-Today;ATP;Roanne (France);hard;SET 1;Grenier H.;Bonzi B.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:00;Munk Mesa B.;Dellien H.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:00;Pacheco Mendez R.;Estevez J.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:00;Torres J. B.;Barrena A.
+Today;ATP;Roanne (France);hard;SET 2;Grenier H.;Bonzi B.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;23:15;Munk Mesa B.;Dellien H.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;23:15;Torres J. B.;Barrena A.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;23:30;Pacheco Mendez R.;Estevez J.
 Today;ATP;Catania (Italy) - Qualification;clay;FINISHED;Gima S.;Vives Marcos P.
 Today;ATP;Catania (Italy) - Qualification;clay;FINISHED;Rodenas P.;Gulin S.
 Today;ATP;Catania (Italy) - Qualification;clay;FINISHED;Vrba J.;Siniakov D.
@@ -62,15 +62,15 @@ Today;ATP;Roanne (France) - Qualification;hard;FINISHED;Bernet H.;Boogaard T.
 Today;ATP;Roanne (France) - Qualification;hard;FINISHED;Massard L.;Paul J.
 Today;ATP;Roanne (France) - Qualification;hard;FINISHED;Brady P.;Donnet E.
 Today;ATP;Roanne (France) - Qualification;hard;FINISHED;Gombos N.;Catry R.
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 1;Alves M.;Fernandez B.
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 1;Ratti L.;Zeballos F.
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 1;Casanova H.;Leite W.
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:30;De La Fuente S.;Huertas Del Pino Cordova A.
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:30;Rodriguez L. J.;Cigarran T.
-Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:30;Rodriguez Taverna S.;Zeitune M.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 2;Alves M.;Fernandez B.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 2;Ratti L.;Zeballos F.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;SET 2;Casanova H.;Leite W.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:45;Rodriguez L. J.;Cigarran T.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;21:45;Rodriguez Taverna S.;Zeitune M.
+Today;ATP;Santa Cruz 2 (Bolivia) - Qualification;clay;22:00;De La Fuente S.;Huertas Del Pino Cordova A.
 Today;WTA;Lisbon (Portugal);clay;FINISHED;Burel C.;Gjorcheska L.
 Today;WTA;Lisbon (Portugal);clay;FINISHED;Palicova B.;Ortenzi J.
-Today;WTA;Lisbon (Portugal);clay;SET 3;Romero Gormaz L.;Rame A.
+Today;WTA;Lisbon (Portugal);clay;FINISHED;Romero Gormaz L.;Rame A.
 Today;WTA;Mallorca (Spain);clay;FINISHED;Teixido Garcia A.;Samson L.
 Today;WTA;Mallorca (Spain);clay;FINISHED;Vedder E.;Curmi F.
 Today;WTA;Mallorca (Spain);clay;FINISHED;Grabher J.;Chiesa D.
@@ -81,7 +81,7 @@ Today;WTA;Rovereto (Italy);hard;FINISHED;Bandecchi S.;Maduzzi G.
 Today;WTA;Rovereto (Italy);hard;FINISHED;Iatcenko P.;Tan H.
 Today;WTA;Rovereto (Italy);hard;FINISHED;Pigato L.;Avdeeva J.
 Today;WTA;Rovereto (Italy);hard;FINISHED;Klimovicova L.;Havlickova L.
-Today;WTA;Rovereto (Italy);hard;SET 2;Barthel M.;Bronzetti L.
+Today;WTA;Rovereto (Italy);hard;SET 3;Barthel M.;Bronzetti L.
 Today;WTA;Lisbon (Portugal) - Qualification;clay;FINISHED;Feistel G.;Lukas T.
 Today;WTA;Lisbon (Portugal) - Qualification;clay;FINISHED;Lollia M.;Ebeling Koning L.
 Today;WTA;Lisbon (Portugal) - Qualification;clay;FINISHED;Nagy A.;Primorac I.
@@ -167,8 +167,8 @@ Day+1;ATP;Roanne (France);hard;14:00;Bernet H.;Tabur C.
 Day+1;ATP;Roanne (France);hard;16:30;Herbert P.;Gombos N.
 Day+1;ATP;Roanne (France);hard;18:30;Kouame M.;Dedura D.
 Day+1;ATP;Roanne (France);hard;20:00;Mpetshi Perricard G.;Donnet E.
-Day+1;ATP;Santa Cruz 2 (Bolivia);clay;00:30;Aguilar Cardozo J.;Meligeni Alves F.
-Day+1;ATP;Santa Cruz 2 (Bolivia);clay;00:30;Comesana F.;Hardt N.
+Day+1;ATP;Santa Cruz 2 (Bolivia);clay;00:45;Aguilar Cardozo J.;Meligeni Alves F.
+Day+1;ATP;Santa Cruz 2 (Bolivia);clay;00:45;Comesana F.;Hardt N.
 Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Aboian V.;Roncadelli F.
 Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Boscardin Dias P.;Mena F.
 Day+1;ATP;Santa Cruz 2 (Bolivia);clay;16:00;Miguel L. A.;Dellien Velasco M. A.
@@ -224,6 +224,8 @@ Day+1;WTA;W35 Birmingham 2 (United Kingdom);hard;15:30;Bekker S.;Stojsavljevic M
 Day+1;WTA;W35 Birmingham 2 (United Kingdom);hard;15:30;Maloney E.;Burrage J.
 Day+1;WTA;W35 Birmingham 2 (United Kingdom);hard;15:30;Malygina E.;Allen V.
 Day+1;WTA;W35 Birmingham 2 (United Kingdom);hard;15:30;Savic L.;Adeshina E.
+Day+1;WTA;W35 Monastir 7 (Tunisia);hard;11:30;Rutlauka S.;Kubareva A.
+Day+1;WTA;W35 Monastir 7 (Tunisia);hard;11:30;Tran D.;Nishimura K.
 Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;12:00;Giambelli C.;Taraba Wallberg N.
 Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;13:30;Grammatikopoulou V.;Gennaro C.
 Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;13:30;Lombardini M.;Radovanovic N.
