@@ -7,14 +7,14 @@ Today;WTA;Wuhan (China);hard;FINISHED;Birrell K.;Volynets K.
 Today;WTA;Wuhan (China);hard;FINISHED;Siniakova K.;Samsonova L.
 Today;WTA;Wuhan (China);hard;FINISHED;Yastremska D.;Bucsa C.
 Today;WTA;Wuhan (China);hard;FINISHED;Sherif M.;Chwalinska M.
-Today;WTA;Wuhan (China);hard;SET 2;Guo H.;Cirstea S.
+Today;WTA;Wuhan (China);hard;SET 3;Guo H.;Cirstea S.
 Today;WTA;Wuhan (China);hard;SET 2;Putintseva Y.;Sonmez Z.
 Today;WTA;Wuhan (China);hard;SET 1;Boulter K.;Shnaider D.
 Today;WTA;Wuhan (China);hard;SET 1;Tagger L.;Bartunkova N.
-Today;WTA;Wuhan (China);hard;09:05;Sakkari M.;Kostyuk M.
-Today;WTA;Wuhan (China);hard;09:35;Kasatkina D.;Ostapenko J.
+Today;WTA;Wuhan (China);hard;10:00;Sakkari M.;Kostyuk M.
 Today;WTA;Wuhan (China);hard;10:00;Snigur D.;Mertens E.
-Today;WTA;Wuhan (China);hard;11:05;Li A.;Osorio C.
+Today;WTA;Wuhan (China);hard;10:10;Kasatkina D.;Ostapenko J.
+Today;WTA;Wuhan (China);hard;11:40;Li A.;Osorio C.
 Today;WTA;Wuhan (China);hard;13:00;Krueger A.;Zhang S.
 Today;WTA;Wuhan (China);hard;14:30;Pohankova M.;Wang Xiy.
 Today;ATP;Catania (Italy);clay;10:00;Geerts M.;Lagutin P.
@@ -31,9 +31,9 @@ Today;ATP;Catania (Italy);clay;14:30;Wiskandt M.;Damas M.
 Today;ATP;Catania (Italy);clay;17:00;Caniato C. A.;Siniakov D.
 Today;ATP;Jinan (China);hard;FINISHED;Sakellaridis S.;Smith K.
 Today;ATP;Jinan (China);hard;FINISHED;Landaluce M.;Simakin I.
-Today;ATP;Jinan (China);hard;SET 2;Kotov P.;Kopriva V.
-Today;ATP;Jinan (China);hard;SET 1;Sun F.;Cui J.
-Today;ATP;Jinan (China);hard;SET 1;Sweeny D.;Tomic B.
+Today;ATP;Jinan (China);hard;FINISHED;Kotov P.;Kopriva V.
+Today;ATP;Jinan (China);hard;SET 2;Sun F.;Cui J.
+Today;ATP;Jinan (China);hard;FINISHED;Sweeny D.;Tomic B.
 Today;ATP;Jinan (China);hard;09:40;Diaz Acosta F.;Mochizuki S.
 Today;ATP;Jinan (China);hard;09:50;Walton A.;Cilic M.
 Today;ATP;Jinan (China);hard;10:15;Ymer E.;Bellucci M.
@@ -169,7 +169,7 @@ Today;WTA;W50 Quebec City (Canada);hard;23:00;Mercier C.;Saito S.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;SET 1;Glushkova A.;Urgesi F.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;SET 1;Simionescu D.;Stankovic A.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;SET 1;Zhenikhova S.;Sawant M.
-Today;WTA;W50 Stara Zagora (Bulgaria);clay;SET 1;Spasova B.;Papadopoulou E.
+Today;WTA;W50 Stara Zagora (Bulgaria);clay;SET 2;Spasova B.;Papadopoulou E.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;10:00;Artemeva V.;Ilieva I.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;10:00;Dimitrova D.;Alves C.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;10:00;Gadient N.;Ivanova I.
@@ -185,6 +185,7 @@ Day+1;WTA;Wuhan (China);hard;04:00;Muchova K.;McNally C.
 Day+1;WTA;Wuhan (China);hard;04:00;Shi H.;Fernandez L.
 Day+1;WTA;Wuhan (China);hard;04:00;Svitolina E.;Samsonova L.
 Day+1;ATP;Catania (Italy);clay;10:00;Almazan Valiente I.;Gill F.
+Day+1;ATP;Jinan (China);hard;04:00;Smith K.;Kopriva V.
 Day+1;ATP;Maia (Portugal);clay;12:00;Martinez P.;Dodig M.
 Day+1;ATP;Maia (Portugal);clay;12:00;Moller E.;Neumayer L.
 Day+1;ATP;Maia (Portugal);clay;12:00;Passaro F.;Torres T.
