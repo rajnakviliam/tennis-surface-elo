@@ -480,6 +480,13 @@ def click_next_day(page):
             5000
         )
 
+        print("  URL po kliknutí:", page.url)
+        print("  Názov stránky:", page.title())
+        print(
+            "  Počet tenisových eventov:",
+            page.locator(".event__match").count()
+        )
+
         return True
 
     except Exception as error:
