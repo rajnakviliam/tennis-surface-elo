@@ -1,6 +1,6 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
 Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Aguilar Cardozo J.;Meligeni Alves F.;player_1_not_in_rankings;Joaquin  Aguilar Cardozo
-Today;ATP;Santa Cruz 2 (Bolivia);clay;22:45;Justo G. I.;Huertas Del Pino Cordova A.;player_2_not_in_aliases;Huertas Del Pino Cordova A.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;23:00;Justo G. I.;Huertas Del Pino Cordova A.;player_2_not_in_aliases;Huertas Del Pino Cordova A.
 Today;WTA;Lisbon (Portugal);clay;FINISHED;Galfi D.;Castro B.;player_2_not_in_aliases;Castro B.
 Today;WTA;Mallorca (Spain);clay;FINISHED;Kucmova A.;Encheva L.;player_1_not_in_aliases;Kucmova A.
 Today;WTA;Rovereto (Italy);hard;FINISHED;Salkova D.;Visentin E.;player_2_not_in_aliases;Visentin E.
@@ -12,11 +12,30 @@ Today;WTA;W35 Birmingham 2 (United Kingdom);hard;FINISHED;Bekker S.;Stojsavljevi
 Today;WTA;W35 Birmingham 2 (United Kingdom);hard;FINISHED;Savic L.;Adeshina E.;player_1_not_in_aliases;Savic L.
 Today;WTA;W35 Heraklion 2 (Greece);clay;FINISHED;Andronicou N.;Korokozidi E.;player_1_not_in_aliases;Andronicou N.
 Today;WTA;W35 Heraklion 2 (Greece);clay;FINISHED;Tsoutsi S.;Di Girolami T.;player_1_not_in_aliases;Tsoutsi S.
-Today;WTA;W35 Redding, CA (USA);hard;SET 1;Hejtmanek A.;Penickova A.;player_1_not_in_aliases;Hejtmanek A.
-Today;WTA;W35 Redding, CA (USA);hard;22:30;Ma C.;Rodriguez V.;player_1_not_in_aliases;Ma C.
-Today;WTA;W35 Redding, CA (USA);hard;22:35;Chan J.;Reasco Gonzalez M. E.;player_1_not_in_aliases;Chan J.
-Today;WTA;W50 Quebec City (Canada);hard;SET 1;Mercier C.;Saito S.;player_1_not_in_aliases;Mercier C.
+Today;WTA;W35 Redding, CA (USA);hard;SET 2;Hejtmanek A.;Penickova A.;player_1_not_in_aliases;Hejtmanek A.
+Today;WTA;W35 Redding, CA (USA);hard;SET 1;Ma C.;Rodriguez V.;player_1_not_in_aliases;Ma C.
+Today;WTA;W35 Redding, CA (USA);hard;SET 1;Chan J.;Reasco Gonzalez M. E.;player_1_not_in_aliases;Chan J.
+Today;WTA;W50 Quebec City (Canada);hard;SET 2;Mercier C.;Saito S.;player_1_not_in_aliases;Mercier C.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Glushkova A.;Urgesi F.;player_1_not_in_aliases;Glushkova A.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Spasova B.;Papadopoulou E.;player_2_not_in_aliases;Papadopoulou E.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Artemeva V.;Ilieva I.;player_2_not_in_aliases;Ilieva I.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Dimitrova D.;Alves C.;player_1_not_in_aliases;Dimitrova D.
+Day+1;WTA;W35 Birmingham 2 (United Kingdom);hard;12:30;Britton D.;Dudeney A.;player_1_not_in_aliases;Britton D.
+Day+1;WTA;W35 Heraklion 2 (Greece);clay;08:00;Mazzoni J.;Bulgaru M.;player_1_not_in_aliases;Mazzoni J.
+Day+1;WTA;W35 Heraklion 2 (Greece);clay;08:00;Oktiabreva A.;Manhard O.;player_2_not_in_aliases;Manhard O.
+Day+1;WTA;W35 Heraklion 2 (Greece);clay;09:30;Fojcik L.;Pikkaart C.;player_1_not_in_aliases;Fojcik L.
+Day+1;WTA;W35 Heraklion 2 (Greece);clay;09:30;Kryvoruchko S.;Jurina S.;player_1_not_in_aliases;Kryvoruchko S.
+Day+1;WTA;W35 Heraklion 2 (Greece);clay;09:30;Roussopoulou S.;Bertea E. R.;player_1_not_in_aliases;Roussopoulou S.
+Day+1;WTA;W35 Monastir 7 (Tunisia);hard;10:30;Rojas S. C.;Fontenel C.;player_1_not_in_aliases;Rojas S. C.
+Day+1;WTA;W35 Monastir 7 (Tunisia);hard;12:00;Adkar V.;Sarganella V. N.;player_2_not_in_aliases;Sarganella V. N.
+Day+1;WTA;W35 Monastir 7 (Tunisia);hard;12:00;Lacinova A.;Zhu C.;player_1_not_in_aliases;Lacinova A.
+Day+1;WTA;W35 Monastir 7 (Tunisia);hard;13:30;Barrera Aguirre I.;Krejcova T.;player_2_not_in_aliases;Krejcova T.
+Day+1;WTA;W35 Monastir 7 (Tunisia);hard;13:30;Lemaitre T.;Castillo Meza M.;player_1_not_in_aliases;Lemaitre T.
+Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;00:00;Paoletti M.;Shapatava S.;player_1_not_in_aliases;Paoletti M.
+Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;09:00;Price G.;Luciano L.;player_1_not_in_aliases;Price G.
+Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;09:00;Raggi A.;Ivanovic I.;player_2_not_in_rankings;Iva Ivanovic
+Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;09:00;Sziedat F.;Fumagalli S.;player_2_not_in_aliases;Fumagalli S.
+Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;12:00;Fernandez B.;Ezzat Y.;tour_mismatch;"Fernandez B.=ATP; Ezzat Y.=WTA"
+Day+1;WTA;W50 Stara Zagora (Bulgaria);clay;09:00;Glushkova D.;Rangelova A.;player_2_not_in_aliases;Rangelova A.
+Day+1;WTA;W50 Stara Zagora (Bulgaria);clay;10:30;Dencheva R.;Krastenova G.;player_2_not_in_aliases;Krastenova G.
+Day+1;WTA;W50 Stara Zagora (Bulgaria);clay;10:30;Toneva E.;Ivanovic G.;player_1_not_in_aliases;Toneva E.
