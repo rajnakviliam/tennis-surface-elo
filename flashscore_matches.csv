@@ -81,9 +81,9 @@ Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Aboian V.;Roncadelli F.
 Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Bueno G.;Zeitune M.
 Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Olivieri G. A.;Ratti L.
 Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Miguel L. A.;Dellien Velasco M. A.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:00;Justo G. I.;Huertas Del Pino Cordova A.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:05;Boscardin Dias P.;Mena F.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:05;Casanova H.;La Serna J. M.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;SET 1;Justo G. I.;Huertas Del Pino Cordova A.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;SET 1;Boscardin Dias P.;Mena F.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;SET 1;Casanova H.;La Serna J. M.
 Today;ATP;Jinan (China) - Qualification;hard;FINISHED;Draxl L.;Jasika O.
 Today;ATP;Jinan (China) - Qualification;hard;FINISHED;Sharipov M.;Delaney Ja.
 Today;ATP;Jinan (China) - Qualification;hard;FINISHED;Uesugi K.;Watanuki Y.
@@ -152,7 +152,7 @@ Today;WTA;W35 Heraklion 2 (Greece);clay;FINISHED;Popa M. S.;Longueville R.
 Today;WTA;W35 Monastir 7 (Tunisia);hard;FINISHED;Rutlauka S.;Kubareva A.
 Today;WTA;W35 Monastir 7 (Tunisia);hard;FINISHED;Tran D.;Nishimura K.
 Today;WTA;W35 Redding, CA (USA);hard;SET 2;Hejtmanek A.;Penickova A.
-Today;WTA;W35 Redding, CA (USA);hard;SET 2;Mahendran K.;Defalco J.
+Today;WTA;W35 Redding, CA (USA);hard;FINISHED;Mahendran K.;Defalco J.
 Today;WTA;W35 Redding, CA (USA);hard;SET 1;Ma C.;Rodriguez V.
 Today;WTA;W35 Redding, CA (USA);hard;SET 1;Chan J.;Reasco Gonzalez M. E.
 Today;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;FINISHED;Grammatikopoulou V.;Gennaro C.
@@ -164,7 +164,7 @@ Today;WTA;W50 Quebec City (Canada);hard;FINISHED;Rinaldo Persson K.;Marton I.
 Today;WTA;W50 Quebec City (Canada);hard;FINISHED;Grubor A.;Inoue H.
 Today;WTA;W50 Quebec City (Canada);hard;FINISHED;Bayerlova M.;Xu M.
 Today;WTA;W50 Quebec City (Canada);hard;FINISHED;Alexander A.;Hu V.
-Today;WTA;W50 Quebec City (Canada);hard;SET 2;Mercier C.;Saito S.
+Today;WTA;W50 Quebec City (Canada);hard;SET 3;Mercier C.;Saito S.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Glushkova A.;Urgesi F.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Simionescu D.;Stankovic A.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Zhenikhova S.;Sawant M.
@@ -273,10 +273,10 @@ Day+1;WTA;W35 Monastir 7 (Tunisia);hard;13:30;Lemaitre T.;Castillo Meza M.
 Day+1;WTA;W35 Monastir 7 (Tunisia);hard;13:30;Soriano Santiago M.;Ewald W.
 Day+1;WTA;W35 Monastir 7 (Tunisia);hard;15:00;Hinojosa Gomez J.;Tupitsyna E.
 Day+1;WTA;W35 Monastir 7 (Tunisia);hard;15:00;Tkacheva M.;Lim J.
+Day+1;WTA;W35 Redding, CA (USA);hard;09:00;Passola B.;Cayetano E.
 Day+1;WTA;W35 Redding, CA (USA);hard;19:00;Cherubini D.;McNeil C.
 Day+1;WTA;W35 Redding, CA (USA);hard;19:00;Evans K.;Ma L.
 Day+1;WTA;W35 Redding, CA (USA);hard;19:00;Pace F.;Zucchini A.
-Day+1;WTA;W35 Redding, CA (USA);hard;19:00;Passola B.;Cayetano E.
 Day+1;WTA;W35 Redding, CA (USA);hard;19:00;Reed L.;Bulatova A.
 Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;00:00;Paoletti M.;Shapatava S.
 Day+1;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;09:00;Pieri J.;Gandolfi F.
