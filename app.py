@@ -53,6 +53,10 @@ def run_script(script):
 
     lines = []
 
+    if script == "export_flashscore_matches.py":
+        with st.expander("🔍 Diagnostika Flashscore", expanded=True):
+            st.code(result.stdout or "(žiadny výstup)")
+
     for line in result.stdout.splitlines():
         line = line.strip()
 
