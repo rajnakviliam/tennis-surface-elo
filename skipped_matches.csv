@@ -1,18 +1,17 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Johnson S.;Zarazua R.;tour_mismatch;"Johnson S.=ATP; Zarazua R.=WTA"
 Today;WTA;W100 Edmond, OK (USA);hard;INTERRUPTED;Frodin T.;Berlanga Bandera M.;player_2_not_in_aliases;Berlanga Bandera M.
-Today;WTA;W35 Birmingham 2 (United Kingdom);hard;SET 3;Aikawa M.;SET;player_2_not_in_aliases;SET
 Today;WTA;W35 Heraklion 2 (Greece);clay;INTERRUPTED;Mazzoni J.;Bulgaru M.;player_1_not_in_aliases;Mazzoni J.
 Today;WTA;W35 Heraklion 2 (Greece);clay;INTERRUPTED;Oktiabreva A.;Manhard O.;player_2_not_in_aliases;Manhard O.
-Today;WTA;W35 Heraklion 2 (Greece);clay;13:00;Kryvoruchko S.;Jurina S.;player_1_not_in_aliases;Kryvoruchko S.
-Today;WTA;W35 Heraklion 2 (Greece);clay;14:00;Fojcik L.;Pikkaart C.;player_1_not_in_aliases;Fojcik L.
-Today;WTA;W35 Heraklion 2 (Greece);clay;14:00;Roussopoulou S.;Bertea E. R.;player_1_not_in_aliases;Roussopoulou S.
+Today;WTA;W35 Heraklion 2 (Greece);clay;14:30;Kryvoruchko S.;Jurina S.;player_1_not_in_aliases;Kryvoruchko S.
+Today;WTA;W35 Heraklion 2 (Greece);clay;15:30;Fojcik L.;Pikkaart C.;player_1_not_in_aliases;Fojcik L.
+Today;WTA;W35 Heraklion 2 (Greece);clay;15:30;Roussopoulou S.;Bertea E. R.;player_1_not_in_aliases;Roussopoulou S.
 Today;WTA;W35 Monastir 7 (Tunisia);hard;FINISHED;Lemaitre T.;Barrera Aguirre I.;player_1_not_in_aliases;Lemaitre T.
-Today;WTA;W35 Monastir 7 (Tunisia);hard;12:35;Rojas S. C.;Kumru A.;player_1_not_in_aliases;Rojas S. C.
+Today;WTA;W35 Monastir 7 (Tunisia);hard;SET 1;Rojas S. C.;Kumru A.;player_1_not_in_aliases;Rojas S. C.
 Today;WTA;W35 Redding, CA (USA);hard;FINISHED;Haddad I.;Soke D.;player_1_not_in_aliases;Haddad I.
 Today;WTA;W35 Redding, CA (USA);hard;19:00;Ma C.;Chan J.;player_1_not_in_aliases;Ma C.
-Today;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;SET 3;Price G.;Taraba Wallberg N.;player_1_not_in_aliases;Price G.
+Today;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;FINISHED;Price G.;Taraba Wallberg N.;player_1_not_in_aliases;Price G.
 Today;WTA;W35 Santa Margherita di Pula 10 (Italy);clay;FINISHED;Fornasieri C.;Paoletti M.;player_2_not_in_aliases;Paoletti M.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Toneva E.;Ivanovic G.;player_1_not_in_aliases;Toneva E.
 Today;WTA;W50 Stara Zagora (Bulgaria);clay;FINISHED;Dencheva R.;Krastenova G.;player_2_not_in_aliases;Krastenova G.
-Today;WTA;W50 Stara Zagora (Bulgaria);clay;SET 2;Glushkova D.;Rangelova A.;player_2_not_in_aliases;Rangelova A.
+Today;WTA;W50 Stara Zagora (Bulgaria);clay;SET 3;Glushkova D.;Rangelova A.;player_2_not_in_aliases;Rangelova A.
