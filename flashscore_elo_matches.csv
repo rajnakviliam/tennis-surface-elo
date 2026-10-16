@@ -1,6 +1,7 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Rank 1;Rank 2;Rank Diff;Overall Elo Rank 1;Overall Elo Rank 2;Surface Elo Rank 1;Surface Elo Rank 2;Overall Elo 1;Overall Elo 2;Surface Elo 1;Surface Elo 2;Overall Elo Diff;Surface Elo Diff;Ranking Favorite;ELO Favorite;Has Elo 1;Has Elo 2;Both Have Elo
 Day+1;WTA;W35 Redding, CA (USA);hard;00:00;Salma Drugdova;Lea Ma;877;285;592;;314;;304;;1431.3;;1396.9;;;Lea Ma;;False;True;False
 Day+1;WTA;W35 Redding, CA (USA);hard;00:00;Vivian Wolff;Nao Nishino;234;1407;1173;332;;283;;1410.1;;1418.2;;;;Vivian Wolff;;True;False;False
+Day+1;ATP;Santa Cruz 2 (Bolivia);clay;00:15;Thiago Seyboth Wild;Nicolas Kicker;136;351;215;172;344;147;293;1605.4;1442.8;1590.5;1430.0;162.6;160.5;Thiago Seyboth Wild;Thiago Seyboth Wild;True;True;True
 Day+1;WTA;W35 Redding, CA (USA);hard;03:15;Duru Soke;Annika Penickova;780;549;231;;;;;;;;;;;Annika Penickova;;False;False;False
 Day+1;WTA;Osaka (Japan) - Qualification;hard;04:30;Sayaka Ishii;Elina Avanesyan;588;145;443;;121;;134;;1681.2;;1614.7;;;Elina Avanesyan;;False;True;False
 Day+1;WTA;Osaka (Japan) - Qualification;hard;04:30;Maya Joint;Kyoka Okamura;92;244;152;94;227;81;204;1723.2;1540.6;1696.1;1513.4;182.6;182.7;Maya Joint;Maya Joint;True;True;True
@@ -69,13 +70,9 @@ Day+1;ATP;Olbia (Italy);hard;16:30;Jacob Fearnley;Luca Nardi;96;251;155;106;211;
 Day+1;ATP;Roanne (France);hard;16:30;Nicolai Budkov Kjaer;Matteo Martineau;152;272;120;193;418;181;370;1579.0;1374.5;1547.2;1366.1;204.5;181.1;Nicolai Budkov Kjaer;Nicolai Budkov Kjaer;True;True;True
 Day+1;ATP;Brussels (Belgium) - Qualification;hard;17:00;Martin Damm;Buvaysar Gadamauri;104;271;167;104;383;110;340;1704.2;1411.5;1655.3;1390.5;292.7;264.8;Martin Damm;Martin Damm;True;True;True
 Day+1;ATP;Brussels (Belgium) - Qualification;hard;17:00;Aziz Dougaz;Tom Gentzsch;430;164;266;304;195;267;214;1468.2;1577.9;1454.0;1506.1;109.7;52.1;Tom Gentzsch;Tom Gentzsch;True;True;True
-Today;WTA;W100 Edmond, OK (USA);hard;21:50;Thea Frodin;Renata Zarazua;535;85;450;;129;;123;;1667.2;;1636.6;;;Renata Zarazua;;False;True;False
-Today;WTA;W100 Edmond, OK (USA);hard;21:50;Tatjana Maria;Dana Guzman;71;529;458;85;;125;;1734.0;;1634.5;;;;Tatjana Maria;;True;False;False
-Today;WTA;W100 Edmond, OK (USA);hard;21:55;Elvina Kalieva;Kristina Penickova;112;555;443;170;;161;;1602.8;;1572.5;;;;Elvina Kalieva;;True;False;False
-Today;ATP;Santa Cruz 2 (Bolivia);clay;22:00;Juan Manuel La Serna;Franco Roncadelli;285;265;20;315;378;275;315;1461.8;1416.2;1446.9;1411.9;45.6;35.0;Franco Roncadelli;Juan Manuel La Serna;True;True;True
-Today;WTA;W100 Edmond, OK (USA);hard;22:05;Akasha Urhobo;Alicia Herrero Linana;173;222;49;232;208;291;317;1531.4;1563.8;1412.4;1385.9;32.4;26.5;Akasha Urhobo;Akasha Urhobo;True;True;True
-Today;ATP;Santa Cruz 2 (Bolivia);clay;22:30;Luis Guto Miguel;Hugo Dellien;603;128;475;397;171;348;134;1401.2;1606.4;1379.0;1603.3;205.2;224.3;Hugo Dellien;Hugo Dellien;True;True;True
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:00;Thiago Seyboth Wild;Nicolas Kicker;136;351;215;172;344;147;293;1605.4;1442.8;1590.5;1430.0;162.6;160.5;Thiago Seyboth Wild;Thiago Seyboth Wild;True;True;True
+Today;WTA;W100 Edmond, OK (USA);hard;21:30;Malaika Rapolu;Kristina Liutova;298;116;182;252;35;245;33;1502.3;1839.4;1467.9;1803.9;337.1;336.0;Kristina Liutova;Kristina Liutova;True;True;True
+Today;WTA;W100 Edmond, OK (USA);hard;22:30;Elvina Kalieva;Kristina Penickova;112;555;443;170;;161;;1602.8;;1572.5;;;;Elvina Kalieva;;True;False;False
+Today;ATP;Santa Cruz 2 (Bolivia);clay;22:45;Luis Guto Miguel;Hugo Dellien;603;128;475;397;171;348;134;1401.2;1606.4;1379.0;1603.3;205.2;224.3;Hugo Dellien;Hugo Dellien;True;True;True
 Today;ATP;Catania (Italy);clay;FINISHED;Buvaysar Gadamauri;Felix Gill;271;222;49;383;323;358;314;1411.5;1457.9;1371.2;1412.7;46.4;41.5;Felix Gill;Felix Gill;True;True;True
 Today;ATP;Catania (Italy);clay;FINISHED;Radu Mihai Papoe;Zdenek Kolar;326;196;130;285;309;270;277;1490.5;1465.0;1451.2;1445.6;25.5;5.6;Zdenek Kolar;Radu Mihai Papoe;True;True;True
 Today;ATP;Catania (Italy);clay;FINISHED;Max Wiskandt;Massimo Giunta;388;390;2;513;492;497;465;1255.0;1285.2;1243.9;1280.9;30.2;37.0;Max Wiskandt;Massimo Giunta;True;True;True
@@ -109,12 +106,15 @@ Today;WTA;Rovereto (Italy);hard;FINISHED;Dominika Salkova;Lea Boskovic;120;334;2
 Today;WTA;Rovereto (Italy);hard;FINISHED;Lucie Havlickova;Jil Teichmann;204;179;25;210;116;176;127;1557.2;1689.1;1554.3;1632.1;131.9;77.8;Jil Teichmann;Jil Teichmann;True;True;True
 Today;WTA;Rovereto (Italy);hard;FINISHED;Bianca Andreescu;Lucrezia Stefanini;168;106;62;113;110;107;99;1691.8;1694.7;1661.3;1669.9;2.9;8.6;Lucrezia Stefanini;Lucrezia Stefanini;True;True;True
 Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Nicolas Kicker;Facundo Mena;351;197;154;344;295;293;247;1442.8;1480.5;1430.0;1472.2;37.7;42.2;Facundo Mena;Facundo Mena;True;True;True
+Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Francisco Comesana;Genaro Alberto Olivieri;125;287;162;162;342;129;306;1623.2;1443.1;1607.2;1419.7;180.1;187.5;Francisco Comesana;Francisco Comesana;True;True;True
 Today;ATP;Shanghai (China);hard;FINISHED;Rafael Jodar;Casper Ruud;13;24;11;9;15;13;21;1970.7;1936.6;1887.4;1852.4;34.1;35.0;Rafael Jodar;Rafael Jodar;True;True;True
 Today;ATP;Shanghai (China);hard;FINISHED;Daniil Medvedev;Tommy Paul;6;18;12;10;14;8;16;1965.3;1937.2;1943.1;1872.2;28.1;70.9;Daniil Medvedev;Daniil Medvedev;True;True;True
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Elvina Kalieva;Savannah Broadus;112;303;191;170;238;161;227;1602.8;1521.1;1572.5;1489.8;81.7;82.7;Elvina Kalieva;Elvina Kalieva;True;True;True
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Julieta Pareja;Elizabeth Mandlik;250;225;25;144;259;141;246;1645.2;1497.2;1604.3;1467.7;148.0;136.6;Elizabeth Mandlik;Julieta Pareja;True;True;True
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Martina Okalova;Alicia Herrero Linana;627;222;405;494;208;483;317;1213.6;1563.8;1222.4;1385.9;350.2;163.5;Alicia Herrero Linana;Alicia Herrero Linana;True;True;True
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Dana Guzman;Caroline Dolehide;529;215;314;;128;;121;;1669.2;;1638.6;;;Caroline Dolehide;;False;True;False
+Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Valeriya Strakhova;Malaika Rapolu;504;298;206;507;252;514;245;1173.2;1502.3;1105.6;1467.9;329.1;362.3;Malaika Rapolu;Malaika Rapolu;True;True;True
+Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Varvara Lepchenko;Julieta Pareja;192;250;58;222;144;194;141;1547.9;1645.2;1529.8;1604.3;97.3;74.5;Varvara Lepchenko;Julieta Pareja;True;True;True
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Madison Brengle;Sloane Stephens;188;133;55;221;100;207;104;1548.3;1715.4;1512.5;1664.4;167.1;151.9;Sloane Stephens;Sloane Stephens;True;True;True
 Today;WTA;W35 Birmingham 2 (United Kingdom);hard;FINISHED;Mika Stojsavljevic;Alicia Dudeney;308;236;72;271;270;298;234;1481.8;1483.2;1406.7;1480.6;1.4;73.9;Alicia Dudeney;Alicia Dudeney;True;True;True
 Today;WTA;W35 Birmingham 2 (United Kingdom);hard;FINISHED;Manon Leonard;Jessika Ponchet;328;310;18;412;202;365;216;1335.4;1572.0;1338.9;1504.3;236.6;165.4;Jessika Ponchet;Jessika Ponchet;True;True;True
@@ -145,9 +145,10 @@ Today;WTA;Wuhan (China);hard;FINISHED;Diana Shnaider;Jelena Ostapenko;13;34;21;2
 Today;WTA;Wuhan (China);hard;FINISHED;Elina Svitolina;Sonay Kartal;6;170;164;9;31;8;32;2032.7;1854.1;1971.3;1807.6;178.6;163.7;Elina Svitolina;Elina Svitolina;True;True;True
 Today;WTA;Wuhan (China);hard;FINISHED;Maja Chwalinska;Maria Sakkari;22;35;13;58;39;76;31;1779.8;1833.4;1706.5;1807.7;53.6;101.2;Maja Chwalinska;Maria Sakkari;True;True;True
 Today;WTA;Wuhan (China);hard;FINISHED;Ann Li;Iga Swiatek;31;9;22;41;5;44;5;1828.1;2098.5;1778.5;2060.8;270.4;282.3;Iga Swiatek;Iga Swiatek;True;True;True
-Today;WTA;W100 Edmond, OK (USA);hard;SET 2;Yeon Woo Ku;Arantxa Rus;177;256;79;224;249;199;210;1545.4;1509.1;1522.6;1508.8;36.3;13.8;Yeon Woo Ku;Yeon Woo Ku;True;True;True
+Today;ATP;Santa Cruz 2 (Bolivia);clay;SET 1;Juan Manuel La Serna;Franco Roncadelli;285;265;20;315;378;275;315;1461.8;1416.2;1446.9;1411.9;45.6;35.0;Franco Roncadelli;Juan Manuel La Serna;True;True;True
+Today;WTA;W100 Edmond, OK (USA);hard;SET 1;Thea Frodin;Renata Zarazua;535;85;450;;129;;123;;1667.2;;1636.6;;;Renata Zarazua;;False;True;False
+Today;WTA;W100 Edmond, OK (USA);hard;SET 1;Tatjana Maria;Dana Guzman;71;529;458;85;;125;;1734.0;;1634.5;;;;Tatjana Maria;;True;False;False
+Today;WTA;W100 Edmond, OK (USA);hard;SET 1;Akasha Urhobo;Alicia Herrero Linana;173;222;49;232;208;291;317;1531.4;1563.8;1412.4;1385.9;32.4;26.5;Akasha Urhobo;Akasha Urhobo;True;True;True
 Today;WTA;W50 Quebec City (Canada);hard;SET 2;Kajsa Rinaldo Persson;Sara Saito;247;271;24;282;323;296;294;1474.7;1416.7;1410.4;1410.7;58.0;0.3;Kajsa Rinaldo Persson;Sara Saito;True;True;True
-Today;ATP;Santa Cruz 2 (Bolivia);clay;SET 3;Francisco Comesana;Genaro Alberto Olivieri;125;287;162;162;342;129;306;1623.2;1443.1;1607.2;1419.7;180.1;187.5;Francisco Comesana;Francisco Comesana;True;True;True
-Today;WTA;W100 Edmond, OK (USA);hard;SET 3;Valeriya Strakhova;Malaika Rapolu;504;298;206;507;252;514;245;1173.2;1502.3;1105.6;1467.9;329.1;362.3;Malaika Rapolu;Malaika Rapolu;True;True;True
-Today;WTA;W100 Edmond, OK (USA);hard;SET 3;Varvara Lepchenko;Julieta Pareja;192;250;58;222;144;194;141;1547.9;1645.2;1529.8;1604.3;97.3;74.5;Varvara Lepchenko;Julieta Pareja;True;True;True
+Today;WTA;W100 Edmond, OK (USA);hard;SET 3;Yeon Woo Ku;Arantxa Rus;177;256;79;224;249;199;210;1545.4;1509.1;1522.6;1508.8;36.3;13.8;Yeon Woo Ku;Yeon Woo Ku;True;True;True
 Today;ATP;Roanne (France);hard;WALKOVER;Jerome Kym;Dominic Stricker;249;263;14;140;192;125;197;1651.0;1579.3;1624.6;1531.8;71.7;92.8;Jerome Kym;Jerome Kym;True;True;True
