@@ -26,10 +26,9 @@ Today;ATP;Roanne (France);hard;FINISHED;Balshaw F.;Brunold M.
 Today;ATP;Roanne (France);hard;FINISHED;Gaston H.;Budkov Kjaer N.
 Today;ATP;Roanne (France);hard;FINISHED;Martineau M.;Gueymard Wayenburg S.
 Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Kicker N.;Mena F.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;SET 3;Comesana F.;Olivieri G. A.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;22:00;La Serna J. M.;Roncadelli F.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;22:30;Miguel L. A.;Dellien H.
-Today;ATP;Santa Cruz 2 (Bolivia);clay;23:00;Seyboth Wild T.;Kicker N.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;FINISHED;Comesana F.;Olivieri G. A.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;SET 1;La Serna J. M.;Roncadelli F.
+Today;ATP;Santa Cruz 2 (Bolivia);clay;22:45;Miguel L. A.;Dellien H.
 Today;WTA;Lisbon (Portugal);clay;FINISHED;Galfi D.;Jones F.
 Today;WTA;Lisbon (Portugal);clay;FINISHED;Romero Gormaz L.;Ferro F.
 Today;WTA;Lisbon (Portugal);clay;FINISHED;Bouzas Maneiro J.;Hercog P.
@@ -48,14 +47,15 @@ Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Kalieva E.;Broadus S.
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Pareja J.;Mandlik E.
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Okalova M.;Herrero Linana A.
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Guzman D.;Dolehide C.
-Today;WTA;W100 Edmond, OK (USA);hard;SET 3;Strakhova V.;Rapolu M.
-Today;WTA;W100 Edmond, OK (USA);hard;SET 3;Lepchenko V.;Pareja J.
-Today;WTA;W100 Edmond, OK (USA);hard;SET 2;Ku Y.;Rus A.
+Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Strakhova V.;Rapolu M.
+Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Lepchenko V.;Pareja J.
+Today;WTA;W100 Edmond, OK (USA);hard;SET 3;Ku Y.;Rus A.
 Today;WTA;W100 Edmond, OK (USA);hard;FINISHED;Brengle M.;Stephens S.
-Today;WTA;W100 Edmond, OK (USA);hard;21:50;Frodin T.;Zarazua R.
-Today;WTA;W100 Edmond, OK (USA);hard;21:50;Maria T.;Guzman D.
-Today;WTA;W100 Edmond, OK (USA);hard;21:55;Kalieva E.;Penickova K.
-Today;WTA;W100 Edmond, OK (USA);hard;22:05;Urhobo A.;Herrero Linana A.
+Today;WTA;W100 Edmond, OK (USA);hard;21:30;Rapolu M.;Liutova K.
+Today;WTA;W100 Edmond, OK (USA);hard;SET 1;Frodin T.;Zarazua R.
+Today;WTA;W100 Edmond, OK (USA);hard;SET 1;Maria T.;Guzman D.
+Today;WTA;W100 Edmond, OK (USA);hard;SET 1;Urhobo A.;Herrero Linana A.
+Today;WTA;W100 Edmond, OK (USA);hard;22:30;Kalieva E.;Penickova K.
 Today;WTA;W35 Birmingham 2 (United Kingdom);hard;FINISHED;Stojsavljevic M.;Dudeney A.
 Today;WTA;W35 Birmingham 2 (United Kingdom);hard;FINISHED;Leonard M.;Ponchet J.
 Today;WTA;W35 Heraklion 2 (Greece);clay;FINISHED;Di Girolami T.;Mazzoni J.
@@ -141,6 +141,7 @@ Day+1;ATP;Olbia (Italy);hard;15:00;Kasnikowski M.;Dzumhur D.
 Day+1;ATP;Olbia (Italy);hard;16:30;Fearnley J.;Nardi L.
 Day+1;ATP;Roanne (France);hard;14:30;Kym J.;Brunold M.
 Day+1;ATP;Roanne (France);hard;16:30;Budkov Kjaer N.;Martineau M.
+Day+1;ATP;Santa Cruz 2 (Bolivia);clay;00:15;Seyboth Wild T.;Kicker N.
 Day+1;WTA;Lisbon (Portugal);clay;12:00;Romero Gormaz L.;Galfi D.
 Day+1;WTA;Lisbon (Portugal);clay;13:30;Bouzas Maneiro J.;Burel C.
 Day+1;WTA;Mallorca (Spain);clay;10:00;Geerlings Martinez A.;Curmi F.
