@@ -1,5 +1,5 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Cali (Colombia) - Qualification;clay;SET 2;Magadan A.;Bolivar Idarraga J. M.;player_2_not_in_aliases;Bolivar Idarraga J. M.
+Today;ATP;Cali (Colombia) - Qualification;clay;FINISHED;Magadan A.;Bolivar Idarraga J. M.;player_2_not_in_aliases;Bolivar Idarraga J. M.
 Today;ATP;Cali (Colombia) - Qualification;clay;20:20;Hernandez R. S. L.;Leite W.;player_1_not_in_aliases;Hernandez R. S. L.
 Today;ATP;Florence (Italy) - Qualification;clay;FINISHED;Guidotti M.;Jones M.;player_1_not_in_aliases;Guidotti M.
 Today;ATP;Florence (Italy) - Qualification;clay;FINISHED;Landini J.;Barranco Cosano J.;player_1_not_in_aliases;Landini J.
@@ -7,7 +7,7 @@ Today;ATP;Guangzhou (China) - Qualification;hard;FINISHED;Huang X. C.;Pankin S.;
 Today;ATP;Guangzhou (China) - Qualification;hard;FINISHED;Yang X.;Sultanov K.;player_2_not_in_rankings;Khumoun Sultanov
 Today;ATP;Lisbon (Portugal) - Qualification;clay;FINISHED;Liborio P.;Krutykh O.;player_1_not_in_aliases;Liborio P.
 Today;ATP;Lisbon (Portugal) - Qualification;clay;FINISHED;Matuszewski P.;Leote Prata V.;player_1_not_in_aliases;Matuszewski P.
-Today;ATP;Lisbon (Portugal) - Qualification;clay;18:40;Sanchez Quilez A.;Lima S. D.;player_2_not_in_aliases;Lima S. D.
+Today;ATP;Lisbon (Portugal) - Qualification;clay;SET 1;Sanchez Quilez A.;Lima S. D.;player_2_not_in_aliases;Lima S. D.
 Today;WTA;W35 Redding, CA (USA);hard;FINISHED;Ma C.;Ma L.;player_1_not_in_aliases;Ma C.
 Today;WTA;W35 Redding, CA (USA);hard;21:00;Penickova A.;Ma C.;player_2_not_in_aliases;Ma C.
 Day+1;ATP;Fort Worth (USA);hard;17:00;Milavsky D.;Nanda G.;player_2_not_in_aliases;Nanda G.
