@@ -16,6 +16,7 @@ SHEET_HEADERS = [
     "last_seen",
     "is_new",
     "is_pinned",
+    "is_opened",
 ]
 
 
@@ -127,6 +128,7 @@ def load_match_states():
     last_seen_index = column_index("last_seen")
     is_new_index = column_index("is_new")
     is_pinned_index = column_index("is_pinned")
+    is_opened_index = column_index("is_opened")
 
     now = datetime.now(TIMEZONE)
     states = {}
@@ -167,6 +169,12 @@ def load_match_states():
             and len(row) > is_pinned_index
             else False
         )
+        is_opened = (
+            parse_bool(row[is_opened_index])
+            if is_opened_index is not None
+            and len(row) > is_opened_index
+            else False
+        )
 
         first_seen = first_seen or now
         last_seen = last_seen or first_seen
@@ -176,6 +184,7 @@ def load_match_states():
             "last_seen": last_seen,
             "is_new": is_new,
             "is_pinned": is_pinned,
+            "is_opened": is_opened,
         }
 
     return states
@@ -207,6 +216,7 @@ def save_match_states(states):
                 ).isoformat(timespec="seconds"),
                 "TRUE" if state["is_new"] else "FALSE",
                 "TRUE" if state["is_pinned"] else "FALSE",
+                "TRUE" if state.get("is_opened", False) else "FALSE",
             ]
         )
 
@@ -238,6 +248,12 @@ def add_saved_status(df):
     result["IsPinned"] = result["MatchID"].map(
         lambda match_id: bool(
             states.get(match_id, {}).get("is_pinned", False)
+        )
+    )
+
+    result["IsOpened"] = result["MatchID"].map(
+        lambda match_id: bool(
+            states.get(match_id, {}).get("is_opened", False)
         )
     )
 
@@ -276,6 +292,7 @@ def update_after_refresh(df):
                 "last_seen": now,
                 "is_new": True,
                 "is_pinned": False,
+                "is_opened": False,
             }
 
     cleaned_states = {
@@ -296,6 +313,11 @@ def update_after_refresh(df):
     result["IsPinned"] = result["MatchID"].map(
         lambda match_id: cleaned_states[match_id]["is_pinned"]
     )
+    result["IsOpened"] = result["MatchID"].map(
+        lambda match_id: bool(
+            cleaned_states[match_id].get("is_opened", False)
+        )
+    )
 
     return result
 
@@ -313,6 +335,7 @@ def set_pinned(match_id, pinned):
             "last_seen": now,
             "is_new": False,
             "is_pinned": bool(pinned),
+            "is_opened": False,
         }
     else:
         states[match_id]["is_pinned"] = bool(pinned)
@@ -320,5 +343,28 @@ def set_pinned(match_id, pinned):
         # Pripnutý zápas sa už vizuálne nepovažuje za NOVÝ.
         if pinned:
             states[match_id]["is_new"] = False
+
+    save_match_states(states)
+
+def set_opened(match_id):
+    """
+    Označí zápas ako otvorený a uloží stav do Google Sheets.
+    """
+    states = load_match_states()
+    now = datetime.now(TIMEZONE)
+
+    if match_id not in states:
+        states[match_id] = {
+            "first_seen": now,
+            "last_seen": now,
+            "is_new": False,
+            "is_pinned": False,
+            "is_opened": True,
+        }
+    else:
+        if states[match_id].get("is_opened", False):
+            return
+
+        states[match_id]["is_opened"] = True
 
     save_match_states(states)

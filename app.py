@@ -16,6 +16,7 @@ from alias_pipeline import (
 
 from google_seen_matches import (
     add_saved_status,
+    set_opened,
     set_pinned,
     update_after_refresh,
 )
@@ -351,6 +352,9 @@ def render_matches(matches, empty_message):
         return
 
     for _, row in matches.iterrows():
+        match_id = row["MatchID"]
+        is_opened = bool(row["IsOpened"])
+
         player_1 = row["Player 1"]
         player_2 = row["Player 2"]
 
@@ -400,11 +404,37 @@ def render_matches(matches, empty_message):
                 f"{player_1} vs {player_2} · "
                 f"{row['Tournament']}"
             )
+        detail_key = f"detail_{match_id}"
 
-        with st.expander(
+        if detail_key not in st.session_state:
+            st.session_state[detail_key] = False
+
+        if is_opened:
+            button_type = "primary"
+        else:
+            button_type = "secondary"
+
+        if st.button(
             title,
-            expanded=False,
+            key=f"open_{match_id}",
+            type=button_type,
+            use_container_width=True,
         ):
+            st.session_state[detail_key] = (
+                not st.session_state[detail_key]
+            )
+
+            if not is_opened:
+                try:
+                    set_opened(match_id)
+                    st.rerun()
+                except Exception as error:
+                    st.error(
+                        f"Nepodarilo sa uložiť otvorenie zápasu: {error}"
+                    )
+                    st.stop()
+
+        if st.session_state[detail_key]:
             st.caption(
                 f"{row['Tour']} · {row['Surface']}"
             )
