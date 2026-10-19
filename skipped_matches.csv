@@ -1,8 +1,10 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Fort Worth (USA);hard;21:00;Milavsky D.;Nanda G.;player_2_not_in_aliases;Nanda G.
-Today;ATP;Cali (Colombia) - Qualification;clay;20:30;Rodriguez Taverna S.;Hernandez R. S. L.;player_2_not_in_aliases;Hernandez R. S. L.
+Today;ATP;Fort Worth (USA);hard;21:45;Milavsky D.;Nanda G.;player_2_not_in_aliases;Nanda G.
+Today;ATP;Cali (Colombia) - Qualification;clay;21:30;Rodriguez Taverna S.;Hernandez R. S. L.;player_2_not_in_aliases;Hernandez R. S. L.
 Today;ATP;Guangzhou (China) - Qualification;hard;FINISHED;Purtseladze S.;Sultanov K.;player_2_not_in_rankings;Khumoun Sultanov
 Day+1;ATP;Guangzhou (China);hard;06:30;Sultanov K.;Castelnuovo L.;player_1_not_in_rankings;Khumoun Sultanov
+Day+1;WTA;W35 Monastir 8 (Tunisia);hard;13:30;Gniewkowska O.;Rojas S. C.;player_2_not_in_aliases;Rojas S. C.
+Day+1;WTA;W35 Monastir 8 (Tunisia);hard;13:30;Vogt M.;Berezina P.;player_2_not_in_aliases;Berezina P.
 Day+1;WTA;W35 Qian Daohu (China);hard;04:00;Ovcharenko E.;Sun J.;player_2_not_in_aliases;Sun J.
 Day+1;WTA;W35 Qian Daohu (China);hard;04:00;Xu J.;Zhang J.;tour_mismatch;"Xu J.=WTA; Zhang J.=ATP"
 Day+1;WTA;W35 Sydney (Australia);hard;03:30;Aulia C.;Kuramochi M.;player_1_not_in_rankings;Catherine Aulia
