@@ -25,16 +25,16 @@ Today;WTA;Osaka (Japan);hard;FINISHED;Tararudee L.;Quevedo K.
 Today;WTA;Osaka (Japan);hard;FINISHED;McNally C.;Kraus S.
 Today;WTA;Osaka (Japan);hard;FINISHED;Gibson T.;Dart H.
 Today;WTA;Osaka (Japan);hard;FINISHED;Krueger A.;Tjen J.
-Today;ATP;Cali (Colombia);clay;23:30;Casanova H.;Bueno G.
-Today;ATP;Cali (Colombia);clay;23:30;Galan D. E.;Varillas J. P.
+Today;ATP;Cali (Colombia);clay;SET 2;Casanova H.;Bueno G.
+Today;ATP;Cali (Colombia);clay;SET 1;Galan D. E.;Varillas J. P.
 Today;ATP;Florence (Italy);clay;FINISHED;Agamenone F.;Houkes M.
 Today;ATP;Florence (Italy);clay;FINISHED;Damas M.;Pieri S.
 Today;ATP;Florence (Italy);clay;FINISHED;Kolar Z.;Bondioli F.
 Today;ATP;Florence (Italy);clay;FINISHED;Forti F.;Forejtek J.
 Today;ATP;Fort Worth (USA);hard;FINISHED;Ambrogi L. E.;Maloney P.
 Today;ATP;Fort Worth (USA);hard;SET 2;Milavsky D.;Nanda G.
-Today;ATP;Fort Worth (USA);hard;23:15;Brooksby J.;Krueger M.
-Today;ATP;Fort Worth (USA);hard;23:25;Winter E.;Legout T.
+Today;ATP;Fort Worth (USA);hard;SET 1;Brooksby J.;Krueger M.
+Today;ATP;Fort Worth (USA);hard;00:00;Winter E.;Legout T.
 Today;ATP;Guangzhou (China);hard;FINISHED;Alkaya M.;Ilagan A.
 Today;ATP;Guangzhou (China);hard;FINISHED;McCabe J.;Ymer E.
 Today;ATP;Guangzhou (China);hard;FINISHED;Wong C.;Delaney Ja.
@@ -64,7 +64,7 @@ Today;ATP;Fort Worth (USA) - Qualification;hard;FINISHED;Young G.;Chan D.
 Today;ATP;Fort Worth (USA) - Qualification;hard;FINISHED;Miyoshi K.;Jong S.
 Today;ATP;Fort Worth (USA) - Qualification;hard;FINISHED;Arutiunian E.;McHugh A.
 Today;ATP;Fort Worth (USA) - Qualification;hard;FINISHED;Bigun K.;Zahraj P.
-Today;ATP;Fort Worth (USA) - Qualification;hard;SET 3;Antonius M.;Pedrico Kravtsov A.
+Today;ATP;Fort Worth (USA) - Qualification;hard;FINISHED;Antonius M.;Pedrico Kravtsov A.
 Today;ATP;Guangzhou (China) - Qualification;hard;FINISHED;Jasika O.;Matsuda K.
 Today;ATP;Guangzhou (China) - Qualification;hard;FINISHED;Palan D.;Pankin S.
 Today;ATP;Guangzhou (China) - Qualification;hard;FINISHED;Purtseladze S.;Sultanov K.
@@ -79,8 +79,8 @@ Today;ATP;Lisbon (Portugal) - Qualification;clay;FINISHED;Taberner C.;Krutykh O.
 Today;ATP;Lisbon (Portugal) - Qualification;clay;FINISHED;Sanchez Quilez A.;Wehnelt K.
 Today;WTA;W50 Austin, TX (USA);hard;FINISHED;Caballero Chica R.;Brengle M.
 Today;WTA;W50 Austin, TX (USA);hard;FINISHED;Palicova B.;Perry L.
-Today;WTA;W50 Austin, TX (USA);hard;SET 2;Zhiyenbayeva S.;Tikhonova A.
-Today;WTA;W50 Austin, TX (USA);hard;SET 1;Collins K.;Abbagnato A.
+Today;WTA;W50 Austin, TX (USA);hard;FINISHED;Zhiyenbayeva S.;Tikhonova A.
+Today;WTA;W50 Austin, TX (USA);hard;FINISHED;Collins K.;Abbagnato A.
 Today;WTA;W75 Saguenay (Canada);hard;FINISHED;Akli A.;Cross K.
 Day+1;ATP;Almaty (Kazakhstan);hard;08:30;Atmane T.;Hijikata R.
 Day+1;ATP;Almaty (Kazakhstan);hard;08:30;Shimabukuro S.;Safiullin R.
@@ -138,6 +138,7 @@ Day+1;ATP;Florence (Italy);clay;14:00;Kopp S.;Cadenasso G.
 Day+1;ATP;Florence (Italy);clay;14:30;Romano F.;Jianu F. C.
 Day+1;ATP;Florence (Italy);clay;15:30;Milev Y.;Giustino L.
 Day+1;ATP;Fort Worth (USA);hard;00:00;Rehberg M. H.;Rottgering M.
+Day+1;ATP;Fort Worth (USA);hard;00:00;Winter E.;Legout T.
 Day+1;ATP;Fort Worth (USA);hard;17:00;Gorzny S.;Marcondes I.
 Day+1;ATP;Fort Worth (USA);hard;17:00;Gray A.;Maxted L.
 Day+1;ATP;Fort Worth (USA);hard;17:00;Mayo A.;Smith C.
