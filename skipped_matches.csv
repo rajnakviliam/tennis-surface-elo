@@ -1,16 +1,16 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
 Today;ATP;Guangzhou (China);hard;FINISHED;Sultanov K.;Castelnuovo L.;player_1_not_in_rankings;Khumoun Sultanov
-Today;WTA;W100 Wrexham (United Kingdom);hard;SET 2;Cabrera L.;Britton D.;player_2_not_in_aliases;Britton D.
-Today;WTA;W100 Wrexham (United Kingdom);hard;16:05;Bassols M.;Werner C.;player_2_not_in_aliases;Werner C.
+Today;WTA;W100 Wrexham (United Kingdom);hard;SET 3;Cabrera L.;Britton D.;player_2_not_in_aliases;Britton D.
+Today;WTA;W100 Wrexham (United Kingdom);hard;17:15;Bassols M.;Werner C.;player_2_not_in_aliases;Werner C.
 Today;WTA;W35 Loule (Portugal);hard;FINISHED;Adeshina E.;Amorim G.;player_2_not_in_aliases;Amorim G.
 Today;WTA;W35 Monastir 8 (Tunisia);hard;FINISHED;Gniewkowska O.;Rojas S. C.;player_2_not_in_aliases;Rojas S. C.
-Today;WTA;W35 Monastir 8 (Tunisia);hard;SET 2;Vogt M.;Berezina P.;player_2_not_in_aliases;Berezina P.
+Today;WTA;W35 Monastir 8 (Tunisia);hard;SET 3;Vogt M.;Berezina P.;player_2_not_in_aliases;Berezina P.
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Ovcharenko E.;Sun J.;player_2_not_in_aliases;Sun J.
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Xu J.;Zhang J.;tour_mismatch;"Xu J.=WTA; Zhang J.=ATP"
 Today;WTA;W35 Sydney (Australia);hard;FINISHED;Aulia C.;Kuramochi M.;player_1_not_in_rankings;Catherine Aulia
 Today;WTA;W35 Sydney (Australia);hard;FINISHED;Kokkinis T.;Alame Re.;player_2_not_in_aliases;Alame Re.
 Today;WTA;W50 Austin, TX (USA);hard;20:00;Johnson S.;Reasco Gonzalez M. E.;tour_mismatch;"Johnson S.=ATP; Reasco Gonzalez M. E.=WTA"
-Today;WTA;W75 Saguenay (Canada);hard;17:00;Xu M.;Dong E.;player_2_not_in_aliases;Dong E.
+Today;WTA;W75 Saguenay (Canada);hard;17:10;Xu M.;Dong E.;player_2_not_in_aliases;Dong E.
 Day+1;ATP;Guangzhou (China);hard;07:30;Sultanov K.;Ilagan A.;player_1_not_in_rankings;Khumoun Sultanov
 Day+1;WTA;W35 Bakersfield, CA (USA);hard;04:30;Chan J.;Lim A.;player_1_not_in_aliases;Chan J.
 Day+1;WTA;W35 Bakersfield, CA (USA);hard;19:00;Cherubini D.;Hejtmanek A.;player_2_not_in_aliases;Hejtmanek A.
