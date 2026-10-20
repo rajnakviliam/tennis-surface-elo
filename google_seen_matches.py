@@ -19,7 +19,7 @@ SHEET_HEADERS = [
     "is_opened",
 ]
 
-
+@st.cache_resource(show_spinner=False)
 def get_worksheet():
     scopes = [
         "https://www.googleapis.com/auth/spreadsheets",
@@ -369,11 +369,6 @@ def set_opened(match_id):
             f"Zápas sa nenašiel v Google Sheets: {match_id}"
         )
 
-    worksheet.update_acell(
-        f"F{row_number}",
-        "TRUE",
-    )
-
     saved_match_id = worksheet.acell(f"A{row_number}").value
 
     if saved_match_id != match_id:
@@ -381,6 +376,40 @@ def set_opened(match_id):
             "Poradie zápasov v Google Sheets sa zmenilo. "
             "Obnov stránku a skús to znova."
         )
+
+    worksheet.update_acell(
+        f"F{row_number}",
+        "TRUE",
+    )
+
+def save_opened_batch(match_ids):
+    """Save multiple opened matches using one read and one batch write.
+
+    Resolve current row numbers from the sheet itself, rather than from
+    cached positions (which can change after a refresh).
+    """
+    ids = set(match_ids)
+    if not ids:
+        return set()
+
+    worksheet = get_worksheet()
+    column_a = worksheet.col_values(1)
+    row_numbers = {
+        value: index
+        for index, value in enumerate(column_a, start=1)
+        if value in ids
+    }
+    if row_numbers:
+        worksheet.batch_update(
+            [
+                {"range": f"F{row_numbers[match_id]}", "values": [["TRUE"]]}
+                for match_id in sorted(row_numbers)
+            ],
+            value_input_option="RAW",
+        )
+        load_match_states.clear()
+    return set(row_numbers)
+
 
 def find_match_row(worksheet, match_id):
     """

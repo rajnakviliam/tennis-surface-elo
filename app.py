@@ -16,7 +16,7 @@ from alias_pipeline import (
 
 from google_seen_matches import (
     add_saved_status,
-    set_opened,
+    save_opened_batch,
     set_pinned,
     update_after_refresh,
 )
@@ -346,14 +346,55 @@ def sort_matches(matches):
     )
 
 
+@st.fragment(run_every="30s")
+def flush_opened_matches():
+    pending = st.session_state.get("pending_opened_match_ids", set())
+    if not pending:
+        return
+
+    try:
+        saved = save_opened_batch(pending)
+    except Exception as error:
+        st.warning(
+            f"Označenia otvorených zápasov zatiaľ nie sú uložené "
+            f"({len(pending)}). Skúsim znova automaticky. "
+            f"Dôvod: {error}"
+        )
+        return
+
+    st.session_state["pending_opened_match_ids"] = pending - saved
+    if pending - saved:
+        st.warning(
+            f"Niektoré zápasy ({len(pending - saved)}) sa nenašli "
+            "v Google Sheets. Označenia zatiaľ nie sú uložené."
+        )
+
+
+@st.fragment
 def render_matches(matches, empty_message):
+    st.markdown(
+        """
+        <style>
+        div[class*="st-key-opened_match_"] button {
+            background-color: #e5e7eb !important;
+            color: #111827 !important;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
     if matches.empty:
         st.info(empty_message)
         return
 
     for _, row in matches.iterrows():
         match_id = row["MatchID"]
-        is_opened = bool(row["IsOpened"])
+        is_opened = (
+            bool(row["IsOpened"])
+            or match_id in st.session_state.get(
+                "opened_match_ids", set()
+            )
+        )
 
         player_1 = row["Player 1"]
         player_2 = row["Player 2"]
@@ -404,40 +445,37 @@ def render_matches(matches, empty_message):
                 f"{player_1} vs {player_2} · "
                 f"{row['Tournament']}"
             )
+
         detail_key = f"detail_{match_id}"
 
         if detail_key not in st.session_state:
             st.session_state[detail_key] = False
 
         button_type = "secondary"
-        if is_opened:
-            title = f"✓ {title}"
 
-        if st.button(
-            title,
-            key=f"open_{match_id}",
-            type=button_type,
-            use_container_width=True,
+        with st.container(
+            key=f"opened_match_{match_id}" if is_opened else None
         ):
+            clicked = st.button(
+                title,
+                key=f"open_{match_id}",
+                type=button_type,
+                use_container_width=True,
+            )
+
+        if clicked:
             st.session_state[detail_key] = (
                 not st.session_state[detail_key]
             )
 
             if not is_opened:
-                try:
-                    set_opened(match_id)
-
-                    if "opened_match_ids" not in st.session_state:
-                        st.session_state["opened_match_ids"] = set()
-
-                    st.session_state["opened_match_ids"].add(match_id)
-
-                    st.rerun()
-                except Exception as error:
-                    st.error(
-                        f"Nepodarilo sa uložiť otvorenie zápasu: {error}"
-                    )
-                    st.stop()
+                st.session_state.setdefault("opened_match_ids", set()).add(
+                    match_id
+                )
+                st.session_state.setdefault(
+                    "pending_opened_match_ids", set()
+                ).add(match_id)
+                st.rerun(scope="fragment")
 
         if st.session_state[detail_key]:
             st.caption(
@@ -628,6 +666,15 @@ with col1:
                     )
         
         try:
+            # Persist pending opened states before the full sheet rewrite.
+            pending = st.session_state.get("pending_opened_match_ids", set())
+            if pending:
+                saved = save_opened_batch(pending)
+                if saved != pending:
+                    raise RuntimeError(
+                        "Nie všetky otvorené zápasy sa podarilo uložiť."
+                    )
+                st.session_state["pending_opened_match_ids"] = set()
             updated_df = update_after_refresh(
                 load_current_matches()
             )
@@ -731,6 +778,9 @@ metric_4.metric(
     alias_skip_count,
 )
 
+
+# Runs independently of match-button fragments, every 30 seconds.
+flush_opened_matches()
 
 try:
     df = load_current_matches()
