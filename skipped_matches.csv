@@ -1,5 +1,5 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2;Reason;Detail
-Today;ATP;Guangzhou (China);hard;06:55;Sultanov K.;Castelnuovo L.;player_1_not_in_rankings;Khumoun Sultanov
+Today;ATP;Guangzhou (China);hard;07:10;Sultanov K.;Castelnuovo L.;player_1_not_in_rankings;Khumoun Sultanov
 Today;WTA;W100 Wrexham (United Kingdom);hard;14:30;Cabrera L.;Britton D.;player_2_not_in_aliases;Britton D.
 Today;WTA;W100 Wrexham (United Kingdom);hard;16:00;Bassols M.;Werner C.;player_2_not_in_aliases;Werner C.
 Today;WTA;W35 Loule (Portugal);hard;13:00;Adeshina E.;Amorim G.;player_2_not_in_aliases;Amorim G.
@@ -8,7 +8,7 @@ Today;WTA;W35 Monastir 8 (Tunisia);hard;13:30;Vogt M.;Berezina P.;player_2_not_i
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Ovcharenko E.;Sun J.;player_2_not_in_aliases;Sun J.
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Xu J.;Zhang J.;tour_mismatch;"Xu J.=WTA; Zhang J.=ATP"
 Today;WTA;W35 Sydney (Australia);hard;FINISHED;Aulia C.;Kuramochi M.;player_1_not_in_rankings;Catherine Aulia
-Today;WTA;W35 Sydney (Australia);hard;SET 2;Kokkinis T.;Alame Re.;player_2_not_in_aliases;Alame Re.
+Today;WTA;W35 Sydney (Australia);hard;FINISHED;Kokkinis T.;Alame Re.;player_2_not_in_aliases;Alame Re.
 Today;WTA;W50 Austin, TX (USA);hard;20:00;Johnson S.;Reasco Gonzalez M. E.;tour_mismatch;"Johnson S.=ATP; Reasco Gonzalez M. E.=WTA"
 Today;WTA;W75 Saguenay (Canada);hard;17:30;Xu M.;Dong E.;player_2_not_in_aliases;Dong E.
 Day+1;WTA;W35 Bakersfield, CA (USA);hard;04:30;Chan J.;Lim A.;player_1_not_in_aliases;Chan J.
