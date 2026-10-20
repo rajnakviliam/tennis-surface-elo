@@ -99,7 +99,7 @@ def parse_bool(value):
         "ano",
     }
 
-
+@st.cache_data(ttl=60, show_spinner=False)
 def load_match_states():
     """
     Načíta stav zápasov z Google Sheets.
@@ -133,7 +133,7 @@ def load_match_states():
     now = datetime.now(TIMEZONE)
     states = {}
 
-    for row in values[1:]:
+    for row_number, row in enumerate(values[1:], start=2):
         if len(row) <= match_id_index:
             continue
 
@@ -180,6 +180,7 @@ def load_match_states():
         last_seen = last_seen or first_seen
 
         states[match_id] = {
+            "row_number": row_number,
             "first_seen": first_seen,
             "last_seen": last_seen,
             "is_new": is_new,
@@ -226,6 +227,7 @@ def save_match_states(states):
         range_name="A1",
     )
 
+    load_match_states.clear()
 
 def add_saved_status(df):
     """
@@ -251,9 +253,16 @@ def add_saved_status(df):
         )
     )
 
+    opened_in_session = st.session_state.get(
+        "opened_match_ids", set()
+    )
+
     result["IsOpened"] = result["MatchID"].map(
-        lambda match_id: bool(
-            states.get(match_id, {}).get("is_opened", False)
+        lambda match_id: (
+            match_id in opened_in_session
+            or bool(
+                states.get(match_id, {}).get("is_opened", False)
+            )
         )
     )
 
@@ -348,23 +357,39 @@ def set_pinned(match_id, pinned):
 
 def set_opened(match_id):
     """
-    Označí zápas ako otvorený a uloží stav do Google Sheets.
+    Označí zápas ako otvorený zmenou jedinej bunky.
     """
+
     states = load_match_states()
-    now = datetime.now(TIMEZONE)
+    row_number = states.get(match_id, {}).get("row_number")
+    worksheet = get_worksheet()
 
-    if match_id not in states:
-        states[match_id] = {
-            "first_seen": now,
-            "last_seen": now,
-            "is_new": False,
-            "is_pinned": False,
-            "is_opened": True,
-        }
-    else:
-        if states[match_id].get("is_opened", False):
-            return
+    if row_number is None:
+        raise ValueError(
+            f"Zápas sa nenašiel v Google Sheets: {match_id}"
+        )
 
-        states[match_id]["is_opened"] = True
+    worksheet.update_acell(
+        f"F{row_number}",
+        "TRUE",
+    )
 
-    save_match_states(states)
+    saved_match_id = worksheet.acell(f"A{row_number}").value
+
+    if saved_match_id != match_id:
+        raise ValueError(
+            "Poradie zápasov v Google Sheets sa zmenilo. "
+            "Obnov stránku a skús to znova."
+        )
+
+def find_match_row(worksheet, match_id):
+    """
+    Nájde číslo riadku zápasu v Google Sheets.
+    """
+    match_ids = worksheet.col_values(1)
+
+    for row_number, saved_id in enumerate(match_ids, start=1):
+        if saved_id == match_id:
+            return row_number
+
+    return None

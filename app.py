@@ -409,10 +409,9 @@ def render_matches(matches, empty_message):
         if detail_key not in st.session_state:
             st.session_state[detail_key] = False
 
+        button_type = "secondary"
         if is_opened:
-            button_type = "primary"
-        else:
-            button_type = "secondary"
+            title = f"✓ {title}"
 
         if st.button(
             title,
@@ -427,6 +426,12 @@ def render_matches(matches, empty_message):
             if not is_opened:
                 try:
                     set_opened(match_id)
+
+                    if "opened_match_ids" not in st.session_state:
+                        st.session_state["opened_match_ids"] = set()
+
+                    st.session_state["opened_match_ids"].add(match_id)
+
                     st.rerun()
                 except Exception as error:
                     st.error(
