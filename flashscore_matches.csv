@@ -16,10 +16,10 @@ Today;WTA;Ningbo (China);hard;07:00;Jovic I.;Paolini J.
 Today;WTA;Ningbo (China);hard;08:30;Kawa K.;Bencic B.
 Today;WTA;Ningbo (China);hard;10:00;Eala A.;Shnaider D.
 Today;WTA;Ningbo (China);hard;13:00;Rybakina E.;Kudermetova P.
-Today;WTA;Osaka (Japan);hard;SET 2;Li A.;Sonmez Z.
+Today;WTA;Osaka (Japan);hard;FINISHED;Li A.;Sonmez Z.
 Today;WTA;Osaka (Japan);hard;FINISHED;Ruzic A.;Day K.
-Today;WTA;Osaka (Japan);hard;06:00;Stoiana M.;Uchijima M.
-Today;WTA;Osaka (Japan);hard;07:30;Linette M.;Siniakova K.
+Today;WTA;Osaka (Japan);hard;06:30;Stoiana M.;Uchijima M.
+Today;WTA;Osaka (Japan);hard;08:00;Linette M.;Siniakova K.
 Today;ATP;Cali (Colombia);clay;17:00;Dedura D.;Meligeni Alves F.
 Today;ATP;Cali (Colombia);clay;17:00;Zarate C. M.;Comesana F.
 Today;ATP;Cali (Colombia);clay;18:30;Pucinelli de Almeida M.;Jarry N.
@@ -37,8 +37,8 @@ Today;ATP;Fort Worth (USA);hard;18:00;Bigun K.;Mayo A.
 Today;ATP;Fort Worth (USA);hard;19:30;Arutiunian E.;Marcondes I.
 Today;ATP;Fort Worth (USA);hard;19:30;Debru G.;Rybakov A.
 Today;ATP;Fort Worth (USA);hard;21:00;Wolf J.J.;Jong S.
-Today;ATP;Guangzhou (China);hard;06:00;Broady L.;Santillan A.
-Today;ATP;Guangzhou (China);hard;06:00;Smith K.;Sun F.
+Today;ATP;Guangzhou (China);hard;SET 1;Broady L.;Santillan A.
+Today;ATP;Guangzhou (China);hard;06:10;Smith K.;Sun F.
 Today;ATP;Guangzhou (China);hard;07:30;Hewitt C.;Schoolkate T.
 Today;ATP;Guangzhou (China);hard;12:00;Cui J.;Wu Y.
 Today;ATP;Lisbon (Portugal);clay;11:00;Ritschard A.;Brancaccio R.
@@ -79,13 +79,13 @@ Today;WTA;W35 Monastir 8 (Tunisia);hard;12:00;Lazarenko M.;Kotliar Y.
 Today;WTA;W35 Monastir 8 (Tunisia);hard;12:00;Rojas S. C.;Lacinova A.
 Today;WTA;W35 Monastir 8 (Tunisia);hard;12:00;Rutlauka S.;Lemaitre T.
 Today;WTA;W35 Qian Daohu (China);hard;SET 2;Huang Yujia;Yao X.
-Today;WTA;W35 Qian Daohu (China);hard;SET 1;Yang Y.;Yuan C.
+Today;WTA;W35 Qian Daohu (China);hard;SET 2;Yang Y.;Yuan C.
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Zhang J.;Wang J.
 Today;WTA;W35 Qian Daohu (China);hard;SET 2;Zolotareva R.;Sun J.
-Today;WTA;W35 Qian Daohu (China);hard;05:45;Khomutsianskaya D.;Guo M.
-Today;WTA;W35 Qian Daohu (China);hard;05:45;Luo X.;Han J.
-Today;WTA;W35 Qian Daohu (China);hard;05:45;Zheng W.;Nugroho P. M.
-Today;WTA;W35 Qian Daohu (China);hard;05:50;Panshina V.;Muramatsu C.
+Today;WTA;W35 Qian Daohu (China);hard;SET 1;Khomutsianskaya D.;Guo M.
+Today;WTA;W35 Qian Daohu (China);hard;06:10;Luo X.;Han J.
+Today;WTA;W35 Qian Daohu (China);hard;06:10;Panshina V.;Muramatsu C.
+Today;WTA;W35 Qian Daohu (China);hard;06:10;Zheng W.;Nugroho P. M.
 Today;WTA;W35 Santa Margherita di Pula 11 (Italy);clay;10:00;Matoula M.;Garcia Cid Ma.
 Today;WTA;W35 Santa Margherita di Pula 11 (Italy);clay;10:00;Paoletti M.;Mazzola A.
 Today;WTA;W35 Santa Margherita di Pula 11 (Italy);clay;10:00;Radovanovic N.;Hennemann C. W.
@@ -100,8 +100,8 @@ Today;WTA;W35 Sydney (Australia);hard;FINISHED;Kokkinis T.;Beck A.
 Today;WTA;W35 Sydney (Australia);hard;FINISHED;Nishimoto S.;Chaudhari V.
 Today;WTA;W35 Sydney (Australia);hard;FINISHED;Barry M.;Yang Y. Y.
 Today;WTA;W35 Sydney (Australia);hard;FINISHED;Mushika Mio;Sema E.
-Today;WTA;W35 Sydney (Australia);hard;SET 2;Katsumi N.;Sato H.
-Today;WTA;W35 Sydney (Australia);hard;SET 2;Bains N.;Subasic A.
+Today;WTA;W35 Sydney (Australia);hard;FINISHED;Katsumi N.;Sato H.
+Today;WTA;W35 Sydney (Australia);hard;FINISHED;Bains N.;Subasic A.
 Today;WTA;W50 Austin, TX (USA);hard;18:00;McDonald E.;Munk Mortensen R.
 Today;WTA;W50 Austin, TX (USA);hard;18:00;Palicova B.;Mandlik E.
 Today;WTA;W50 Austin, TX (USA);hard;19:30;Frodin T.;Brengle M.
@@ -136,6 +136,7 @@ Day+1;ATP;Guangzhou (China);hard;04:00;Zhou Y.;Ilagan A.
 Day+1;ATP;Lisbon (Portugal);clay;11:00;Moller E.;Rocha H.
 Day+1;ATP;Lisbon (Portugal);clay;11:00;Trungelliti M.;Dodig M.
 Day+1;WTA;W35 Bakersfield, CA (USA);hard;04:30;Yamalapalli S.;Defalco J.
+Day+1;WTA;W35 Sydney (Australia);hard;01:00;Bains N.;Sato H.
 Day+1;WTA;W35 Sydney (Australia);hard;01:00;Kokkinis T.;Chaudhari V.
 Day+1;WTA;W35 Sydney (Australia);hard;01:00;Mushika Mio;Yang Y. Y.
 Day+1;WTA;W35 Sydney (Australia);hard;01:00;Wan I W.;Britez Risso L. F.
