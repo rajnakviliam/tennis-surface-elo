@@ -1,5 +1,5 @@
 ﻿DateLabel;Tour;Tournament;Surface;Time;Player 1;Player 2
-Today;ATP;Almaty (Kazakhstan);hard;08:40;Basilashvili N.;Mannarino A.
+Today;ATP;Almaty (Kazakhstan);hard;SET 2;Basilashvili N.;Mannarino A.
 Today;ATP;Almaty (Kazakhstan);hard;10:00;Tsitsipas S.;Duckworth J.
 Today;ATP;Almaty (Kazakhstan);hard;11:30;Medvedev D.;Atmane T.
 Today;ATP;Almaty (Kazakhstan);hard;16:30;Bublik A.;Khachanov K.
@@ -11,13 +11,13 @@ Today;ATP;Lyon (France);hard;14:00;Moutet C.;Paul T.
 Today;ATP;Lyon (France);hard;15:30;Altmaier D.;Fritz T.
 Today;ATP;Lyon (France);hard;19:00;Cobolli F.;Nakashima B.
 Today;ATP;Lyon (France);hard;20:30;van Assche L.;Musetti L.
-Today;WTA;Ningbo (China);hard;SET 2;Bejlek S.;Bouzkova M.
-Today;WTA;Ningbo (China);hard;09:00;Fernandez L.;Alexandrova E.
+Today;WTA;Ningbo (China);hard;FINISHED;Bejlek S.;Bouzkova M.
+Today;WTA;Ningbo (China);hard;SET 1;Fernandez L.;Alexandrova E.
 Today;WTA;Ningbo (China);hard;10:30;Jovic I.;Shnaider D.
 Today;WTA;Ningbo (China);hard;13:00;Rybakina E.;Kawa K.
 Today;WTA;Osaka (Japan);hard;FINISHED;Li A.;Tagger L.
 Today;WTA;Osaka (Japan);hard;FINISHED;Gibson T.;Krueger A.
-Today;WTA;Osaka (Japan);hard;SET 1;Stoiana M.;Siniakova K.
+Today;WTA;Osaka (Japan);hard;SET 2;Stoiana M.;Siniakova K.
 Today;WTA;Osaka (Japan);hard;10:05;Boulter K.;Ruzic A.
 Today;ATP;Cali (Colombia);clay;FINISHED;Tobon M.;Mejia N.
 Today;ATP;Cali (Colombia);clay;17:00;Meligeni Alves F.;Zarate C. M.
@@ -33,20 +33,20 @@ Today;ATP;Fort Worth (USA);hard;19:30;Debru G.;Arutiunian E.
 Today;ATP;Fort Worth (USA);hard;21:00;Jong S.;Mayo A.
 Today;ATP;Fort Worth (USA);hard;22:30;Brooksby J.;Maloney P.
 Today;ATP;Guangzhou (China);hard;FINISHED;Wong C.;Hara Friend J. D.
-Today;ATP;Guangzhou (China);hard;SET 2;Zhou Y.;Ilagan A.
-Today;ATP;Guangzhou (China);hard;SET 1;Smith K.;Schoolkate T.
-Today;ATP;Guangzhou (China);hard;09:15;Santillan A.;Cui J.
+Today;ATP;Guangzhou (China);hard;FINISHED;Zhou Y.;Ilagan A.
+Today;ATP;Guangzhou (China);hard;FINISHED;Smith K.;Schoolkate T.
+Today;ATP;Guangzhou (China);hard;SET 1;Santillan A.;Cui J.
 Today;ATP;Lisbon (Portugal);clay;11:00;Trungelliti M.;Dodig M.
 Today;ATP;Lisbon (Portugal);clay;14:00;Ritschard A.;Nagal S.
 Today;ATP;Lisbon (Portugal);clay;15:30;Moller E.;Rocha H.
 Today;ATP;Lisbon (Portugal);clay;15:30;Pellegrino A.;Gulin S.
 Today;WTA;W100 Wrexham (United Kingdom);hard;11:30;Jacquemot E.;Dudeney A.
 Today;WTA;W100 Wrexham (United Kingdom);hard;12:30;Sramkova R.;Klugman H.
-Today;WTA;W100 Wrexham (United Kingdom);hard;14:30;Lamens S.;Hewitt D.
-Today;WTA;W100 Wrexham (United Kingdom);hard;16:00;Bassols M.;Burrage J.
+Today;WTA;W100 Wrexham (United Kingdom);hard;14:00;Lamens S.;Hewitt D.
+Today;WTA;W100 Wrexham (United Kingdom);hard;15:00;Bassols M.;Burrage J.
 Today;WTA;W35 Bakersfield, CA (USA);hard;FINISHED;Cherubini D.;Ma C.
 Today;WTA;W35 Bakersfield, CA (USA);hard;FINISHED;Drugdova S.;Chang H.
-Today;WTA;W35 Bakersfield, CA (USA);hard;08:30;Yamalapalli S.;Defalco J.
+Today;WTA;W35 Bakersfield, CA (USA);hard;09:30;Yamalapalli S.;Defalco J.
 Today;WTA;W35 Bakersfield, CA (USA);hard;INTERRUPTED;Mamedova E.;Hossam Salah J.
 Today;WTA;W35 Bakersfield, CA (USA);hard;INTERRUPTED;Sharma A.;Ma L.
 Today;WTA;W35 Bakersfield, CA (USA);hard;INTERRUPTED;Wolff V.;Bartashevich Y.
@@ -61,7 +61,7 @@ Today;WTA;W35 Monastir 8 (Tunisia);hard;10:30;Vogt M.;Rojas S. C.
 Today;WTA;W35 Monastir 8 (Tunisia);hard;11:30;Adkar V.;Milovanovic E.
 Today;WTA;W35 Monastir 8 (Tunisia);hard;11:30;Nishimura K.;Kotliar Y.
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Khomutsianskaya D.;Han J.
-Today;WTA;W35 Qian Daohu (China);hard;SET 2;Panshina V.;Zheng W.
+Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Panshina V.;Zheng W.
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Yang Y.;Yao X.
 Today;WTA;W35 Qian Daohu (China);hard;FINISHED;Zolotareva R.;Zhang J.
 Today;WTA;W35 Santa Margherita di Pula 11 (Italy);clay;10:00;Matoula M.;Radovanovic N.
@@ -76,7 +76,7 @@ Today;WTA;W50 Austin, TX (USA);hard;18:00;Brengle M.;Mandlik E.
 Today;WTA;W50 Austin, TX (USA);hard;18:00;Tikhonova A.;McDonald E.
 Today;WTA;W50 Cherbourg-en-Cotentin (France);hard;12:30;Bolkvadze M.;Jorge F.
 Today;WTA;W50 Cherbourg-en-Cotentin (France);hard;13:30;Tan H.;Hruncakova V.
-Today;WTA;W50 Cherbourg-en-Cotentin (France);hard;15:30;Ponchet J.;Leonard M.
+Today;WTA;W50 Cherbourg-en-Cotentin (France);hard;14:30;Ponchet J.;Leonard M.
 Today;WTA;W50 Cherbourg-en-Cotentin (France);hard;17:00;Podrez V.;Zavatska K.
 Today;WTA;W75 Saguenay (Canada);hard;FINISHED;Arseneault A.;Sebov K.
 Today;WTA;W75 Saguenay (Canada);hard;FINISHED;Saito S.;Bajraliu L.
@@ -84,6 +84,8 @@ Today;WTA;W75 Saguenay (Canada);hard;17:00;Maria T.;Brantmeier R.
 Today;WTA;W75 Saguenay (Canada);hard;18:30;Abe H.;Kuhl C.
 Today;WTA;W75 Saguenay (Canada);hard;20:00;Naito Y.;Akli A.
 Day+1;WTA;Osaka (Japan);hard;03:00;Li A.;Krueger A.
+Day+1;ATP;Guangzhou (China);hard;04:00;Wong C.;Zhou Y.
+Day+1;WTA;W35 Qian Daohu (China);hard;04:00;Panshina V.;Khomutsianskaya D.
 Day+1;WTA;W35 Qian Daohu (China);hard;04:00;Yao X.;Zolotareva R.
 Day+1;WTA;W35 Sydney (Australia);hard;01:00;Chaudhari V.;Wan I W.
 Day+1;WTA;W35 Sydney (Australia);hard;01:00;Sato H.;Mushika Mio
