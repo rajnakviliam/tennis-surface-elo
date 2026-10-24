@@ -41,16 +41,16 @@ Day+1;ATP;Almaty (Kazakhstan);hard;11:00;Daniil Medvedev;Nikoloz Basilashvili;5;
 Day+1;ATP;Basel (Switzerland) - Qualification;hard;11:00;Juan Manuel Cerundolo;Daniel Altmaier;53;65;12;61;107;81;123;1781.6;1703.2;1689.7;1626.6;78.4;63.1;Juan Manuel Cerundolo;Juan Manuel Cerundolo;True;True;True
 Day+1;ATP;Basel (Switzerland) - Qualification;hard;11:00;Rinky Hijikata;Yannick Hanfmann;86;59;27;83;57;87;60;1733.7;1787.8;1685.1;1726.7;54.1;41.6;Yannick Hanfmann;Yannick Hanfmann;True;True;True
 Day+1;ATP;Basel (Switzerland) - Qualification;hard;11:00;Giovanni Mpetshi Perricard;Aleksandar Kovacevic;145;82;63;160;145;164;125;1632.8;1648.0;1569.9;1618.9;15.2;49.0;Aleksandar Kovacevic;Aleksandar Kovacevic;True;True;True
-Day+1;ATP;Vienna (Austria) - Qualification;hard;11:00;Fabian Marozsan;Tomas Machac;64;72;8;76;49;74;47;1745.2;1797.8;1698.5;1755.0;52.6;56.5;Fabian Marozsan;Tomas Machac;True;True;True
-Day+1;ATP;Vienna (Austria) - Qualification;hard;11:00;Lukas Neumayer;Titouan Droguet;168;69;99;201;39;250;39;1571.7;1817.1;1466.7;1773.2;245.4;306.5;Titouan Droguet;Titouan Droguet;True;True;True
-Day+1;ATP;Vienna (Austria) - Qualification;hard;11:00;Lorenzo Sonego;Jacob Fearnley;89;87;2;116;88;103;93;1691.1;1727.5;1663.6;1675.9;36.4;12.3;Jacob Fearnley;Jacob Fearnley;True;True;True
 Day+1;WTA;W100 Wrexham (United Kingdom);hard;11:00;Elsa Jacquemot;Hannah Klugman;157;341;184;231;252;215;237;1529.5;1501.1;1501.5;1475.2;28.4;26.3;Elsa Jacquemot;Elsa Jacquemot;True;True;True
 Day+1;WTA;W35 Loule (Portugal);hard;11:00;Maria Aran Teixido Garcia;Federica Urgesi;361;268;93;341;297;375;350;1400.2;1446.7;1328.2;1350.7;46.5;22.5;Federica Urgesi;Federica Urgesi;True;True;True
 Day+1;WTA;Courmayeur (Italy) - Qualification;hard;12:00;Tayisiya Morderger;Alja Senica;1495;645;850;;514;;512;;1061.1;;1089.3;;;Alja Senica;;False;True;False
 Day+1;ATP;Lisbon (Portugal);clay;12:00;Alexander Ritschard;Svyatoslav Gulin;483;545;62;;493;;468;;1299.7;;1283.7;;;Alexander Ritschard;;False;True;False
+Day+1;ATP;Vienna (Austria) - Qualification;hard;13:00;Lukas Neumayer;Titouan Droguet;168;69;99;201;39;250;39;1571.7;1817.1;1466.7;1773.2;245.4;306.5;Titouan Droguet;Titouan Droguet;True;True;True
+Day+1;ATP;Vienna (Austria) - Qualification;hard;13:00;Lorenzo Sonego;Jacob Fearnley;89;87;2;116;88;103;93;1691.1;1727.5;1663.6;1675.9;36.4;12.3;Jacob Fearnley;Jacob Fearnley;True;True;True
+Day+1;ATP;Lyon (France);hard;14:30;Lorenzo Musetti;Taylor Fritz;26;14;12;33;17;37;20;1847.8;1930.0;1778.1;1861.1;82.2;83.0;Taylor Fritz;Taylor Fritz;True;True;True
+Day+1;ATP;Vienna (Austria) - Qualification;hard;14:30;Fabian Marozsan;Tomas Machac;64;72;8;76;49;74;47;1745.2;1797.8;1698.5;1755.0;52.6;56.5;Fabian Marozsan;Tomas Machac;True;True;True
 Day+1;WTA;Courmayeur (Italy) - Qualification;hard;15:00;Yana Morderger;Enola Chiesa;1495;536;959;;;;;;;;;;;Enola Chiesa;;False;False;False
 Day+1;ATP;Florence (Italy);clay;15:00;Michele Ribecai;Filippo Romano;288;301;13;395;497;390;517;1406.3;1293.2;1346.3;1222.7;113.1;123.6;Michele Ribecai;Michele Ribecai;True;True;True
-Today;ATP;Vienna (Austria) - Qualification;hard;18:45;Thiago Agustin Tirante;Adrian Mannarino;50;79;29;45;113;63;102;1799.3;1693.9;1720.9;1664.0;105.4;56.9;Thiago Agustin Tirante;Thiago Agustin Tirante;True;True;True
 Today;WTA;W75 Saguenay (Canada);hard;19:10;Ariana Arseneault;Yuki Naito;352;278;74;466;375;450;332;1266.4;1371.1;1252.7;1371.6;104.7;118.9;Yuki Naito;Yuki Naito;True;True;True
 Today;ATP;Cali (Colombia);clay;19:35;Gustavo Heide;Matheus Pucinelli De Almeida;114;240;126;182;271;141;222;1592.8;1497.1;1594.9;1498.4;95.7;96.5;Gustavo Heide;Gustavo Heide;True;True;True
 Today;ATP;Fort Worth (USA);hard;22:00;Sander Jong;Darwin Blanch;451;159;292;;197;;195;;1576.7;;1533.6;;;Darwin Blanch;;False;True;False
@@ -127,6 +127,7 @@ Today;WTA;W50 Cherbourg-en-Cotentin (France);hard;FINISHED;Mariam Bolkvadze;Harm
 Today;WTA;W75 Saguenay (Canada);hard;FINISHED;Sara Saito;Ariana Arseneault;262;352;90;320;466;290;450;1416.7;1266.4;1410.7;1252.7;150.3;158.0;Sara Saito;Sara Saito;True;True;True
 Today;ATP;Brussels (Belgium);hard;SET 1;Arthur Fils;Jan Lennard Struff;10;58;48;5;75;5;99;2019.7;1745.3;1961.3;1667.0;274.4;294.3;Arthur Fils;Arthur Fils;True;True;True
 Today;ATP;Cali (Colombia);clay;SET 1;Felipe Meligeni Alves;Valerio Aboian;396;340;56;326;411;258;352;1456.7;1385.8;1462.5;1370.5;70.9;92.0;Valerio Aboian;Felipe Meligeni Alves;True;True;True
+Today;ATP;Vienna (Austria) - Qualification;hard;SET 1;Thiago Agustin Tirante;Adrian Mannarino;50;79;29;45;113;63;102;1799.3;1693.9;1720.9;1664.0;105.4;56.9;Thiago Agustin Tirante;Thiago Agustin Tirante;True;True;True
 Today;WTA;W50 Austin, TX (USA);hard;SET 1;Madison Brengle;Ella Mcdonald;192;353;161;219;379;206;453;1548.3;1368.6;1512.5;1249.9;179.7;262.6;Madison Brengle;Madison Brengle;True;True;True
 Today;ATP;Basel (Switzerland) - Qualification;hard;SET 2;Remy Bertola;Jakub Paul;219;993;774;261;;272;;1503.5;;1449.7;;;;Remy Bertola;;True;False;False
 Today;WTA;W75 Saguenay (Canada);hard;SET 2;Reese Brantmeier;Hiromi Abe;265;269;4;172;364;160;343;1605.4;1380.7;1575.0;1360.8;224.7;214.2;Reese Brantmeier;Reese Brantmeier;True;True;True
